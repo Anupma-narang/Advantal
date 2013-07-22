@@ -1,0 +1,12 @@
+Kpi:
+  kpi_sat:
+    nombre: Servicio de atención al cliente
+  kpi_velocidad:
+    nombre: Velocidad
+  kpi_precio:
+    nombre: Precio
+  kpi_accesibilidad:
+    nombre: Accesibilidad de la ubicación
+  kpi_calidad:
+    nombre: Calidad del servicio
+

@@ -1,0 +1,13 @@
+Empresa:
+  restaurant_raco:
+    name: El raco
+    direccion: Muntaner, 34
+    codigopostal: 08032
+    dividendo: 1000
+    divisor: 30
+    Cuestionario: cuestionario_restaurante
+    lista: lb
+    comentario_inicial: |
+      Muy buena empresa, donde se come muy y muy bien. Todo delicioso. Abrieron en marzo del 2011
+      y desde enteonces no han parado de trabajar
+

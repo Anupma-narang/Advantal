@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://local.dmt.com/" />
+<title>Rellenando cuestionario</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Rellenando cuestionario</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/backend_dev.php/cuestionario/new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_nombre</td>
+	<td>Cuestionario comercio</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=lista_cuestionario_empresa_sector_uno_id</td>
+	<td>label=ALIMENTACIÓN</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_1_pregunta</td>
+	<td>Qué te parece la situación del comercio?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=autocomplete_lista_cuestionario_ListaCuestionarioPregunta_N__m_1_kpi_id</td>
+	<td>Velo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_2_pregunta</td>
+	<td>Como valoras la atención personal?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=autocomplete_lista_cuestionario_ListaCuestionarioPregunta_N__m_2_kpi_id</td>
+	<td>Atencion personal</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_3_pregunta</td>
+	<td>Qué te parece el color de las paredes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=autocomplete_lista_cuestionario_ListaCuestionarioPregunta_N__m_3_kpi_id</td>
+	<td>Decoración</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_4_pregunta</td>
+	<td>Valora los precios del establecimiento</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=autocomplete_lista_cuestionario_ListaCuestionarioPregunta_N__m_4_kpi_id</td>
+	<td>Precios</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_5_pregunta</td>
+	<td>Hay buenas ofertas?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=autocomplete_lista_cuestionario_ListaCuestionarioPregunta_N__m_5_kpi_id</td>
+	<td>Pre</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_6_pregunta</td>
+	<td>Te gusta el nombre del comercio?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_7_pregunta</td>
+	<td>Te atrae el nombre?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_8_pregunta</td>
+	<td>Has encontrado lo que necesitas?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_9_pregunta</td>
+	<td>Volverás otro día?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_10_pregunta</td>
+	<td>Puntua en cuanto recomendarías el comercio</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_11_pregunta</td>
+	<td>Estarías interesado en montar una tienda</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_12_pregunta</td>
+	<td>Te ha gustado venir?</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_12_tipo</td>
+	<td>label=Si / No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_13_pregunta</td>
+	<td>Comentario libre</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=lista_cuestionario_ListaCuestionarioPregunta_N__m_13_tipo</td>
+	<td>label=Texto</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
