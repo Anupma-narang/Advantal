@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/***************
+inicio menu
+****************/
+/* Barra de navegación */
+#barra_nav{
+     background: url("/images/img/fondoportal/fondo_web_nav.png") no-repeat scroll center top #FFFFFF;
+    float: left;
+    min-height: 42px;
+    padding: 13px 0 0;
+    text-align: center;
+    vertical-align: top;
+    width: 980px;
+}
+#barra_nav a{
+    text-decoration: none;
+    display: inline-block;
+    height:32px;
+    background: url('/images/img/menu-css3.png') repeat-x 0px 0px;
+    margin: 0px;
+    padding-top: 10px;
+    color: #666666;
+    font-size: 17px;
+    width:178px;
+    float:left;
+    vertical-align: top;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    -ms-border-radius: 5px;
+
+}
+#barra_nav a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-position:0px -41px;
+}
+#barra_nav .current{ background-position:0px -41px;color: #fff;}
+#barra_nav .menu-separador{
+    background: url("/images/img/menu-separador-css3.png") repeat-x scroll 0 0 transparent;
+    display: inline-block;
+    height: 42px;
+    margin: 0;
+    vertical-align: top;
+    width: 3px;
+    float:left;
+}
+#barra_nav .blk{
+    margin-left: 38px;
+}
+#barra_nav a#inicio {
+    width: 179px;
+}

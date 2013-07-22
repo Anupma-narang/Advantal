@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+@font-face {
+ font-family: "Franklin";
+ src: url(http://auditoscopia.servigenlm.com/css/grafias/FRAMDCN.TTF) format("truetype");  
+ font-weight: normal; 
+ font-style:normal;
+}
+
+body, td, pre {color:#000; font-family: "Franklin"; font-size:15px; margin:8px;}

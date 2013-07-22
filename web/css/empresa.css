@@ -1,0 +1,19 @@
+#content_empresa_nuevo{  margin: 0px 0px 0px 10px;
+    float: left;
+/*    border: #006600 solid 1px;*/
+}
+#botones_cambio_concurso { float: left; width: 230px; height: 42px;
+        padding-top: 5px;
+	background:url(../images/img/concurso_boton_no_activo.png) no-repeat center top;
+	text-align: center;
+	text-decoration: none;
+	/*border: #006699 solid 1px;*/
+}
+
+#content_titulo_seccion{ float: left; width: 620px; height: 25px;
+    background:url(../images/img_empresa/titulo_seccion_activa.png) no-repeat;
+    margin: 0px 0px 20px 10px; text-align: center;
+}
+#content_titulo_seccion .txt_titulo_seccion{color: #ffffff; font-weight: bold;
+
+}

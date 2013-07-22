@@ -1,0 +1,36 @@
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Verdana;
+    font-size: 15px;
+}
+
+hr.line {
+    background: url('/images/img/fondo1.png') #009321 repeat-y;
+    background-position: -90px 0;
+    height: 5px;
+    border: 0;
+}
+
+div#logo {
+    padding: 10px 0 0 30px;
+}
+div#content {
+    padding: 10px 30px;
+}
+div#text {
+    padding:15px 0px;
+}
+
+#title_concurso a {
+    color: #006600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#title_concurso a:hover {
+    text-decoration: underline;
+}
+
+.strong {
+    font-weight: bold;
+    padding-top: 20px;
+}

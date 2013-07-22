@@ -1,0 +1,65 @@
+/* ESTILOS PARA LISTAS AUDITA */
+div.cuestionario {
+    color: #4D5357;
+}
+
+div.cuestionario h3 {
+    font-size: 20px;
+}
+
+div.cuestionario ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-left: 0px
+}
+div.cuestionario ul label {
+    display: block;
+    margin-bottom: 10px
+}
+
+div.cuestionario ul.radio_list label {
+    display: inline;
+    margin-bottom: 0px
+}
+
+div.cuestionario ul.radio_list li {
+    display: inline;
+    margin: 0 10px
+}
+
+div.cuestionario textarea {
+    width: 350px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+div.cuestionario input {
+    color: #4D5357;
+}
+
+div.cuestionario input[type="submit"] {
+    margin-top: 20px;
+}
+
+div.cuestionario ul.error_list {
+    display: none;
+}
+ul.error_list + label { color: red !important}
+div.form_row_error { color: red;
+    border-bottom: medium none;
+    border-radius: 5px 5px 5px 5px;
+    border-top: medium none;
+    color: #fff;
+    margin: 5px;
+    padding: 2px 2px 2px 27px;
+    background:#FA1919 url(/images/error.png) no-repeat 6px  6px;
+    width: 463px;
+}
+/* FIN ESTILOS PARA LISTAS AUDITA */
+
+div.form_row_error p{
+    margin: 0;
+    padding: 0;
+    line-height: 23px;
+    min-height: 25px; 
+} 

@@ -1,0 +1,14 @@
+.anchotexto{width: 300px;}
+
+#content_titulo_seccion{ float: left; width: 620px; height: 25px;
+    background:url(../images/img_concurso/titulo_seccion_activa.png) no-repeat;
+    margin: 0px 0px 20px 10px; text-align: center;
+}
+#content_titulo_seccion .txt_titulo_seccion{color: #ffffff; font-weight: bold;
+
+}
+#content_producto_nuevo{  margin: 0px 0px 0px 10px;
+    float: left;
+    width: 500px;
+/*    border: #006600 solid 1px;*/
+}

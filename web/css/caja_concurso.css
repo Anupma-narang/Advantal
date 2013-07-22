@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.border-box {
+/*	width: 960px;*/
+}
+
+.border-box .top-left, .border-box .top-right, .border-box .bottom-left, .border-box .bottom-right  {
+	background-image: url(../images/caja/caja.png);
+	background-repeat: no-repeat;
+}
+.border-box .top-left {
+	background-position: left top;
+}
+.border-box .top-right {
+	background-position: right top;
+	margin-left: 10px;
+   	padding: 9px 10px 1px 5px;
+        padding:15px 10px 14px 5px;
+        line-height: 25px;
+        text-align: justify;
+}
+.border-box .bottom-left {
+	background-position: left bottom;
+}
+.border-box .bottom-right {
+    background-position: right bottom;
+    height: 12px;
+    margin-left: 80px;
+}
+
+.caja{
+	/*display:none;*/
+}

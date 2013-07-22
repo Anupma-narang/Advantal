@@ -1,0 +1,2360 @@
+
+/************INIT ACORDEON*************/
+.h4_accordion {
+    font-size: 15px;
+/*    margin-bottom: 0px;*/
+    font-weight: normal;
+    margin: 3px 1px 16px 4px;
+}
+#accordion{
+/*    border: #C30 solid 3px;*/
+    float: left;
+    width: 620px;
+}
+.acordeon{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0px 10px 2px;
+
+    height: 30px;
+    padding: 20px 0px 0px 0px; 
+}
+
+.h4_accordion a
+{
+    font-size: 15px; font-weight: bold; text-decoration: none;
+}
+.h4_accordion a:hover
+{
+    text-decoration: underline;
+}
+.h4_accordion a:visited
+{
+/*   color:#009900;*/
+   color:#fbcb09;
+}
+
+/************FINIS ACORDEON*************/
+
+/***************
+BOTONES
+**************/
+.red_button
+{
+/*    background: url("../images/img/login/login_boton_crear.png") no-repeat scroll center center transparent;*/
+    background: url(../images/img/login/login_boton_crear.png) no-repeat center;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 39px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family:"Trebuchet MS","Lucida Sans Unicode", "Lucida Grande", Verdana;
+    width: 174px;
+    cursor:pointer;
+}
+
+
+.gray_button_150
+{
+    background: url(../images/img/login/btn_gris_125.png) no-repeat center;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px; height: 34px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family:"Trebuchet MS","Lucida Sans Unicode", "Lucida Grande", Verdana;
+    width: 125px;
+    cursor:pointer;
+}
+
+/*********
+FIN BOTONES
+***********/
+
+.content_h2 {
+    margin-left: 20px;
+}
+
+.linea {
+    background: url(../images/img_nosotros/nosotros_fondo_linea.jpg) no-repeat top left;
+}
+
+/*.linea2{float: left;
+ background:url(../images/img_nosotros/nosotros_fondo_linea.jpg) no-repeat top left;
+ }*/
+
+/*.negrita {
+	font-weight: bold;
+}
+*/
+.link_rojo {
+/*    color: #FF0000;*/
+    color: #006600; font-weight: bold;
+}
+
+.link_rojo a {
+/*    color: #FF0000;*/
+/*    color: #006600;*/
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link_rojo a:hover {
+    color: #FF0000; color: #006600; font-weight: bold;
+    text-decoration: underline;
+}
+
+.texto_rojo {
+    color: #FF0000;
+}
+
+.texto_negro {
+    color: #000000;
+}
+.entre_parrafos{height: 18px;}
+
+ #img_left{
+     text-align: left;
+     margin: 46px 0px 0px 41px;
+                
+ }
+
+
+/*Fin contenido breadcrumbs*/
+
+
+
+.verde_link {
+    color: #006600;
+    font-weight: bold;
+}
+
+.verde_link a {
+    color: #006600;
+    text-decoration: none;
+}
+
+.verde_link a:hover {
+    color: #006600;
+    text-decoration: underline;
+}
+
+
+
+.blanco {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+  
+#haztecolaborador{ float: left; margin: 40px 0px 0px 5px; 
+    height: 50px;
+    width: 500px;
+    font-size: 15px;
+}
+#haztecolaborador .subtitulo_haztecolaborador{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;      
+}
+ #frasefinal{ float: left; margin: 20px 0px 0px 5px; 
+    height: 50px;
+    width: 600px;
+    font-size: 14px;
+}
+.prueba_trebu{
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    
+}
+
+.color_tabla{ font-weight: bold; color:#FFFFFF;}
+                        
+.texto_justify{ text-align: justify;}
+    
+/***********
+ PAGE
+ *************/
+
+#table {
+    height: 90px;
+    width: 270px;
+    text-align: left;
+    line-height: 13px;
+    margin: 2px 0px 0px 30px;
+}
+#table_log {
+    height: 110px;
+    width: 285px;
+    text-align: left;
+    line-height: 22px;
+    margin: 0px 0px 0px 10px;
+    font-size:16px;
+}
+.salir{font-size: 22px;}
+.recuerda{margin:0px 0px 0px 0px;}
+
+#tdi {
+    float: left;
+    width: 62px;
+}
+
+#tdd {
+    float: left;
+    width: 180px;
+    text-align: left;
+    margin: 0px 0px 3px 0px;
+    color: #666;
+   }
+
+#tr {
+    float: left;
+    width: 200px;
+    text-align: left;
+    border-bottom: #CCCCCC solid 2px;
+    margin: 0px 0px 5px 0px;
+   
+}
+
+.tr {
+	 display: block;
+}
+
+#tr1 {
+    float: left;
+    width: 200px;
+    text-align: left;
+    margin: 5px 0px 0px 0px;
+}
+
+.verde {
+    /*color: #009966;*/
+    color: rgb(66, 157, 41);
+    font-weight: bold;
+}
+
+.naranja {
+    color: rgb(246, 94, 19);
+    margin-bottom: 5px;
+}
+
+.azul {
+    color: rgb(22, 100, 148);
+}
+
+.rojo {
+    color: #C30;
+}
+
+.rojo_marron {
+	color: #b41b1d;
+}
+
+.rojo_ferrari{
+	color: rgb(250, 25,25)
+}
+
+.gris{
+	/*color: #BEC1C4;*/
+		color: rgb(190,193,196);
+                color: rgb(100,113,121);
+}
+
+.numero_size {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#page #page_top #header #header_foo #login #form_acceso {
+    width: 300px;
+    height: 40px;
+    float: right;
+    padding: 0px 0px 0px 0px; /* border:#00CC66 solid 1px;*/
+}
+
+#page #page_top #header #header_foo #login #form_acceso #form1 {
+    margin: 2px 65px 2px 0px; /*height:35px;*/
+}
+
+#page #page_top #header #header_foo #login #form_acceso #form1 #textfield2, #page #header #header_foo #login #form_acceso #form1 #textfield {
+    float: right;
+    width: 75px;
+    height: 16px;
+    margin: 0px 2px 2px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/*#page #header #header_foo #login*/
+#form_acceso #acceso_recordar_pass {
+    float: right;
+    width: 250px;
+    height: 25px;
+    font-weight: bold;
+    /* border:#00CC66 solid 1px;*/
+}
+
+
+#margin1{ float: left; margin: 0px 0px 20px 0px;}
+    
+ 
+/*POSTIT*/
+#postist{    
+    width: 300px;
+}
+
+#postit_titles{
+    float: left;
+    width: 617px;
+}
+.title_1 { float: left; width: 200px; font-weight: bold; 
+           font-size: 13px; text-align: center;
+/*          border: #009966 solid 1px;*/
+}
+#nosotros_postit {    float: left;    width: 617px;    height: 180px;
+    font-size: 13px;    margin: 1px 0px 0px 0px;
+    background: url(../images/img_nosotros_empresa/fondo_postit.jpg) no-repeat;
+/*            border: #009966 solid 1px;*/
+}
+#nosotros_postit_p1 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    text-align: left;
+    margin: 51px 2px 0px 8px;
+    color: #FFF;
+/*                                      border: #990033 solid 1px;*/
+}
+
+#nosotros_postit_p2 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    margin: 40px 2px 0px 8px;
+    color: #FFF;
+/*    border: #990033 solid 1px;*/
+}
+
+#nosotros_postit_p3 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    margin: 50px 2px 0px 10px;
+    color: #FFF;
+/*    border:  #FF0000 solid 1px;*/
+}
+
+/*FIN POSTIT*/
+/*PARRAFOS*/
+#parrafo { float:left;margin:5px 0px 10px 3px;
+/*	font-family: Verdana, Geneva, sans-serif;*/
+/*	font-size:12px; */
+	}
+	#forma_hea {
+		width:615px;
+		height:30px;
+		background:url(../images/img_nosotros/bg_hd.png) no-repeat;
+/*                border: #069 solid 1px;*/
+	}
+	#forma_body {
+		width:615px;
+		background:url(../images/img_nosotros/bg_bd.png);
+	}
+		#alinea{
+				width:590px;
+                                text-align:justify;
+				padding: 0px 10px 0px 10px;
+                                line-height: 25px;
+                                font-size: 15px;
+		}
+	#forma_bot {
+		float:left;
+		width:615px;
+		height:30px;
+		background:url(../images/img_nosotros/bg_bt.png) no-repeat;
+                
+                /*	 border:#FF0000 solid 1px;*/
+	}
+
+#alinea ul,.top-right ul { 
+    margin: 0px 0px 0px 0px;
+/*    list-style-image: url(../images/img_nosotros/circulo-lista.png);*/
+    list-style-image: url(../images/img_nosotros/circulo-lista-2.png);
+    line-height: 25px;
+    }         
+        
+        #alinea_images{
+                width:590px; text-align:justify;
+        }
+        
+/*        FIN PARRAFOS*/
+
+/***********
+ CONTENT
+ ********/
+#page_top #content {
+    float: left;
+    width: 980px;
+    /*	height:1264px;*/
+    margin-top: 2px; /* border:#00FF33 solid 1px;*/
+}
+
+/***********
+ VOSOTROS
+ **********/
+#content_vosotros {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 10px 0px 0px 10px; /*background:url(../images/img/nosotros_fondo_pag_1.jpg) no-repeat;*/
+    /*border:#00CC66 solid 1px;*/
+}
+
+#content_vosotros #content_vosotros_activo, .cuadro-1{
+    padding: 10px;
+    width: 97%;
+    border: 4px solid lightgray;
+    border-radius: 10px 10px 10px 10px;    
+}
+
+#content_vosotros #content_vosotros_activo .txt_vosotros {
+    font-weight: bold;
+    text-align: left;
+    margin: 15px 0px 0px 8px;
+    color: #333; /*          border:#00FF33 solid 1px;*/
+}
+
+ 
+ /***************
+ NOSOTROS quese
+ ****************/
+#content_nosotros_quesedice {
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat;
+}
+
+
+#content_nosotros_quesedice_uno_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+}
+
+/**************
+ NOSOTROS trabaja
+ *************/
+#content_nosotros_trabaja {
+    width: 645px;
+/*    height: 1184px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*border:#00CC66 solid 1px;*/
+}
+
+
+
+#content_nosotros_trabaja_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+}
+
+/**************
+ sistema de recompensa
+ *************/
+
+
+/*#content_nosotros_sistema_uno_a #content_nosotros_sistema_uno_aa {
+ float: left;
+ width:340px;
+ height:215px;
+ margin:10px auto;
+ border:#00CC66 solid 1px;
+ }*/
+#content_nosotros_sistema_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+    margin: 10px 0px 10px 0px; /*                border:#00CC66 solid 1px;*/
+}
+
+#content_nosotros_sistema_dos {
+    width: 630px;
+    height: 220px;
+    margin: 10px 0px 10px 0px; /*        border:#00CC66 solid 1px;*/
+}
+
+#content_nosotros_sistema_tres {
+    width: 630px;
+    height: 220px;
+    margin: 10px 0px 10px 0px; /*      border:#00CC66 solid 1px;*/
+}
+
+#content_nosotros_sistema_cuatro {
+    width: 630px;
+    height: 220px;
+    margin: 10px 0px 10px 0px; /*      border:#00CC66 solid 1px;*/
+}
+
+/************
+ NOSOTROS como ganar puntos
+ ************/
+#content_nosotros_comoganarpuntos {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+/*    background: url(../images/img/back_fondo.jpg) no-repeat;*/
+ /*            border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comoganarpuntos_uno {
+    width: 630px;
+    height: 220px;
+/*    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;*/
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comoganarpuntos_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px;
+    /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comoganarpuntos_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comoganarpuntos_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+/**************
+ NOSOTROS colabora
+ *************/
+#content_nosotros_colabora {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*border:#00CC66 solid 1px;*/
+}
+
+
+#content_nosotros_colabora_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+}
+
+#content_nosotros_colabora_dos {
+    width: 602px;
+    height: 214px;
+    background: url(../images/img_nosotros_colabora/nosotros_617_214.jpg) top center no-repeat;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    line-height: 30px;
+}
+
+#content_nosotros_colabora_tres {
+    width: 601px;
+    height: 151px;
+    background: url(../images/img_nosotros_colabora/nosotros_616_151.jpg) top center no-repeat;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    line-height: 30px;
+}
+
+#content_nosotros_colabora_cuatro {
+    width: 602px;
+    height: 214px;
+    background: url(../images/img_nosotros_colabora/nosotros_617_214.jpg) top center no-repeat;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    line-height: 30px;
+}
+
+/*****************
+ CONTENT nosotros nuestros
+ *******************/
+#content_nosotros_nuestros {
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 5px 0px 10px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat;
+}
+
+/*#content_nosotros_nuestros_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px;
+}*/
+/*33333
+#content_nosotros_nuestros_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px;
+}*/
+
+#content_nosotros_nuestros_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+}
+
+#page #content #content_nosotros_nuestros #content_nosotros_nuestros_uno #content_nosotros_nuestros_uno_a .auditoscopia_o {
+    color: #343434;
+}
+
+#content_nosotros_nuestros_dos {
+    width: 620px;
+    height: 211px;
+    float: left;
+    padding: 5px 0px 0px 25px;
+    background: url(../images/img/static/nosotros_fondo_pag_12.jpg) no-repeat; /*	border:#33FF99 solid 1px;*/
+}
+
+#page #content #content_nosotros_nuestros #content_nosotros_nuestros_cinco li, #page #content #content_nosotros_nuestros #content_nosotros_nuestros_cuatro li, #page #content #content_nosotros_nuestros #content_nosotros_nuestros_tres li, #page #content #content_nosotros_nuestros #content_nosotros_nuestros_dos li {
+    line-height: 25px;
+}
+
+#content_nosotros_nuestros_tres {
+    width: 620px;
+    height: 150px;
+    float: left;
+    padding: 5px 0px 0px 25px; /*		background:url(../img/static/nosotros_fondo_pag_13.jpg) no-repeat;
+     border:#33FF99 solid 1px;*/
+}
+
+#content_nosotros_nuestros_cuatro {
+    width: 620px;
+    height: 250px;
+    float: left;
+    padding: 5px 0px 0px 25px;
+}
+
+#content_nosotros_nuestros_cinco {
+    width: 600px;
+    height: 195px;
+    float: left;
+    padding: 10px 20px 0px 25px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img/static/nosotros_fondo_pag_14a.jpg) no-repeat bottom;
+}
+
+/*****************
+ NOSOTROS decalogo
+ *******************/
+#content_nosotros_decalogo {
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 5px 0px 10px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat;
+}
+
+#content_nosotros_decalogo_uno {
+    width: 630px;
+    height: 220px;
+/*    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;*/
+    margin: 10px 0px 0px 0px;
+    /*        border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogo_uno_a { font-size: 16px;
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px;
+}
+
+#content_nosotros_decalogo_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+}
+
+/*#content_nosotros_decalogo_dos {
+ width:585px;
+ height:150px;
+ margin:15px 0px 0px 0px;
+ padding:5px 40px 10px 20px;
+ border:#FF0000 solid 1px;
+ line-height:18px;
+ }
+ #content_nosotros_decalogo_tres {
+ width:585px;
+ height:161px;
+ padding:5px 40px 10px 20px;
+ background:url(../images/img/static/nosotros_fondo_pag_14a.jpg) top left no-repeat;
+ line-height:18px;
+ }
+ #content_nosotros_decalogo_cuatro {
+ width:585px;
+ height:161px;
+ padding:5px 40px 10px 20px;
+ background:url(../images/img/static/nosotros_fondo_pag_14a.jpg) top left no-repeat;
+ line-height:18px;
+ }
+ #content_nosotros_decalogo_cinco {
+ width:585px;
+ height:161px;
+ padding:5px 40px 10px 20px;
+ background:url(../images/img/static/nosotros_fondo_pag_14a.jpg) top left no-repeat;
+ line-height:18px;
+ }
+ #content_nosotros_decalogo_seis {
+ width:585px;
+ height:161px;
+ padding:5px 40px 10px 20px;
+ background:url(../images/img/static/nosotros_fondo_pag_14a.jpg) top left no-repeat;
+ line-height:18px;        border:#FF0000 solid 1px;
+ }
+ #content_nosotros_decalogo_siete {
+ width:585px;
+ height:161px;
+ padding:5px 40px 10px 20px;
+ background:url(../images/img/static/nosotros_fondo_pag_14a.jpg) top left no-repeat;
+ line-height:18px;
+ }*/
+/*****************
+ NOSOTROS como salir lista negra
+ *******************/
+#content_nosotros_comosalirlistanegra {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*    border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_comosalirlistanegra_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 10px 0px; /*	border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_comosalirlistanegra_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+/*        #content_nosotros_decalogolistablanca_uno_a_img{float:left;width:250px; height:215px;
+ }*/
+#content_nosotros_comosalirlistanegra_dos {
+    width: 595px;
+    height: 150px;
+    padding: 0px 30px 0px 15px;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px; /*        border:#FF0000 solid 1px;*/
+}
+
+/*****************
+ NOSOTROS decalogo lista negra
+ *******************/
+#content_nosotros_decalogolistanegra {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*    border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogolistanegra_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 10px 0px; /*	border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogolistanegra_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+/*        #content_nosotros_decalogolistablanca_uno_a_img{float:left;width:250px; height:215px;
+ }*/
+#content_nosotros_decalogolistanegra_dos {
+    width: 595px;
+    height: 150px;
+    padding: 0px 30px 0px 15px;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px; /*        border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogolistanegra_tres {
+    width: 595px;
+    height: 201px;
+    padding: 10px 30px 10px 15px;
+    background: url(../images/img_nosotros/nosotros_contenido_pag_34.jpg) top left no-repeat;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px; /*          border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogolistanegra_cuatro {
+    width: 595px;
+    height: 402px;
+    margin: 15px 0px 0px 0px;
+    padding: 10px 30px 10px 15px;
+    line-height: 18px;
+}
+
+/*****************
+ NOSOTROS decalogo lista blanca
+ *******************/
+#content_nosotros_decalogolistablanca {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*    border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogolistablanca_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 10px 0px; /*	border:#FF0000 solid 1px;*/
+}
+
+#content_nosotros_decalogolistablanca_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+#content_nosotros_decalogolistablanca_dos {
+    width: 595px;
+    height: 201px;
+    padding: 10px 30px 10px 15px;
+    background: url(../images/img_nosotros/nosotros_contenido_pag_34.jpg) top left no-repeat;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px;
+}
+
+#content_nosotros_decalogolistablanca_tres {
+    width: 595px;
+    height: 201px;
+    padding: 10px 30px 10px 15px;
+    background: url(../images/img_nosotros/nosotros_contenido_pag_34.jpg) top left no-repeat;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px;
+}
+
+#content_nosotros_decalogolistablanca_cuatro {
+    width: 595px;
+    height: 201px;
+    padding: 10px 30px 10px 15px;
+    background: url(../images/img_nosotros/nosotros_contenido_pag_34.jpg) top left no-repeat;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px;
+}
+
+#content_nosotros_decalogolistablanca_cinco {
+    width: 595px;
+    height: 201px;
+    padding: 10px 30px 10px 15px;
+    background: url(../images/img_nosotros/nosotros_contenido_pag_34.jpg) top left no-repeat;
+    line-height: 18px;
+    margin: 15px 0px 0px 0px;
+}
+
+/************
+ NOSOTROS empresa , entidad
+ ************/
+#content_nosotros_empresa {
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+
+
+#content_nosotros_empresa_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+    /* padding:15px 15px 0px 5px;*/
+    /* border: #009966 solid 1px;*/
+}
+
+#content_nosotros_empresa_dos {    float: left;    width: 617px;    height: 180px;
+    font-size: 13px;    margin: 15px 0px 0px 0px;
+    background: url(../images/img_nosotros_empresa/fondo_postit.jpg) no-repeat;
+    /*        border: #009966 solid 1px;*/
+}
+
+#content_nosotros_empresa_dos_p1 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    text-align: left;
+    margin: 10px 2px 0px 8px;
+    color: #FFF;
+/*                                      border: #990033 solid 1px;*/
+}
+
+#content_nosotros_empresa_dos_p2 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    margin: 10px 2px 0px 8px;
+    color: #FFF;
+/*    border: #990033 solid 1px;*/
+}
+
+#content_nosotros_empresa_dos_p3 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    margin: 15px 2px 0px 10px;
+    color: #FFF;
+/*    border:  #FF0000 solid 1px;*/
+}
+
+#content_nosotros_empresa_tres {
+    float: left;
+    width: 617px;
+    height: 180px;
+    font-size: 13px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img_nosotros_empresa/fondo_postit_inv.png) no-repeat;
+}
+
+#content_nosotros_empresa_tres_p1 {
+    width: 170px;
+    height: 80px;
+    float: left;
+    margin: 50px 2px 0px 18px;
+    color: #FFF;
+    /*                                  border:  #FF0000 solid 1px;*/
+}
+
+#content_nosotros_empresa_tres_p2 {
+    width: 190px;
+    height: 80px;
+    float: left;
+    margin: 60px 2px 0px 18px;
+    color: #FFF;
+    /*border:  #FF0000 solid 1px;*/
+}
+
+#content_nosotros_empresa_tres_p3 {
+    width: 190px;
+    height: 80px;
+    float: left;
+    margin: 60px 2px 0px 18px;
+    color: #FFF;
+    /*border:  #FF0000 solid 1px;*/
+}
+
+#content_nosotros_empresa_cinco {
+    float: left;
+    width: 500px;
+    /*	height:50px;*/
+    margin: 10px 0px 40px 10px;
+    text-align: justify;
+}
+
+/************
+ NOSOTROS que es lista blanca
+ ************/
+#content_nosotros_listanegra {
+    width: 645px;
+    line-height: 20px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 5px 0px 10px 10px;
+    /*	background:url(../images/img/back_fondo.jpg) no-repeat; */
+    /*        border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_tres {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 25px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_cuatro {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 25px 0px 10px 0px;
+    /*                               background:url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;*/
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_listablanca_cinco {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 25px 0px 10px 0px;
+    /*                               background:url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;*/
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+/************
+ quienes
+ ************/
+#content_nosotros_quienes {
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 5px 0px 10px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+
+#content_nosotros_trabaja_uno, #content_nosotros_jerarquias_uno, #content_nosotros_empresa_uno,
+#content_nosotros_sistema_uno,#content_nosotros_colabora_uno,
+#content_porque_existimos_uno,#content_nosotros_auditanos_uno,
+#content_nosotros_nuestros_uno,#content_nosotros_quesedice_uno,
+#content_nosotros_quienes_uno {
+    width: 630px;
+    height: 230px;
+/*    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;*/
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+    line-height: 25px
+}
+#content_nosotros_trabaja_uno_a, #content_nosotros_jerarquias_uno_a,
+#content_porque_existimos_uno_a,#content_nosotros_empresa_uno_a,
+#content_nosotros_comofuncionamos_uno_a,#content_nosotros_colabora_uno_a,
+#content_nosotros_nuestros_uno_a, #content_nosotros_auditanos_uno_a,
+#content_nosotros_quienes_uno_a,#content_nosotros_quesedice_uno_a,
+#content_nosotros_sistema_uno_a { font-size: 16px; text-align: justify; 
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+
+/****************/
+#content_nosotros_quienes_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_quienes_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 5px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_quienes_tres {
+    float: left; width: 635px; height: 321px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_13.jpg) no-repeat;
+    padding: 20px 0px 0px 10px;
+    font-size: 12px;
+}
+
+#nosotros_texto_tres_uno {
+    width: 530px;
+    height: 65px;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+    padding: 40px 0px 0px 0px;
+}
+
+#nosotros_texto_tres_dos {
+    color: #FFFFFF;
+    font-weight: bold;
+    float: left;
+    width: 170px;
+    height: 30px;
+    text-align: center;
+    padding: 0px 0px 20px 120px;
+    margin: 32px 0px 0px 0px;
+}
+
+#nosotros_texto_tres_tres {
+    float: left;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    padding: 10px 90px 0px 0px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
+    /*         border: #006699 solid 1px;*/
+}
+
+#nosotros_texto_tres_cuatro {
+    float: left;
+    width: 590px;
+    height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 5px 0px 0px 10px;
+    /*         border: #006699 solid 1px;*/
+}
+
+#content_nosotros_quienes_cuatro {
+    float: left;
+    width: 500px;
+    height: 143px;
+    margin: 5px 0px 5px 10px;
+    padding: 0px 60px 0px 60px;
+    text-align: justify;
+    background: url(../images/img_nosotros/nosotros_fondo_parentesis.png) no-repeat;
+    /*            border: #009966 solid 1px;   */
+}
+
+#content_nosotros_quienes_cinco {
+    float: left;
+    width: 500px;
+    height: 50px;
+    margin: 10px 0px 40px 10px;
+    /*    padding:0px 60px 0px 60px;*/
+    text-align: justify; /*    border: #009966 solid 1px;   */
+}
+
+/************
+ POLITICA DE ANONIMATO
+ ************/
+#content_politica_anonimato {
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 5px 0px 10px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_politica_anonimato_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_politica_anonimato_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_politica_anonimato_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_politica_anonimato_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_politica_anonimato_cuatro {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+/************
+ NOSOTROS como enviar regalos
+ ************/
+#content_nosotros_envioderegalos {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegalos_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegalos_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegaloss_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegalos_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegalos_dos_a {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegalos_tres {
+    float: left;
+    width: 635px;
+    height: 321px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_13.jpg) no-repeat;
+    padding: 20px 0px 0px 10px; /*        border: #009966 solid 1px;*/
+}
+
+#content_nosotros_envioderegalos_cuatro {
+    float: left;
+    width: 500px;
+    height: 143px;
+    margin: 5px 0px 5px 10px;
+    padding: 10px 60px 0px 60px;
+    text-align: justify;
+    background: url(../images/img_nosotros/nosotros_fondo_parentesis.png) no-repeat; /*    border: #009966 solid 1px;   */
+}
+
+#content_nosotros_envioderegalos_cinco {
+    float: left;
+    width: 500px;
+    height: 143px;
+    margin: 5px 0px 5px 10px;
+    padding: 10px 60px 0px 60px;
+    text-align: justify; /*    background:url(../images/img_nosotros/nosotros_fondo_parentesis.png) no-repeat;*/
+    /*    border: #009966 solid 1px;   */
+}
+
+/**********************
+ NOSOTROS auditanos
+ ***********************/
+#content_nosotros_auditanos {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 10px 0px 0px 10px;
+    background: url(../images/img_nosotros/back_fondo.jpg) no-repeat;
+}
+
+
+#content_nosotros_auditanos_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_auditanos_dos {
+ float: left;    width: 617px;    height: 180px;
+    font-size: 13px;    margin: 15px 0px 0px 0px;
+    background: url(../images/img_nosotros_empresa/fondo_postit.jpg) no-repeat;
+}
+
+#content_nosotros_auditanos_dos_p1 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    margin: 25px 0px 0px 10px;
+    color: #FFF;
+/*    border: #009966 solid 1px;*/
+}
+
+#content_nosotros_auditanos_dos_p2 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    text-align: left;
+    margin: 10px 2px 0px 8px;
+    color: #FFF;
+/*    border: #009966 solid 1px;*/
+}
+
+#content_nosotros_auditanos_dos_p3 {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 25px 0px 0px 10px;
+    color: #FFF; 
+/*    border: #009966 solid 1px;*/
+}
+
+
+
+
+#content_nosotros_auditanos_tres {
+    float: left;    width: 617px;    height: 180px;
+    font-size: 13px;    margin: 15px 0px 0px 0px;
+    background: url(../images/img_nosotros_empresa/fondo_postit.jpg) no-repeat;
+}
+
+
+/*#content_nosotros_auditanos_tres {
+    width: 630px;
+    height: 312px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    background: url(../images/img_nosotros_empresa/puzzle_tres_piezas.png) top center no-repeat;
+}*/
+
+#content_nosotros_auditanos_tres_p1 {
+    width: 190px;
+    height: 150px;
+    float: left;
+    margin: 35px 0px 0px 10px;
+    color: #FFF;
+/*    border: #009966 solid 1px;*/
+}
+
+#content_nosotros_auditanos_tres_p2 {
+     width: 190px;
+    height: 150px;
+    float: left;
+    text-align: left;
+    margin: 10px 2px 0px 8px;
+    color: #FFF;
+/*    border: #009966 solid 1px;*/
+}
+
+#content_nosotros_auditanos_tres_p3 {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 45px 0px 0px 10px;
+    color: #FFF; 
+/*    border: #009966 solid 1px;*/
+}
+
+/**********************
+ NOSOTROS como funcionamos
+ ***********************/
+#content_nosotros_comofuncionamos {
+    line-height: 20px;
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 10px 0px 10px 10px;
+    background: url(../images/img_nosotros/back_fondo.jpg) no-repeat;
+}
+
+#content_nosotros_comofuncionamos_uno {
+    width: 630px;
+    height: 220px;
+    /*	background:url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;*/
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+
+/*{ */
+/*    font-size: 16px;*/
+/*    float: left;*/
+/*    width: 340px;*/
+/*    height: 215px;*/
+/*    padding: 5px 15px 5px 15px;          border: #009966 solid 1px;*/
+/*}*/
+
+#content_nosotros_comofuncionamos_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comofuncionamos_dos {
+    float: left;
+    width: 600px;
+    height: 300px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 15px 0px 15px;
+    background: url(../img/nosotros_fondo_pag_31.jpg) no-repeat; /* border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comofuncionamos_tres {
+    width: 600px;
+    height: 225px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    padding: 0px 15px 10px 15px;
+    text-align: justify; /* border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comofuncionamos_cuatro {
+    width: 600px;
+    height: 155px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    padding: 0px 15px 10px 15px;
+    text-align: justify; /* border: #009966 solid 1px;*/
+}
+
+/**********************
+ NOSOTROS porque existimos
+ ***********************/
+#content_nosotros_por_que_existimos {
+    width: 645px;
+    /*	height:1177px;*/
+    float: left;
+    margin: 10px 0px 10px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*border: #990033 solid 1px;*/
+}
+
+
+
+#content_porque_existimos_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px;
+/*    padding: 0px 15px 0px 5px;*/
+    /*              border: #009966 solid 1px;*/
+}
+
+#content_porque_existimos_dos {
+    width: 585px;
+    height: 225px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_32.jpg) no-repeat;
+    padding: 0px 30px 0px 15px;
+    text-align: justify; /*            border: #990033 solid 1px;*/
+}
+
+#content_porque_existimos_tres {    width: 630px;    height: 225px;    float: left;
+    background: url(../images/img_nosotros/puzzle_3.png) no-repeat; font-size: 12px;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    /*                    border: #990033 solid 1px; */
+}
+
+#content_porque_existimos_tres_iz {
+    width: 160px;
+    height: 130px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    padding: 0px 15px 10px 15px;
+    color: #FFFFFF;
+    /*         border: #990033 solid 1px; */
+}
+
+#content_porque_existimos_tres_ce {
+    width: 160px;
+    height: 175px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    padding: 15px 10px 10px 15px;
+    color: #FFFFFF;
+    /*         border: #990033 solid 1px; */
+}
+
+#content_porque_existimos_tres_de {
+    width: 120px;
+    height: 135px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    padding: 20px 10px 10px 60px;
+    color: #FFFFFF;
+    /*         border: #990033 solid 1px; */
+}
+
+#content_porque_existimos_cuatro {
+    float: left;
+    width: 640px;
+    height: 105px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify; /*        border: #990033 solid 1px;*/
+}
+
+#content_porque_existimos_cinco {
+    width: 640px;
+    height: 105px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    float: left; /*                border: #990033 solid 1px;*/
+}
+
+/************
+ NOSOTROS comunidad privada
+ ************/
+#content_nosotros_comunidadprivada {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comunidadprivada_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         bordomuer: #009966 solid 1px;*/
+}
+
+#content_nosotros_comunidadprivada_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comunidadprivada_uno_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comunidadprivada_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 40px 0px 15px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_comunidadprivada_tres {
+    float: left;
+    width: 635px;
+    height: 321px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_13.jpg) no-repeat;
+    padding: 20px 0px 0px 10px; /*        border: #009966 solid 1px;*/
+}
+
+/*    #nosotros_texto_tres_uno{width:530px; height:65px;
+ text-align:center; font-weight:bold; color:#333333; padding:40px 0px 0px 0px; }
+ #nosotros_texto_tres_dos{ color:#FFFFFF; font-weight:bold;
+ float:left;width:170px; height:50px;text-align:center;
+ padding:0px 0px 20px 120px; margin:70px 0px 0px 0px;}
+ #nosotros_texto_tres_tres{ float:left;width:150px; height:80px; text-align:center;
+ padding:10px 90px 0px 0px; color:#FFFFFF; font-weight:bold;margin:20px 0px 0px 0px;}
+ #nosotros_texto_tres_cuatro{ float:left;width:590px; height:45px;text-align:center;
+ color:#FFFFFF; font-weight:bold;}
+ 
+ #content_nosotros_quienes_cuatro{ float:left; width:500px; height:143px;
+ margin:5px 0px 5px 10px;
+ padding:10px 60px 0px 60px; text-align:justify;
+ background:url(../images/img_nosotros/nosotros_fondo_parentesis.png) no-repeat;
+ border: #009966 solid 1px;
+ }*/
+#content_nosotros_comunidadprivada_cinco {
+    float: left;
+    width: 500px;
+    height: 50px;
+    margin: 10px 0px 40px 10px;
+    /*    padding:0px 60px 0px 60px;*/
+    text-align: justify; /*    border: #009966 solid 1px;   */
+}
+
+/**************
+ LISTAS inicio
+ **************/
+#page #content_listas {
+    width: 980px;
+/*    height: 1264px;*/
+    margin-top: 2px;
+    /* border:#00FF33 solid 1px;*/
+/*    height: 1325px;*/
+}
+
+#page #contenido_listas {
+    position:relative;
+    width: 899px;
+    /*height: 1266px;*/
+    margin: 2px auto;
+    /* border:#00FF33 solid 1px;*/
+}
+
+/************
+ NOSOTROS antes de crear mesaredonda
+ ************/
+#content_nosotros_antesmesaredonda {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesmesaredonda_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesmesaredonda_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesmesaredonda_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesmesaredonda_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesmesaredonda_tres {
+    float: left;
+    width: 635px;
+    height: 321px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_13.jpg) no-repeat;
+    padding: 20px 0px 0px 10px; /*        border: #009966 solid 1px;*/
+}
+
+/************
+ NOSOTROS antes de publicar una ponencia
+ ************/
+#content_nosotros_antesponencia {
+    width: 645px;
+    height: 1177px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesponencia_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesponencia_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesponencia_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesponencia_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesponencia_tres {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+/************
+ NOSOTROS antes de publicar una contribucion
+ ************/
+#content_nosotros_antescontribucion {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antescontribucion_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antescontribucion_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antescontribucion_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antescontribucion_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antescontribucion_tres {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+/************
+ NOSOTROS antes de crear concurso
+ ************/
+#content_nosotros_antesconcurso {
+    width: 645px;
+/*    height: 1177px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    background: url(../images/img/back_fondo.jpg) no-repeat; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesconcurso_uno {
+    width: 630px;
+    height: 220px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+    margin: 10px 0px 0px 0px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesconcurso_uno_a {
+    float: left;
+    width: 340px;
+    height: 215px;
+    padding: 5px 15px 5px 15px; /*         border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesconcurso_a_img {
+    float: left;
+    width: 250px;
+    height: 215px; /*		padding:15px 15px 0px 5px;*/
+    /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesconcurso_dos {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+#content_nosotros_antesconcurso_tres {
+    width: 590px;
+    height: 145px;
+    float: left;
+    margin: 5px 0px 10px 0px;
+    background: url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+    padding: 15px 40px 0px 15px; /*     border: #009966 solid 1px;*/
+}
+
+/*************
+ MESA REDONDA inicio
+ **************/
+#page #content #menu_side #mesaredonda_side {
+    float: right;
+    width: 229px;
+    height: 148px;
+    padding: 0px 0px 0px 10px;
+    /*         border:#CCCC33 solid 1px;*/
+}
+
+#page #content #menu_side #mesaredonda_side #mesaredonda_botones {
+    width: 230px;
+    height: 148px;
+    float: left;
+    margin-top: 5px;
+    background: url(../images/img/concurso_botones.png) no-repeat;
+}
+
+#menu_side #mesaredonda_side #crear_mesaredonda {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#menu_side #mesaredonda_side #referendum_mesaredonda {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#menu_side #mesaredonda_side #historico_mesaredonda {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    padding: 8px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#menu_side #mesaredonda_side #mesaredonda_botones #crear_mesaredonda a, #menu_side #mesaredonda_side #historico_mesaredonda a, #menu_side #mesaredonda_side #referendum_mesaredonda a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#menu_side #mesaredonda_side #mesaredonda_botones #crear_mesaredonda a:hover, #menu_side #mesaredonda_side #historico_mesaredonda a:hover, #menu_side #mesaredonda_side #referendum_mesaredonda a:hover {
+    color: #FFFFFF;
+    text-decoration: underline
+}
+
+/*#page #content #menu_side */
+/*#page #content #menu_side #mesaredonda_destacados .mesaredonda_destacada {
+ color: #993333;
+ font-size: 18px;
+ font-weight: bold;
+ text-align:center;
+ }*/
+/*************
+ CONTRIBUCIONES
+ ********/
+#content_contribuciones {
+    width: 635px;
+    min-height: 950px;
+    float: left;
+    margin: 5px 0px 0px 10px; /*                        border:#00CCFF solid 1px;*/
+}
+
+#content_contribuciones #content_contribuciones_arriba {
+    width: 605px;
+    height: 25px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 2px 30px 0px 0px;
+    background: url(../images/img/concurso_fondo_arriba.png) no-repeat;
+    text-align: right;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#content_contribuciones #content_contribuciones_buscador {
+    width: 635px;
+    height: 123px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: url(../images/img/concurso_fondo_buscador.png) no-repeat; /* border:#FF0000 solid 1px;*/
+}
+
+#content_contribuciones #content_contribuciones_buscador #boton_activo .concurso_link a, #content_concursos_activos #content_concursos_activos_boton .concurso_link a {
+    color: #FFFFFF;
+}
+
+#content_contribuciones #content_contribuciones_buscador #boton_no_activo .concurso_link a, #content_concursos_activos #content_concursos_no_activos_boton .concurso_link_no a {
+    color: #333333;
+}
+
+#content_contribuciones #content_contribuciones_buscador #boton_activo {
+    width: 168px;
+    height: 49px;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    padding: 5px 0px 0px 0px;
+    background: url(../images/img/concurso_boton_activo_buscar.png) no-repeat top;
+    text-align: center;
+}
+
+#content_contribuciones #content_contribuciones_buscador #boton_no_activo {
+    width: 168px;
+    height: 44px;
+    float: left;
+    margin: 0px 0px 0px 2px;
+    padding: 5px 0px 0px 0px;
+    background: url(../images/img/concurso_boton_no_activo_buscar.png) no-repeat top;
+    text-align: center;
+}
+
+/***************
+ CONCURSOS - lateral
+ ****************/
+#page #content #menu_side #concurso_side {
+    float: right;
+    padding: 0 0 0 10px;
+    width: 229px;
+}
+
+#page #content #menu_side #concurso_side #concurso_botones {
+    width: 230px;
+    height: 148px;
+    float: left;
+    margin-top: 5px;
+    background: url(../images/img/concurso_botones.png) no-repeat;
+}
+
+#menu_side #concurso_side #crear_concurso {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#menu_side #concurso_side #referendum {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#menu_side #concurso_side #historico_concurso {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    padding: 8px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#menu_side #concurso_side #concurso_botones #crear_concurso a, #menu_side #concurso_side #historico_concurso a, #menu_side #concurso_side #referendum a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#menu_side #concurso_side #concurso_botones #crear_concurso a:hover, #menu_side #concurso_side #historico_concurso a:hover, #menu_side #concurso_side #referendum a:hover {
+    color: #FFFFFF;
+    text-decoration: underline
+}
+
+/*#page #content #menu_side*/
+/**************
+ CONCURSOS - content
+ **************/
+#content_concursos {
+    width: 635px;
+    /*	height:950px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    /*        border: #009966 solid 1px;*/
+}
+
+/**Inicio buscador**/
+/*#content_concursos */
+#content_concursos_arriba {
+    width: 605px;
+    height: 25px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 2px 30px 0px 0px;
+    background: url(../images/img/concurso_fondo_arriba.png) no-repeat;
+    text-align: right;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#content_concursos_buscador #boton_activo .concurso_link a, #content_concursos_activos #content_concursos_activos_boton .concurso_link a {
+    color: #FFFFFF;
+}
+
+#content_concursos_arriba2 {
+    width: 635px;
+    height: 36px;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    background: url(../images/img/concurso_fondo_arriba2.png) no-repeat;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.color_text {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#content_concursos_activos {
+}
+
+#content_concursos_activos_top {
+    float: left;
+    width: 635px;
+    height: 18px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/img_concurso/fondoconcurso/concurso_fondo_top.png) no-repeat;
+}
+
+#content_concursos_activos_middle {
+    background: url("../images/img_concurso/fondoconcurso/concurso_fondo_midd.png") repeat scroll 0 0 transparent;
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+    width: 590px
+}
+
+#content_concursos_activos_botton {
+    float: left;
+    width: 635px;
+    height: 21px;
+    background: url(../images/img_concurso/fondoconcurso/concurso_fondo_bot.png) no-repeat;
+    /*              background:url(../images/img/fondoportal/fondo-body_botton1.jpg) no-repeat;*/
+}
+
+/*#content_concursos #content_concursos_activos_boton {
+ width:227px;
+ height:44px;
+ float:left;
+ margin:0px 0px 0px 20px;
+ padding:5px 0px 0px 0px;
+ background:url(../images/img/concurso_boton_activo.png) no-repeat top;
+ text-align:center;
+ }*/
+/**************
+ CONCURSO nuevo
+ ****************/
+#content_concursos_nuevo {
+    width: 635px;
+    /*	height:650px;*/
+    float: left;
+    margin: 5px 0px 0px 10px;
+    padding: 10px 0px 0px 0px;
+    /*        border:#FF0000 solid 1px;*/
+}
+
+#content_concursos_nuevo #content_concursos_arriba {
+    width: 605px;
+    height: 25px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 2px 30px 0px 0px;
+    background: url(../images/img/concurso_fondo_arriba.png) no-repeat;
+    text-align: right;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#content_concursos_nuevo #content_concursos_buscador {
+    width: 635px;
+    height: 123px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    /*	background:url(../images/img/concurso_fondo_buscador.png) no-repeat;*/
+    border: #FF0000 solid 1px;
+}
+
+#content_concursos_nuevo #content_concursos_buscador #boton_activo .concurso_link a, #content_concursos_activos #content_concursos_activos_boton .concurso_link a {
+    color: #FFFFFF;
+}
+
+#content_concursos_nuevo #content_concursos_buscador #boton_no_activo .concurso_link a, #content_concursos_activos #content_concursos_no_activos_boton .concurso_link_no a {
+    color: #333333;
+}
+
+#content_concursos_nuevo #content_concursos_buscador #boton_activo {
+    width: 168px;
+    height: 49px;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    padding: 5px 0px 0px 0px;
+    background: url(../images/img/concurso_boton_activo_buscar.png) no-repeat top;
+    text-align: center;
+}
+
+#content_concursos_nuevo #content_concursos_buscador #boton_no_activo {
+    width: 168px;
+    height: 44px;
+    float: left;
+    margin: 0px 0px 0px 2px;
+    padding: 5px 0px 0px 0px;
+    background: url(../images/img/concurso_boton_no_activo_buscar.png) no-repeat top;
+    text-align: center;
+}
+
+#content_concursos_nuevo #content_concursos_activos #content_concursos_no_activos_boton .concurso_link_no a {
+    padding-top: 5px;
+    float: left;
+    width: 230px;
+    height: 42px;
+    background: url(../images/img/concurso_boton_no_activo.png) no-repeat center top;
+    text-align: center;
+    text-decoration: none;
+    /*border: #006699 solid 1px;*/
+}
+
+#content_concursos_nuevo #content_concursos_activos #content_concursos_no_activos_boton .concurso_link_no a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#content_concursos_nuevo #content_concursos_nuevos {
+    width: 635px;
+    height: 943px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    /*			background:url(../images/img/concurso_fondo_activos.png) no-repeat;*/
+    border: #009966 solid 1px;
+}
+
+#content_concursos_nuevo #concurso_crear {
+    width: 605px;
+    height: 25px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 30px 0px 0px;
+    background: url(../images/img/concurso_crear.png) no-repeat;
+    text-align: right; /* border:#FF0000 solid 1px;*/
+}
+
+#content_contribucion_nuevo #contribucion_crear {
+    width: 605px;
+    height: 25px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 30px 0px 0px;
+    background: url(../images/img/concurso_crear.png) no-repeat;
+    text-align: right; /* border:#FF0000 solid 1px;*/
+}
+
+#content_concursos_nuevo #concurso_crear #concurso_crear_texto {
+    font-size: 18px;
+    color: #FFF;
+    padding: 0px 20px 0px 0px;
+}
+
+#content_contribucion_nuevo #contribucion_crear #contribucion_crear_texto {
+    font-size: 18px;
+    color: #FFF;
+    padding: 0px 20px 0px 0px;
+}
+
+#content_concursos_nuevo #content_concursos_activos #concurso_form {
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin: 0px 0px 0px 20px; /*        border:#FF0000 solid 1px;*/
+}
+
+/************
+ footer-concurso
+ **************/
+#menu_footer_concurso {
+    width: 666px;
+    height: 58px;
+    float: right;
+    margin: 0px 41px 0px 0px;
+}
+
+/*
+ * mensajes flash
+ */	
+.flash_notice
+{
+    background-attachment: scroll;
+    background-image: url("/images/info-icon.png");
+    background-position: -1px 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    padding: 5px 30px;
+}
+
+.flash_error
+{
+    background-attachment: scroll;
+    background-image: url("/images/atention-icon.png");
+    background-position: -1px 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    padding: 5px 20px;
+}
+
+.etiqueta_naranja
+{
+	background-color: orange;
+}
+.etiqueta_marron
+{
+	background-color: brown;
+}
+
+/* Desactivar el resize de los textareas */
+textarea{
+	resize: none;
+}
+
+/* Esto es para añadir en botón al flash para cerrar*/
+
+#Flash .close{
+    background-image: url("/images/close.png");
+    cursor: pointer;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+/* bundle con bombilla */
+ul .bundle{
+	
+}
+.bundle li{
+	list-style-image: url(../images/img_nosotros/circulo-lista-2.png);
+}
+
+/*pagination*/
+.pagination{
+	float:right;
+	font-size: 0.9em;
+}
+
+.order_by_box{
+    float: left;
+    width: 626px;
+}
+/*.order_by_box table{
+   background-color: #CDCDCD;
+   font-family: arial;
+   font-size: 8pt;
+   text-align: left;
+   width: 100%;
+}
+
+.order_by_box table thead th {
+    background-image: url("/images/bg.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #E6EEEE;
+    border: 1px solid #FFFFFF;
+    font-size: 8pt;
+    padding: 4px;    
+}
+
+.order_by_box table thead th.selected{
+	background-color: #8DBDD8;
+}
+
+
+.order_by_box table thead th.asc{
+	background-image: url("/images/asc.gif");
+}
+
+.order_by_box table thead th.desc{
+	background-image: url("/images/desc.gif");
+}
+
+
+.order_by_box a{
+    color: black;
+ 	padding: 11px 13px;
+    cursor: pointer; 	
+}
+
+.order_by_box a:hover{	
+	text-decoration: none; 
+}
+
+.order_by_box a:visited{	
+	font-weight: bold; 
+}
+*/

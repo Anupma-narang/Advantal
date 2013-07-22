@@ -1,0 +1,377 @@
+.form_login
+{
+
+}
+
+.form_login select.select_pequeño
+{
+  width: 170px;
+}
+
+.form_login select.select_mediano
+{
+  max-width: 290px;
+}
+
+.form_login label.bundle
+{
+  background: url("../images/img_nosotros/circulo-lista-2.png") no-repeat scroll left center transparent;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+label.bundle
+{
+  background: url("../images/img_nosotros/circulo-lista-2.png") no-repeat scroll left center transparent;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.form_login table
+{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form_login table thead
+{
+  background-color: #CCCCCC;
+  font-weight: bold;
+}
+
+.form_login table tfoot tr
+{
+  height: 25px;
+}
+
+.form_login table th
+{
+  text-align: left;
+}
+
+h2
+{
+  margin: 5px 0 -5px 2px;
+  padding: 0 0 0;
+}
+
+.form_login select
+{
+
+  font-family:"Trebuchet MS","Lucida Sans Unicode", "Lucida Grande", Verdana;
+  font-size: 15px;
+}
+
+.cuadro-1
+{
+  border: 4px solid gray;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  width: 97%;
+  background-color: #CCCCCC;
+}
+
+table th
+{
+  text-align: left;
+}
+
+/*ul.error_list li
+{
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../images/error.png");
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    list-style: none outside none;
+    padding: 4px 0 4px 25px;
+}
+
+ul.error_list
+{       
+    background-color: #FA1919;
+    border-bottom: medium none;
+    border-radius: 5px 5px 5px 5px;
+    border-top: medium none;
+    height: 22px;
+    margin: 0;
+    padding: 2px;
+}*/
+
+ul.error_list li
+{
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url("../images/error.png");
+  background-position: 4px 4px;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  color: #FFFFFF;
+  font-size:15px;
+  list-style: none outside none;
+  padding: 0 0 0 25px;
+  font-weight:bold;
+  list-style-image: none !important;
+  min-height: 25px;
+  line-height: 23px;
+}
+
+ul.error_list
+{
+  background-color: #FA1919;
+  border-bottom: medium none;
+  border-radius: 5px 5px 5px 5px;
+  border-top: medium none;
+  color: #DD3333;
+  margin: 0;
+  padding: 2px;
+  height: auto;
+}
+
+
+
+ul.flash_error_list li
+{
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url("../images/error.png");
+  background-position: 4px 1px;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  color: #FFFFFF;
+  font-size: 0.9em;
+  list-style: none outside none;
+  margin-top: 3px;
+  min-height: 21px;
+  padding: 0 0 0 25px;
+}
+
+ul.flash_error_list
+{
+  background-color: red;
+  border-bottom: medium none;
+  border-radius: 5px 5px 5px 5px;
+  border-top: medium none;
+  color: #DD3333;
+  margin: 0;
+  padding: 2px;
+}
+input
+{
+  font-size: 15px;
+  font-family:"Trebuchet MS","Lucida Sans Unicode", "Lucida Grande", Verdana;
+}
+input.tamano_20_c
+{
+  width: 162px;
+}
+
+input.tamano_27_c
+{
+  width: 215px;
+}
+input.tamano_70_c
+{
+  width: 565px;
+}
+
+input.tamano_25_c
+{
+  width: 180px;
+}
+
+input.tamano_10_c
+{
+  width: 81px;
+}
+
+input.tamano_14_c
+{
+  width: 130px;
+}
+
+input.tamano_16_c
+{
+  width: 150px;
+}
+
+input.tamano_32_c
+{
+  width: 260px;
+}
+
+input.tamano_60_c
+{
+  width: 480px;
+}
+
+input.tamano_4_c
+{
+  width: 33px;
+}
+input.tamano_3_c
+{
+  width: 22px;
+}
+input.tamano_5_c
+{
+  width: 44px;
+}
+
+input.tamano_6_c
+{
+  width: 52px;
+}
+
+input.tamano_9_c
+{
+  width: 75px;
+}
+
+input.tamano_2_c
+{
+  width: 20px;
+}
+
+div.resaltar
+{
+  background-color: grey;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+/*input
+{
+        border-color: lightgray;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 15px;
+}*/
+a
+{
+  text-decoration:none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+.auditoscopia_title
+{
+  background: url("../images/img/login/fondo_colaborador.png") center bottom no-repeat;
+  height: 119px;
+  margin: 1px 1px -10px 0;
+  text-align: center;
+  width: 308px;
+}
+
+
+
+.fomacion_academica
+{
+  width: 290px;
+}
+
+/* captcha */
+.recaptcha_image_cell
+{
+  border-radius: 10px 10px 10px 10px;
+}
+
+#recaptcha_image
+{
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+.input_label
+{
+  bottom: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  left: 16px;
+  position: relative;
+}
+
+#scorebar
+{
+  background-image: url("/images/bg_strength_scroll.gif");
+  background-repeat: no-repeat;
+  /*    border-radius: 5px 5px 5px 5px;
+      box-shadow: 0 0 2px grey;
+      color: black;*/
+  font-size: 0.9em;
+  height: 19px;
+  width: 110px;
+  z-index: 0;
+}
+
+.barra_corta{
+  max-width: 300px;
+}
+
+.barra_mediana{
+  max-width: 350px;
+}
+
+.barra_mediana_grande{
+  max-width: 600px;
+}
+
+/*******FORM LOGIN COLABORADOR***********/
+
+.h2_title{
+  font-size: 20px; text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+.nosotros_auditoscopia_subtitle {
+  font-family: "Franklin";
+  color: #b41b1d;
+  font-size:21px;
+  /*    font-size:1em;*/
+}
+
+
+.auditoscopia_o_subtitle {
+  color: #000;
+}
+
+#boton_entra {
+  width: 118px;
+  height: 32px;
+  margin: 0px 0px 5px 0px;
+  background: url(../images/img/login/boton_entra_colaborador.png) no-repeat center;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+#boton_entra a {color:#FFFFFF; text-decoration: none;}
+#boton_entra a:hover{text-decoration: none;}
+
+#haztecolaborador_login {
+  float: left; margin: 10px 0px 0px 5px;
+  height: 50px;
+  width: 510px;
+  font-size: 15px;
+}
+#haztecolaborador_login a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#haztecolaborador_login .subtitulo_haztecolaborador_login{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+select.tamano_32_c
+{
+  width: 260px;
+}

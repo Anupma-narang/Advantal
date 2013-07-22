@@ -1,0 +1,159 @@
+ul li{ list-style-type: none;}
+
+#content_vosotros {
+    width:645px;
+    /*	height:1000px;*/
+    float:left;
+    margin:10px 0px 0px 10px;
+    /*background:url(../images/img/nosotros_fondo_pag_1.jpg) no-repeat;*/
+    /*border:#00CC66 solid 1px;*/
+}
+#content_vosotros_top {
+    width:630px; height:26px; margin: 0px 0px 0px 0px;
+    float:left;
+    margin:0px 0px 0px 8px;
+    background:url(../images/img_vosotros/fondo_vosotros_top.png) no-repeat;
+}
+#content_vosotros_mid{
+    width:630px;margin: 0px 0px 0px 0px;
+    float:left;
+    margin:0px 0px 0px 8px;
+    padding-top: 15px;
+    background:url(../images/img_vosotros/fondo_vosotros_mid.png);
+}
+#content_vosotros_bot{
+    width:630px; height:20px;margin: 0px 0px 0px 0px;
+    float:left;
+    margin:0px 0px 0px 8px;
+    padding-top: 15px;
+    background:url(../images/img_vosotros/fondo_vosotros_bot.png) no-repeat;
+}
+#referendum {
+    background: url("../images/img/concurso_botones.png") no-repeat scroll 0 -60px transparent;
+    float: left;
+    height: 38px;
+    margin-top: 5px;
+    width: 230px;
+    text-align: center;
+}
+#referendum a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 30px;
+}
+#historico_concurso {
+    background: url("../images/img/concurso_botones.png") no-repeat scroll 0 -102px transparent;
+    float: left;
+    height: 38px;
+    margin-top: 5px;
+    width: 230px;
+    text-align: center;
+}
+#historico_concurso a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 30px;
+}
+/* #content_vosotros_activo .txt_vosotros {
+        font-weight: bold;
+        text-align:left;
+        margin:15px 0px 0px 8px;
+        color:#333;          border:#00FF33 solid 1px;
+}*/
+#content_laslistas_right div.main div.middle div.item {
+    background: url("../images/img_listas/fondo_items.png") repeat scroll 0 0 transparent;
+    color: #4D5357;
+    float: left;
+    font-size: 12px;
+    height: 106px;
+    margin-bottom: 11px;
+    padding: 10px 20px;
+    width: 473px;
+}
+ul.lista_detalles {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_right {
+    float: right;
+    text-align: center;
+}
+#content_laslistas_right div.main div.middle div.item div.col_center {
+    float: left;
+    height: 84px;
+    width: 150px;
+}
+#content_concursos_activos_middle li {
+    list-style-type: none !important;
+}
+.gift-summery{
+    height: 166px;
+    position: absolute;
+    right: -60px;
+    top: -54px;
+    width: 170px;
+    z-index: 1111;
+}
+#referendumselected {
+    background: url("../images/img/concurso_botones.png") no-repeat scroll 0 -145px transparent;
+    float: left;
+    height: 38px;
+    margin-top: 5px;
+    text-align: center;
+    width: 230px;
+}
+#referendumselected a {
+    color: #FFFFFF;
+    line-height: 30px;
+    text-decoration: none;
+}
+.cuentanos_caso_btn{
+    background: url("../images/cuentanos_caso.png") no-repeat 0 0 transparent;
+    color: #FFF;
+    font-size: 12px;
+    height: 36px;
+    padding: 10px 0;
+    width: 211px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.cuentanos_caso_btn a{
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a.btn-ver-caso, a.btn-ver-caso:hover, a.btn-ver-caso:active{
+    background: url("../images/img_listas/btn-ver-caso.png") repeat scroll 0 0 transparent;
+    color: white;
+    display: block;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    text-decoration: none;
+    width: 123px;
+    margin-left: 15px;
+}
+.color_red{ color: #FF1919 }
+.color_orange{ color: #F65E13 }
+.color_green{ color: #429D29 }
+.color_blue{ color: #166494 }
+.color_brown{ color: #B41B1D }
+.color_grey1{ color: #BEC1C4 }
+.color_grey2{ color: #7D7873 }
+
+.prof-detail{
+    background: url("../images/img/login/boton_entra_colaborador.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 23px;
+    margin-top: 5px;
+    width: 129px;
+    text-align: center;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 20px;
+}

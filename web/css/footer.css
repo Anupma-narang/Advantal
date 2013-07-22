@@ -1,0 +1,237 @@
+   p { text-align:justify;} 
+   .texto_negro {font-weight: bold; }
+   .texto_azul {color:#06F;font-weight: bold;  }
+   .letras_header,.letras_header a{color:#FF0033; text-align:center;}
+   .negrita { font-weight: bold; text-align: justify;}
+
+   #content_avisolegal{ float: left; width:595px; 
+/*                        height:1177px;*/
+                     padding:0px 15px 0px 15px; margin: 10px 0px 0px 10px;
+/*                   font-family: verdana;
+                     font-size: 12px;
+                     text-align:justify;
+                     line-height: 20px;*/
+}
+#conten_avisolegal_uno{width:630px; height:220px;
+                       background:url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+                       margin:10px 0px 0px 0px; }
+#conten_avisolegal_uno_a{float: left;width:340px; height:215px;
+                         padding:5px 15px 5px 15px;
+                          line-height: 20px;
+                         /*         border: #009966 solid 1px;*/
+}
+#conten_avisolegal_uno_a_img{ float:left;width:250px; height:215px;
+}
+#conten_avisolegal_dos{ float: left; width:565px;  margin:10px 0px 10px 0px;
+/*                        height:860px; overflow: auto;*/
+                        padding:0px 30px 10px 0px; line-height: 20px;
+                        /*      border: #009966 solid 1px;*/    
+}
+
+/************
+NOSOTROS condiciones de participacion
+************/
+
+#content_nosotros_condicionesparticipa{width:645px;float:left; margin:5px 0px 10px 10px;
+/*                                       height:1177px;*/
+                                       background:url(../images/img/back_fondo.jpg) no-repeat;
+/*                                       border: #009966 solid 1px;*/
+ line-height: 20px;
+}
+#content_nosotros_condicionesparticipa_uno{width:630px; height:220px;
+                                           background:url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+                                           margin:10px 0px 0px 0px;
+                                           /*         border: #009966 solid 1px;*/
+
+}
+#content_nosotros_condicionesparticipa_uno_a{float: left;width:340px; height:215px;
+                                             padding:5px 15px 5px 15px;
+                                             /*         border: #009966 solid 1px;*/
+}
+#content_nosotros_condicionesparticipa_uno_a_img{ float:left;width:250px; height:215px;
+                                                  /*		padding:15px 15px 0px 5px;*/
+                                                  /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_condicionesparticipa_dos{float: left; width:565px; height:857px;
+                                           overflow: auto;
+                                           padding:0px 27px 10px 0px;
+                                     }
+
+
+#content_nosotros_condicionesparticipa_tres{ 
+    width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+    
+}
+
+#content_nosotros_condicionesparticipa_cuatro{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+}
+#content_nosotros_condicionesparticipa_cinco{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+}
+#content_nosotros_condicionesparticipa_seis{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+#content_nosotros_condicionesparticipa_siete{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_ocho{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_nueve{ 
+    width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_diez{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_once{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_doce{ 
+    width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_trece{ 
+   width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_catorce{ 
+    width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+	#content_nosotros_condicionesparticipa_quince{ 
+    width:523px; height:208px; float:left; margin:10px 0px 10px 5px;
+    background:url(../images/img_footer/footer_fondo_5.png) left no-repeat;
+    padding:0px 30px 1px 15px;
+/*  border: #009966 solid 1px;*/
+    line-height: 20px;
+	}
+
+/************
+NOSOTROS condiciones de participacion dos
+************/
+.subtitulos_negrita { font-weight: bold; font-size: 13px; color:#000000;}
+.subtitulos_negrita a{ font-weight: bold; font-size: 13px; color:#000000; text-decoration:none; }
+.subtitulos_negrita a:hover{ font-weight: bold; font-size: 13px; color:#000000; text-decoration:underline;}
+
+#content_nosotros_condicionesparticipados{width:645px;height:1177px;float:left; margin:5px 0px 0px 10px;
+                                          background:url(../images/img/back_fondo.jpg) no-repeat;
+                                          /*         border: #009966 solid 1px;*/
+}
+#content_nosotros_condicionesparticipados_uno{width:630px; height:220px;
+                                             /* background:url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;*/
+                                              margin:10px 0px 0px 0px;
+                                              /*         border: #009966 solid 1px;*/
+
+}
+#content_nosotros_condicionesparticipados_uno_a{float: left;width:340px; height:215px;
+                                                padding:5px 15px 5px 15px;
+                                                /*         border: #009966 solid 1px;*/
+}
+#content_nosotros_condicionesparticipados_uno_a_img{ float:left;width:250px; height:215px;
+                                                     /*		padding:15px 15px 0px 5px;*/
+                                                     /*                border: #009966 solid 1px;*/
+}
+
+#content_nosotros_condicionesparticipados_dos{ width:590px; height:145px; float:left; margin:5px 0px 10px 0px;
+                                               background:url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;
+                                               padding:15px 40px 0px 15px;
+                                               /*     border: #009966 solid 1px;*/
+}
+#content_nosotros_condicionesparticipados_cinco{ width:590px; height:145px; float:left; margin:5px 0px 10px 0px;
+                                                 /*     background:url(../images/img_nosotros/nosotros_fondo_pag_12.jpg) no-repeat;*/
+                                                 padding:15px 40px 0px 15px;
+                                                 /*     border: #009966 solid 1px;*/
+}
+
+/****************
+GLOSARIO DE TERMINOS
+*****************/
+#content_nosotros_glosarioterminos{ float: left; width:595px; 
+/*                                    height:1177px;*/
+                     padding:0px 15px 0px 15px; margin: 10px 0px 10px 10px;
+/*                     font-family: verdana;
+                     font-size: 12px;
+                     text-align:justify;
+                     line-height: 20px;*/
+}
+#content_nosotros_glosarioterminos_uno{width:630px; height:220px;
+                       background:url(../images/img_nosotros/nosotros_fondo_pag_11.jpg) no-repeat;
+                       margin:10px 0px 0px 0px; }
+#content_nosotros_glosarioterminos_uno_a{float: left;width:340px; height:215px;
+                         padding:5px 15px 5px 15px;
+                         /*         border: #009966 solid 1px;*/
+}
+#content_nosotros_glosarioterminos_uno_a_img{ float:left;width:250px; height:215px;
+}
+#content_nosotros_glosarioterminos_dos{ float: left; width:565px; 
+/*                                        height:800px; overflow: auto;*/
+                        padding:5px 30px 10px 0px; margin: 15px 0px 0px 0px;
+                        /*      border: #009966 solid 1px;*/    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#espacia_footer{ width:665px; height:58px; float:right; margin: 0px 41px 0px 0px;
+                 		background:url(../images/img/img_menu_footer.png) no-repeat right top;
+                 border: #009966 solid 1px;
+}*/

@@ -1,0 +1,291 @@
+@CHARSET "UTF-8";
+
+#wrapper {
+    text-align: left;
+    margin: auto;
+    width: 904px;
+}
+
+#header {
+    padding-top: 10px;
+    clear: both;
+    width: 904px;
+    background: url("../images/logo.png") top no-repeat;
+}
+
+#header h1 {
+    padding: 0px;
+    margin: 0px;
+    visibility: hidden;
+}
+
+#body {
+    padding-top: 0px;
+    text-align: justify;
+}
+
+#body-left {
+    float: left;
+    width: 764px;
+}
+
+#body-right {
+    float: right;
+    width: 200px;
+}
+
+#footer {
+    color: #FFFFFF;
+    background: #42453D url(../images/footer_bg.gif) repeat-x;
+    padding: 6px 0 5px 0;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+#footer p {
+    margin: 0;
+    padding: 0;
+}
+
+#clearer {
+    clear: both;
+}
+
+#sf_admin_container .mainLink {
+    background: none;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+#nav {
+    padding-bottom: 30px;
+    margin-top: 72px;
+}
+
+#nav h1 {
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 6px;
+}
+
+.panel {
+    font-size: 1.7em;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.mainMenu ul {
+    float: left;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 50 !important;
+}
+
+.mainMenu li ul {
+    float: none;
+    left: -999em;
+    position: absolute;
+    z-index: 90;
+    margin-top: -2px;
+}
+
+.mainMenu li:hover ul, .mainMenu li.sfHover ul {
+    left: 0px;
+    top: 34px;
+    z-index: 50;
+}
+
+.mainMenu li:hover li ul, .mainMenu li.sfHover li ul, .mainMenu li li:hover li ul, .mainMenu li li.sfHover li ul, .mainMenu li li li:hover li ul, .mainMenu li li li.sfHover li ul {
+    top: -999em;
+}
+
+.mainMenu li li:hover ul, .mainMenu li li.sfHover ul, .mainMenu li li li:hover ul, .mainMenu li li li.sfHover ul, .mainMenu li li li li:hover ul, .mainMenu li li li li.sfHover ul {
+    left: 180px;
+    top: 0px;
+    z-index: 50;
+}
+
+.mainMenu li li {
+    position: relative;
+    float: none;
+    z-index: 50;
+}
+
+.mainMenu {
+    position: relative;
+    z-index: 50;
+}
+
+.mainMenu li {
+    list-style: none;
+    position: relative;
+    z-index: 50;
+}
+
+ul.mainMenu {
+    clear: both;
+    background: #3b3b3a;
+    height: 24px;
+    padding-top: 11px;
+    padding-left: 4px;
+    margin: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+ul.mainMenu li {
+    display: inline;
+    padding: 10px 10px 7px 10px;
+    background: #57574f;
+    margin: 0px;
+    margin-left: -4px;
+    border: 0px;
+}
+
+ul.mainMenu li.active {
+    background: #869657;
+}
+
+ul.mainMenu li a:link {
+    color: #fff;
+}
+
+ul.mainMenu li a:visited {
+    color: #fff;
+}
+
+.mainMenu li li {
+    display: list-item;
+    margin: 0px;
+    padding: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: -1px;
+}
+
+.mainMenu li li:hover {
+    background: #869657 none repeat scroll 0 0;
+}
+
+#sf_admin_container {
+    width: 100%;
+}
+
+#timetable_schedule {
+    margin: 20px;
+}
+
+#timetable_schedule span {
+    display: block;
+    border-bottom: 1px solid #000;
+    background: #c5ccd5;
+    padding: 10px;
+    margin: 10px;
+    font-size: 13px;
+}
+
+#timetable_schedule table {
+    width: 100%;
+}
+
+#timetable_schedule table td.no_disponibility {
+    background: #b9b9b9;
+}
+
+#timetable_schedule table td.disponibility {
+    background: #699ee2;
+}
+
+#timetable_schedule table td {
+    border: 1px solid #DDDDDD;
+    height: 22px;
+    width: 44px;
+}
+
+#timetable_schedule table th {
+    text-align: center;
+}
+
+#concurso_actions {
+    float: right;
+    width: 300px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#contribucion_actions {
+    float: right;
+    width: 300px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.concurso_contribucion {
+    background: #e4fae1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px dotted #cbd0ca;
+}
+
+.contribuciones {
+    padding: 10px;
+    border: 3px double #a2aca0;
+    margin: 10px;
+	clear:both;
+	
+}
+
+.concursos_home {
+    width: 330px;
+    margin: 10px;
+    padding: 10px;
+    background: #e9fbe6;
+    border: 1px solid #a5aca4;
+    float: left;
+}
+
+.contribuciones_home {
+    float: right;
+    width: 330px;
+    margin: 10px;
+    padding: 10px;
+    background: #fbf3e6;
+    border: 1px solid #a5aca4;
+}
+
+.clear {
+    clear: both;
+}
+
+#concurso_actions ul li a {
+    background-image: none;
+}
+
+#concurso_actions ul li {
+    list-style: none;
+}
+
+#contribucion_actions ul li a {
+    background-image: none;
+}
+
+#contribucion_actions ul li {
+    list-style: none;
+}
+
+#concurso_results {
+    float: right;
+    width: 300px;
+    border: 1px solid #000;
+    padding: 10px;
+	clear:both;
+}
+
+.primer_puesto, .segundo_puesto, .tercer_puesto {
+	display:block;
+}

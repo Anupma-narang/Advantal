@@ -1,0 +1,6 @@
+
+.paging{margin: 0px 10px 0px 0px;}
+ul.paging a {float: right; color:#000000; text-decoration: none;}
+ul.paging a:hover {float: right; color:#000000; text-decoration: underline;}
+ul.paging{float: right; color: #FF0000;}
+ul.paging li{display: inline-block;}

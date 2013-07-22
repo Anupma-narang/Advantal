@@ -1,0 +1,25 @@
+
+body {font-size: 15px; line-height: 18px;}
+#alinea ul { margin: 0px 0px 0px 0px;
+list-style-image: url(../images/img_preguntas_fre/circulo-lista.png);}
+#content_pf{ width: 630px; 
+/*             height: 1169px; */
+             margin: 0px 0px 0px 10px; padding: 20px 0px 0px 0px;
+/*             border: #FF0000 solid 1px; */
+             float: left;}
+
+#img_sup{ float: right; width: 260px; height: 225px;
+/*          border: #FF0000 solid 1px;*/
+    background: url(../images/img/static/preguntasfrecuentes_img0_lateral.jpg) right no-repeat;
+margin:40px 12px 0px 0px;
+}
+.short{ font-size: 9px;}
+.subtitle{color: #000000; font-size: 16px; font-weight: bold;}
+.subtitle a{text-decoration: none;}
+.subtitle a:hover {text-decoration:underline;}
+.subtitle_contenido{float: left; width: 630px; height: 155px;
+    background:url(../images/img_preguntas_fre/nosotros_fondo_linea.jpg) no-repeat top left;}
+
+
+
+

@@ -1,0 +1,134 @@
+/************
+BUSCADOR DE CONCURSO
+******************/
+#content_concursos_arriba {
+	width: 620px; height: 25px;
+	float: left;
+	margin: 5px 0px 0px 10px; padding: 2px 20px 0 0;
+	background: url(../images/img_concurso/concurso_fondo_arriba.png) no-repeat;
+	text-align: right; color: #FFFFFF;
+	font-weight: bold;
+}
+
+#content_concursos_buscador {
+    float: left;
+    margin: 5px 67px 0px 10px;
+    width:630px;
+}
+
+#buscador_hea {
+	width: 635px;
+	height: 18px;
+	margin: 0px 0px 0px 0px;
+	background:
+		url(../images/img_concurso/fondoconcurso/concurso_fondo_top.png)
+		no-repeat;
+	padding: 0px 0px 0px 20px;
+}
+
+#buscador_body {
+	width: 635px;
+	margin: 0px 0px 0px 0px;
+	background:
+		url(../images/img_concurso/fondoconcurso/concurso_fondo_midd.png)
+		repeat-y;
+	padding: 0px 0px 0px 20px;
+}
+
+#buscador_bot {
+	width: 635px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	background:
+		url(../images/img_concurso/fondoconcurso/concurso_fondo_bot.png)
+		no-repeat;
+	padding: 0px 0px 0px 20px;
+}
+
+/*    //input{float: left;}*/
+#buscador_content {
+	float: left;
+	/*width: 580px;*/
+	margin: 10px 0px 0px 0px;
+	/*                  		background:url(../images/img_concurso/concurso_fondo_buscador_bot.png) no-repeat;*/
+	/*                  border:#090 solid 1px;*/
+	/*background:url(../images/img_concurso/concurso_fondo_mid.png);*/
+}
+
+.filter_label {
+	float: left;
+	width: 220px;
+	color: #333333;
+        height: 12px;
+}
+
+.filter_select {
+	float: left;
+	width: 220px;
+	padding: 3px 0px 0px 0px;
+}
+
+/*form #Producto_form{float: left; width: 200px;}*/
+#buscador_body label {
+	float: left;
+	width: 220px;
+	color: #333333
+}
+
+li {
+	/*list-style-type: none;*/
+}
+
+ul .filter_list li {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	/*       display: table-row;*/ /*       border:#006600 solid 1px;*/
+}
+
+/*input {float: left; width: 200px; color: #333333}*/
+
+#content_concurso_activos_boton #boton_noactivo .concurso_link_no a.active {
+	background: url(../images/img_concurso/concurso_boton_activo_buscar.png) no-repeat top;
+	color:#FFFFFF;
+	}
+
+#content_concursos_buscador #boton_no_activo .concurso_link a.active {
+	background: url(../images/img_concurso/concurso_boton_activo_buscar.png) no-repeat top;
+	color:#FFFFFF;
+	}
+
+#content_concursos_buscador #boton_no_activo .concurso_link a {
+	width: 168px;
+	height: 49px;
+	float: left;
+	margin: 0px 0px 0px 20px;
+	padding: 5px 0px 0px 0px;
+	background:
+		url("../images/img_concurso/concurso_boton_no_activo_buscar.png") no-repeat top;
+	text-align: center;
+	padding: 5px 0px 0px 0px;
+	color: #333333;
+	text-decoration: none;
+	/*border:#090 solid 1px;*/
+}
+
+#content_concursos_buscador #boton_no_activo .concurso_link a:hover {
+	width: 168px;
+	height: 49px;
+	float: left;
+	margin: 0px 0px 0px 20px;
+	padding: -5px 0px 0px 0px;
+	background: url("../images/img_concurso/concurso_boton_activo_buscar.png") no-repeat top;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.searchform {
+    width: 630px;
+    float: left;
+}
+
+.totheright {
+    text-align:left;
+    padding-left: 152px;
+}

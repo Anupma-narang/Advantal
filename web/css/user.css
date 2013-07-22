@@ -1,0 +1,81 @@
+body {
+/*	font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana;*/
+	font-size: 15px;
+	margin-top: 0px;
+	background-color: #CCCCCC;
+}
+
+.rojo {
+	color: #f00;
+}
+
+.anchoUser {
+	width: 350px;
+}
+
+.anchoUser_2 {
+    width: 290px;
+}
+
+.username_or_email {
+	width: 300px;
+}
+
+#formUser {
+    float: left;
+    font-size: 15px;
+    width: 859px;
+    width: 630px;
+}
+
+#formUsersettings {
+	float: left;
+	width: 800px;
+	margin: 0px 0px 0px 60px;
+	font-size: 15px;
+}
+
+/*#table_login{ float: left; width: 400px;
+              border: #006600 solid 1px;
+}
+  */
+#confirm_invalid {
+	margin: 0px 0px 0px 40px;
+	width: 850px;
+	padding-bottom: 120px;
+	font-size: 100%;
+}
+
+#confirm_valid {
+	margin: 0px 0px 0px 40px;
+	width: 850px;
+	padding-bottom: 120px;
+	font-size: 100%;
+}
+
+#sfApplylogin {
+	margin: 0px 0px 0px 40px;
+	width: 850px;
+	padding-bottom: 120px;
+	font-size: 100%;
+}
+
+#applyafter {
+	margin: 0px 0px 0px 40px;
+	width: 850px;
+	padding-bottom: 120px;
+	font-size: 100%;
+}
+
+.form_login table.uploadfield {
+    margin: 0;
+    width: auto;
+}
+
+.form_login table.uploadfield td {
+    vertical-align:top;
+}
+
+.form_login .captcha {
+    margin-top: 25px;
+}

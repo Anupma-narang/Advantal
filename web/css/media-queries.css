@@ -1,0 +1,281 @@
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px){
+
+    /* pagewrap */
+    #page {
+        width: 650px;
+    }    
+    #page {
+        width: 650px;
+    }
+    #page_top {
+        width: 650px;
+    }
+    #page_middle {
+        width: 650px;
+        background-size: 100% 7px;
+    }
+    #page_botton {
+        width: 650px;
+        background-size: 100% 400px;
+    }    
+    #titulares_header {
+        display: none;
+        width: 162px;
+        float: left;
+        margin: 15px 0px 10px 0px;
+    }
+    #titulares_header h1{
+        text-align: center;
+        color: #000;
+        margin-top: 11px;
+        font-size: 14px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    #titulares_header h2{
+        text-align: center;
+        color: #000;
+        margin-top: 3px;
+        font-size: 11px;
+        margin-bottom: 17px;
+        font-weight: normal;
+        padding: 0;
+    }
+
+    #content{
+        width: 600px;
+        margin: 0px auto;
+    }
+    .content_with_side{
+        width: 380px;
+    }
+    .border-box-n {
+        width: 380px;
+    }
+    table{
+        width: 340px;
+        margin: 0px auto;
+        border-spacing: 4%;
+    }
+    #barra_nav{
+        width: 650px;
+        background-size: 100% 650px;
+    }
+    #barra_nav a{
+        width:118px;
+    }
+    #barra_nav a#inicio{
+        width:116px;
+    }
+    #barra_nav a#laslistas{
+        width:116px;
+    }
+    #menu_side.nosotros nav.nosotros{
+        font-size: 14px;
+    }
+    #menu_side{
+        font-size: 13px;
+        width: 200px;
+    }
+    #menu_side.nosotros nav.nosotros a{
+        width: 200px;        
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -ms-border-radius: 7px;
+
+    }
+    #menu_side.nosotros{
+        background: -25px;
+        padding-bottom: 10px;
+    }
+    p.img_220{
+        display: block;
+        clear: both;
+        float: none;
+        height: auto;
+    }
+
+    .postit1{
+        float: none;  
+        width: 208px;
+        margin: 0px auto;
+    }
+    .postit2{
+        float: none;  
+        width: 220px;
+        margin: 0px auto;
+    }
+    .postit3{
+        float: none;  
+        width: 227px;
+        margin: 0px auto;
+    }
+    .postit1 .body{
+        background: url('/images/img/postit1_solo.png') no-repeat #f75e13 ;
+        width: 192px;
+        padding: 5px 8px;
+    }
+    .postit2 .body{
+        background: url('/images/img/postit2_solo.png') no-repeat #166494 ;
+        width: 190px;
+        padding: 5px 15px;
+    }
+    .postit3 .body{
+        background: url('/images/img/postit3_solo.png') no-repeat #429d29 ;
+        width: 197px;
+        padding: 5px 15px;
+    }
+    .fondo_parentesis{
+        width: 280px;
+    }
+    .solo-responsive-grande{
+        display: block;
+    }
+    table.mediana{
+        display:none;
+    }
+    .border-box-n .diagrama{
+        margin: 0px 0px;
+        width: 336px;
+    }
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+    /* pagewrap */
+    #page {
+        width: 300px;
+    }    
+    #page {
+        width: 300px;
+    }
+    #page_top {
+        width: 300px;
+    }
+    #barra_nav{
+        width: 300px;
+        background-size: 100% 400px;
+    }
+    #page_middle {
+        width: 300px;
+        background-size: 100% 7px;
+    }
+    #page_botton {
+        width: 300px;
+        background-size: 100% 400px;
+    }
+    #content{
+        width: 275px;
+    }
+
+    /* header */    
+    #header {
+        height: auto;
+    }
+    #header_foo {
+        padding-top: 10px;
+    }
+    #logo {
+        width: 100%;
+        max-width: 230px;
+        float: none;
+        margin:0px auto;
+    }
+    #login{
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+    }
+    #barra_nav a{
+        width:98%;
+    }
+    #barra_nav a#inicio{
+        width:98%;
+    }
+    #barra_nav a#laslistas{
+        width:98%;
+    }
+    #barra_nav .menu-separador{
+        display: none;
+    }
+    #titulares_header {
+        display: none;
+    }
+    #login a {
+        width: 94%;
+        height: auto;
+        min-height: 23px;
+        margin: 0px auto;
+    }
+    .href_boton_red {
+        background-size: 100% 100%;
+    }
+    .href_boton_gray {
+        background-size: 100% 100%;
+    }
+    #menuside{
+        width: 98%;
+        float: none;
+        clear: both;
+    }
+
+    .content_with_side{
+        width: 260px;
+        float: none;
+        clear: both;
+        text-align: left;
+    }
+    .border-box-n {
+        width: 260px;
+    }
+    table{
+        width: 255px;
+        margin: 0px auto;
+    }
+    #menu_side.nosotros nav.nosotros{
+        font-size: 15px;
+        
+    }
+    #menu_side.nosotros{
+        float: none;
+        font-size: 13px;
+        width: 200px;
+        margin: 0px auto;
+    }
+    #menu_side.nosotros img{
+        display: none;
+    }
+    #menu_side.nosotros nav.nosotros a{
+        width: 200px;
+        text-align: center;
+    }
+    #menu_side.nosotros{
+        background: -25px;
+        padding-bottom: 10px;
+    }
+    .fondo_parentesis{
+        width: 190px;
+    }
+    .solo-responsive{
+        display: block;
+    }
+    table.pequena{
+        display:none;
+    }
+    .border-box-n .top-right{
+        text-align: left;
+    }
+    .border-box-n .diagrama{
+        margin: 0px -5px;
+        width: 226px;
+    }
+
+}
+

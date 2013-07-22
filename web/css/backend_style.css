@@ -1,0 +1,466 @@
+.panel {
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px grey;
+    float: left;
+    margin: 10px;
+    max-height: 400px;
+    min-height: 200px;
+    min-width: 300px;
+    overflow: auto;
+    width: 47%;
+}
+
+.column {
+    width: 49%;
+    margin-right: .5%;
+    min-height: 300px;
+    background: #fff;
+    float: left;
+}
+
+.column .dragbox {
+    margin: 5px 2px 20px;
+    background: #fff;
+    position: relative;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.column .dragbox h2 {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding: 5px !important;
+    background: #f0f0f0;
+    border-bottom: 1px solid #eee;
+    font-family: Verdana;
+    cursor: move;
+
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.dragbox-content {
+    background: #fff;
+    min-height: 100px;
+    margin: 5px;
+    /*font-family:'Lucida Grande', Verdana; font-size:0.8em; line-height:1.5em;*/
+}
+
+.column  .placeholder {
+    background: #f0f0f0;
+    border: 1px dashed #ddd;
+}
+
+.dragbox h2.collapse {
+    /*background: #f0f0f0 url('/images/collapse.png') no-repeat top right !important;*/
+}
+
+.dragbox h2 .configure {
+    font-size: 11px;
+    font-weight: normal;
+    margin-right: 30px;
+    float: right;
+}
+
+#Asignacion_puntos_content {
+    min-height: 70px;
+    max-width: 500px;
+}
+
+.loader {
+    background: #fff url(/images/round_preload.gif) no-repeat 50% 20%
+}
+
+/*****************************
+** Estilos subform en linia **
+******************************/
+ul.inline li {
+    display: inline;
+    margin: 0 8px
+}
+
+ul.inline input {
+    width: 250px !important;
+}
+
+ul.block-inline {
+    display: inline;
+    margin-left: 10px !important
+}
+
+input.input10{
+    width: 75px !important;
+}
+/******************************
+** Campos más pequeños ********
+******************************/
+input.input-small {
+    width: 100px
+}
+
+button.icon {
+    border: none;
+    text-indent: -9999em;
+    width: 20px;
+    height: 17px;
+    margin: 0 3px;
+}
+
+.delete_kpi {
+    background: white url(/sf/sf_admin/images/cancel.png) no-repeat 0 50%;
+}
+
+.add_kpi {
+    background: white url(/sf/sf_admin/images/add.png) no-repeat 0 50%;
+}
+
+.th-link{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 60px 0 20px;
+    position: relative;
+    text-decoration: none;
+}
+.g-top{
+    width: 14%;
+    height: 5px;
+    display: inline-block;
+    background: #429D29
+}
+.b-top{
+    width: 28%;
+    height: 5px;
+    display: inline-block;
+    background: #166494
+}
+.o-top{
+    width: 58%;
+    height: 5px;
+    display: inline-block;
+    background: #F65E13
+}
+
+#num_concursos_abiertos {
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 400px;
+}
+
+/***** UI SORTABLE PARA EMPRESA DESTACADA ****/
+ul.destacados .ui-state-default, ul.destacados .ui-state-highlight {
+    margin: 5px 0;
+    list-style: none;
+    padding: 5px;
+    width: 350px;
+    border-left: 5px solid #ccc;
+    cursor: move;
+    font-size: 0.9em;
+}
+
+ul.destacados .ui-state-highlight {
+    min-height: 15px;
+    width: 400px
+}
+
+#sf_admin_container ul.destacados a.destacar {    background: transparent url(/sf/sf_admin/images/ok.png) no-repeat 0 0 }
+#sf_admin_container ul.destacados a.no-destacar {    background: transparent url(/sf/sf_admin/images/delete.png) no-repeat 0 0
+}
+ul.sortable li span.edit_action {
+    float: right;
+    height: 20px;
+    background: transparent url(/sf/sf_admin/images/edit.png) no-repeat 50% 0
+}
+ul.sortable li span.nb_order {float: left;
+                              margin: 0 6px;
+                              background: #C7F708;
+                              padding: 6px;
+                              line-height: 9px;
+                              border-radius: 20px;
+                              position: relative;
+                              top: -4px;
+                              border: 1px solid #C7F7FF;}
+
+ul.sortable li span a {
+    text-indent: -9000em;
+    display: block;
+    padding-left: 20px;
+    background: none !important
+}
+
+ul.destacados span.action_destacado {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+ul.destacados span.title {
+    margin-left: 11px;
+    font-size: 1.1em;
+}
+
+ul.destacados > li {
+    border: 1px #DDD solid;
+    width: 870px;
+    padding: 5px;
+    list-style: none;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 0
+}
+
+table.alerta_cuestionario td {
+    vertical-align: top
+}
+
+#sf_admin_path {
+    padding: 10px 20px !important;
+}
+
+input:disabled, select:disabled {
+    color: grey;
+    opacity: .5
+}
+
+/** ALERTAS DE CUESTIONARIO **/
+ul.alerta_cuestionario li span {
+    /*display: block*/
+}
+
+ul.alerta_cuestionario li {
+    /*margin: 10px 0*/
+}
+
+.hide_show_filters_label {
+    position: relative;
+    float: right;
+    right: 250px;
+    bottom: 20px;
+}
+
+.hide_show_filters_concurso_label {
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 20px;
+}
+
+.filters_center {
+    text-align: center;
+}
+
+#submenu_concursos li {
+    display: inline;
+    padding-right: 16px;
+    /*padding-right: 20px;*/
+}
+
+#info_colaboradores_cabecera {
+    /*position: relative;
+    float: right;
+    text-align: right;
+    right: 0px;
+    top: -65px;*/
+    position: absolute;
+    float: right;
+    text-align: right;
+    right: 20px;
+    top: 80px;
+}
+
+span.actions a { white-space: nowrap;}
+/*.ac_loading { background: none !important;}*/
+
+.hdr-120{width: 120px;}
+.hdr-180{width: 180px;}
+.hdr-220{width: 220px !important;}
+.hdr-351{width: 351px;}
+.hdr-420{width: 420px;}
+
+.volver_al_listado1 a{
+    background: url("../images/list_detail.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 113px;
+}
+.volver_al_listado2 a{
+    background: url("../images/list_detail.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 113px;
+}
+
+.volver_al_listado123 a{
+    background: url("../images/list_detail.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 100%;
+    padding-left: 22px;
+}
+.volver_al_listado_contest a{
+    background: url("../images/list_detail.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+#contribucion_filters_concurso_id option{
+    width:650px !important;
+
+}
+#concurso_filters_concurso_categoria_id option{
+    /*width:340px;*/
+}
+#concurso_filters_empresa_id option{
+    width:340px;
+}
+#producto_tipo_tres_filters_producto_tipo_uno_id{
+    width:300px;
+}
+#producto_tipo_tres_filters_producto_tipo_dos_id{
+    width:300px;
+}
+
+/*label[for=concurso_contribucion]
+{
+    font-weight: bold;
+}*/
+/*label.concurso_contribucion
+{
+    font-weight: bold;
+}*/
+/*.sf_admin_form_field_contribucion label{
+    font-weight: bold;
+}*/
+.cg-color{
+    background: #429D29 !important;
+    color: #FFF;
+}
+.co-color{
+    background: #F65E13 !important;
+    color: #FFF;
+}
+.cb-color{
+    background: #B41B1D !important;
+    color: #FFF;
+}
+.cbl-color{
+    background: #166494 !important;
+    color: #FFF;
+}
+.spnmain a{
+    font-weight: bold;
+    color: #000;
+    text-decoration: none
+}
+select#contribucion_filters_created_at_from_month option:last-child{
+    border-bottom:1px solid !important;
+}
+select#contribucion_filters_created_at_from_year option:last-child{
+    border-bottom:1px solid !important;
+}
+select#contribucion_filters_created_at_to_month option:last-child{
+    border-bottom:1px solid !important;
+}
+select#contribucion_filters_created_at_to_year option:last-child{
+    border-bottom:1px solid !important;
+}
+select#concurso_filters_created_at_from_month option:last-child{
+    border-bottom:1px solid !important;
+}
+select#concurso_filters_created_at_from_year option:last-child{
+    border-bottom:1px solid !important;
+}
+select#concurso_filters_created_at_to_month option:last-child{
+    border-bottom:1px solid !important;
+}
+select#concurso_filters_created_at_to_year option:last-child{
+    border-bottom:1px solid !important;
+}
+select#concurso_filters_concurso_estado_id option:last-child{
+    border-bottom:1px solid !important;
+}
+select#alertas_filters_created_at_from_month option:last-child{
+    border-bottom:1px solid !important;
+}
+select#alertas_filters_created_at_from_year option:last-child{
+    border-bottom:1px solid !important;
+}
+select#alertas_filters_created_at_to_month option:last-child{
+    border-bottom:1px solid !important;
+}
+select#alertas_filters_created_at_to_year option:last-child{
+    border-bottom:1px solid !important;
+}
+#sf_admin_list_th_actions{
+    padding-left: 20px !important;
+}
+tr.sf_admin_row td:last-child{
+    padding-left: 20px !important;
+}
+/************* New Changes *************/
+.cke_editor_concurso_comentario_inicial,
+.cke_editor_empresa_texto_lista_negra,
+.cke_editor_empresa_comentario_inicial,
+.cke_editor_producto_comentario_inicial,
+.cke_editor_concurso_texto_lista_negra,
+.cke_editor_producto_texto_lista_negra{
+    width: 588px;
+}
+#cke_contents_concurso_comentario_inicial,
+#cke_contents_empresa_texto_lista_negra,
+#cke_contents_empresa_comentario_inicial,
+#cke_contents_producto_comentario_inicial,
+#cke_contents_concurso_texto_lista_negra,
+#cke_contents_producto_texto_lista_negra{
+    height: 200px;
+}
+#sf_fieldset_none .sf_admin_form_field_comentario_inicial label,
+#sf_fieldset_none .sf_admin_form_field_texto_lista_negra label{
+    font-weight: bold !important;
+}
+.sf_admin_filter tr.sf_admin_filter_field_nombre td input{
+    width: 225px !important;
+}
+.sf_admin_form_field_plan #error_max_length,
+.sf_admin_form_field_texto_lista_negra #error_max_length,
+.sf_admin_form_field_comentario_inicial #error_max_length,
+.sf_admin_form_field_googleMap .error_gmap,
+.sf_admin_form_field_ayudar #error_max_length,
+.sf_admin_form_field_description #error_max_length,
+.sf_admin_form_field_body #Error_max_length_body,
+.sf_admin_form_field_summary #error_max_length_summary{
+    background: url("../images/error.png") no-repeat scroll 10px 4px #FF3333;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    color: #FFFFFF;
+    margin: 4px 0;
+    padding: 4px 4px 4px 30px;
+}
+.newclass li {
+    background: url("../images/error.png") no-repeat scroll 4px 4px transparent;
+    color: #FFFFFF;
+    list-style: none outside none;
+    padding: 4px 4px 4px 25px;
+    font-weight: normal;
+}
+
+/****** New CSS  *******/
+.clean_clear_blanca{clear: both;height: 29px;}
+.clean_clear_negra{clear: both;height: 16px;}
+.clean_clear_0_blanca{clear: both;height: 21px;}
+.clean_clear_1_blanca{clear: both;height: 26px;}
+.clean_clear_blanca_1{clear: both;height: 17px;}
+
+.clean_clear_0_negra{clear: both;height: 19px;}
+.clean_clear_1_negra{clear: both;height: 12px;}
+
+.color_red{ color: #FF1919 }
+.color_orange{ color: #F65E13 }
+.color_green{ color: #429D29 }
+.color_blue{ color: #166494 }
+.color_brown{ color: #B41B1D }
+.color_grey1{ color: #BEC1C4 }
+.color_grey2{ color: #7D7873 }

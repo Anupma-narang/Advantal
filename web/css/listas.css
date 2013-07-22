@@ -1,0 +1,74 @@
+#content_laslistas { width:898px; height:1240px;/* border:#F00 solid 1px;*/ }
+
+#header_listas { float:left;	width:898px; height:41px;
+                 background: url(../images/img_listas/s1.png) bottom center no-repeat;
+                 /*border:#F00 solid 1px;*/}
+#header_listas_a {float: left; width:252px; height:30px; margin:0px 0px 0px 40px;
+                  background:url(../images/img_listas/b_3.jpg) no-repeat;}
+#header_listas_b {float: left; width:252px; height:30px; margin:0px 0px 0px 10px;
+                  background:url(../images/img_listas/b_2.jpg) no-repeat;}
+#header_listas_c {float: left; width:298px; height:30px; margin:0px 0px 0px 10px;
+                  background:url(../images/img_listas/b_1.jpg) no-repeat;
+}
+#header_listas_c a{color:#FFF; text-decoration: none;}
+#header_listas_c a:hover{color:#FFF; text-decoration:underline;}
+
+#header_listas #header_listas_a,
+#header_listas #header_listas_b,
+#header_listas #header_listas_c {
+    text-align: center; color:#FFFFFF; font-weight:bold;
+}
+
+#content_laslistas_dos{ float:left; width:898px; height:40px; margin:5px 0px 0px 10px;}
+#content_laslistas_dos a{ color:#006600; text-decoration:none;} 
+#content_laslistas_dos a:hover{ text-decoration:underline;} 
+
+/*Inicio buscador*/
+#content_laslistas_buscador{float:left; width:898px; height:165px; margin:5px 0px 0px 0px;
+                            background:url(../images/img_listas/s1.jpg) bottom center no-repeat;}
+#content_laslistas_buscador_a{float:left; width:898px; height:24px; margin:0px 0px 0px 0px;
+                              background: url(../images/img_listas/fondo_tit_buscar.png) bottom right no-repeat;}
+#content_laslistas_buscador #content_laslistas_buscador_a .texto_center {
+    text-align: right; float:right;  color:#FFF; font-weight:bold; margin-right:20px; }
+#content_laslistas_buscador_b{float:left; width:898px; height:14px; margin:0px 0px 0px 0px;
+                              background: url(../images/img_listas/s1.png) bottom center no-repeat;}
+#content_laslistas_buscador_c{float:left; width:898px; height:140px; margin:0px 0px 0px 0px;
+                              background:url(../images/img_listas/fondo_buscador.jpg) center center no-repeat;}
+
+#content_laslistas_buscador_c1{float:left; width:195px; height:34px; margin:0px 0px 0px 35px;
+                               background:url(../images/img_listas/btoton_tipo.jpg) top right no-repeat; 
+                               text-align: center; color:#FFFFFF; font-weight:bold;
+
+}
+
+#content_laslistas_buscador_c2{float:left; width:110px; height:30px; margin:0px 0px 0px 10px;
+                               background:url(../images/img_listas/boton_tipo_des.png) left top no-repeat; text-align:center;
+}
+/*Fin buscador*/
+#content_laslistas_lista{float:left; width:860px; height:928px; margin: 15px 0px 0px 20px;
+                         background:url(../images/img_listas/fondo_listas.jpg) left bottom no-repeat;
+}
+#content_laslistas_lista_uno {float:left; width:190px; height:34px; margin:0px 0px 0px 20px;
+                              background:url(../images/img_listas/btoton_tipo.jpg) top right no-repeat;}
+
+#content_laslistas_lista #content_laslistas_lista_uno{text-align: center; color:#FFFFFF; font-weight:bold;}
+
+#content_laslistas_lista_dos{float:left; width:110px; height:30px; margin:0px 0px 0px 10px;
+                             background:url(../images/img_listas/boton_tipo_des.png) left bottom no-repeat;text-align:center;
+}
+#content_laslistas_left{clear:both; float:left; width:285px; height:430px; margin:10px 0px 0px 0px;
+                        background:url(../images/img_listas/sombra_lateral.jpg) right repeat-y;
+}
+#content_laslistas_right_top{ float:left; width:540px; height:50px; margin:10px 0px 0px 10px;
+}
+#content_laslistas_right{ float:left; width:540px; height:600px; margin:10px 0px 0px 10px;
+                          background:url(../images/img_listas/fondo_listas_lista.jpg) no-repeat;
+/*                          border: #006600 solid 1px;*/
+}
+
+#content_laslistas_udd{ float:left; width:513px; height:113px; margin:10px 0px 0px 12px;
+                        background:url(../images/img_listas/fondo_lista_udd.jpg) no-repeat;}
+
+/*New profesional*/
+.inputText{ width: 350px;}
+       

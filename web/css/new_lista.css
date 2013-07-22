@@ -1,0 +1,779 @@
+/* ESTILOS LISTAS DE CATEGORÍAS */
+
+#content_laslistas_lista {
+    width: 851px;
+    float: left;
+    margin-left: 22px;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.content-top {
+    height: 15px;
+    background: white url('../images/img_listas/fondo_listas-top.png') no-repeat;
+    margin-top: -3px;
+}
+
+.content-middle {
+    overflow: hidden;
+    position: relative;
+    background: white url('../images/img_listas/fondo_listas-middle.png') repeat-y;
+}
+
+.content-bottom {
+    height: 15px;
+    background: white url('../images/img_listas/fondo_listas-bottom.png') no-repeat;
+}
+
+/* Estilo menu superior expresas productos */
+.menu-listas {
+    height: 30px;
+    margin-left: 15px;
+}
+
+.menu-listas a.active {
+    color: white;
+}
+
+.menu-listas a {
+
+    padding-top: 6px;
+    text-decoration: none;
+    color: #4d5357;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    float: left;
+    height: 24px; /*30*/
+}
+
+.menu-listas a.empresa {
+    width: 195px;
+    background: url(../images/img_listas/btoton_tipo.jpg) top right no-repeat;
+}
+
+.menu-listas a.producto {
+    margin-left: 4px;
+    width: 106px;
+    background: url(../images/img_listas/boton_tipo_des.png) left top no-repeat;
+}
+
+ul.lista-categorias a, ul.lista-categorias ul a {
+    text-decoration: none;
+}
+
+ul.lista-categorias, ul.lista-categorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos columna izquierda (categorías )*/
+#content_laslistas_left {
+    float: left;
+    width: 285px;
+    border-right: 1px solid #999;
+    background-repeat: repeat-y;
+}
+
+#content_laslistas_left_shadow {
+    top: 0;
+    width: 47px;
+    position: absolute;
+    background-image: url('../images/img_listas/sombra_categoria.png');
+    height: 100%;
+    left: 239px;
+}
+
+/* Fin estilos columna izquierda (categorías )*/
+
+/* Estilos columna derecha de listas */
+#content_laslistas_right {
+    float: left;
+    width: 564px;
+}
+
+#content_laslistas_right div.top {
+    margin: 0 15px;
+    float: left;
+    width: 535px;
+}
+
+#content_laslistas_right div.top div.order {
+    float: left;
+}
+
+#content_laslistas_right div.pagination {
+    float: right;
+}
+
+#content_laslistas_right .pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#content_laslistas_right .pagination ul li {
+    float: left; padding: 0 2px;
+}
+
+#content_laslistas_right .pagination ul li.pagina,
+#content_laslistas_right .pagination ul li.active {
+    height: 14px;
+    border-right: 1px solid #4d5357;
+}
+
+#content_laslistas_right .pagination ul li.active a {
+    font-weight: bold
+}
+
+#content_laslistas_right .pagination ul li a {
+    text-decoration: none;
+    color: #4d5357;
+}
+
+#content_laslistas_right div.bottom {
+    float: left;
+}
+
+#content_laslistas_right div.main {
+    float: left;
+    margin: 15px;
+    width: 535px;
+}
+
+#content_laslistas_right div.main div.top {
+    margin: 0;
+    float: left;
+    width: 535px;
+    height: 15px;
+    background-image: url('../images/img_listas/fondo_lista_blanca_items_top.png');
+}
+
+#content_laslistas_right div.main div.bottom {
+    float: left;
+    width: 535px;
+    height: 15px;
+    background-image: url('../images/img_listas/fondo_lista_blanca_items_bottom.png');
+}
+
+#content_laslistas_right div.main div.middle {
+    min-height: 30px;
+    padding: 0 10px;
+    float: left;
+    width: 515px; /*535*/
+    background: url('../images/img_listas/fondo_lista_blanca_items_middle.png') repeat-y;
+}
+
+#content_laslistas_right div.main div.middle_audit {
+    min-height: 300px;
+    padding: 0 0px;
+    float: left;
+    width: 535px;
+    background: url('../images/img_listas/fondo_lista_blanca_items_middle.png') repeat-y;
+}
+
+/* Estilos para titulo de la categoría */
+#content_laslistas_right div.main div.middle div.title {
+    float: left;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#content_laslistas_right div.main div.middle div.title img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+#content_laslistas_right div.main div.middle div.title span {
+    margin-top: 10px;
+    display: block;
+    float: left;
+}
+
+.comentario_box {
+    color: #4d5357;
+    padding: 10px 20px;
+    margin-bottom: 11px;
+    font-size: 0.85em;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 1px 1px 5px #777;
+    -webkit-box-shadow: 1px 1px 5px #777;
+
+}
+
+.comentarios a {
+    color: #060 !important
+}
+
+/* Estilos para los items de la listas */
+#content_laslistas_right div.main div.middle div.item {
+    float: left;
+    width: 480px; /* 513 */
+    /*height: 92px;*/ /* 111*/
+
+    font-size: 12px;
+    color: #4d5357;
+    padding: 10px 15px;
+    margin-bottom: 11px;
+    /*background: url('../images/img_listas/fondo_items.png');*/
+    background:#ffffff;
+    border:3px solid #dddddd;
+    -moz-border-radius:8px; -webkit-border-radius:8x; border-radius:8px;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_left {
+    width: 360px;
+    float: left;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_left span {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+ul.lista_detalles {
+    margin: 0;
+    padding:0px 0px 0px 5px;
+}
+ul.lista_detalles_profeshanel {
+    margin: 0;
+    padding:0px 0px 0px 5px;
+}
+ul.lista_detalles li {
+    list-style: none;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width:240px;
+}
+ul.lista_detalles_profeshanel li {
+    list-style: none;
+    /*overflow: hidden;*/
+    word-wrap:break-word;
+    text-overflow:ellipsis;
+    white-space: normal;
+    width:280px;
+}
+.second_name_string{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width:190px;
+}
+
+ul.lista_detalles_profeshanel li.title {
+    color: #166393;
+    font-weight: bold;
+}
+
+ul.lista_detalles_profeshanel li.ciudad {
+    color: #429233;
+}
+ul.lista_detalles_profeshanel li.org {
+    color: #f65e13;
+}
+
+ul.lista_detalles li.title {
+    color: #166393;
+    font-weight: bold;
+}
+
+ul.lista_detalles li.ciudad {
+    color: #429233;
+}
+ul.lista_detalles li.org {
+    color: #f65e13;
+}
+
+
+
+#content_laslistas_right div.main div.middle div.item div.col_left a {
+    color: #585858;
+    text-decoration: underline;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_center {
+    float: left;
+    width: 130px;
+    height: 84px;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_right {
+    float: left;
+    text-align: center;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_right img {
+    margin-bottom: 10px;
+}
+
+#content_laslistas_right div.main div.middle div.item div.col_right a.btn-audita {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 88px;
+    height: 19px;
+    background: url('../images/img_listas/btn-audita.png');
+}
+
+#content_laslistas_right div.main div.middle div.item #icono-grafica {
+    display: block;
+    margin-top: 5px;
+    width: 75px;
+    height: 73px;
+    text-indent: -10000px;
+    background: url('../images/img_listas/icon-grafica.jpg');
+}
+
+/* Fin estilos para los items de la listas */
+
+/* Estilos li primer nivel */
+ul.lista-categorias a {
+
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+ul.lista-categorias {
+    width: 277px; /*285px*/
+    padding-left: 8px;
+}
+
+ul.lista-categorias li {
+    opacity: 0.9
+}
+
+ul.lista-categorias li:hover {
+    opacity: 1
+}
+
+ul.lista-categorias li a.open {
+    background: transparent url('../images/img_listas/categoria-activa.png') no-repeat;
+}
+
+ul.lista-categorias li > ul li a.open {
+    background: none;
+    font-weight: bold;
+    color: rgb(249, 95, 0);
+}
+
+ul.lista-categorias > li {
+    cursor: pointer;
+    background: transparent url('../images/img_listas/categoria.png') no-repeat;
+    min-height: 52px;
+    margin: 0 0 4px 0;
+}
+
+ul.lista-categorias > li > a {
+    padding:0px 8px;
+    display:inline-block!important;
+    width:94%;
+    height:56px;
+}
+ul.lista-categorias > li > a span{ width:205px;}
+
+ul.lista-categorias a span {
+}
+
+ul.lista-categorias li.first {
+    margin-top: 0;
+}
+
+ul.lista-categorias li img.miniatura-categoria {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 9px 12px 0 0;
+}
+
+/* Fin estilos li primer nivel */
+ul.lista-categorias li ul li {
+    margin: 0 0 0 28px;
+    width:220px;
+}
+
+ul.lista-categorias li ul li ul li {
+    margin: 0
+}
+
+ul.lista-categorias ul li a {
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+    text-transform: none;
+
+}
+
+/* Estilos li segundo nivel */
+ul.lista-categorias ul.activa {
+    display: block;
+}
+
+ul.lista-categorias ul li a.activa {
+    color: #ff8549;
+}
+
+ul.lista-categorias > ul {
+    background-color: #f8f8f5;
+    margin-left: 2px;
+    padding-bottom: 25px;
+}
+
+/* Fin estilos li segundo nivel */
+
+/* Estilos li tercer nivel */
+
+ul.lista-categorias ul ul.activa {
+    display: block;
+}
+
+ul.lista-categorias ul ul {
+    background: none;
+    margin: 0 0 0 14px;
+    height: auto;
+    padding-bottom: 0px;
+}
+
+ul.lista-categorias ul ul.activa li a.activa {
+    color: #ff8549;
+}
+
+/* Fin estilos li tercer nivel */
+
+/* FIN ESTILOS LISTAS DE CATEGORÍAS */
+
+/* ESTILOS BUSCADOR */
+div.buscador {
+    float: left;
+    width: 899px;
+
+}
+
+div.buscador span.buscar-concurso {
+    padding-top: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 229px;
+    height: 21px; /*23*/
+    float: right;
+    display: block;
+    margin-right: 30px;
+    background: transparent url('../images/img_listas/buscar-concurso.png');
+
+}
+
+div.buscador .buscador-top {
+    float: left;
+    width: 100%;
+    height: 8px;
+    background: transparent url('../images/img_listas/buscador-top.png') repeat-x;
+    margin-bottom: 5px;
+}
+
+div.buscador .buscador-bottom {
+    width: 100%;
+    height: 8px;
+    background: transparent url('../images/img_listas/buscador-top.png') repeat-x;
+    margin: 10px 0;
+}
+
+div.buscador .buscador-wrapper {
+    overflow: hidden;
+    width: 851px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+div.buscador .buscador-wrapper div.content-middle {
+    padding: 0 10px;
+}
+
+div.buscador .buscador-wrapper div.content-middle form {
+    color: #000000;
+}
+
+div.buscador .buscador-wrapper div.content-middle form .columna {
+    float: left;
+    margin-right: 30px;
+}
+
+div.buscador .buscador-wrapper div.content-middle form .botonera {
+    margin-top: 10px;
+    float: left;
+    clear: both;
+}
+
+div.buscador .buscador-wrapper div.content-middle form .botonera a.busqueda-avanzada {
+    color: black;
+    margin-left: 5px;
+}
+
+div.buscador .buscador-wrapper div.content-middle form .botonera input[type="submit"] {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background: transparent url('../images/img_listas/btn-audita.png');
+    width: 88px;
+    height: 19px;
+    cursor: pointer;
+    padding: 0 0 5px;
+}
+
+div.buscador .buscador-wrapper div.content-middle form label {
+    margin: 5px 0;
+}
+
+div.buscador .buscador-wrapper div.content-middle form input[type="text"],
+div.buscador .buscador-wrapper div.content-middle form select {
+    clear: left;
+}
+
+div.buscador .buscador-wrapper div.content-middle form label,
+div.buscador .buscador-wrapper div.content-middle form input[type="text"],
+div.buscador .buscador-wrapper div.content-middle form select {
+    width: 165px;
+    float: left;
+}
+
+div.buscador .avanzado {
+    display: none;
+    clear: both;
+}
+
+div.menu-buscador {
+    height: 30px;
+    position: relative;
+    margin-left: 7px;
+}
+
+div.menu-buscador a {
+    display: block;
+    background: transparent url('../images/img_listas/sprite.png');
+    height: 30px;
+    text-indent: 10000px;
+    float: left;
+    margin-left: 10px;
+}
+
+div.menu-buscador a.empresas-entidades {
+    width: 190px;
+    background-position: 0 -81px;
+}
+
+div.menu-buscador a.empresas-entidades-activa {
+    width: 190px;
+    background-position: 0 -112px;
+}
+
+div.menu-buscador a.productos {
+    width: 108px;
+    background-position: -193px -80px;
+}
+
+div.menu-buscador a.productos-activa {
+    width: 108px;
+    background-position: -193px -113px;
+}
+
+/* FIN ESTILOS BUSCADOR */
+
+/*  ESTILOS MENU SUPERIOR DE LISTAS */
+div.menu-superior-listas {
+    height: 35px;
+    width: 100%;
+}
+
+div.menu-superior-listas .menu-listas-wrapper {
+    float: left;
+
+}
+
+div.menu-superior-listas .menu-listas-bottom {
+    margin-bottom: 25px;
+    float: left;
+    padding: 15px 10px 0 10px;
+    color: #006600;
+}
+
+div.menu-superior-listas span.separador {
+    float: left;
+    height: 8px;
+    display: block;
+    width: 100%;
+    background: transparent url('../images/img_listas/buscador-top.png') repeat-x;
+}
+
+div.menu-superior-listas a {
+    color: #006600;
+    text-decoration: none;
+}
+
+div.menu-superior-listas ul {
+    list-style: none;
+}
+
+div.menu-superior-listas ul li {
+    float: left;
+}
+
+div.menu-superior-listas ul li a {
+    margin-right: 10px;
+    text-indent: -10000px;
+    background: transparent url('../images/img_listas/sprite.png');
+    height: 23px;
+    display: block;
+}
+
+div.menu-superior-listas ul li.lista-blanca a {
+    background-position: 0 0;
+    width: 250px;
+}
+
+div.menu-superior-listas ul li.lista-blanca a.active {
+    background-position: 0 -25px;
+}
+
+div.menu-superior-listas ul li.lista-negra a {
+    background-position: -251px 0;
+    width: 249px;
+}
+
+div.menu-superior-listas ul li.directorio-profesionales a {
+    background-position: -502px 0;
+    width: 290px;
+}
+
+/*  FIN ESTILOS MENU SUPERIOR DE LISTAS */
+
+/** FORMULARIO ORDEN **/
+span.hide {
+    opacity: 0.3;
+}
+
+#form_order label {
+    font-size: 0.8em;
+    color: #022;
+}
+
+select.hide { display: none}
+/** EMPRESAS DESTACADAS **/
+div.empresas_destacadas {
+    background-color: #f3ef8d;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+div.clear {
+    clear: both
+}
+
+.addComentario h3 {
+    font-size: 1.3em
+}
+
+.addComentario ul.error_list li {
+    color: red;
+    list-style: none
+}
+
+.msg_order {
+    position: absolute;
+    padding: 9px;
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    width: 524px;
+    color: #C09853;
+    border-radius: 8px;
+}
+
+.msg_order .close {
+    float: right;
+    text-shadow: 0 1px 0 white;
+    opacity: 0.3;
+    border: none;
+    background: transparent;
+
+}
+
+.msg_orderProf{
+    padding: 9px;
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    width: 524px;
+    color: #C09853;
+    border-radius: 8px;
+}
+
+.msg_orderProf .close {
+    float: right;
+    text-shadow: 0 1px 0 white;
+    opacity: 0.3;
+    border: none;
+    background: transparent;
+
+}
+
+
+div.form_row_error {
+    border-bottom: medium none;
+    border-radius: 5px 5px 5px 5px;
+    border-top: medium none;
+    color: white;
+    margin: 5px;
+    padding: 2px 2px 2px 35px;
+    background: #FA1919 url(/images/error.png) no-repeat 10px 50%;
+}
+
+div.block_reset {
+    float: left;
+}
+
+.border-box .top-left1 { padding:2px 10px; background:url("../images/caja/from-boxbg.png") left top repeat-y; }
+.top-select{margin:5px 0 5px 0; padding:3px 1px; font-size:15px; float:left; width:97%; height: 29px;}
+.top-select1{margin:5px 0 5px 0; padding:3px 1px; font-size:15px; float:left; width:74%; height: 29px;}
+.top-select2{margin:5px 0 5px 0; padding:3px 1px;  font-size:15px; height: 29px;} /*color:#000000;*/
+#alin_der_img ul{ margin:0px;}
+#alin_der_img ul li{list-style:none; float:left; margin-bottom:4px;}
+#alin_der_img ul li img{ vertical-align:middle;}
+.fright{ float:right;}
+.width100{ width:100%;}
+div.buscador .buscador-wrapper div.content-middle form .columna .searchSelect{ width:100%!important;}
+.MTB10{ margin:10px 0px;}
+.MAR0{ margin:0px!important;}
+.MR15{ margin-right:15px!important;}
+.fontDisable{ width: 260px;}
+.width50{ width:50px;}
+
+#content_laslistas_right div.main div.middle div.item div.col_left a.comolegar {
+    text-decoration: none;   
+}
+#content_laslistas_right div.main div.middle div.item div.col_left a.comolegar:hover {
+    text-decoration: underline;   
+}

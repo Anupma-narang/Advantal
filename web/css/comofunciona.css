@@ -1,0 +1,29 @@
+#content_comofunciona{ width: 900px; height: 1177px;  margin: auto;
+/*    border: #1c94c4 solid 1px;*/
+}
+#comofunciona_concurso_uno_img{width: 900px; height: 400px;  margin:10px auto 10px;
+    background: url(../images/img_comofunciona/como_funciona_un_concurso_.jpg) no-repeat top;
+/*    border: #1c94c4 solid 1px;*/
+}
+#comofunciona_directorio_uno_img{width: 900px; height: 400px;  margin:10px auto 10px;
+    background: url(../images/img_comofunciona/como_funciona_el_directorio_.jpg) no-repeat top;
+    
+    
+}
+
+#comofunciona_referendum_en_mesaredonda_uno_img{width: 900px; height: 400px;  margin:10px auto 10px;
+    background: url(../images/img_comofunciona/como_funciona_el_referendum_en_una_mesa_redonda_.jpg) no-repeat top;
+    
+    
+}
+
+#comofunciona_referendum_en_concurso_uno_img{width: 900px; height: 400px;  margin:10px auto 10px;
+    background: url(../images/img_comofunciona/como_funciona_el_referendum_en_un_concurso_.jpg) no-repeat top;
+    
+    
+}
+#comofunciona_mesa_redonda_uno_img{width: 900px; height: 400px;  margin:10px auto 10px;
+    background: url(../images/img_comofunciona/como_funciona_una_mesa_redonda_.jpg) no-repeat top;
+    
+    
+}
