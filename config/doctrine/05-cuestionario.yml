@@ -1,0 +1,160 @@
+ListaCuestionario:
+  actAs:    
+    Timestampable: ~
+
+  columns:
+    nombre: { type: string(255), notnull: true }
+    tipo: string(10) # un cuestionario puede ser de "empresa" o "producto"
+    empresa_sector_uno_id: integer
+    empresa_sector_dos_id: integer
+    empresa_sector_tres_id: integer
+
+    producto_tipo_uno_id: integer
+    producto_tipo_dos_id: integer
+    producto_tipo_tres_id: integer
+
+  relations:
+    EmpresaSectorUno: ~
+    EmpresaSectorDos: ~
+    EmpresaSectorTres: ~
+    ProductoTipoUno: ~
+    ProductoTipoDos: ~
+    ProductoTipoTres: ~
+
+
+
+ListaCuestionarioUser:
+  actAs: [ Timestampable ]
+  columns:
+    user_id: { type: integer, notnull: true }
+    lista_cuestionario_id: { type: integer, notnull: true }
+    aprobado: { type: boolean, default: true }
+    empresa_id: { type: integer }
+    producto_id: { type: integer }
+    disabled: { type: boolean, default: false }
+
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      onDelete: cascade
+
+    Cuestionario:
+      class: ListaCuestionario
+
+    Empresa:
+      class: Empresa
+      foreignAlias: CuestionarioRespuestas
+
+    Producto:
+      class: Producto
+      foreignAlias: CuestionarioRespuestas
+
+ListaCuestionarioPregunta:
+  actAs:
+    #Sortable: { uniqueBy: [lista_cuestionario_id] }
+
+  columns:
+    pregunta:                 { type: string(255), notnull: true }
+    tipo:                     { type: string(255), notnull: true, default: opcion } # tipo de pregunta: opcion, texto
+    lista_cuestionario_id:    { type: integer }
+    kpi_id:                   { type: integer }
+
+  relations:
+    Cuestionario:
+      class: ListaCuestionario
+      local: lista_cuestionario_id
+      onDelete: cascade
+
+    Kpi:
+      class: Kpi
+
+Kpi:
+  columns:
+    nombre: { type: string(255), notnull: true }
+    tipo: string(10) # un Kpi puede ser de "empresa" o "producto"
+
+  indexes:
+    tipo_index:
+      fields: [ tipo ]
+
+    nombre_index:
+      fields: [ nombre ]
+
+
+ListaCuestionarioRespuesta:
+  actAs:
+    Timestampable: ~
+    Signable: ~
+
+  columns:
+    respuesta:                      { type: longtext }
+    lista_cuestionario_pregunta_id: { type: integer }
+    lista_cuestionario_user_id: { type: integer }
+
+  relations:
+    Pregunta:
+      class: ListaCuestionarioPregunta
+      foreignAlias: Respuestas
+
+    ListaCuestionarioUser:
+      foreignAlias: Respuestas
+      onDelete: cascade
+
+KpiEmpresaProducto:
+  columns:
+    kpi_id: integer
+    empresa_id: integer
+    producto_id: integer
+    suma_valores: integer
+    numero_valores: integer
+    nombre: { type: string(255), notnull: true }
+  relations:
+    Empresa:
+      foreignAlias: Kpis
+
+    Producto:
+      foreignAlias: Kpis
+
+    Kpi: ~
+
+
+# Joan Teixidó: esto no lo uso para nada, pero ya estaba y vicente me dijo que no lo tocara... ni idea si funciona o no...
+
+CuestionarioRespuestas:
+  actAs:    
+    Timestampable: ~
+    Signable: ~
+  columns:
+    respuesta1:                 { type: integer }
+    respuesta2:                 { type: integer }
+    respuesta3:                 { type: integer }
+    respuesta4:                 { type: integer }
+    respuesta5:                 { type: integer }
+    respuesta6:                 { type: integer }
+    respuesta7:                 { type: integer }
+    respuesta8:                 { type: integer }
+    respuesta9:                 { type: integer }
+    respuesta10:                { type: integer }
+    respuesta11:                { type: integer }
+    respuesta12:                { type: integer }
+    respuesta13:                { type: clob }
+    total:                      { type: integer }
+    cuestionario_id:            { type: integer }
+    concurso_id:                { type: integer }
+  relations:
+    Cuestionario:
+      class:        Cuestionario
+      foreign:      id
+      local:        cuestionario_id
+      type:         one
+      foreignType:  many
+      onDelete:     cascade
+    Concurso:
+      foreignAlias: CuestionarioRespuestaConcurso
+      class:        Concurso
+      foreign:      id
+      local:        concurso_id
+      type:         one
+      foreignType:  many
+      onDelete:     cascade

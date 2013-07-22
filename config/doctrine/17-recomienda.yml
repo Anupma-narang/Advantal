@@ -1,0 +1,23 @@
+Recomienda:
+  tableName: recomienda
+  columns:
+    email:
+      type: string(64)
+      notnull: true
+    user_id:
+      type: integer(11)
+    is_registerd: { type: boolean , default: 0 }
+    created_at: timestamp
+    updated_at: timestamp
+  
+   
+RecomendedRegistration:
+  tableName: recomended_registration
+  columns:
+    registered_user: varchar(70)
+    recomended_user: varchar(70)
+    email: varchar(70)
+    created_at: timestamp
+    updated_at: timestamp
+  
+   

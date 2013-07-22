@@ -1,0 +1,133 @@
+Auditanos:
+  tableName: auditanos
+  columns:
+    status:
+      type: integer(5)
+      default: 1
+    usuario:
+      type: string(255)
+      notnull: true    
+    user_id:
+      type: integer(7)
+      notnull: true   
+    email:
+      type: string(255)
+      notnull: true     
+    phone:
+      type: string(32)
+    plan:
+      type: string(1000)
+      notnull: true
+    fichero1:
+      type: string(255)
+      notnull: true 
+    fichero2:
+      type: string(255)
+      notnull: true 
+    fichero3:
+      type: string(255)
+      notnull: true 
+    fichero4:
+      type: string(255)
+      notnull: true 
+    fichero5:
+      type: string(255)
+      notnull: true 
+    
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      
+      
+Contratanos:
+  tableName: contratanos
+  columns:
+    status: { type: integer(5), default: 1 }
+    name: { type: varchar(70), notnull: true }
+    road_type_id: { type: integer, notnull: false }
+    cif: { type: varchar(9), notnull: true }
+    actividad: { type: varchar(70), notnull: true }
+    nombre: { type: varchar(70), notnull: true }
+    apellido1: { type: varchar(70), notnull: true }
+    apellido2: { type: varchar(70), notnull: true }
+    cargo: { type: varchar(70), notnull: true }
+    email: { type: varchar(70), notnull: true }
+    phone: { type: varchar(9), notnull: true }
+    direccion: { type: varchar(70), notnull: true }
+    num: { type: varchar(6), notnull: true }
+    piso: { type: varchar(3), notnull: true }
+    puerta: { type: varchar(6), notnull: true }
+    cp: { type: varchar(5), notnull: true }
+    states_id: { type: varchar(70), notnull: true }
+    city_id: { type: varchar(70), notnull: true }
+    ayudar: { type: varchar(850), notnull: true }
+    servicio: { type: varchar(100), notnull: true }
+    antes: { type: varchar(10), notnull: true }
+    what: { type: varchar(100), notnull: true }
+    empresa: { type: varchar(70), notnull: true }
+    form_type: { type: boolean, notnull: true, default: 0 }
+    created_at: timestamp
+    updated_at: timestamp
+  
+      
+      
+Contactanos:
+  tableName: contactanos
+  columns:
+    status:
+      type: integer(5)
+      default: 1
+    user_id:
+      type: integer(7)
+      notnull: false
+    nombre:
+      type: string(70)
+      notnull: true
+    apellido1:
+      type: string(70)
+      notnull: true
+    apellido2:
+      type: string(70)
+      notnull: true  
+    email:
+      type: string(70)
+      notnull: true
+    phone:
+      type: string(32)
+      notnull: true
+    comentario:
+      type: string(8300)
+      notnull: true 
+    fichero1:
+      type: string(255)
+      notnull: true 
+    fichero2:
+      type: string(255)
+      notnull: true 
+    fichero3:
+      type: string(255)
+      notnull: true 
+    fichero4:
+      type: string(255)
+      notnull: true 
+    fichero5:
+      type: string(255)
+      notnull: true 
+    logo:
+      type: string(255)
+      notnull: true 
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+  

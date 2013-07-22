@@ -1,0 +1,10 @@
+UserAuditoria:
+  actAs:
+    Timestampable: ~
+  columns:
+    sf_guard_user_id: integer
+    tipo: string(255)
+
+  relations:
+    sfGuardUser:
+      foreignAlias: Auditorias

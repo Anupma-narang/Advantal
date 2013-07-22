@@ -1,0 +1,34 @@
+#
+# Sistema de puntos 
+#
+ColaboradorPuntoDefinicion:
+  tableName: colaborador_punto_definicion
+  columns: 
+    descripcion:      { type: string, size: 255, notnull: true }
+    puntos:           { type: integer, size: 12, notnull: true}
+    is_automatic:     { type: boolean, default: false, notnull: true }
+    codigo:           { type: string, size: 255, notnull: true, unique: true }
+    
+#
+# Historico de puntos a usuarios
+#
+ColaboradorPuntosHistorico:
+  actAs: { Timestampable: ~ }
+  tableName: colaborador_puntos_historico
+  columns:
+    user_id:          { type: integer, notnull: true }
+    puntos:           decimal(20,10)
+    objeto_id:        { type: integer, notnull: false }
+    objeto:           { type: string, size: 255, notnull: false }
+    descripcion:      { type: string, size: 255, notnull: false }
+    parametros:       { type: string, notnull: false }
+    tipo_punto:       { type: string, size: 255 }   
+    status:           { type: boolean, default: false }
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one

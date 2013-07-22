@@ -1,0 +1,32 @@
+options:
+  type: INNODB
+  collate: utf8_unicode_ci
+  charset: utf8
+      
+CuestionarioBajaValue:
+  tableName: cuestionario_baja_value 
+  actAs: { Timestampable: ~ }
+  columns:
+    user_id:                { type: integer, notnull: true }
+    pregunta_id:            { type: integer, notnull: true }
+    value:                  { type: string(300), notnull: true}
+  relations:
+    sfGuardUser:            { class: sfGuardUser, foreign: id, local: user_id, onDelete: cascade, alias: User }
+    CuestionarioPregunta:  { onDelete: cascade, local: pregunta_id, foreign: id }      
+
+
+CuestionarioPregunta:
+  actAs: { Timestampable: ~ }
+  tableName: cuestionario_pregunta
+  columns:
+    label:      { type: string(100), notnull: true }
+    type_id:    { type: integer, notnull: true }    
+  relations:
+    CuestionarioValuesTypes: {onDelete: cascade, local: type_id, foreign: id, type: one }
+    
+CuestionarioValuesTypes:
+  actAs: { Timestampable: ~ }
+  tableName: cuestionario_values_types
+  columns:
+    type:   { type: string(50), notnull: true } 
+    code:   { type: string(10), notnull: true }     

@@ -1,0 +1,17 @@
+EmpresaProductoEvolucion:
+  columns:
+    puntuacion: integer
+    date: date
+    empresa_id: integer
+    producto_id: integer
+
+  relations:
+    Empresa:
+      foreignAlias: Evolucion
+      onDelete: cascade
+
+    Producto:
+      foreignAlias: Evolucion
+      onDelete: cascade
+
+

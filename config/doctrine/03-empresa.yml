@@ -1,0 +1,361 @@
+Empresa:
+  tableName: empresa
+  actAs:
+    Sluggable:
+        fields: [ name, Localidad, RoadType, direccion, numero ]
+        unique: true
+        canUpdate: true
+    Timestampable: ~
+
+  columns:
+
+    name: { type: string(100), notnull: true }
+    road_type_id: { type: integer, notnull: false }
+    direccion: { type: string(70), notnull: false }
+    numero: {  type: string(50), notnull: false }   #lo siento pero lo necesito así
+    piso: string(50)
+    puerta: string(50)
+    localidad_id: { type: integer, notnull: false }
+    codigopostal: { type: string(10), notnull: false }
+    dividendo: { type: integer, default: 0 }
+    divisor: { type: integer, default: 0 }
+    comentario_inicial: string
+    texto_lista_negra: longtext
+    lista: { type: string(255) }
+    valida: { type: integer, size: 2, default: 0 }
+    persona_contacto: string(255)
+    telefono: string(255)
+    email: string(255)
+    states_id:
+      type: integer
+      notnull: false
+    lista_cuestionario_id:
+      type: integer
+      notnull: false
+    empresa_sector_uno_id:
+      type: integer
+      notnull: false
+    empresa_sector_dos_id:
+      type: integer
+      notnull: false
+    empresa_sector_tres_id:
+      type: integer
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: false
+    concurso_id: { type: integer }
+    featured:
+      type: boolean
+    featured_order:
+      type: integer(5)
+
+
+  indexes:
+    lista_index:
+      fields: [ lista ]
+
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: set null
+      onUpdate: cascade
+      foreignType: one
+      foreignAlias: User
+
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    Localidad:
+      class: City
+      local: localidad_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    ListaCuestionario:
+      local: lista_cuestionario_id
+      foreign: id
+      alias: Cuestionario
+      type: one
+      foreignAlias: Empresa
+
+    EmpresaSectorUno:
+      local: empresa_sector_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorDos:
+      local: empresa_sector_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorTres:
+      local: empresa_sector_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    Concurso:
+      alias: concursoDestacado
+
+
+EmpresaDestacada:
+  columns:
+    empresa_id: integer
+    empresa_sector_uno_id: integer
+    empresa_sector_dos_id: integer
+    empresa_sector_tres_id: integer
+    localidad_id: integer
+    states_id: integer
+    rank: integer
+    combinado: { type: integer, default: 0  } # 0 none, 1 provincia+sector, 2 localidad+sector
+
+  relations:
+    Empresa:
+      foreignAlias: EmpresaDestacada
+    EmpresaSectorUno:
+      foreignAlias: EmpresasDestacadas
+    EmpresaSectorDos:
+      foreignAlias: EmpresasDestacadas
+    EmpresaSectorTres:
+      foreignAlias: EmpresasDestacadas
+
+CompanyCaseStudy:
+  tableName: company_case_study
+  actAs:
+    Timestampable: ~
+
+  columns:
+    status: { type: integer(5), default: 1 , notnull: true }
+    name: { type: string(70), notnull: true }
+    road_type_id: { type: integer, notnull: false }
+    direccion: { type: string(70), notnull: false }
+    numero: {  type: string(50), notnull: false }   #lo siento pero lo necesito así
+    piso: string(50)
+    puerta: string(50)
+    states_id:
+      type: integer
+      notnull: false
+    city_id: { type: integer, notnull: false }
+    empresa_sector_uno_id:
+      type: integer
+      notnull: false
+    empresa_sector_dos_id:
+      type: integer
+      notnull: false
+    empresa_sector_tres_id:
+      type: integer
+      notnull: false
+    description: varchar(43000)
+    summary: varchar(8300)
+    file1: varchar(100)
+    file2: varchar(100)
+    file3: varchar(100)
+    file4: varchar(100)
+    logo: varchar(100)
+  relations:
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    Localidad:
+      class: City
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    EmpresaSectorUno:
+      local: empresa_sector_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorDos:
+      local: empresa_sector_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorTres:
+      local: empresa_sector_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+
+UserCompanyCaseStudy:
+  tableName: user_company_case_study
+  actAs:
+    Timestampable: ~
+  columns:
+    status: { type: integer(5), default: 1 , notnull: true }
+    user_name : { type: string(50), notnull: true }
+    user_id : { type: integer(7), notnull: true }
+    name: { type: string(70), notnull: true }
+    road_type_id: { type: integer, notnull: false }
+    direccion: { type: string(70), notnull: false }
+    numero: {  type: string(50), notnull: false }   #lo siento pero lo necesito así
+    piso: string(50)
+    puerta: string(50)
+    states_id:
+      type: integer
+      notnull: false
+    city_id: { type: integer, notnull: false }
+    empresa_sector_uno_id:
+      type: integer
+      notnull: false
+    empresa_sector_dos_id:
+      type: integer
+      notnull: false
+    empresa_sector_tres_id:
+      type: integer
+      notnull: false
+    description: varchar(43000)
+    summary: varchar(8300)
+    file1: varchar(100)
+    file2: varchar(100)
+    file3: varchar(100)
+    file4: varchar(100)
+    logo: varchar(100)
+
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    Localidad:
+      class: City
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    EmpresaSectorUno:
+      local: empresa_sector_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorDos:
+      local: empresa_sector_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorTres:
+      local: empresa_sector_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+UserCompanyCaseStudyRequest:
+  tableName: user_company_case_study_request
+  actAs:
+    Timestampable: ~
+  columns:
+    status: { type: integer(5), default: 1 }
+    user_name : { type: string(50), notnull: true }
+    user_id : { type: integer(7), notnull: true }
+    name: { type: string(50), notnull: true }
+    homepage: { type: string(50), notnull: false }
+    road_type_id: { type: integer, notnull: false }
+    direccion: { type: string(70), notnull: false }
+    numero: {  type: string(50), notnull: false }   #lo siento pero lo necesito así
+    piso: string(50)
+    puerta: string(50)
+    states_id:
+      type: integer
+      notnull: false
+    city_id: { type: integer, notnull: false }
+    cp: {type: string(5), notnull: false }
+    empresa_sector_uno_id:
+      type: integer
+      notnull: false
+    empresa_sector_dos_id:
+      type: integer
+      notnull: false
+    empresa_sector_tres_id:
+      type: integer
+      notnull: false
+    description: varchar(43000)
+    summary: varchar(8300)
+    file1: varchar(100)
+    file2: varchar(100)
+    file3: varchar(100)
+    file4: varchar(100)
+    logo: varchar(100)
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    Localidad:
+      class: City
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    EmpresaSectorUno:
+      local: empresa_sector_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorDos:
+      local: empresa_sector_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorTres:
+      local: empresa_sector_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE

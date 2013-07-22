@@ -1,0 +1,14 @@
+all: 
+  default:
+    mailfrom: info@auditoscopia.com
+
+#  sf_guard_plugin:
+#    algorithm_callable: [MyCryptoClass, MyCryptoMethod]
+    
+  recaptcha_public_key: 6Lcflc8SAAAAACaCvJ3IDx6kRRJJBlQTSzEv9Iml
+  recaptcha_private_key: 6Lcflc8SAAAAANgEKm3dhCxwCBeBT4uw_DYVIHBr
+  
+  sfApplyPlugin:
+    apply_subject_welcome: 'Bienvenid@ a auditoscopia' 
+    apply_subject_new: 'Confirmación datos de colaborador - auditoscopia'
+    reset_subject:  'Cambio de contraseña – auditoscopia'         

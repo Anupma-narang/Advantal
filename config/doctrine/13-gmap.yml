@@ -1,0 +1,35 @@
+GoogleMap:
+  columns:
+    address: string(255)
+    lat: decimal(10,6)
+    lng: decimal(10,6)
+    zoom: integer
+    marker_lat: decimal(10,6)
+    marker_lng: decimal(10,6)
+    empresa_id: integer
+
+  relations:
+    Empresa:
+      local: empresa_id
+      foreign: id
+      foreignType: one
+      onDelete: cascade
+      foreignAlias: googleMap
+      
+ProfesionalGoogleMap:
+  columns:
+    address: string(255)
+    lat: decimal(10,6)
+    lng: decimal(10,6)
+    zoom: integer
+    marker_lat: decimal(10,6)
+    marker_lng: decimal(10,6)
+    profesional_id: integer
+
+  relations:
+    Profesional:
+      local: profesional_id
+      foreign: id
+      foreignType: one
+      onDelete: cascade
+      foreignAlias: profesionalGoogleMap

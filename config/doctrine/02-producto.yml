@@ -1,0 +1,268 @@
+Producto:
+  tableName: producto
+  actAs:
+    Sluggable:
+        fields: [name, marca, modelo]
+        unique: true
+        canUpdate: true
+    Timestampable: ~
+
+  columns:
+    name:
+      type: string(100)
+      notnull: true
+    marca:
+      type: string(100)
+      notnull: false
+    modelo:
+      type: string(100)
+      notnull: false
+    valida: { type: integer, size: 2, default: 0 }
+    lista: { type: string(255) }
+    dividendo: { type: integer, default: 0 }
+    divisor: { type: integer, default: 0 }
+    comentario_inicial: longtext
+    lista_cuestionario_id: { type: integer, notnull: false }
+    texto_lista_negra: longtext
+    persona_contacto: string(255)
+    email: string(255)
+    telefono: string(9)
+
+    producto_tipo_uno_id:
+      type: integer
+      notnull: false
+    producto_tipo_dos_id:
+      type: integer
+      notnull: false
+    producto_tipo_tres_id:
+      type: integer
+      notnull: false
+    concurso_id:
+      type: integer
+      notnull: false
+    featured:
+      type: boolean
+    featured_order:
+      type: integer(5)
+
+  relations:
+    ProductoTipoUno:
+      local: producto_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoDos:
+      local: producto_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoTres:
+      local: producto_tipo_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ListaCuestionario:
+      alias: Cuestionario
+      type: one
+      foreignAlias: Productos
+
+    Concurso:
+      alias: concursoDestacado
+
+  indexes:
+    lista_index:
+      fields: [ lista ]
+
+ProductoDestacado:
+  columns:
+    producto_id: integer
+    producto_tipo_dos_id: integer
+    producto_tipo_tres_id: integer
+    name: string(255)
+    marca: string(255)
+    rank: integer
+    combinado: { type: integer, default: 0 }
+
+  relations:
+    Producto:
+      foreignAlias: ProductoDestacado
+    ProductoTipoDos:
+      foreignAlias: EmpresasDestacadas
+    ProductoTipoTres:
+      foreignAlias: EmpresasDestacadas
+
+ProductCaseStudy:
+  tableName: product_case_study
+  actAs:
+    Timestampable: ~
+
+  columns:
+    status: { type: integer(5), default: 1 }
+    name:
+      type: string(70)
+      notnull: true
+    marca:
+      type: string(70)
+      notnull: false
+    modelo:
+      type: string(20)
+      notnull: false
+
+    producto_tipo_uno_id:
+      type: integer
+      notnull: false
+    producto_tipo_dos_id:
+      type: integer
+      notnull: false
+    producto_tipo_tres_id:
+      type: integer
+      notnull: false
+    description: varchar(43000)
+    summary: varchar(8300)
+    file1: varchar(100)
+    file2: varchar(100)
+    file3: varchar(100)
+    file4: varchar(100)
+    logo: varchar(100)
+  relations:
+    ProductoTipoUno:
+      local: producto_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoDos:
+      local: producto_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoTres:
+      local: producto_tipo_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+UserProductCaseStudy:
+  tableName: user_product_case_study
+  actAs:
+    Timestampable: ~
+
+  columns:
+    status: { type: integer(5), default: 1 }
+    user_name :
+      type: string(50)
+      notnull: true
+    user_id : { type: integer(7), notnull: true }
+    name:
+      type: string(100)
+      notnull: true
+
+    marca:
+      type: string(100)
+      notnull: false
+    modelo:
+      type: string(100)
+      notnull: false
+
+    producto_tipo_uno_id:
+      type: integer
+      notnull: false
+    producto_tipo_dos_id:
+      type: integer
+      notnull: false
+    producto_tipo_tres_id:
+      type: integer
+      notnull: false
+    description: varchar(43000)
+    summary: varchar(8300)
+    file1: varchar(100)
+    file2: varchar(100)
+    file3: varchar(100)
+    file4: varchar(100)
+    logo: varchar(100)
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    ProductoTipoUno:
+      local: producto_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoDos:
+      local: producto_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoTres:
+      local: producto_tipo_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+UserProductCaseStudyRequest:
+  tableName: user_product_case_study_request
+  actAs:
+    Timestampable: ~
+
+  columns:
+    status: { type: integer(5), default: 1 }
+    user_name:
+      type: string(100)
+      notnull: true
+    user_id : { type: integer(7), notnull: true }
+    name:
+      type: string(70)
+      notnull: true
+    homepage:
+      type: string(100)
+      notnull: true
+    marca:
+      type: string(100)
+      notnull: false
+    modelo:
+      type: string(100)
+      notnull: false
+    producto_tipo_uno_id:
+      type: integer
+      notnull: false
+    producto_tipo_dos_id:
+      type: integer
+      notnull: false
+    producto_tipo_tres_id:
+      type: integer
+      notnull: false
+    description: varchar(43000)
+    summary: varchar(8300)
+    file1: varchar(100)
+    file2: varchar(100)
+    file3: varchar(100)
+    file4: varchar(100)
+    logo: varchar(100)
+
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    ProductoTipoUno:
+      local: producto_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoDos:
+      local: producto_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoTres:
+      local: producto_tipo_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE

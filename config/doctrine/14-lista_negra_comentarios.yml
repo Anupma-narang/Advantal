@@ -1,0 +1,20 @@
+ComentarioListaNegra:
+  actAs:
+    Timestampable: ~
+
+  columns:
+    comentario: string
+    sf_guard_user_id: integer
+    producto_id: integer
+    empresa_id: integer
+    aprobado: { type: boolean, default: false, notnull: true }
+
+  relations:
+    Producto:
+      foreignAlias: ComentariosListaNegra
+    Empresa:
+      foreignAlias: ComentariosListaNegra
+
+    sfGuardUser:
+      alias: User
+

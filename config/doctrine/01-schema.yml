@@ -1,0 +1,2513 @@
+ColaboradorNivelUno:
+  tableName: colaborador_nivel_uno
+  columns:
+    name:
+      type: string(50)
+      notnull: true
+    value:
+      type: string(50)
+      notnull: true
+    orden:
+      type: string(100)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+
+ColaboradorNivelDos:
+  tableName: colaborador_nivel_dos
+  columns:
+    name:
+      type: string(50)
+      notnull: true
+    value:
+      type: string(50)
+      notnull: true
+    orden:
+      type: string(100)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    colaborador_nivel_uno_id:
+      type: integer
+      notnull: true
+  relations:
+    ColaboradorNivelUno:
+      local: colaborador_nivel_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ColaboradorEstilos:
+  tableName: colaborador_estilos
+  columns:
+    name:
+      type: string(150)
+      notnull: true
+
+Concurso:
+  tableName: concurso
+  columns:
+    name:
+      type: string(100)
+      notnull: true
+    incidencia:
+      type: string(2147483647)
+      notnull: true
+    concurso_estado_id:
+      type: integer
+      notnull: true
+    concurso_tipo_id:
+      type: integer
+      notnull: true
+    empresa_id:
+      type: integer
+      notnull: false
+    producto_id:
+      type: integer
+      notnull: false
+    concurso_categoria_id:
+      type: integer
+      notnull: false
+    fecha_activacion:
+      type: date
+      notnull: false
+    fecha_referendum:
+      type: date
+      notnull: false
+    fecha_revision:
+      type: datetime
+      notnull: false
+    fecha_deliberacion:
+      type: datetime
+      notnull: false
+    fecha_observacion:
+      type: datetime
+      notnull: false
+    fecha_cerrado:
+      type: datetime
+      notnull: false
+    fecha_rechazado:
+      type: datetime
+      notnull: false
+    fecha_nulo:
+      type: datetime
+      notnull: false
+    revision_last_state_id:
+      type: integer
+      notnull: false
+    road_type_id:
+      type: integer
+      notnull: false
+    states_id:
+      type: integer
+      notnull: false
+    city_id:
+      type: integer
+      notnull: false
+    concurso_address:
+      type: string(250)
+      notnull: false
+    concurso_numero:
+      type: string(6)
+      notnull: true
+    concurso_piso:
+      type: string(4)
+      notnull: false
+    concurso_puerta:
+      type: string(6)
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: true
+    destacado:
+      type: boolean
+      notnull: true
+      default: false
+    fecha_destacado:
+      type: date
+      notnull: false
+    cuestionario_id:
+      type: integer
+      notnull: false
+    cuestionario_total:
+      type: integer
+      default: 0
+    featured:
+      type: boolean
+    featured_order:
+      type: integer(5)
+      
+
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      #foreignAlias: Profile
+    ConcursoCategoria:
+      local: concurso_categoria_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    City:
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ConcursoTipo:
+      local: concurso_tipo_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ConcursoEstado:
+      local: concurso_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Empresa:
+      local: empresa_id
+      foreign: id
+      type: one
+      foreignType: one
+    Producto:
+      local: producto_id
+      foreign: id
+      type: one
+
+    Contribuciones:
+      class:        Contribucion
+      local:        id
+      foreign:      concurso_id
+      type:         many
+  actAs:
+    Timestampable:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+
+ConcursoArchivo:
+  tableName: concurso_archivo
+  columns:
+    concurso_id:
+      type: integer
+      notnull: true
+    file:
+      type: string(255)
+      notnull: false
+  relations:
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+
+ContribucionArchivo:
+  tableName: contribucion_archivo
+  columns:
+    contribucion_id:
+      type: integer
+      notnull: true
+    file:
+      type: string(255)
+      notnull: false
+  relations:
+    Contribucion:
+      local: contribucion_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: cascade
+
+ConcursoRevision:
+  tableName: concurso_revision
+  columns:
+
+    concurso_id:
+      type: integer
+      notnull: true
+    fecha_inicio:
+      type: date
+      notnull: true
+    fecha_fin:
+      type: date
+      notnull: false
+
+ConcursoHistorico:
+  tableName: concurso_historico
+  columns:
+
+    concurso_id:
+      type: integer
+      notnull: true
+    date:
+      type: datetime
+      notnull: true
+    estado_inicial:
+      type: integer(3)
+      notnull: true
+    estado_final:
+      type: integer(3)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ConcursoEstado:
+  tableName: concurso_estado
+  columns:
+
+    value:
+      type: string(50)
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+
+ContribucionEstado:
+  tableName: contribucion_estado
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+
+ConcursoCategoria:
+  tableName: concurso_categoria
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    concurso_tipo_id:
+      type: integer
+      notnull: true
+    image:
+     type: string(255)
+     notnull: false
+    orden:
+      type: integer
+      notnull: true
+  relations:
+    ConcursoTipo:
+      local: concurso_tipo_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ConcursoTipo:
+  tableName: concurso_tipo
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    value:
+      type: string((100)
+      notnull: true
+
+Contribucion:
+  tableName: contribucion
+  columns:
+    name:
+      type: string(100)
+      notnull: true
+    concurso_id:
+      type: integer
+      notnull: true
+    contribucion_estado_id:
+      type: integer
+      notnull: true
+    incidencia:
+      type: string(2147483647)
+      notnull: true
+    plan_accion:
+      type: string(2147483647)
+      notnull: true
+    resumen:
+      type: string(2147483647)
+      notnull: true
+    principal:
+      type: boolean
+      notnull: true
+    numero:
+      type: integer
+      notnull: true
+      default: 1
+    user_id:
+      type: integer(5)
+      notnull: true
+    destacado:
+      type: boolean
+      notnull: true
+    fecha_destacado:
+      type: date
+      notnull: false
+  indexes:
+    idx_concurso_numero:
+      fields: [concurso_id, numero]
+      type: unique
+  actAs:
+    Timestampable:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  relations:
+    User:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onDelete: cascade
+    ContribucionEstado:
+      local: contribucion_estado_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+
+EmpresaSectorUno:
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  tableName: empresa_sector_uno
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    value:
+      type: string(60)
+      notnull: true
+    orden:
+      type: integer
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+
+EmpresaSectorDos:
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  tableName: empresa_sector_dos
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    value:
+      type: string(60)
+      notnull: true
+    orden:
+      type: integer
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    empresa_sector_uno_id:
+      type: integer
+      notnull: true
+  relations:
+    EmpresaSectorUno:
+      local: empresa_sector_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+EmpresaSectorTres:
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  tableName: empresa_sector_tres
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    value:
+      type: string(60)
+      notnull: true
+    orden:
+      type: integer
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    empresa_sector_uno_id:
+      type: integer
+      notnull: true
+    empresa_sector_dos_id:
+      type: integer
+      notnull: true
+  relations:
+    EmpresaSectorUno:
+      local: empresa_sector_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    EmpresaSectorDos:
+      local: empresa_sector_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+Fichero:
+  tableName: fichero
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    file:
+      type: string(255)
+      notnull: true
+    contribucion_id:
+      type: integer
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    Contribucion:
+      local: contribucion_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ConcursoReferendum:
+  tableName: concurso_referendum
+  columns:
+    concurso_id:
+     type: integer
+     notnull: true
+    contribucion_id:
+      type: integer
+      notnull: true
+    value:
+      type: integer(1)
+      notnull: true
+    user_id:
+      type: integer(5)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    sfGuardUser:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+    Contribucion:
+      local: contribucion_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: cascade
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: cascade
+
+MesaRedonda:
+  tableName: mesa_redonda
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    fecha_activacion:
+      type: date
+      notnull: false
+    mesaredonda_estado_id:
+      type: integer
+      notnull: false
+    fecha_referendum:
+      type: date
+      notnull: false
+    mesaredonda_categoria_id:
+      type: integer
+      notnull: true
+    plan_accion:
+      type: string(2147483647)
+      notnull: true
+    resumen:
+      type: string(2147483647)
+      notnull: true
+  relations:
+    MesaredondaCategoria:
+      local: mesaredonda_categoria_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    MesaredondaEstado:
+      local: mesaredonda_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+  actAs:
+    Timestampable:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+
+MesaredondaCategoria:
+  tableName: mesaredonda_categoria
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    image:
+     type: string(255)
+     notnull: false
+
+MesaredondaPonencia:
+  tableName: mesaredonda_ponencia
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    asunto:
+      type: string(200)
+      notnull: true
+    mesa_redonda_id:
+      type: integer
+      notnull: true
+    plan_accion:
+      type: string(2147483647)
+      notnull: true
+    resumen:
+      type: string(2147483647)
+      notnull: true
+    fecha_alta:
+      type: date
+      notnull: false
+    mesaredonda_estado_id:
+      type: integer
+      notnull: true
+  relations:
+    MesaRedonda:
+      local: mesa_redonda_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    MesaredondaEstado:
+      local: mesaredonda_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+
+MesaredondaEstado:
+  tableName: mesaredonda_estado
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    value:
+      type: string(50)
+      notnull: false
+
+MesaredondaReferendum:
+  tableName: mesaredonda_referendum
+  columns:
+
+    mesa_redonda_id:
+     type: integer
+     notnull: true
+    mesaredonda_ponencia_id:
+      type: integer
+      notnull: true
+    value:
+      type: integer(3)
+      notnull: false
+  actAs:
+    Timestampable:
+  relations:
+    MesaredondaPonencia:
+      local: mesaredonda_ponencia_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    MesaRedonda:
+      local: mesa_redonda_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+FormacionAcademica:
+  tableName: formacion_academica
+  columns:
+
+    nombre:
+      type: string(50)
+      notnull: true
+
+ProfesionalTipoUno:
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  tableName: profesional_tipo_uno
+  columns:
+
+    name:
+      type: string(70)
+      notnull: true
+    value:
+      type: string(50)
+      notnull: false
+    orden:
+      type: integer(5)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+
+ProfesionalTipoDos:
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  tableName: profesional_tipo_dos
+  columns:
+
+    name:
+      type: string(70)
+      notnull: true
+    value:
+      type: string(50)
+      notnull: false
+    orden:
+      type: integer(5)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    profesional_tipo_uno_id:
+      type: integer
+      notnull: true
+  relations:
+    ProfesionalTipoUno:
+      local: profesional_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ProfesionalTipoTres:
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  tableName: profesional_tipo_tres
+  columns:
+
+    name:
+      type: string(70)
+      notnull: true
+    value:
+      type: string(50)
+      notnull: false
+    orden:
+      type: integer(5)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    profesional_tipo_uno_id:
+      type: integer
+      notnull: false
+    profesional_tipo_dos_id:
+      type: integer
+      notnull: false
+  relations:
+    ProfesionalTipoUno:
+      local: profesional_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalTipoDos:
+      local: profesional_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+Pd:
+  tableName: pd
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    road_type_id:
+      type: integer
+      notnull: true
+    direccion:
+      type: string(50)
+      notnull: false
+    localidad:
+      type: string(50)
+      notnull: false
+    codigopostal:
+      type: string(10)
+      notnull: false
+    states_id:
+      type: integer
+      notnull: false
+    profesional_tipo_uno_id:
+      type: integer
+      notnull: true
+    profesional_tipo_dos_id:
+      type: integer
+      notnull: true
+    profesional_tipo_tres_id:
+      type: integer
+      notnull: true
+  relations:
+    ProfesionalTipoUno:
+      local: profesional_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalTipoDos:
+      local: profesional_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalTipoTres:
+      local: profesional_tipo_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+  actAs:
+    Timestampable:
+
+PdAproDespro:
+  tableName: pd_apro_despro
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+PdActivaDesa:
+  tableName: pd_activa_desa
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+PdEstadoCarta:
+  tableName: pd_estado_carta
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    description:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+PdCarta:
+  tableName: pd_carta
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    description:
+      type: string(2147483647)
+      notnull: false
+    plan_accion:
+      type: string(2147483647)
+      notnull: false
+    pd_estado_carta_id:
+      type: integer
+      notnull: true
+    pd_activa_desa_id:
+      type: integer
+      notnull: true
+    pd_apro_despro_id:
+      type: integer
+      notnull: true
+    pd_id:
+      type: integer
+      notnull: true
+  relations:
+    PdEstadoCarta:
+      local: pd_estado_carta_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    PdActivaDesa:
+      local: pd_activa_desa_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    PdAproDespro:
+      local: pd_apro_despro_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Pd:
+      local: pd_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+  actAs:
+    Timestampable:
+
+
+ProductoTipoUno:
+  tableName: producto_tipo_uno
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+
+  columns:
+    orden:
+      type: integer
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+
+ProductoTipoDos:
+  tableName: producto_tipo_dos
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  columns:
+    orden:
+      type: integer
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    producto_tipo_uno_id:
+      type: integer
+      notnull: true
+  relations:
+    ProductoTipoUno:
+      local: producto_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ProductoTipoTres:
+  tableName: producto_tipo_tres
+
+  actAs:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+
+  columns:
+    orden:
+      type: integer
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+    image:
+      type: string(100)
+      notnull: false
+    producto_tipo_uno_id:
+      type: integer
+      notnull: true
+    producto_tipo_dos_id:
+      type: integer
+      notnull: true
+  relations:
+    ProductoTipoUno:
+      local: producto_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProductoTipoDos:
+      local: producto_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+RoadType:
+  tableName: road_type
+  columns:
+    value:
+      type: string(50)
+      notnull: true
+    orden:
+      type: integer
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+States:
+  tableName: states
+  columns:
+    name:
+      type: string(100)
+      notnull: true
+    orden:
+      type: integer(5)
+      notnull: false
+
+City:
+  tableName: city
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    is_capital:
+      type: boolean
+      notnull: true
+      default: 0
+    states_id:
+      type: integer
+      notnull: true
+  relations:
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+TipoDocumento:
+  tableName: tipo_documento
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+
+sfGuardUserProfile:
+  tableName: sf_guard_user_profile
+  columns:
+    id:
+      name: id as user_id
+      type: integer(5)
+      primary: true
+      autoincrement: true
+#    id:
+#      type: integer(4)
+#      primary: true
+#      autoincrement: true
+#    user_id:
+#      type: integer(5)
+#      notnull: true
+    email:
+      type: string(80)
+    name:
+      type: string(80)
+    surname1:
+      type: string(80)
+      notnull: true
+    surname2:
+      type: string(80)
+      notnull: true
+    active:
+      type: string(5)
+    fecha_nac:
+      type: date
+      notnull: false
+    validate:
+      type: string(17)
+    image:
+      type: string(100)
+      notnull: false
+    direccion:
+      type: string(100)
+      notnull: false
+    numero:
+      type: string(6)
+      notnull:  false
+    piso:
+      type: string(4)
+      notnull:  false
+    puerta:
+      type: string(6)
+      notnull:  false
+    cp:
+      type: char(5)
+      notnull:  false
+    telefono:
+      type: string(12)
+    colaborador_nivel_uno_id:
+      type: integer
+      notnull: false
+    colaborador_nivel_dos_id:
+      type: integer
+      notnull: false
+    metodo_cobro_id: { type: integer, notnull: false, default: 1 }
+    rank:
+      type: integer(7)
+      notnull: true
+    accumulated_points:
+      type: integer(20)
+      notnull: true
+    hierarchy:
+      type: integer(7)
+      notnull: true
+      default: 1
+    change_points:
+      type: integer(20)
+      notnull: true
+    money:
+      type: decimal(20,10)
+      notnull: true
+    money_sum:
+      type: decimal(20,10)
+      notnull: true
+    # Don't forget this!
+    road_type_id:
+      type: integer
+      notnull: false
+    states_id:
+      type: integer
+      notnull: true
+    city_id:
+      type: integer
+      notnull: false
+    sex:
+      type: string(10)
+      notnull: true
+    formacion_academica_id:
+      type: integer
+      notnull: false
+    is_online:
+      type: boolean
+      notnull: true
+      default: false
+    is_blocked:
+      type: boolean
+      default: false
+    blocked_limit:
+      type: integer
+      default: 0
+
+  relations:
+    User:
+     class: sfGuardUser
+     foreignType: one
+     onDelete: cascade
+     foreignAlias: Profile
+     foreign: id
+     local: user_id
+
+#    User:
+#     class: sfGuardUser
+#     foreign: id
+#     local: user_id
+#     type: one
+#     onDelete: cascade
+#     foreignType: one
+#     foreignAlias: Profile
+
+    FormacionAcademica:
+      local: formacion_academica_id
+      foreign:  id
+      type: one
+      onUpdate: CASCADE
+    ColaboradorNivelUno:
+     local: colaborador_nivel_uno_id
+     foreign: id
+     type: one
+     onUpdate: CASCADE
+    ColaboradorNivelDos:
+     local: colaborador_nivel_dos_id
+     foreign: id
+     type: one
+     onUpdate: CASCADE
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    City:
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    MetodoCobro:
+      local: metodo_cobro_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+#    Jerarquia:
+#      local: hierarchy
+#      foreign: id
+#      type: one
+#      onUpdate: CASCADE
+#    Notification:
+#      type: many
+#      class: UserNotification
+#      local: user_id
+#      foreign: user_id
+#      onDelete: CASCADE
+
+sfGuardUserData:
+  tableName: sf_guard_user_data
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(5)
+      notnull: true
+    name:
+      type: string(80)
+    user_data:
+      type: array
+      notnull: true
+  indexes:
+    idx_userid_name:
+      fields: [user_id, name]
+      type: unique
+  relations:
+    User:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignAlias: User
+     foreignType: many
+
+MetodoCobro:
+  tableName: metodo_cobro
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    metodo: { type: string(50), notnull: true }
+
+MetodoPaypal:
+  tableName: metodo_paypal
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    tipo_documento_id: { type: integer, notnull: true}
+    nifnie: { type: string(12), notnull: true }
+    user_id: { type: integer(5), notnull: true }
+    usuario: { type: string(32), notnull: true }
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      foreignAlias: User
+    TipoDocumento:
+     local: tipo_documento_id
+     foreign: id
+     type: one
+     onUpdate: CASCADE
+
+MetodoBanco:
+  tableName: metodo_banco
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    user_id: { type: integer(5), notnull: true }
+    tipo_documento_id: { type: integer, notnull: true}
+    nifnie: { type: string(12), notnull: true }
+    titular_name: { type: string(80), notnull: true }
+    surname1: { type: string(80), notnull: true }
+    surname2: { type: string(80), notnull: true }
+    cuenta_entidad: { type: string(4), notnull: true }
+    cuenta_oficina: { type: string(4), notnull: true }
+    cuenta_dc: { type: string(2), notnull: true }
+    cuenta_numero: { type: string(10), notnull: true }
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      foreignAlias: User
+    TipoDocumento:
+     local: tipo_documento_id
+     foreign: id
+     type: one
+     onUpdate: CASCADE
+
+ConcursoCp:
+  tableName: concurso_cp
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    incidencia:
+      type: string(2147483647)
+      notnull: true
+    concurso_estado_id:
+      type: integer
+      notnull: true
+    concurso_tipo_id:
+      type: integer
+      notnull: true
+    empresa_id:
+      type: integer
+      notnull: false
+    producto_id:
+      type: integer
+      notnull: false
+    concurso_categoria_id:
+      type: integer
+      notnull: false
+    fecha_activacion:
+      type: date
+      notnull: false
+    fecha_referendum:
+      type: date
+      notnull: false
+    road_type_id:
+      type: integer
+      notnull: false
+    states_id:
+      type: integer
+      notnull: false
+    city_id:
+      type: integer
+      notnull: false
+    concurso_address:
+      type: string(250)
+      notnull: false
+    concurso_code:
+      type: string(5)
+      notnull: false
+    concurso_otra:
+      type: string(9)
+      notnull: false
+    mail:
+      type: string(100)
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: true
+    destacado:
+      type: boolean
+      notnull: true
+      default: false
+    fecha_destacado:
+      type: date
+      notnull: false
+  actAs:
+    Timestampable:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  relations:
+    ConcursoCategoria:
+     local: concurso_categoria_id
+     foreign: id
+     type: one
+     onUpdate: CASCADE
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    City:
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ConcursoTipo:
+      local: concurso_tipo_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ConcursoEstado:
+      local: concurso_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      foreignAlias: User
+    Empresa:
+      local: empresa_id
+      foreign: id
+      type: one
+    Producto:
+      local: producto_id
+      foreign: id
+      type: one
+    ContribucionesCp:
+      class:        ContribucionCp
+      local:        id
+      foreign:      concurso_id
+      type:         many
+
+ConcursoCpArchivo:
+  tableName: concurso_cp_archivo
+  columns:
+    concurso_id:
+      type: integer
+      notnull: true
+    file:
+      type: string(255)
+      notnull: false
+  relations:
+    ConcursoCp:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ContribucionCpArchivo:
+  tableName: contribucion_cp_archivo
+  columns:
+    contribucion_id:
+      type: integer
+      notnull: true
+    file:
+      type: string(255)
+      notnull: false
+  relations:
+    ContribucionCp:
+      local: contribucion_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ContribucionCp:
+  tableName: contribucion_cp
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    concurso_cp_id:
+      type: integer
+      notnull: true
+    contribucion_estado_id:
+      type: integer
+      notnull: true
+    incidencia:
+      type: string(2147483647)
+      notnull: true
+    plan_accion:
+      type: string(2147483647)
+      notnull: true
+    resumen:
+      type: string(2147483647)
+      notnull: true
+    principal:
+      type: boolean
+      notnull: true
+    user_id:
+      type: integer(5)
+      notnull: true
+    destacado:
+      type: boolean
+      notnull: true
+    fecha_destacado:
+      type: date
+      notnull: false
+  actAs:
+    Timestampable:
+    Sluggable: {fields: [name], uniqueBy: [id, name] }
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    ContribucionEstado:
+      local: contribucion_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ConcursoCp:
+      local: concurso_cp_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ConcursoReferendumCp:
+  tableName: concurso_referendum_cp
+  columns:
+    concurso_cp_id:
+     type: integer
+     notnull: true
+    contribucion_cp_id:
+      type: integer
+      notnull: true
+    value:
+      type: integer(1)
+      notnull: true
+    user_id:
+      type: integer(5)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    ContribucionCp:
+      local: contribucion_cp_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ConcursoCp:
+      local: concurso_cp_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+ComentarioCp:
+  tableName: comentario_cp
+  columns:
+
+    name:
+      type: string(255)
+      notnull: true
+    contenido:
+      type: string(2147483647)
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: true
+    concurso_cp_id:
+      type: integer
+      notnull: true
+    contribucion_cp_id:
+      type: integer
+      notnull: true
+    parent_id:
+      type: integer
+      notnull: false
+  relations:
+    Parent:
+      class: ComentarioCp
+      local: parent_id
+      foreign: id
+      foreignAlias: Subcomentario
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      foreignAlias: User
+    ConcursoCp:
+      local: concurso_cp_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ContribucionCp:
+      local: contribucion_cp_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+Rank:
+  tableName: rank
+  columns:
+
+    name:
+      type: string(255)
+      notnull: true
+    value:
+      type: integer(3)
+      notnull: true
+
+GanadoresConcursos:
+  tableName: ganadores_concursos
+  columns:
+
+    concurso_id:
+      type: integer
+      notnull: true
+    user_id:
+      type: integer(5)
+      notnull: true
+    position:
+      type: integer(1)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    sfGuardUser:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      
+Jerarquia:
+  tableName: jerarquia
+  columns:
+    name:
+      type: string(20)
+      notnull: true
+    points:
+      type: integer(7)
+      notnull: true
+Informa:
+  tableName: informa
+  columns:
+
+    user_id:
+      type: integer(5)
+      notnull: true
+    se_crea_un_concurso_para_producto:
+      type: string(100)
+      notnull: false
+    se_crea_un_concurso_para_empresa:
+      type: string(100)
+      notnull: false
+    un_concurso_en_el_que_contribuyes_finaliza_en_3_dias:
+      type: string(100)
+      notnull: false
+    una_mesa_redonda_en_el_que_contribuyes_finaliza_en_3_dias:
+      type: string(100)
+      notnull: false
+  actAs:
+    Timestampable:
+  relations:
+    sfGuardUser:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+
+TipoTiempo:
+  tableName: tipo_tiempo
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+ConcursosDestacadosTemporales:
+  tableName: concursos_destacados_temporales
+  columns:
+
+    concurso_id:
+      type: integer
+      notnull: true
+    tipo_tiempo_id:
+      type: integer
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    TipoTiempo:
+      local: tipo_tiempo_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+
+ProfesionalDestacadosTemporales:
+  tableName: profesional_destacados_temporales
+  columns:
+    profesional_id:
+      type: integer
+      notnull: true
+    tipo_tiempo_id:
+      type: integer
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    Profesional:
+      local: profesional_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+    TipoTiempo:
+      local: tipo_tiempo_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+
+ConcursoBeneficio:
+  tableName: concurso_beneficio
+  columns:
+
+    concurso_id:
+      type: integer
+      notnull: true
+    beneficio:
+      type: int(9)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+UserNotification:
+  tableName: user_notification
+  columns:
+
+    user_id:
+      type: integer
+      notnull: true
+    colaborador_contribuye_value:
+      type: boolean
+      default: false
+    concurso_empresa_value:
+      type: boolean
+      default: false
+    concurso_empresa_nombre:
+      type: string(50)
+      notnull: false
+    concurso_empresa_provincia_id:
+      type: integer
+      notnull: false
+    concurso_empresa_ciudad_id:
+      type: integer
+      notnull: false
+    concurso_producto_value:
+      type: boolean
+      default: false
+    concurso_producto_nombre:
+      type: string(50)
+      notnull: false
+    concurso_producto_marca:
+      type: string(50)
+      notnull: false
+    lista_blanca_value:
+      type: boolean
+      default: false
+    lista_negra_value:
+      type: boolean
+      default: false
+    publica_profesional_value:
+      type: boolean
+      default: false
+    publica_recomend_disaprov_value:
+      type: boolean
+      default: false
+    hash:
+      type: string(50)
+      notnull: false
+  relations:
+    States:
+      local: concurso_empresa_provincia_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    User:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+    City:
+      local: concurso_empresa_ciudad_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+Alertas:
+  tableName: alertas
+  actAs: { Timestampable: ~ }
+  columns:
+    view: { type: boolean, default: false }
+    entity: { type: integer, notnull: true }
+    type: { type: varchar, size: 40, notnull: true }
+    message: { type: varchar, size: 300, notnull: true }
+    user_related_id:  { type: integer, notnull: false }
+    url:  { type: varchar, size: 255, notnull: false }
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      foreign: id
+      local: user_related_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      foreignAlias: UserRelated
+
+ComentarioConcurso:
+  tableName: comentario_concurso
+  actAs:  { Timestampable: ~ }
+  columns:
+    concurso_id:
+      type: integer
+      notnull:  true
+    user_id:
+      type: integer
+      notnull:  true
+    mensaje:
+      type: mediumtext
+      notnull:  true
+  relations:
+    Concurso:
+      local: concurso_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    User:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+
+UsersOnlineYesterday:
+  tableName: users_online_yesterday
+  columns:
+    user_id:
+      type: integer
+      notnull:  true
+    logged_in:
+      type: date
+      notnull: true
+  relations:
+    User:
+     class: sfGuardUser
+     foreign: id
+     local: user_id
+     type: one
+     onDelete: cascade
+     foreignType: one
+     
+AlertasDeCaja:
+  tableName: alertas_de_caja
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    amount: float
+    created_at: timestamp
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+
+AdministrationCaja:
+  tableName: administration_caja
+  columns:
+    expiry_date: { type: varchar, size: 3, notnull: true }
+    points_per_cent: { type : integer(1), notnull: true }
+    
+AdministrationEmails:
+  tableName: administration_emails
+  columns:
+    user_id: { type: integer(7), notnull: true }
+    email: { type: varchar(70), notnull: true }
+    permission_id: { type: integer(7), notnull: false }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      type: one
+      onDelete: cascade
+    Permission:
+      class: sfGuardPermission
+      local: permission_id
+      foreign: id
+      type: one
+      onDelete: cascade
+    
+RewardLog:
+  tableName: reward_log
+  columns:
+    user_id: { type : integer }
+    hierarchy: { type: integer(7) }
+    cash:  decimal(20,10) 
+    gift: { type : varchar(70) }
+    descroption: { type: varchar, size: 32 }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    Jerarquia:
+      local: hierarchy
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      
+Gift:
+  tableName: gift
+  columns:
+    name: { type: varchar(70), notnull: true }
+    image: { type: varchar(100), notnull: true }
+    require_points: { type: integer(5), notnull: true }
+    hierarchy: {type: integer(7), notnull: true }
+    features: { type: varchar(3000), notnull: true }
+    orden: { type: integer(5), notnull: false }
+    featured:
+      type: boolean
+    featured_order:
+      type: integer(5)
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    Jerarquia:
+      local: hierarchy
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      
+GiftRedemption:
+  tableName: gift_redemption
+  columns:
+    name: { type: varchar(32), notnull: false }
+    surname1: { type: varchar(32), notnull: false }
+    surname2: { type: varchar(32), notnull: false }
+    road_type: { type: varchar(32), notnull: true }
+    address: { type: varchar(70), notnull: true }
+    number: { type: varchar(6), notnull: true }
+    floor: { type: varchar(4), notnull: false }
+    door: { type: varchar(6), notnull: false }
+    states_id: { type: integer(7), notnull: true }
+    city_id: { type: integer(7), notnull: false }
+    cp: { type: varchar(5), notnull: false }
+    contact_number: { type: varchar(9), notnull: false }
+    delivery_time: { type: integer(7), notnull false }
+    gift: { type: integer(7), notnull: true }
+    user: { type: integer(7), notnull: true }
+    status: { type: integer(2), notnull: false, default: 1 }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    Gift:
+      local: gift
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    sfGuardUser:
+      local: user
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    City:
+      local: city_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+
+ComapnyFavouriteList:
+  tableName: company_favourite_list    
+  columns: 
+    user_id: { type: integer(7),  notnull: true }
+    company_id: { type: integer(7),  notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Empresa:
+      local: company_id
+      foreign: id
+      type: one
+      foreignType: one
+      
+ProductFavouriteList:
+  tableName: product_favourite_list    
+  columns: 
+    user_id: { type: integer(7),  notnull: true }
+    product_id: { type: integer(7),  notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Producto:
+      local: product_id
+      foreign: id
+      type: one
+    
+    
+
+ComapnyContestFavouriteList:
+  tableName: company_contest_favourite_list    
+  columns: 
+    user_id: { type: integer(7),  notnull: true }
+    contest_id: { type: integer(7),  notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Concurso:
+      local: contest_id
+      foreign: id
+      type: one
+      foreignType: one
+      
+ProductContestFavouriteList:
+  tableName: product_contest_favourite_list    
+  columns: 
+    user_id: { type: integer(7),  notnull: true }
+    contest_id: { type: integer(7),  notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Concurso:
+      local: contest_id
+      foreign: id
+      type: one
+    
+GiftFavouriteList:
+  tableName: gift_favourite_list    
+  columns: 
+    user_id: { type: integer(7),  notnull: true }
+    gift_id: { type: integer(7),  notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Gift:
+      local: gift_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+
+Profesional:
+  tableName: profesional
+  columns:
+    first_name:
+      type: string(100)
+      notnull: true
+    last_name_one:
+      type: string(100)
+      notnull: true
+    last_name_two:
+      type: string(100)
+      notnull: true
+    address:
+      type: string(70)
+      notnull: false
+    numero:
+      type: string(6)
+      notnull: true
+    piso:
+      type: string(3)
+      notnull: false
+    puerta:
+      type: string(6)
+      notnull: false
+    telefono:
+      type: string(9)
+      notnull: false
+    email:
+      type: string(70)
+      notnull: false
+    destacado:
+      type: boolean
+      notnull: true
+      default: false
+    fecha_destacado:
+      type: date
+      notnull: false
+    fecha_activacion:
+      type: date
+      notnull: false
+    fecha_referendum:
+      type: date
+      notnull: false
+    fecha_revision:
+      type: datetime
+      notnull: false
+    fecha_deliberacion:
+      type: datetime
+      notnull: false
+    fecha_observacion:
+      type: datetime
+      notnull: false
+    fecha_cerrado:
+      type: datetime
+      notnull: false
+    fecha_rechazado:
+      type: datetime
+      notnull: false
+    fecha_nulo:
+      type: datetime
+      notnull: false
+    revision_last_state_id:
+      type: integer
+      notnull: false
+    profesional_estado_id:
+      type: integer
+      notnull: true
+    profesional_tipo_uno_id:
+      type: integer
+      notnull: true
+    profesional_tipo_dos_id:
+      type: integer
+      notnull: true
+    profesional_tipo_tres_id:
+      type: integer
+      notnull: false
+    road_type_id:
+      type: integer
+      notnull: false
+    states_id:
+      type: integer
+      notnull: false
+    city_id:
+      type: integer
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: true
+    active_reason:
+      type: string(2147483647)
+      notnull: false
+    dividendo:
+      type: integer
+      default: 0
+    featured:
+      type: boolean
+    featured_order:
+      type: integer(5)
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      type: one
+      onDelete: cascade
+      foreignType: one
+      #foreignAlias: Profile
+    RoadType:
+      local: road_type_id
+      foreign: id
+      type: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    City:
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalTipoUno:
+      local: profesional_tipo_uno_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalTipoDos:
+      local: profesional_tipo_dos_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalTipoTres:
+      local: profesional_tipo_tres_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalEstado:
+      local: profesional_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+
+  actAs:
+    Timestampable:
+    Sluggable: {fields: [first_name], uniqueBy: [id, first_name], canUpdate: true }
+
+ProfesionalAproDespro:
+  tableName: profesional_apro_despro
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+ProfesionaldActivaDesa:
+  tableName: profesional_activa_desa
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+ProfesionalLetterType:
+  tableName: profesional_letter_type
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    description:
+      type: string(100)
+      notnull: true
+  actAs:
+    Timestampable:
+
+ProfesionalLetter:
+  tableName: profesional_letter
+  columns:
+
+    name:
+      type: string(100)
+      notnull: true
+    description:
+      type: string(2147483647)
+      notnull: false
+    plan_accion:
+      type: string(2147483647)
+      notnull: false
+    fecha_activacion:
+      type: date
+      notnull: false
+    fecha_referendum:
+      type: date
+      notnull: false
+    fecha_revision:
+      type: datetime
+      notnull: false
+    fecha_deliberacion:
+      type: datetime
+      notnull: false
+    fecha_observacion:
+      type: datetime
+      notnull: false
+    fecha_cerrado:
+      type: datetime
+      notnull: false
+    fecha_rechazado:
+      type: datetime
+      notnull: false
+    fecha_nulo:
+      type: datetime
+      notnull: false
+    is_first:
+      type: boolean
+      notnull: true
+      default: false
+    revision_last_state_id:
+      type: integer
+      notnull: false
+    profesional_letter_estado_id:
+      type: integer
+      notnull: true
+    profesional_letter_type_id:
+      type: integer
+      notnull: true
+    profesional_activa_desa_id:
+      type: integer
+      notnull: true
+    profesional_apro_despro_id:
+      type: integer
+      notnull: true
+    profesional_id:
+      type: integer
+      notnull: true
+    states_id:
+      type: integer
+      notnull: false
+    city_id:
+      type: integer
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: true
+  relations:
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one
+      onDelete: cascade
+      foreignType: one
+    States:
+      local: states_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    City:
+      local: city_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalLetterType:
+      local: profesional_letter_type_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalActivaDesa:
+      local: profesional_activa_desa_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    ProfesionalAproDespro:
+      local: profesional_apro_despro_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+    Profesional:
+      local: profesional_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+    ProfesionalLetterEstado:
+      local: profesional_letter_estado_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+  actAs:
+    Timestampable:
+
+KpiProfesionales:
+  columns:
+    kpi_id: integer
+    profesional_id: integer
+    suma_valores: integer
+    numero_valores: integer
+    nombre: { type: string(255), notnull: true }
+  relations:
+    Profesional:
+      foreignAlias: Kpis
+
+    Kpi: ~
+
+ProfesionalDestacada:
+  columns:
+    profesional_id: integer
+    profesional_tipo_uno_id: integer
+    profesional_tipo_dos_id: integer
+    profesional_tipo_tres_id: integer
+    city_id: integer
+    states_id: integer
+    rank: integer
+    combinado: { type: integer, default: 0  } # 0 none, 1 provincia+sector, 2 localidad+sector
+
+  relations:
+    Profesional:
+      foreignAlias: ProfesionalDestacada
+      onDelete: CASCADE
+    ProfesionalTipoUno:
+      foreignAlias: ProfesionalDestacadas
+    ProfesionalTipoDos:
+      foreignAlias: ProfesionalDestacadas
+    ProfesionalTipoTres:
+      foreignAlias: ProfesionalDestacadas
+
+ProfesionalEstado:
+  tableName: profesional_estado
+  columns:
+
+    value:
+      type: string(50)
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+
+ProfesionalHistorico:
+  tableName: profesional_historico
+  columns:
+
+    profesional_id:
+      type: integer
+      notnull: true
+    date:
+      type: datetime
+      notnull: true
+    estado_inicial:
+      type: integer(3)
+      notnull: true
+    estado_final:
+      type: integer(3)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    Profesional:
+      local: profesional_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+
+ProfesionalArchivo:
+  tableName: profesional_archivo
+  columns:
+    profesional_id:
+      type: integer
+      notnull: true
+    file:
+      type: string(255)
+      notnull: false
+  relations:
+    Profesional:
+      local: profesional_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+
+ProfesionalLetterArchivo:
+  tableName: profesional_letter_archivo
+  columns:
+    profesional_letter_id:
+      type: integer
+      notnull: true
+    file:
+      type: string(255)
+      notnull: false
+  relations:
+    ProfesionalLetter:
+      local: profesional_letter_id
+      foreign: id
+      type: one
+      onUpdate: CASCADE
+      onDelete: CASCADE
+
+ProfesionalLetterEstado:
+  tableName: profesional_letter_estado
+  columns:
+
+    value:
+      type: string(50)
+      notnull: true
+    name:
+      type: string(100)
+      notnull: true
+
+ProfesionalLetterHistorico:
+  tableName: profesional_letter_historico
+  columns:
+
+    profesional_letter_id:
+      type: integer
+      notnull: true
+    date:
+      type: datetime
+      notnull: true
+    estado_inicial:
+      type: integer(3)
+      notnull: true
+    estado_final:
+      type: integer(3)
+      notnull: true
+  actAs:
+    Timestampable:
+  relations:
+    ProfesionalLetter:
+      local: profesional_letter_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE

@@ -1,0 +1,74 @@
+Pizarra:
+  tableName: pizarra
+  columns:
+    name:
+      type: string(150)
+      notnull: true
+    
+    text:
+      type: string(3000)
+      notnull: true
+    seccion:
+      type: varchar(50)
+      notnull: true
+      
+    visibilidad:
+      type: text(16)
+      notnull: true  
+    velocidad:
+      type: integer(7)
+      notnull: true  
+      
+    desde:     
+      type: timestamp
+      notnull: false
+      
+    hasta:     
+      type: timestamp
+      notnull: false  
+     
+      
+    days:
+      type: varchar(30)
+      notnull: true  
+      
+    months:
+      type: varchar(30)
+      notnull: true  
+         
+    created_at: timestamp
+    updated_at: timestamp
+    
+PizarraSection:
+  tableName: pizarra_section
+  columns:
+    name: { type: varchar(50), notnull : true }
+    module: { type: varchar(30), notnull: true }
+    action : { type: varchar(30), notnull : true }
+    short_name: { type: varchar(3), notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+    
+PizarraSectionMapping:
+  tableName: pizarra_section_mapping
+  columns:
+    pizarra_id: { type: integer(7), notnull: true }
+    pizarra_section_id: { type: integer(70), notnull: true }
+    created_at: timestamp
+    updated_at: timestamp
+  relations:
+    Pizarra:
+      class: Pizarra
+      foreign: id
+      local: pizarra_id
+      onDelete: cascade
+    PizarraSection:
+      class: PizarraSection
+      foreign: id
+      local: pizarra_section_id
+      onDelete: cascade
+     
+    
+    
+    
+

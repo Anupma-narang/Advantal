@@ -1,0 +1,5 @@
+CategoriaExcelencia:
+  columns:
+    nombre: { type: string(100) }
+    valor_min:  { type: integer }
+    valor_max:  { type: integer }
