@@ -1,0 +1,31 @@
+Kpi:
+  kpi_sat:
+    nombre: Servicio de atención al cliente
+    tipo: empresa
+  kpi_velocidad:
+    nombre: Velocidad
+    tipo: empresa
+
+  kpi_precio:
+    nombre: Precio
+    tipo: empresa
+
+  kpi_accesibilidad:
+    nombre: Accesibilidad de la ubicación
+    tipo: empresa
+
+  kpi_calidad:
+    nombre: Calidad del servicio
+    tipo: empresa
+
+  kpi_pro:
+    nombre: Aspecto del producto
+    tipo: producto
+  kpi_peso:
+    nombre: Peso del producto
+    tipo: prodcuto
+
+  kpi_precio:
+    nombre: Precio
+    tipo: producto
+

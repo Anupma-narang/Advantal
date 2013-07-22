@@ -1,0 +1,11 @@
+ProfesionalLetterType:
+  ProfesionalLetterType_1:
+    name: 'Recomendación'
+    description: 'Recomendation Letter'
+    created_at: '2012-10-15 10:38:36'
+    updated_at: '2012-10-15 10:38:40'
+  ProfesionalLetterType_2:
+    name: 'Desaprobación'
+    description: 'Disapproval Letter'
+    created_at: '2012-10-27 14:05:08'
+    updated_at: '2012-10-27 14:05:11'

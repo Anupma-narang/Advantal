@@ -1,0 +1,20 @@
+CategoriaExcelencia:
+  oro:
+    nombre: Oro
+    valor_min: 51
+    valor_max: 60
+  plata:
+    nombre: Plata
+    valor_min: 42
+    valor_max: 50
+  bronze:
+    nombre: Bronce
+    valor_min: 33
+    valor_max: 41
+
+  ninguno:
+    nombre: ninguno
+    valor_min: 0
+    valor_max: 32
+
+

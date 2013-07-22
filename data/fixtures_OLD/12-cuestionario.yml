@@ -1,0 +1,161 @@
+ListaCuestionario:
+  cuestionario_restaurante:
+    nombre: 'Cuestionario de un restaurante'
+    tipo: empresa
+  cuestionario_producto:
+    nombre: 'Cuestionario una televisión'
+    tipo: producto
+
+ListaCuestionarioPregunta:
+  pregunta_A_1:
+    pregunta: 'Primera impresión del restaurante?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_sat
+
+  pregunta_A_2:
+    pregunta: 'Que te parece la comida?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_calidad
+
+  pregunta_A_3:
+    pregunta: 'Valora el servicio?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_calidad
+
+  pregunta_A_4:
+    pregunta: 'Valora la velocidad?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+  pregunta_A_5:
+    pregunta: 'Valora del 1 al 5 si volverías'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_calidad
+
+  pregunta_A_6:
+    pregunta: 'El precio es el correcto?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+
+  pregunta_A_7:
+    pregunta: 'Qué te parece la decoración del restaurante?. valora del 1 al 5'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+  pregunta_A_8:
+    pregunta: 'y la situación en el pueblo?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_calidad
+
+  pregunta_A_9:
+    pregunta: 'Volverás?'
+    tipo: sino
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+  pregunta_A_10:
+    pregunta: 'Seguro que te ha gustado?'
+    tipo: sino
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+  pregunta_A_11:
+    pregunta: 'Valora el número de platos'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_calidad
+
+  pregunta_A_12:
+    pregunta: 'El menú diario es correcto?'
+    tipo: opcion
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+  pregunta_A_13:
+    pregunta: 'Puedes hacer el comentario que quieras:'
+    tipo: texto
+    Cuestionario: cuestionario_restaurante
+    Kpi: kpi_velocidad
+
+  pregunta_B_1:
+    pregunta: 'Primera impresión del restaurante?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_pro
+
+  pregunta_B_2:
+    pregunta: 'Que te parece la comida?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+
+  pregunta_B_3:
+    pregunta: 'Valora el servicio?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_peso
+
+  pregunta_B_4:
+    pregunta: 'Valora la velocidad?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+
+  pregunta_B_5:
+    pregunta: 'Valora del 1 al 5 si volverías'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_precio
+
+  pregunta_B_6:
+    pregunta: 'El precio es el correcto?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_precio
+
+
+  pregunta_B_7:
+    pregunta: 'Qué te parece la decoración del restaurante?. valora del 1 al 5'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_peso
+
+  pregunta_B_8:
+    pregunta: 'y la situación en el pueblo?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_peso
+
+  pregunta_B_9:
+    pregunta: 'Volverás?'
+    tipo: sino
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_peso
+
+  pregunta_B_10:
+    pregunta: 'Seguro que te ha gustado?'
+    tipo: sino
+    Cuestionario: cuestionario_producto
+    Kpi: kpi_precio
+
+  pregunta_B_11:
+    pregunta: 'Valora el número de platos'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+
+  pregunta_B_12:
+    pregunta: 'El menú diario es correcto?'
+    tipo: opcion
+    Cuestionario: cuestionario_producto
+
+  pregunta_B_13:
+    pregunta: 'Puedes hacer el comentario que quieras:'
+    tipo: texto
+    Cuestionario: cuestionario_producto

@@ -1,0 +1,31 @@
+ProfesionalEstado:
+  ProfesionalEstado_1:
+    value: '1'
+    name: Revista
+  ProfesionalEstado_2:
+    value: '2'
+    name: Activo
+  ProfesionalEstado_3:
+    value: '3'
+    name: Referéndum
+  ProfesionalEstado_4:
+    value: '4'
+    name: Deliberación
+  ProfesionalEstado_5:
+    value: '5'
+    name: Observación
+  ProfesionalEstado_6:
+    value: '6'
+    name: Cerrado
+  ProfesionalEstado_7:
+    value: '7'
+    name: Rechazado
+  ProfesionalEstado_8:
+    value: '8'
+    name: Nulo
+  ProfesionalEstado_9:
+    value: '9'
+    name: Borrador
+  ProfesionalEstado_10:
+    value: '10'
+    name: Revisión

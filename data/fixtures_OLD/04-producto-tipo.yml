@@ -1,0 +1,2029 @@
+ProductoTipoUno:
+  ProductoTipoUno_1:
+    name: 'ALIMENTACIÓN Y BEBIDAS'
+    image: alimentacion.png
+  ProductoTipoUno_2:
+    name: 'ROPA Y COMPLEMENTOS'
+    
+    image: ropa.png
+  ProductoTipoUno_3:
+    name: 'SALUD, BELLEZA Y BIENESTAR'
+    
+    image: salud.png
+  ProductoTipoUno_4:
+    name: 'OCIO Y ENTRETENIMIENTO'
+    
+    image: ocio.png
+  ProductoTipoUno_5:
+    name: ELECTRODOMÉSTICOS
+    image: electrodomesticos.png
+
+  ProductoTipoUno_6:
+    name: ELECTRÓNICA
+    image: electronica.png
+  ProductoTipoUno_7:
+    name: 'INFORMÁTICA Y TELECOMUNICACIONES'
+    image: informatica.png
+  ProductoTipoUno_8:
+    name: 'VIVIENDA Y HOGAR'
+    image: vivienda.png
+    
+  ProductoTipoUno_9:
+    name: MOTOR
+    
+    image: motor.png
+  ProductoTipoUno_10:
+    name: 'OTRAS CATEGORÍAS'
+    
+    image: otrosproductos.png
+
+ProductoTipoDos:
+  ProductoTipoDos_1:
+    name: Alimentos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+  ProductoTipoDos_2:
+    name: Bebidas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+  ProductoTipoDos_3:
+    name: 'Ropa de hombre'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_4:
+    name: 'Ropa de mujer '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_5:
+    name: 'Calzado Hombre'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_6:
+    name: 'Calzado de Mujer'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_7:
+    name: 'Complementos de hombre'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_8:
+    name: 'Complementos de Mujer'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_9:
+    name: 'Ropa y complementos de niño'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_10:
+    name: 'Calzado de Niño'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_11:
+    name: 'Ropa y complementos para bebé'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_12:
+    name: Joyería
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_13:
+    name: Relojes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_14:
+    name: 'Otros productos de ropa y complementos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+  ProductoTipoDos_15:
+    name: Belleza
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+  ProductoTipoDos_16:
+    name: Salud
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+  ProductoTipoDos_17:
+    name: 'Instrumentos musicales'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+  ProductoTipoDos_18:
+    name: 'Juegos y Juguetes'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+  ProductoTipoDos_19:
+    name: 'Material deportivo'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+  ProductoTipoDos_20:
+    name: Videojuegos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+  ProductoTipoDos_21:
+    name: 'Otros productos de ocio y entretenimiento'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+  ProductoTipoDos_22:
+    name: Cocina
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+  ProductoTipoDos_23:
+    name: 'Limpieza y cuidado del hogar'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+  ProductoTipoDos_24:
+    name: 'Cuidado personal'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+  ProductoTipoDos_25:
+    name: 'Otros electrodomésticos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+  ProductoTipoDos_26:
+    name: 'Imagen y sonido'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+  ProductoTipoDos_27:
+    name: 'Cámaras de fotos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+  ProductoTipoDos_28:
+    name: 'Otros productos de electrónica'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+  ProductoTipoDos_29:
+    name: Hardware
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+  ProductoTipoDos_30:
+    name: Software
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+  ProductoTipoDos_31:
+    name: Telefonía
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+  ProductoTipoDos_32:
+    name: 'Otros productos de informática y telecomunicacione'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+  ProductoTipoDos_33:
+    name: 'Equipamiento básico'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_34:
+    name: Muebles
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_35:
+    name: Iluminación
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_36:
+    name: Menaje
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_37:
+    name: 'Decoración y complementos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_38:
+    name: Jardinería
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_39:
+    name: 'Textil de hogar'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_40:
+    name: 'Otros productos de Vivienda  y Hogar'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+  ProductoTipoDos_41:
+    name: Vehículos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+  ProductoTipoDos_42:
+    name: Embarcaciones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+  ProductoTipoDos_43:
+    name: Aviación
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+  ProductoTipoDos_44:
+    name: 'Accesorios y componentes'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+  ProductoTipoDos_45:
+    name: 'Otros vehículos y productos de motor'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+  ProductoTipoDos_46:
+    name: 'Artículos de limpieza para el hogar'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+  ProductoTipoDos_47:
+    name: Droguería
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+  ProductoTipoDos_48:
+    name: 'Artículos de oficina'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+  ProductoTipoDos_49:
+    name: 'Artículos para la escritura-'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+  ProductoTipoDos_50:
+    name: 'Herramientas eléctricas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+  ProductoTipoDos_51:
+    name: 'Herramientas manuales'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+  ProductoTipoDos_52:
+    name: 'Maquinaria agrícola'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+ProductoTipoTres:
+  ProductoTipoTres_1:
+    name: Accesorios
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+  ProductoTipoTres_2:
+    name: Accesorios
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_3:
+    name: Acordeones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_4:
+    name: 'Aire acondicionado y Calefacción'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_25
+  ProductoTipoTres_5:
+    name: Alfombras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_37
+  ProductoTipoTres_6:
+    name: Americanas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_7:
+    name: Americanas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_8:
+    name: 'Amplificadores y altavoces'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_9:
+    name: Anticonceptivos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_10:
+    name: Antivirus
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_11:
+    name: Aparadores
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_12:
+    name: 'Aperos de jardinería'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_38
+  ProductoTipoTres_13:
+    name: Apliques
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_35
+  ProductoTipoTres_14:
+    name: Armarios
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_15:
+    name: 'Artes marciales'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_16:
+    name: 'Artículos de Baño'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_17:
+    name: 'Aspiradores y Vaporetas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_23
+  ProductoTipoTres_18:
+    name: Atletismo
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_19:
+    name: 'Audio y Sonido para vehículos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_20:
+    name: Aviación
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_21:
+    name: 'Aviones '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_43
+  ProductoTipoTres_22:
+    name: Avionetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_43
+  ProductoTipoTres_23:
+    name: Azulejos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_24:
+    name: Bailarinas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_6
+  ProductoTipoTres_25:
+    name: Bailarinas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_10
+  ProductoTipoTres_26:
+    name: Baldosas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_27:
+    name: Baloncesto
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_28:
+    name: Balonmano
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_29:
+    name: Básculas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_24
+  ProductoTipoTres_30:
+    name: 'Bases de datos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_31:
+    name: Batidoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_32:
+    name: 'Bebidas gaseosas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_2
+  ProductoTipoTres_33:
+    name: Bolígrafos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_49
+  ProductoTipoTres_34:
+    name: Bolsos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_8
+  ProductoTipoTres_35:
+    name: Bolsos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_36:
+    name: 'Bufandas y Fulares'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_7
+  ProductoTipoTres_37:
+    name: 'Bufandas y fulares'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_8
+  ProductoTipoTres_38:
+    name: 'Bufandas y fulares'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_39:
+    name: 'Cadenas de música'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_40:
+    name: 'Cafés e infusiones'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_2
+  ProductoTipoTres_41:
+    name: Cafeteras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_42:
+    name: Calculadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_28
+  ProductoTipoTres_43:
+    name: Camas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_44:
+    name: Camión/furgoneta
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_45:
+    name: Camiones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_46:
+    name: Camisas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_47:
+    name: Camisas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_48:
+    name: Camisas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_49:
+    name: Camisetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_50:
+    name: Camisetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_51:
+    name: Camisetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_52:
+    name: Caravanas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_53:
+    name: Carteras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_7
+  ProductoTipoTres_54:
+    name: Carteras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_8
+  ProductoTipoTres_55:
+    name: 'Cazuelas y sartenes'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_36
+  ProductoTipoTres_56:
+    name: Cereales
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_57:
+    name: Ciclismo
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_58:
+    name: Ciclomotores
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_59:
+    name: Cinturones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_7
+  ProductoTipoTres_60:
+    name: Cinturones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_8
+  ProductoTipoTres_61:
+    name: Cinturones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_62:
+    name: Coche
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_63:
+    name: Coches
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_64:
+    name: 'Coches y Sillas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_11
+  ProductoTipoTres_65:
+    name: Cojines
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_37
+  ProductoTipoTres_66:
+    name: 'Complementos para teléfonos móviles'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_31
+  ProductoTipoTres_67:
+    name: 'Congelados '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_68:
+    name: Conservas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_69:
+    name: Consolas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_20
+  ProductoTipoTres_70:
+    name: 'Construcción y Bricologe'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_51
+  ProductoTipoTres_71:
+    name: Consumibles
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_72:
+    name: 'Corbatas y Pajaritas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_7
+  ProductoTipoTres_73:
+    name: Cortinas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_74:
+    name: Cosméticos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_75:
+    name: Cuberterías
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_36
+  ProductoTipoTres_76:
+    name: 'Cuidado de manos y pies'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_77:
+    name: 'Cuidado del cabello'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_78:
+    name: 'Cuidado del cuerpo'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_79:
+    name: 'Chaquetas y Cazadoras'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_80:
+    name: 'Chaquetas y Cazadoras'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_81:
+    name: 'Chaquetas y Cazadoras'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_82:
+    name: 'Depiladoras eléctricas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_24
+  ProductoTipoTres_83:
+    name: 'Desarrollo web'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_84:
+    name: Desbrozadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_52
+  ProductoTipoTres_85:
+    name: Digitales
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+  ProductoTipoTres_86:
+    name: 'Diseño y fotografía'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_87:
+    name: 'Dulces y postres'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_88:
+    name: DVDs
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_89:
+    name: Edredones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_90:
+    name: 'Elementos de Red'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_91:
+    name: Embarcaciones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_92:
+    name: 'Embutidos y Jamones'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_93:
+    name: Entretenimiento
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_94:
+    name: 'Equipos de estudio y grabación'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_95:
+    name: 'Esquí y snowboard'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_96:
+    name: 'Estanterías y baldas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_97:
+    name: 'Exprimidores y licuadoras'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_98:
+    name: Faldas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_99:
+    name: Faldas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_100:
+    name: Fármacos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_101:
+    name: Faxes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_102:
+    name: Fotocopiadoras/Scanners
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_103:
+    name: 'Frigoríficos y congeladores'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_104:
+    name: Furgonetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_105:
+    name: Fútbol
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_106:
+    name: 'Gafas de sol'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_7
+  ProductoTipoTres_107:
+    name: 'Gafas de sol'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_8
+  ProductoTipoTres_108:
+    name: 'Gafas de sol'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_109:
+    name: 'Gafas graduadas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_110:
+    name: 'Gestión empresarial'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_111:
+    name: 'Gimnasia y Fitness'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_112:
+    name: Golf
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_113:
+    name: 'Golosinas y snacks'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_114:
+    name: 'Guitarras y Bajos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_115:
+    name: Helados
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_116:
+    name: 'Higiene bucal'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_117:
+    name: 'Higiene femenina'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_118:
+    name: 'Hípica y Equitación'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_119:
+    name: 'Home Cinema'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_120:
+    name: Hornos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_121:
+    name: 'Instrumentos de viento'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_122:
+    name: 'Jardinería y floricultura'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_51
+  ProductoTipoTres_123:
+    name: Jerseys
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_124:
+    name: Jerseys
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_125:
+    name: Jerseys
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_126:
+    name: 'Juegos de construcción'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_127:
+    name: 'Juegos de mesa'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_128:
+    name: 'Juegos educativos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_129:
+    name: Juguetes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_130:
+    name: Lácteos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_131:
+    name: Lámparas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_35
+  ProductoTipoTres_132:
+    name: 'Lámparas de suelo'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_35
+  ProductoTipoTres_133:
+    name: 'Lanchas Zodiac'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_42
+  ProductoTipoTres_134:
+    name: Lavadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_23
+  ProductoTipoTres_135:
+    name: Lavavajillas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_23
+  ProductoTipoTres_136:
+    name: Leggings
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_137:
+    name: Leggings
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_138:
+    name: Lijadoras/Decapadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_50
+  ProductoTipoTres_139:
+    name: Manteles
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_140:
+    name: Maquetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_141:
+    name: Maquillajes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_142:
+    name: 'Menaje variado'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_36
+  ProductoTipoTres_143:
+    name: Mesas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_144:
+    name: Microondas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_145:
+    name: Mobiliario
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_11
+  ProductoTipoTres_146:
+    name: Monovolúmenes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_147:
+    name: 'Montaña y Escalada'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_148:
+    name: Moquetas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_37
+  ProductoTipoTres_149:
+    name: 'Moto y ciclomotor'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_150:
+    name: Motos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_41
+  ProductoTipoTres_151:
+    name: 'Motos de agua'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_42
+  ProductoTipoTres_152:
+    name: Motosierras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_52
+  ProductoTipoTres_153:
+    name: 'Muñecos y Muñecas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_154:
+    name: Náutico
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_155:
+    name: Netbooks
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_156:
+    name: 'Otra ropa de hombre'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_157:
+    name: 'Otra ropa de mujer'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_158:
+    name: 'Otra ropa o complemento de bebé'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_11
+  ProductoTipoTres_159:
+    name: 'Otra ropa y complementos de niño'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_160:
+    name: 'Otras bebidas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_2
+  ProductoTipoTres_161:
+    name: 'Otras embarcaciones'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_42
+  ProductoTipoTres_162:
+    name: 'Otras herramientas eléctricas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_50
+  ProductoTipoTres_163:
+    name: 'Otras herramientas manuales'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_51
+  ProductoTipoTres_164:
+    name: 'Otro calzado de hombre'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_5
+  ProductoTipoTres_165:
+    name: 'Otro calzado de mujer'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_6
+  ProductoTipoTres_166:
+    name: 'Otro calzado de niño'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_10
+  ProductoTipoTres_167:
+    name: 'Otro complemento de hombre'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_7
+  ProductoTipoTres_168:
+    name: 'Otro complemento de mujer'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_8
+  ProductoTipoTres_169:
+    name: 'Otro material deportivo'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_170:
+    name: Otros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_25
+  ProductoTipoTres_171:
+    name: Otros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_28
+  ProductoTipoTres_172:
+    name: Otros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_40
+  ProductoTipoTres_173:
+    name: Otros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_45
+  ProductoTipoTres_174:
+    name: 'Otros accesorios y componentes'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+  ProductoTipoTres_175:
+    name: 'Otros alimentos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_176:
+    name: 'Otros artículos de jardinería'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_38
+  ProductoTipoTres_177:
+    name: 'Otros artículos para la escritura'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_49
+  ProductoTipoTres_178:
+    name: 'Otros electrodomésticos de cocina'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_179:
+    name: 'Otros electrodomésticos de cuidado personal'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_24
+  ProductoTipoTres_180:
+    name: 'Otros electrodomésticos de limpieza y cuidado del '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_23
+  ProductoTipoTres_181:
+    name: 'Otros equipamientos básicos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_182:
+    name: 'Otros equipos de maquinaria agrícola'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_52
+  ProductoTipoTres_183:
+    name: 'Otros equipos y videojuegos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_20
+  ProductoTipoTres_184:
+    name: 'Otros instrumentos musicales'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_185:
+    name: 'Otros juegos y juguetes'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_186:
+    name: 'Otros muebles'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_187:
+    name: 'Otros productos de belleza'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_188:
+    name: 'Otros productos de decoración y complementos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_37
+  ProductoTipoTres_189:
+    name: 'Otros productos de hardware'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_190:
+    name: 'Otros productos de iluminación'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_35
+  ProductoTipoTres_191:
+    name: 'Otros productos de imagen y sonido'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_192:
+    name: 'Otros productos de menaje'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_36
+  ProductoTipoTres_193:
+    name: 'Otros productos de salud'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_194:
+    name: 'Otros productos de software'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_195:
+    name: 'Otros productos de telefonía '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_31
+  ProductoTipoTres_196:
+    name: 'Otros productos textiles de hogar'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_197:
+    name: 'Otros vehículos de aviación'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_43
+  ProductoTipoTres_198:
+    name: 'Panadería y bollería'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_199:
+    name: Pantalones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_200:
+    name: Pantalones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_201:
+    name: Pantalones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_202:
+    name: Patés
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_203:
+    name: 'Patinaje en línea'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_204:
+    name: PCs
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_205:
+    name: PDAs
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_206:
+    name: Percusión
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_207:
+    name: Perfumes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_15
+  ProductoTipoTres_208:
+    name: Periféricos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_209:
+    name: Pianos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_210:
+    name: 'Pinturas y barnices'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_211:
+    name: Piragüismo
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_212:
+    name: 'Placas de cocina'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_213:
+    name: Planchas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_23
+  ProductoTipoTres_214:
+    name: 'Platos precocinados'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_215:
+    name: Plumas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_49
+  ProductoTipoTres_216:
+    name: Podadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_52
+  ProductoTipoTres_217:
+    name: Portátiles
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+  ProductoTipoTres_218:
+    name: Premamá
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_219:
+    name: 'Procesadores de texto'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_220:
+    name: 'Protectores solares'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+  ProductoTipoTres_221:
+    name: Quesos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_222:
+    name: 'Radios '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_223:
+    name: Réflex
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+  ProductoTipoTres_224:
+    name: 'Refrescos y zumos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_2
+  ProductoTipoTres_225:
+    name: Remolques
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_45
+  ProductoTipoTres_226:
+    name: 'Reproductores MP3'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_227:
+    name: Ropa
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_11
+  ProductoTipoTres_228:
+    name: 'Ropa interior'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_229:
+    name: 'Ropa interior'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_230:
+    name: 'Ropa interior/Lencería'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_231:
+    name: Sábanas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_232:
+    name: 'Salsas y condimentos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+  ProductoTipoTres_233:
+    name: Sandalias
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_5
+  ProductoTipoTres_234:
+    name: Sandalias
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_6
+  ProductoTipoTres_235:
+    name: Sandalias
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_10
+  ProductoTipoTres_236:
+    name: Secadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_23
+  ProductoTipoTres_237:
+    name: 'Secadores de pelo'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_24
+  ProductoTipoTres_238:
+    name: Seguridad
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_11
+  ProductoTipoTres_239:
+    name: Seguridad
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_30
+  ProductoTipoTres_240:
+    name: Sillas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_241:
+    name: Sillones
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_242:
+    name: 'Sistemas de Navegación GPS'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_28
+  ProductoTipoTres_243:
+    name: 'Sistemas de seguridad'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_40
+  ProductoTipoTres_244:
+    name: Skating
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_245:
+    name: Sofás
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+  ProductoTipoTres_246:
+    name: 'Submarinismo y Natación'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_247:
+    name: Surf/windsurf
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_248:
+    name: Taladros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_10
+    ProductoTipoDos: ProductoTipoDos_50
+  ProductoTipoTres_249:
+    name: Tapices
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_250:
+    name: 'Tarimas y solados'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_251:
+    name: Teclados
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_17
+  ProductoTipoTres_252:
+    name: 'Teléfonos fijos'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_31
+  ProductoTipoTres_253:
+    name: 'Teléfonos móviles'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_31
+  ProductoTipoTres_254:
+    name: 'Televisores '
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_255:
+    name: Tenis/pádel/squash
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+  ProductoTipoTres_256:
+    name: Toallas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+  ProductoTipoTres_257:
+    name: Tostadoras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+  ProductoTipoTres_258:
+    name: Tractores
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_45
+  ProductoTipoTres_259:
+    name: Trajes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_260:
+    name: Trajes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_261:
+    name: Trajes
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_262:
+    name: 'Trajes de fiesta'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_263:
+    name: 'Trajes de fiesta y boda'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_264:
+    name: Vaqueros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+  ProductoTipoTres_265:
+    name: Vaqueros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_266:
+    name: Vaqueros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_267:
+    name: 'Vehículos para niños'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_18
+  ProductoTipoTres_268:
+    name: Veleros
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_42
+  ProductoTipoTres_269:
+    name: 'Ventanas y persianas'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_33
+  ProductoTipoTres_270:
+    name: Ventiladores
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_25
+  ProductoTipoTres_271:
+    name: Vestidos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_272:
+    name: Vestidos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_273:
+    name: 'Vestidos de boda'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_274:
+    name: 'Vestidos de fiesta'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_4
+  ProductoTipoTres_275:
+    name: 'Vestidos de fiesta'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_9
+  ProductoTipoTres_276:
+    name: Videocámaras
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_26
+  ProductoTipoTres_277:
+    name: 'Videojuegos Microsoft Xbox'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_20
+  ProductoTipoTres_278:
+    name: 'Videojuegos Nintendo'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_20
+  ProductoTipoTres_279:
+    name: 'Videojuegos para PC'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_20
+  ProductoTipoTres_280:
+    name: 'Videojuegos Sony Playstation'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_20
+  ProductoTipoTres_281:
+    name: 'Vinos y licores'
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_2
+  ProductoTipoTres_282:
+    name: Yates
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_42
+  ProductoTipoTres_283:
+    name: Zapatillas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_5
+  ProductoTipoTres_284:
+    name: Zapatillas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_6
+  ProductoTipoTres_285:
+    name: Zapatillas
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_10
+  ProductoTipoTres_286:
+    name: Zapatos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_5
+  ProductoTipoTres_287:
+    name: Zapatos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_6
+  ProductoTipoTres_288:
+    name: Zapatos
+    
+    image: null
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_10

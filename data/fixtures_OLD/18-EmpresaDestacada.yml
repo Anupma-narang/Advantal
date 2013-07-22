@@ -1,0 +1,8 @@
+EmpresaDestacada:
+  empresa_1:
+    Empresa: Empresa_1
+    EmpresaSectorTres: EmpresaSectorTres_1
+
+  empresa_2:
+    Empresa: Empresa_2
+    EmpresaSectorDos: EmpresaSectorDos_2

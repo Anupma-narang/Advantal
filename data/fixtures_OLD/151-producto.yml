@@ -1,0 +1,391 @@
+Producto:
+  Producto_1:
+    name: Kellogs
+    marca: kellog's
+    modelo: caja
+    ProductoTipoUno: ProductoTipoUno_1
+    ProductoTipoDos: ProductoTipoDos_1
+    ProductoTipoTres: ProductoTipoTres_56
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_2:
+    name: 'Camisa Producto'
+    Marca: 'Camisa Marca'
+    Modelo: 'Camisa Modelo'
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_3
+    ProductoTipoTres: ProductoTipoTres_46
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+    dividendo: 1
+    divisor: 1
+
+    lista: lb
+  Producto_3:
+    name: guantes
+    Marca: Springfield
+    Modelo: '4'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+    dividendo: 1
+    divisor: 1
+    lista: lb
+  Producto_4:
+    name: Zapatos
+    Marca: 'PanamÃ¡ Jack'
+    Modelo: panamÃ¡
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_10
+    ProductoTipoTres: ProductoTipoTres_286
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_5:
+    name: pantalón
+    Marca: Levi´s
+    Modelo: '501'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_6:
+    name: televisión
+    Marca: grundig
+    Modelo: F-0
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_31
+    ProductoTipoTres: ProductoTipoTres_254
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_7:
+    name: televisor
+    Marca: Grundig
+    Modelo: F-0
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_31
+    ProductoTipoTres: ProductoTipoTres_254
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_8:
+    name: Podador
+    Marca: Phillips
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+    ProductoTipoTres: ProductoTipoTres_170
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_9:
+    name: Podadora
+    Marca: Phillips
+    Modelo: K-1
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+    ProductoTipoTres: ProductoTipoTres_170
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_10:
+    name: Chaqueta
+    Marca: Springfield
+    Modelo: K-1
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_11:
+    name: Coche
+    Marca: KIA
+    Modelo: C123
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+    ProductoTipoTres: ProductoTipoTres_63
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_12:
+    name: Audi
+    Marca: Audi
+    Modelo: A7
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_13:
+    name: Moto
+    Marca: KIA
+    Modelo: C123
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+    ProductoTipoTres: ProductoTipoTres_150
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_14:
+    name: Frigorífico
+    Marca: Bosch
+    Modelo: C123
+    ProductoTipoUno: ProductoTipoUno_7
+    ProductoTipoDos: ProductoTipoDos_29
+    ProductoTipoTres: ProductoTipoTres_103
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_15:
+    name: tostadoras
+    Marca: Fagor
+    Modelo: C123
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_39
+    ProductoTipoTres: ProductoTipoTres_257
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_16:
+    name: Lavadora
+    Marca: Fagor
+    Modelo: C123
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_42
+    ProductoTipoTres: ProductoTipoTres_134
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_17:
+    name: Exprimidor
+    Marca: Fagor
+    Modelo: C123
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+    ProductoTipoTres: ProductoTipoTres_97
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_18:
+    name: Pantalón
+    Marca: Adidas
+    Modelo: Tshirt
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_45
+    ProductoTipoTres: ProductoTipoTres_258
+    lista: lb
+    Cuestionario: cuestionario_producto
+    dividendo: 1
+    divisor: 1
+  Producto_19:
+    name: Cuchillos
+    Marca: Dada
+    Modelo: '1-!"·$%&/()=?'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_20:
+    name: Cuchillos
+    Marca: Duralex
+    Modelo: '!"·$%&/()=?¿()=?--'
+    ProductoTipoUno: ProductoTipoUno_9
+    ProductoTipoDos: ProductoTipoDos_44
+    ProductoTipoTres: ProductoTipoTres_63
+    lista: ln
+  Producto_21:
+    name: carretilla
+    Marca: Mercedes
+    Modelo: '!"·$%!"·$%&/('
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_22:
+    name: camión
+    Marca: Seat
+    Modelo: '234'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_23:
+    name: avion
+    Marca: Boeing
+    Modelo: '2'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_24:
+    name: carros
+    Marca: Fiat
+    Modelo: '2'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_25:
+    name: zapatillas
+    Marca: J´haiber
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_26:
+    name: rty
+    Marca: Rtyt
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_27:
+    name: gfrde
+    Marca: Vgfdsw
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_28:
+    name: gfd
+    Marca: Bvgfd
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_29:
+    name: bvc
+    Marca: 'B vc'
+    Modelo: bvd
+    ProductoTipoUno: ProductoTipoUno_5
+    ProductoTipoDos: ProductoTipoDos_22
+    ProductoTipoTres: ProductoTipoTres_32
+    lista: ln
+  Producto_30:
+    name: calzoncillos
+    Marca: Ferry´s
+    Modelo: Machote!
+    ProductoTipoUno: ProductoTipoUno_3
+    ProductoTipoDos: ProductoTipoDos_16
+    ProductoTipoTres: ProductoTipoTres_117
+    lista: ln
+  Producto_31:
+    name: calzoncillos
+    Marca: 'Big hunk'
+    Modelo: )((
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_12
+    lista: ln
+  Producto_32:
+    name: pantuflas
+    Marca: Superpie
+    Modelo: '4567890898888888888'
+    ProductoTipoUno: ProductoTipoUno_2
+    ProductoTipoDos: ProductoTipoDos_12
+    lista: ln
+  Producto_33:
+    name: compresas
+    Marca: Ausonia
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_34:
+    name: Crampones
+    Marca: Gravel
+    Modelo: Alpes
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_35:
+    name: ''
+    Marca: 'Mc donald´s o´brien'
+    Modelo: '501'
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_36:
+    name: zara
+    Marca: Zapatillas
+    Modelo: gfd
+    ProductoTipoUno: ProductoTipoUno_6
+    ProductoTipoDos: ProductoTipoDos_27
+    ProductoTipoTres: ProductoTipoTres_1
+    lista: ln
+  Producto_37:
+    name: pantuflas
+    Marca: Remar
+    Modelo: ''
+    ProductoTipoUno: ProductoTipoUno_8
+    ProductoTipoDos: ProductoTipoDos_34
+    ProductoTipoTres: ProductoTipoTres_11
+    lista: ln
+
+  Producto_38:
+    name: Balon
+    Marca: Adidas
+    Modelo:
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+    ProductoTipoTres: ProductoTipoTres_105
+    lista: lb
+  Producto_39:
+    name: Balon
+    Marca: Adidas
+    Modelo: 1
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+    ProductoTipoTres: ProductoTipoTres_105
+    lista: lb
+  Producto_40:
+    name: Balon
+    Marca: Adidas
+    Modelo: Europa League
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+    ProductoTipoTres: ProductoTipoTres_105
+    lista: lb
+  Producto_41:
+    name: Balon
+    Marca: Adidas
+    Modelo: Wordcup
+    ProductoTipoUno: ProductoTipoUno_4
+    ProductoTipoDos: ProductoTipoDos_19
+    ProductoTipoTres: ProductoTipoTres_105
+    lista: lb

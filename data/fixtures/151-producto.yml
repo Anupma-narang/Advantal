@@ -1,0 +1,196 @@
+Producto:
+  Producto_1: { name: Kellogs, marca: 'kellog''s', modelo: caja, ProductoTipoUno: ProductoTipoUno_1, ProductoTipoDos: ProductoTipoDos_2, ProductoTipoTres: ProductoTipoTres_160, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_2: { name: 'Camisa Producto', Marca: 'Camisa Marca', Modelo: 'Camisa Modelo', ProductoTipoUno: ProductoTipoUno_2, ProductoTipoDos: ProductoTipoDos_14, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_3: { name: guantes, Marca: Springfield, Modelo: '4', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_171, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1, lista: lb }
+  Producto_4: { name: Zapatos, Marca: 'PanamÃ¡ Jack', Modelo: panamÃ¡, ProductoTipoUno: ProductoTipoUno_2, ProductoTipoDos: ProductoTipoDos_7, ProductoTipoTres: ProductoTipoTres_72, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1, lista: lb }
+  Producto_5: { name: pantalón, Marca: Levi´s, Modelo: '501', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_242, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_6: { name: televisión, Marca: grundig, Modelo: F-0, ProductoTipoUno: ProductoTipoUno_7, ProductoTipoDos: ProductoTipoDos_30, ProductoTipoTres: ProductoTipoTres_83, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_7: { name: televisor, Marca: Grundig, Modelo: F-0, ProductoTipoUno: ProductoTipoUno_7, ProductoTipoDos: ProductoTipoDos_29, ProductoTipoTres: ProductoTipoTres_189, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_8: { name: Podador, Marca: Phillips, Modelo: '', ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_17, ProductoTipoTres: ProductoTipoTres_8, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_9: { name: Podadora, Marca: Phillips, Modelo: K-1, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_20, ProductoTipoTres: ProductoTipoTres_277, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_10: { name: Chaqueta, Marca: Springfield, Modelo: K-1, ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_42, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_11: { name: Coche, Marca: KIA, Modelo: C123, ProductoTipoUno: ProductoTipoUno_9, ProductoTipoDos: ProductoTipoDos_41, ProductoTipoTres: ProductoTipoTres_52, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_12: { name: Audi, Marca: Audi, Modelo: A7, ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_242, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_13: { name: Moto, Marca: KIA, Modelo: C123, ProductoTipoUno: ProductoTipoUno_9, ProductoTipoDos: ProductoTipoDos_45, ProductoTipoTres: ProductoTipoTres_173, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_14: { name: Frigorífico, Marca: Bosch, Modelo: C123, ProductoTipoUno: ProductoTipoUno_7, ProductoTipoDos: ProductoTipoDos_31, ProductoTipoTres: ProductoTipoTres_253, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_15: { name: tostadoras, Marca: Fagor, Modelo: C123, ProductoTipoUno: ProductoTipoUno_8, ProductoTipoDos: ProductoTipoDos_34, ProductoTipoTres: ProductoTipoTres_14, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_16: { name: Lavadora, Marca: Fagor, Modelo: C123, ProductoTipoUno: ProductoTipoUno_9, ProductoTipoDos: ProductoTipoDos_44, ProductoTipoTres: ProductoTipoTres_44, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_17: { name: Exprimidor, Marca: Fagor, Modelo: C123, ProductoTipoUno: ProductoTipoUno_8, ProductoTipoDos: ProductoTipoDos_40, ProductoTipoTres: ProductoTipoTres_243, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_18: { name: Pantalón, Marca: Adidas, Modelo: Tshirt, ProductoTipoUno: ProductoTipoUno_9, ProductoTipoDos: ProductoTipoDos_44, ProductoTipoTres: ProductoTipoTres_62, lista: lb, Cuestionario: cuestionario_producto, dividendo: 1, divisor: 1 }
+  Producto_19: { name: Cuchillos, Marca: Dada, Modelo: largo, ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_27, ProductoTipoTres: ProductoTipoTres_223, lista: ln }
+  Producto_20: { name: Cuchillos, Marca: Duralex, Modelo: '!"·$%&/()=?¿()=?--', ProductoTipoUno: ProductoTipoUno_9, ProductoTipoDos: ProductoTipoDos_44, ProductoTipoTres: ProductoTipoTres_44, lista: ln }
+  Producto_21: { name: carretilla, Marca: Mercedes, Modelo: '!"·$%!"·$%&/(', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_26, ProductoTipoTres: ProductoTipoTres_226, lista: ln }
+  Producto_22: { name: camión, Marca: Seat, Modelo: '234', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_26, ProductoTipoTres: ProductoTipoTres_88, lista: ln }
+  Producto_23: { name: avion, Marca: Boeing, Modelo: '2', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_42, lista: ln }
+  Producto_24: { name: carros, Marca: Fiat, Modelo: '2', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_242, lista: ln }
+  Producto_25: { name: zapatillas, Marca: J´haiber, Modelo: '', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_171, lista: ln }
+  Producto_26: { name: rty, Marca: Rtyt, Modelo: '', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_26, ProductoTipoTres: ProductoTipoTres_39, lista: ln }
+  Producto_27: { name: gfrde, Marca: Vgfdsw, Modelo: '', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_27, ProductoTipoTres: ProductoTipoTres_223, lista: ln }
+  Producto_28: { name: gfd, Marca: Bvgfd, Modelo: '', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_27, ProductoTipoTres: ProductoTipoTres_85, lista: ln }
+  Producto_29: { name: bvc, Marca: 'B vc', Modelo: bvd, ProductoTipoUno: ProductoTipoUno_5, ProductoTipoDos: ProductoTipoDos_24, ProductoTipoTres: ProductoTipoTres_29, lista: ln }
+  Producto_30: { name: calzoncillos, Marca: Ferry´s, Modelo: Machote!, ProductoTipoUno: ProductoTipoUno_3, ProductoTipoDos: ProductoTipoDos_16, ProductoTipoTres: ProductoTipoTres_117, lista: ln }
+  Producto_31: { name: calzoncillos, Marca: 'Big hunk', Modelo: )((, ProductoTipoUno: ProductoTipoUno_2, ProductoTipoDos: ProductoTipoDos_6, lista: ln, ProductoTipoTres: ProductoTipoTres_24 }
+  Producto_32: { name: pantuflas, Marca: Superpie, Modelo: '4567890898888888888', ProductoTipoUno: ProductoTipoUno_2, ProductoTipoDos: ProductoTipoDos_9, lista: ln, ProductoTipoTres: ProductoTipoTres_272 }
+  Producto_33: { name: compresas, Marca: Ausonia, Modelo: '', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_28, ProductoTipoTres: ProductoTipoTres_242, lista: ln }
+  Producto_34: { name: Crampones, Marca: Gravel, Modelo: Alpes, ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_26, ProductoTipoTres: ProductoTipoTres_276, lista: ln }
+  Producto_35: { name: '', Marca: 'Mc donald´s o´brien', Modelo: '501', ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_27, ProductoTipoTres: ProductoTipoTres_223, lista: ln }
+  Producto_36: { name: zara, Marca: Zapatillas, Modelo: gfd, ProductoTipoUno: ProductoTipoUno_6, ProductoTipoDos: ProductoTipoDos_26, ProductoTipoTres: ProductoTipoTres_191, lista: ln }
+  Producto_37: { name: pantuflas, Marca: Remar, Modelo: '', ProductoTipoUno: ProductoTipoUno_8, ProductoTipoDos: ProductoTipoDos_39, ProductoTipoTres: ProductoTipoTres_196, lista: ln }
+  Producto_38: { name: Balones, Marca: Adidas, Modelo: null, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_17, ProductoTipoTres: ProductoTipoTres_94, lista: lb }
+  Producto_39: { name: Balones, Marca: Adidas, Modelo: 1, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, ProductoTipoTres: ProductoTipoTres_267, lista: lb }
+  Producto_40: { name: Balones, Marca: Adidas, Modelo: CU, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, ProductoTipoTres: ProductoTipoTres_126, lista: lb }
+  Producto_41: { name: Balones, Marca: Adidas, Modelo: YE, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_42: { name: Balones, Marca: Adidas, Modelo: ZY, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_43: { name: Calcetines, Marca: Adidas, Modelo: CC, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_44: { name: Calcetines, Marca: Adidas, Modelo: XT, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_45: { name: Calcetines, Marca: Adidas, Modelo: ZR, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_46: { name: Chaquetas, Marca: Adidas, Modelo: 5, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_47: { name: Pantalones, Marca: Adidas, Modelo: AA, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_48: { name: Pantalones, Marca: Adidas, Modelo: RT, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+  Producto_49: { name: Zapatillas, Marca: Adidas, Modelo: 1, ProductoTipoUno: ProductoTipoUno_4, ProductoTipoDos: ProductoTipoDos_18, lista: lb, ProductoTipoTres: ProductoTipoTres_126 }
+
+ComentarioListaNegra:
+  c1:
+    comentario: comentario1
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+
+  c2:
+    comentario: comentario2
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c3:
+    comentario: comentario3
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+
+  c4:
+    comentario: comentario4
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+
+  c5:
+    comentario: comentario5
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c6:
+    comentario: comentario6
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c7:
+    comentario: comentario7
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c8:
+    comentario: comentario8
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c9:
+    comentario: comentario9
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c10:
+    comentario: comentari10
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c11:
+    comentario: comentario11
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c12:
+    comentario: comentario12
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c13:
+    comentario: comentario13
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c14:
+    comentario: comentario14
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c15:
+    comentario: comentario15
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c16:
+    comentario: comentario16
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c17:
+    comentario: comentario17
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c18:
+    comentario: comentario18
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c19:
+    comentario: comentario19
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+
+  c20:
+    comentario: comentario20
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c21:
+    comentario: comentario21
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c22:
+    comentario: comentario22
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c23:
+    comentario: comentario23
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c24:
+    comentario: comentario24
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c25:
+    comentario: comentario25
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c26:
+    comentario: comentario26
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c27:
+    comentario: comentario27
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2
+  c28:
+    comentario: comentari28
+    Producto: Producto_19
+    aprobado: true
+    User:  sfGuardUser_2

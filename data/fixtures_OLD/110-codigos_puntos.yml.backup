@@ -1,0 +1,91 @@
+CodigosPuntos:
+  auditar:
+    codigo: auditar
+    descripcion:  Auditar
+  recomendar_a:
+    codigo: recomentar_a
+    descripcion:  Recomendar amigo
+  inc_1_fich:
+    codigo: inc_1_fich
+    descripcion:  Añadir fichero
+  votar:
+    codigo: votar
+    descripcion:  Votar
+  crear_cuenta:
+    codigo: crear_cuenta
+    descripcion:  Alta colaborador
+  contr_concurso:
+    codigo: contr_concurso
+    descripcion:  Contribuir
+  crear_concurso:
+    codigo: crear_concurso
+    descripcion:  Crear concurso
+  contr_concurso_sem:
+    codigo: contr_concurso_sem
+    descripcion:  Contribuir concurso semana
+  contr_concurso_mes:
+    codigo: contr_concurso_mes
+    descripcion:  Contribuir concurso mes
+  contr_concurso_anio:
+    codigo: contr_concurso_anio
+    descripcion:  Contribuir concurso año
+  recomendar_prof:
+    codigo: recomendar_prof
+    descripcion:  Recomendar profesional
+  desaprobar_prof:
+    codigo: desaprobar_prof
+    descripcion:  Desaprobar profesional
+  auditarnos:
+    codigo: auditarnos
+    descripcion:  Auditarnos
+  user_ganador_concurso:
+    codigo: user_ganador_concurso
+    descripcion:  Primero en concurso
+  user_segu_concurso:
+    codigo: user_segu_concurso
+    descripcion:  Segundo en concurso
+  user_terc_concurso:
+    codigo: user_terc_concurso
+    descripcion:  Tercero en concurso
+  user_ganador_concurso_semana: 
+    codigo: user_ganador_concurso_semana
+    descripcion:  Primero en concurso semana
+  user_segu_concurso_semana: 
+    codigo: user_segu_concurso_semana
+    descripcion:  Segundo en concurso semana
+  user_terc_concurso_semana: 
+    codigo: user_terc_concurso_semana
+    descripcion:  Tercero en concurso semana
+  user_ganador_concurso_mes:
+    codigo: user_ganador_concurso_mes
+    descripcion:  Primero concurso mes
+  user_segu_concurso_mes:
+    codigo: user_segu_concurso_mes
+    descripcion:  Segundo concurso mes
+  user_terc_concurso_mes:
+    codigo: user_terc_concurso_mes
+    descripcion:  Tercero concurso mes
+  user_gan_concurso_anio:
+    codigo: user_gan_concurso_anio
+    descripcion: Primero concurso año
+  user_segundo_concurso_anio:
+    codigo: user_segundo_concurso_anio
+    descripcion:  Segundo concurso año
+  user_terc_concurso_anio:
+    codigo: user_terc_concurso_anio
+    descripcion:  Tercero concurso año
+  comp_exito:
+    codigo: comp_exito
+    descripcion:  Compartir caso éxito
+  contr_conc_gran_valor:
+    codigo: contr_conc_gran_valor
+    descripcion:  Contribución gran valor
+  contr_concurso_idea_genial:
+    codigo: contr_concurso_idea_genial
+    descripcion:  Idea genial
+  publ_cyc_inflin:
+    codigo: publ_cyc_inflin
+    descripcion:  Infringir normas  
+  vot_ref:
+    codigo: vot_ref
+    descripcion:  Votar referéndum

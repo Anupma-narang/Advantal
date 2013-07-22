@@ -1,0 +1,67 @@
+ListaCuestionarioUser:
+  respuestas_2:
+    User: sfGuardUser_2
+    Cuestionario: cuestionario_restaurante
+    aprobado: true
+    Empresa: Empresa_1
+
+ListaCuestionarioRespuesta:
+  respuesta_a1:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_1
+
+  respuesta_a2:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_2
+
+  respuesta_a3:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_3
+  respuesta_a4:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_4
+  respuesta_a5:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_5
+  respuesta_a6:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_6
+  respuesta_a7:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_7
+  respuesta_a8:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_8
+  respuesta_a9:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_9
+  respuesta_a10:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_10
+  respuesta_a11:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_11
+  respuesta_a12:
+      respuesta:  1
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_12
+  respuesta_a13:
+      respuesta: |
+        Pues muy bonito el restaurante. La verdad es que probablemente volveré en los próximos días y traeré
+        toda mi família.
+      ListaCuestionarioUser: respuestas_2
+      Pregunta: pregunta_A_13
+
+
+

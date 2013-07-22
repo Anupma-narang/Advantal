@@ -1,0 +1,21 @@
+#sfGuardPermission:
+#  sfGuardPermission_1:
+#    name: 'Superadministrador'
+#    description: 'Superadministrador'
+#    created_at: '2013-02-11 17:56:51'
+#    updated_at: '2013-02-11 17:56:51'
+#  sfGuardPermission_2:
+#    name: 'Administrador'
+#    description: 'Administrador'
+#    created_at: '2013-02-11 17:56:51'
+#    updated_at: '2013-02-11 17:56:51'
+#  sfGuardPermission_3:
+#    name: 'Editor'
+#    description: 'Editor'
+#    created_at: '2013-02-11 17:56:51'
+#    updated_at: '2013-02-11 17:56:51'
+#  sfGuardPermission_4:
+#    name: 'Lector'
+#    description: 'Lector'
+#    created_at: '2013-02-11 17:56:51'
+#    updated_at: '2013-02-11 17:56:51'

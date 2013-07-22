@@ -1,0 +1,31 @@
+ProfesionalLetterEstado:
+  ProfesionalLetterEstado_1:
+    value: '1'
+    name: Revista
+  ProfesionalLetterEstado_2:
+    value: '2'
+    name: Activa
+  ProfesionalLetterEstado_3:
+    value: '3'
+    name: Referéndum
+  ProfesionalLetterEstado_4:
+    value: '4'
+    name: Deliberación
+  ProfesionalLetterEstado_5:
+    value: '5'
+    name: Observación
+  ProfesionalLetterEstado_6:
+    value: '6'
+    name: Cerrado
+  ProfesionalLetterEstado_7:
+    value: '7'
+    name: Rechazado
+  ProfesionalLetterEstado_8:
+    value: '8'
+    name: Nulo
+  ProfesionalLetterEstado_9:
+    value: '9'
+    name: Borrador
+  ProfesionalLetterEstado_10:
+    value: '10'
+    name: Revisión

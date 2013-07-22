@@ -1,0 +1,120 @@
+EmpresaProductoEvolucion:
+  empresa_can_serra_enero:
+    Empresa: Empresa_1
+    date: '2012-01-01'
+    puntuacion: 43
+
+  empresa_can_serra_febrero:
+    Empresa: Empresa_1
+    date: '2012-02-01'
+    puntuacion: 23
+
+  empresa_can_serra_marzo:
+    Empresa: Empresa_1
+    date: '2012-03-01'
+    puntuacion: 35
+
+  empresa_can_serra_abril:
+    Empresa: Empresa_1
+    date: '2012-04-01'
+    puntuacion: 38
+
+  empresa_can_serra_mayo:
+    Empresa: Empresa_1
+    date: '2012-05-01'
+    puntuacion: 46
+
+  empresa_can_serra_junio:
+    Empresa: Empresa_1
+    date: '2012-06-01'
+    puntuacion: 42
+
+  empresa_can_serra_julio:
+    Empresa: Empresa_1
+    date: '2012-07-01'
+    puntuacion: 55
+
+  empresa_can_serra_agosto:
+    Empresa: Empresa_1
+    date: '2012-08-01'
+    puntuacion: 53
+
+  empresa_can_serra_septiembre:
+    Empresa: Empresa_1
+    date: '2012-09-01'
+    puntuacion: 52
+
+  empresa_can_serra_octubre:
+    Empresa: Empresa_1
+    date: '2012-10-01'
+    puntuacion: 49
+
+  empresa_can_serra_noviembre:
+    Empresa: Empresa_1
+    date: '2012-11-01'
+    puntuacion: 48
+
+  empresa_can_serra_diciembre:
+    Empresa: Empresa_1
+    date: '2012-12-01'
+    puntuacion: 45
+
+  producto_kellogs_enero:
+    Producto: Producto_1
+    date: '2012-01-01'
+    puntuacion: 43
+
+  producto_kellogs_febrero:
+    Producto: Producto_1
+    date: '2012-02-01'
+    puntuacion: 23
+
+  producto_kellogs_marzo:
+    Producto: Producto_1
+    date: '2012-03-01'
+    puntuacion: 35
+
+  producto_kellogs_abril:
+    Producto: Producto_1
+    date: '2012-04-01'
+    puntuacion: 38
+
+  producto_kellogs_mayo:
+    Producto: Producto_1
+    date: '2012-05-01'
+    puntuacion: 46
+
+  producto_kellogs_junio:
+    Producto: Producto_1
+    date: '2012-06-01'
+    puntuacion: 42
+
+  producto_kellogs_julio:
+    Producto: Producto_1
+    date: '2012-07-01'
+    puntuacion: 55
+
+  producto_kellogs_agosto:
+    Producto: Producto_1
+    date: '2012-08-01'
+    puntuacion: 53
+
+  producto_kellogs_septiembre:
+    Producto: Producto_1
+    date: '2012-09-01'
+    puntuacion: 52
+
+  producto_kellogs_octubre:
+    Producto: Producto_1
+    date: '2012-10-01'
+    puntuacion: 49
+
+  producto_kellogs_noviembre:
+    Producto: Producto_1
+    date: '2012-11-01'
+    puntuacion: 48
+
+  producto_kellogs_diciembre:
+    Producto: Producto_1
+    date: '2012-12-01'
+    puntuacion: 45

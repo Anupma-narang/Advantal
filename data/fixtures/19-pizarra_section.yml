@@ -1,0 +1,11 @@
+PizarraSection:
+  PizarraSection_1: { name: 'Concursos de empresa/entidad', module: 'concurso', action: 'index', short_name: 'CE', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_2: { name: 'Concursos de producto', module: 'concurso', action: 'index', short_name: 'CP', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_3: { name: 'Directorio de buenos profesionales', module: 'directorio', action: 'index', short_name: 'D', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_4: { name: 'Lista blanca de empresas y entidades', module: 'listaBlanca', action: 'index', short_name: 'LBE', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_5: { name: 'Lista blanca de productos', module: 'listaBlancaProducto', action: 'index', short_name: 'LBP', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_6: { name: 'Lista negra de empresas y entidades', module: 'listaNegra', action: 'indexEmpresas', short_name: 'LNE', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_7: { name: 'Lista negra de productos', module: 'listaNegra', action: 'indexProductos', short_name: 'LNP', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_8: { name: 'Ranking de colaboradores', module: 'vosotros', action: 'hierarchyRanking', short_name: 'RC', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  PizarraSection_9: { name: 'Ranking de recompensas', module: 'vosotros', action: 'rewardRanking', short_name: 'RR', created_at: '2012-08-31 19:33:17', updated_at: '2012-08-31 20:34:20' }
+  

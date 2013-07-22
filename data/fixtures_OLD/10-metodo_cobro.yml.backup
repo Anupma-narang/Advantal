@@ -1,0 +1,7 @@
+metodo_cobro:
+  no:
+    metodo: No indicar de momento
+  banco:
+    metodo: Cuenta bancaria
+  paypal:
+    metodo: Paypal
