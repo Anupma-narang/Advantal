@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext" date="2012-06-05T14:06:28Z">
+    <body>
+      <trans-unit id="1">
+        <source>cap_first_name</source>
+        <target>First Name</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>cap_last_name_one</source>
+        <target>Last Name 1</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>cap_last_name_two</source>
+        <target>Last Name 2</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>cap_email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>msg_profesional_has_been_successfully_added</source>
+        <target>Profesional has been successfully added</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>cap_last_name_one_required</source>
+        <target>Last name one required</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>cap_last_name_two_required</source>
+        <target>Last name two required</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>cap_email_address_required</source>
+        <target>Email address required</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>cap_recommend_professional</source>
+        <target>Recommend a professional</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>cap_name</source>
+        <target>Name</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

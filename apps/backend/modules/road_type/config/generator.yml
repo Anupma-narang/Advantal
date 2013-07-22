@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           RoadType
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          road_type
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+        _new: { label: "Nuevo tipo de vía"}
+      fields:  
+        #value: { label: Valor }
+        orden: { label: Orden }
+        #created_at: { label: Creado el }
+        #updated_at: { label: Actualizado el }
+        name: { label: Tipo de vía }  
+      list:
+        title: Tipos de vía
+        #display: [orden, name, created_at, updated_at]
+        display: [id, orden, name]
+        max_per_page: 25
+        sort: orden
+      filter:
+        display: [orden, name]
+      form:    ~
+      edit:
+        title: Editar tipo de vía
+      new:     
+        title: Nuevo tipo de vía

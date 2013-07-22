@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUserProfile
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user_profile_blocked_users
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css: nothing
+
+    config:
+      actions: ~
+      fields:  
+        username: { label: "Usario" }
+        email: { label: "Correo electrónico" }
+      list:    
+        title: Listado de usuarios bloqueados
+        display: [=username, email]
+        object_actions:
+          _hierarchy: { label: Desbloquear, action: unblock }
+        
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

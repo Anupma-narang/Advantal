@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           RewardLog
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          reward_log
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+        _new: { label: 'Nueva entrada' }
+      fields:
+        created_at: { label : 'Creado el'}
+        hierarchy: { label : 'Jerarquía'}
+        cash: { label : 'Caja'}
+        gift_value: { label : 'Regalo'}
+        discription: { label : 'Descripción'}
+        user_id: { label : 'Usuario'}
+      list:
+        title: Histórico de recompensas
+        display: [ _created_at, _cash, _gift_value, _discription, _user_id, _hierarchy]
+        sort: [user_id, desc]
+        object_actions:
+          _edit:         ~
+          _delete:       ~  
+      filter:  
+        display: [ created_at, cash, gift, descroption 	, user_name, hierarchy]
+      form:    
+        class: RewardLogForm
+      edit:
+        title: Editar histórico de recompensas
+        display: [  user_id, user_name, hierarchy, cash, gift, descroption ]
+      new:
+        title: 'Nueva entrada en el Histórico'
+        display: [  user_id, user_name, hierarchy, cash, gift, descroption ]

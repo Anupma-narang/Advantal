@@ -1,0 +1,9 @@
+all:
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,/sfDependentSelectPlugin/js/SelectDependiente.min.js]
+  stylesheets:    [ui-lightness/jquery-ui-1.8.18.custom.css]
+  
+showIncidenciaSuccess:
+  layout:     false
+  
+showPlanAccionSuccess:
+  layout:     false  

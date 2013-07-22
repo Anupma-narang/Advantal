@@ -1,0 +1,68 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribuciones_pendientes
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva contribución"}
+      fields:
+        user_name: { label: Usuario }
+        user_id: {label: Usuario }
+        contribucion_estado: { label: Estado contribución }
+        created_at: { label: Creada el }
+        #destacado: {label: Dest. }
+        concurso_tipo: {label: Tipo }
+        tipo_concurso: {label: Tipo de concurso }
+        concurso_tipo_id: {label: Tipo de concurso }
+        resume_concurso: {label: Resumen (concurso) }
+        resumename: { label: Título }
+        name: { label: Título }
+        contribucion_estado_id: { label: Estado contribucion }
+      list:
+        max_per_page: 25
+        sort: created_at
+        title: Contribuciones pendientes
+        #display: [resumename,destacado,created_at,contribucion_estado,username]
+        display: [_created_at,resumename,concurso,tipo_concurso,username, contribucion_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+        actions:
+          _new: ~
+          _volver:
+            action: volver
+            label:  Volver al Listado
+      filter:
+        class: ContribucionesPendientesFormFilter
+        #display: [name, user_id, contribucion_estado_id, destacado, created_at, contribucion_estado_id]
+        display: [created_at, name, concurso_tipo_id, concurso_id, user_id]
+      form:
+        class: ContribucionPendienteBackendForm
+        display: [name, user_id, concurso_id, contribucion_estado_id, incidencia, plan_accion, resumen, principal]
+        actions:
+          _delete:  ~
+          _list:  ~
+          volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title:  Editar contribución
+        #display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen, principal]
+        display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen,archivo_1,archivo_2,archivo_3,archivo_4,archivo_5]
+      new:
+        title:  Nueva contribución pendiente
+        #display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen, principal]
+        display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen,archivo_1,archivo_2,archivo_3,archivo_4,archivo_5]

@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           logpuntos
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          logpuntos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions:
+       _new: { label: "Nuevo"}      
+      fields:  
+        sfGuardUser: { label: Usuario }
+        concurso_estado: { label: Estado }
+        created_at: { label: Creado el }
+        destacado: {label: Dest. }
+        concurso_tipo: {label: Tipo }
+        concurso_categoria: {label: Categoría }
+        action_id: { label: Acción }
+        code_accion: { label: Acción }
+      list:
+        sort: created_at
+        title: Log de usuarios/puntos
+        display: [id, sfGuardUser,code_accion,descripcion, n_puntos, concurso, contribucion, created_at]        
+        max_per_page: 20
+      filter: ~
+#         display: [user_id,action_id,descripcion, n_puntos, concurso_id, contribucion_id, created_at]
+      form: ~   
+      edit: ~
+      new:     ~

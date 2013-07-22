@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           EmpresaSectorDos
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          empresa_sector_dos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo subsector"}
+      fields:  
+        name: { label: Subsector }
+        empresa_sector_uno: { label: Sector }
+        empresa_sector_uno_id: { label: Sector }
+      list:
+        max_per_page: 25
+        title: Listado de subsectores de Empresa/Entidad
+        display: [id,orden,name,empresa_sector_uno]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name, empresa_sector_uno_id]
+      form:    ~
+      edit:
+        title: Editar subsector de Empresa/Entidad
+        display: [id,orden, name,empresa_sector_uno_id]
+      new:
+        title: Nuevo subsector de Empresa/Entidad

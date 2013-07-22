@@ -1,0 +1,7 @@
+newSuccess:
+  javascripts:
+    - ckeditor/ckeditor.js
+
+editSuccess:
+  javascripts:
+    - ckeditor/ckeditor.js

@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProductoTipoUno
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_tipo_uno
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo sector de Producto"}
+      fields:  
+        name: { label: Sector del producto }
+        image:  { label: Imagen }      
+      list:
+        max_per_page: 25
+        title: Listado de sectores de Producto
+        display: [id,orden,name]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name]
+      form:    ~
+      edit:
+        title: Editar sector del Producto
+        display: [orden,name,image]
+      new:
+        title: Nuevo sector del Producto
+        display: [orden,name,image]

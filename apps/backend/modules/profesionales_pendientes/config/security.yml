@@ -1,0 +1,11 @@
+changeStatus:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]
+
+delete:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]
+  
+all:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor ]]

@@ -1,0 +1,50 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion_planes_de_accion_producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      fields:      
+        name: { label: Contribución }
+        resume_name: { label: Contribución }
+        concurso: { label: Concurso }
+        resume_concurso: { label: Concurso }
+        concurso_created_at: { label: Creado el }
+        concurso_estado: { label: Estado concurso }
+        concurso_categoria: { label: Categoría }
+        concurso_producto: { label: Producto }
+        concurso_producto_marca: { label: Marca }
+        concurso_prod_tipo: { label: Tipo de producto }
+        username: { label: Usuario }
+        user_id: { label: Usuario }
+        concurso_id: { label: Concurso }
+        created_at: { label: Creado el }
+        concurso_producto_modelo: { label: Modelo }
+      list:
+        max_per_page: 25
+        sort: [created_at, desc]
+        title: Listado de Planes de acción de Producto
+        display: [_concurso_created_at, resume_name, resume_concurso, concurso_categoria, concurso_producto, concurso_producto_marca, _modelo, concurso_producto_uno, concurso_producto_dos, concurso_prod_tipo, username, concurso_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+        actions: {}
+      filter:  
+        class: PlanesDeAccionProductoFormFilter
+        #display: [concurso_created_at, name, concurso, concurso_categoria, concurso_producto, concurso_producto_marca, user_id, concurso_estado]
+        display: [created_at, name, concurso_id, concurso_categoria, concurso_producto, concurso_producto_marca, concurso_producto_modelo, producto_tipo_uno_id,producto_tipo_dos_id,producto_tipo_tres_id, user_id, concurso_estado]
+      form:    ~
+      edit:    ~
+      new:     ~

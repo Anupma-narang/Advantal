@@ -1,0 +1,23 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+  
+setFeatured:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]
+  
+removeFeatured:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]  
+
+delete:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]
+
+destacadoManager:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]
+  
+all:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]

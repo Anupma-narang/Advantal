@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Alertas
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          colaboradores_alertas
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva alerta"}
+      fields:
+        message: { label: "Descripción" }
+        message_without_html: { label: "Descripción" }
+        type: { label: "Tipo de alerta" }
+        created_at: { label: "Creada el" }
+        user_related_id: { label: "Usuario" }
+        user_name: { label: "Usuario" }
+      list:
+        title: Alertas de colaboradores
+        display: [_created_at, type, message_without_html, _user_related_id]
+        sort: [created_at, desc]
+        max_per_page: 25
+        object_actions:
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [ created_at ,user_related_id, type]
+      form:
+        class: ColaboradoresAlertasForm
+      edit:
+        display: [type, user_name,user_related_id, message]
+        title: Editar alerta de colaborador
+      new:
+        display: [type, user_name,user_related_id, message]
+        title: Nueva alerta de colaborador

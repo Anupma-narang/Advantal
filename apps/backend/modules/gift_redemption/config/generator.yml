@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           GiftRedemption
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gift_redemption
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new: { label: 'Nuevo canje' }
+      fields:  
+        created_at: { label: 'Creado el' }
+        user: { label: 'Usuario' }
+        gift: { label: 'Regalo solicitado' }
+        states_id: { label: 'Provincia' }
+        city_id: { label: 'Localidad' }
+        name 	: { label: 'Tu nombre' }
+        surname1 	: { label: 'Tu apellido 1' }
+        surname2 	: { label: 'Tu apellido 2' }
+        road_type : { label: 'Tipo de vía' }
+        address 	: { label: 'Dirección de entrega' }
+        number 	: { label: 'Nº' }
+        floor 	: { label: 'Piso' }
+        door 	: { label: 'Puerta' }
+        status 	: { label: 'Estado' }
+        contact_number: { label: 'Teléfono de contacto' }
+      list:    
+        display: [ _created_at,  _gift, _states_id, _city_id ,_user, _status] 
+        title: 'Listado de canje de regalos'
+        object_actions:
+          _ver: ~
+          _edit: ~
+          _delete: ~
+          _sent: { label: Enviado, action: sent}
+          _delivered: { label: Entregado, action: delivered}
+          
+      filter:  
+        display: [ created_at,  gift, states_id, city_id , user, status] 
+      form:    ~
+      edit:    
+        title: 'Editar canje de regalo'
+        display: [ user_name, user , status, gift, road_type,address, number, floor, door, states_id, city_id, contact_number, delivery_time ]
+      new:     
+        title: 'Nuevo canje de regalo'
+        display: [ user_name, user, status, gift, road_type,address, number, floor, door, states_id, city_id, contact_number, delivery_time ]

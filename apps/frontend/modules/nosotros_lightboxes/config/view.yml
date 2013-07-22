@@ -1,0 +1,22 @@
+default:
+  http_metas: ~
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony,project
+    #language:     en
+    #robots:       index, follow
+all:    
+  stylesheets:    [jquery.jscrollpane.css, main3-lightbox.css, media-queries-lightbox.css,  -main.css,-global.css,-estyl_side.css,-estyl_sup.css,-caja.css]
+
+  javascripts:    [jquery-1.7.2.min.js, fancybox/jquery.fancybox.pack.js, jquery.jscrollpane.min.js]
+
+  has_layout:     true
+  layout:         lightbox5_nosotros
+quienesSuccess:
+  metas:
+    title:        Ideas para mejorar tu experiencia de cliente y ganar recompensas
+    description:  ¿Tienes buenas ideas para mejorar tu experiencia de cliente? ¿Te gustaría auditar y mejorar productos, servicios y profesionales y ganar recompensas?
+    keywords:     idea, ideas, comunidad experiencia cliente, mejorar experiencia cliente, mejora experiencia cliente, auditar, auditar producto, auditar productos, auditar servicio, auditar servicios, auditar profesional, auditar profesionales
+    #language:     en
+    #robots:       index, follow

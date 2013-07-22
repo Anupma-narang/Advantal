@@ -1,0 +1,19 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+  stylesheets:    [ui-lightness/jquery-ui-1.8.18.custom.css, global.css, estyl_side.css,estyl_sup.css, lista.css, lista-audita.css ]
+  javascripts:    [ jquery-1.7.2.min.js, jquery-ui-1.8.6.custom.min.js , listas.js, jquery.nestedAccordion.js, fancybox/jquery.fancybox.pack.js ]
+
+  has_layout:     true
+  layout:         layout_principal
+  

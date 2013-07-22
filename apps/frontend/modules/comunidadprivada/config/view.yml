@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [global.css,concurso.css,estyl_sup.css,/sfJqueryReloadedPlugin/css/JqueryAutocomplete.css,pagination.css,caja.css, buscador.css,fancybox/jquery.fancybox.css,comunidadprivada.css]
+
+  javascripts:    [jquery-1.7.2.min.js, fancybox/jquery.fancybox.pack.js, jquery.autocompleter.js,close_flash.js, /sfDependentSelectPlugin/js/SelectDependiente.min.js, tiny_mce/tiny_mce.js]
+
+  has_layout:     true
+  layout:         layout_comunidadprivada

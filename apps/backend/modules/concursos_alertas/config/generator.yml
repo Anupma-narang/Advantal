@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Alertas
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concursos_alertas
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva alerta"}
+      fields:
+        message: { label: "Descripción" }
+        message_without_html: { label: "Descripción" }
+        type: { label: "Tipo de alerta" }
+        created_at: { label: "Creada el" }
+      list:
+        title: Alertas de concursos
+        display: [type, message_without_html, created_at]
+        sort: [created_at, desc]
+        max_per_page: 25
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [type, created_at]
+      form:
+        class: ConcursosAlertasForm
+      edit:
+        display: [type, message]
+        title: Editar alerta de concurso
+      new:
+        display: [type, message]
+        title: Nueva alerta de concurso

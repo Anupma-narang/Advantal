@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           kpi
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          kpi
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+      actions: 
+        _new: { label: "Nuevo KPI"}  
+      fields:
+        nombre: { label: KPI }
+      list:
+        title: Listado de KPIs
+        display: [ nombre, _tipo ]
+        max_per_page: 25
+      filter:
+        display: [ nombre, tipo ]
+      form:    ~
+      edit:    
+        title: Editar KPI
+      new:     
+        title: Nuevo KPI

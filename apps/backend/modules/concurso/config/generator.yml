@@ -1,0 +1,69 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Concurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions:
+       _new: { label: "Nuevo concurso"}
+      fields:
+        username: { label: Usuario }
+        concurso_estado: { label: Estado }
+        concurso_estado_id: { label: Estado }
+        created_at: { label: Creado el }
+        tipodestacado: {label: Destacado }
+        concurso_categoria: {label: Categoría }
+        concurso_categoria_id: {label: Categoría }
+        resumename: { label: Título }
+        name: { label: Título }
+        from: { label: desde }
+        states_id: { label: Provincia }
+        city_id:  { label: Localidad }
+        user_id:  { label: Usuario }
+        concurso_tipo_id: { label: Tipo de concurso }
+        empresa_id: { label: Empresa/Entidad }
+        destacado: { label: Destacado }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+      list:
+        sort: [created_at, desc]
+        title: Listado de concursos
+        display: [_created_at, resumename, _tipodestacado,destacado,concurso_tipo,concurso_categoria,_producto,_marca,_modelo,_empresa,_sector,_subsector,_actividad,_sector_del_producto,_subsector_del_producto,_tipo_de_producto,_provincia,_localidad, username, concurso_estado, _featured, featured_order]
+        max_per_page: 25
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          featured:
+            action: setFeatured
+            label: Home
+          featured_order:
+            action: setFeaturedOrder
+            label: Orden home
+          _edit:         ~
+          _delete:       ~
+      filter:
+         display: [created_at, name, destacado, concurso_tipo_id, concurso_categoria_id, empresa_id, producto_id, states_id, city_id, marca, modelo, user_id, concurso_estado_id]
+      form:
+        class: ConcursoFormBackend
+        actions:
+          _delete:  ~
+          _list:  ~
+          volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title: Editar concurso
+        display: [name, concurso_estado_id, user_id, concurso_categoria_id, empresa_nombre, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id,concurso_address, concurso_numero, concurso_piso, concurso_puerta, road_type_id, states_id, city_id, destacado, featured, featured_order, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+      new:
+        title: Nuevo concurso
+        display: [name, concurso_estado_id, user_id, concurso_categoria_id, empresa_nombre, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id,concurso_address, concurso_numero, concurso_piso, concurso_puerta, road_type_id, states_id, city_id, destacado, featured, featured_order, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]

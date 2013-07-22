@@ -1,0 +1,10 @@
+passwordSuccess:
+  metas:
+    title: Password restore
+
+password_sentSuccess:
+  metas:
+    title: Password sent
+
+default:
+  stylesheets:    [/sfAdminDashPlugin/css/default.css,/sfAdminDashPlugin/css/global.css, main_background.css,global.css,login/boxes.css] 

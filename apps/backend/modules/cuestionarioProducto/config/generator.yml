@@ -1,0 +1,51 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ListaCuestionario
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          cuestionario_producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+
+    config:
+      actions:
+       _new:        { label: "Nuevo cuestionario"}
+      fields:
+        created_at: { label: Creado el, date_format: dd/MM/y }
+        nombre:     { label: Título }
+        sector:  { label: Sector del producto, sortBy : ptu.sector }
+        subsector:  { label: Subsector del producto, sortBy : ptd.subsector }
+        actividad:  { label: Tipo de producto, sortBy : ptt.actividad }
+      list:
+        title: Listado de cuestionarios de auditoría de Producto
+        display: [ created_at, nombre, _tipo, sector, subsector, actividad]
+        table_method: getCuestionariosForProducto
+        max_per_page: 25  
+        object_actions:
+          _show:    { label: Ver, action: show}
+          _edit: ~
+          duplicar: { label: Duplicar, action: duplicar }
+          _delete: ~
+
+      filter:
+         fields:
+           producto_tipo_uno_id: { label: Sector del producto}
+           producto_tipo_dos_id: { label: Subsector del producto}
+           producto_tipo_tres_id: { label: Tipo de producto}
+         display: [created_at, nombre, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id ]
+      form:
+        actions:
+          _list: ~
+          _delete: ~
+          _save: { label: Guardar }
+          _save_and_add: { label: Guardar y crear otro }
+      edit:
+        title: Editar cuestionario de auditoría de Producto
+      new:
+        title: Nuevo cuestionario de Producto

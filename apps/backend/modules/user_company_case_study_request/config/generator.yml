@@ -1,0 +1,56 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           UserCompanyCaseStudyRequest
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          user_company_case_study_request
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css: nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo caso de éxito"}
+      fields:
+        divisor: { label: Auditorías}
+        factor_formula: { label: Factor de fórmula }
+        name: { label: Empresa/Entidad }
+        user_name: { label: Usuario }
+        road_type_id : { label: Tipo de vía }
+        numero : { label: Nº }
+        States : { label: Provincia, sortBy : s.States }
+        city_id : { label: Localidad, sortBy : c.city_id }
+        empresa_sector_uno_id : { label: Sector, sortBy : c.empresa_sector_uno_id }
+        empresa_sector_dos_id : { label: Subsector, sortBy : c.empresa_sector_dos_id }
+        empresa_sector_tres_id : { label: Actividad, sortBy : c.empresa_sector_tres_id }
+        created_at: { label: Creado el }
+        status: { label: Estado }
+        direccion: { label: Dirección }
+        states_id: { label: Provincia }
+        description: { label: Descripción del caso de éxito  }
+        summary: { label: Resumen del caso de éxito  }
+
+      list:
+        max_per_page: 25
+        title: Listado de casos de éxito de Empresa/Entidad
+        display: [ _created_at,name,empresa_sector_uno_id,empresa_sector_dos_id,empresa_sector_tres_id,States,city_id,user_name,_status ]
+        table_method: doSelectJoinSectors
+        object_actions:
+          _ver: { label: ver, action: show }
+          _edit: ~
+          _delete: ~
+          _processed: { label: Tramitado, action: processed}
+          _closed: { label: Cerrado , action: closed}
+      filter:
+        display: [created_at,name,states_id,city_id,empresa_sector_uno_id,empresa_sector_dos_id,empresa_sector_tres_id,user_name,status]
+      form:
+      edit:
+        display: [status,user_name,name,homepage,road_type_id,direccion,numero,piso,puerta,cp,states_id,city_id,empresa_sector_uno_id,empresa_sector_dos_id,empresa_sector_tres_id,description,summary,file1,file2,file3,file4,logo]
+        title: Editar caso de éxito de Empresa/Entidad
+      new:
+        display: [status,user_name,name,homepage,road_type_id,direccion,numero,piso,puerta,cp,states_id,city_id,empresa_sector_uno_id,empresa_sector_dos_id,empresa_sector_tres_id,description,summary,file1,file2,file3,file4,logo]
+        title: Nuevo caso de éxito de Empresa/Entidad

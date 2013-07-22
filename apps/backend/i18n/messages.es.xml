@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext" date="2012-06-05T14:06:28Z">
+    <body>
+      <trans-unit id="1">
+        <source>Required.</source>
+        <target>Campo obligatorio</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>is empty</source>
+        <target>nulo</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>is not a number.</source>
+        <target>No es un n&#xFA;mero</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Yes</source>
+        <target>Si</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Filters</source>
+        <target>Filtros</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Preguntas cuestionario de baja</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Editar Pregunta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Nueva Pregunta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Etiqueta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Tipo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>listado de prov</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Referendums de Concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Listado de Alertas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Mensaje</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Creado el</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Hit&#xF3;rico de Concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Hist&#xF3;rico de puntos a colaboradores</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Colaborador</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>M&#xF3;dulo relacionado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Listado de Mesas redondas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Listado de Cuestionarios</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Editar cuestionario</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Nuevo cuestionario</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Estado de las contribuciones</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Tipos de concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Listado de Estados Concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Concursos pendientes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>[0]Le ha votado 0 colaboradores
+						|[1]Le ha votado 1 colaborador
+						|(1,+Inf]Le ha votado %%count%% colaboradores</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Enviar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Participar en Beneficio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Editar concurso</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Nuevo concurso</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Usuario</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Estado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>&#xBF;Destacado?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Categor&#xED;a</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>T&#xED;tulo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>desde</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Provincia</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Ciudad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Creado por</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Categoria de Empresas Nivel 1</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Edici&#xF3;n de Empresas Nivel 1</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Listado de Productos Nivel 3</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Edicion de Productos Nivel 3</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Categoria de Empresas Nivel 2</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Edici&#xF3;n de Empresas Nivel 2</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>Revisiones de concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Listado de Concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Destacado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Localidad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Tipo de concurso</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Empresa/Entidad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Tipos de Vias</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Listado de puntos a asignar a colaboradores</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Descripci&#xF3;n</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>&#xBF;Autom&#xE1;tico?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>N&#xBA; puntos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Listado de Categorias de Concursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Categoria de Empresas Nivel 3</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>Edici&#xF3;n de Empresas Nivel 3</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Lista de productos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Ficheros con los documentos de cada concurso</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Lista de Colaboradores</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>Editar colaborador</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>Nuevo colaborador</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>&#xBF;Activo?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="66">
+        <source>&#xBF;Deshabilitado?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>&#xDA;ltimo acceso</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>Correo electr&#xF3;nico</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>Contrase&#xF1;a</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>Lista grupos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>lista permisos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>Repite contrase&#xF1;a</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>&#xBF;Superadministrador?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Listado de Productos Nivel 1</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>Edici&#xF3;n de Productos Nivel 1</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>[0]Hay 0 contribuciones pendientes.|[1]Hay 1 contribuci&#xF3;n pendiente.|(1,+Inf]Hay %count% contribuciones pendientes.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="77">
+        <source>[0]Hay 0 concursos pendientes.|[1]Hay 1 concurso pendiente.|(1,+Inf]Hay %count% concursos pendientes.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="78">
+        <source>Contribuciones pendientes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>Editar contribuci&#xF3;n</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="80">
+        <source>Estado contribucion</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="81">
+        <source>Dest.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="82">
+        <source>Resumen (concurso)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="83">
+        <source>Medallero</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="84">
+        <source>Log de usuarios/puntos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="85">
+        <source>Acci&#xF3;n</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="86">
+        <source>Hola %alias%:
+
+Te informamos de que, el %created_at%, se ha creado el concurso %concurso_titulo%, creado para %nombre_producto% %marca_producto% en la categor&#xED;a de %concurso_categoria%.
+Esperamos que sea de tu inter&#xE9;s y nos gustar&#xED;a animarte a contribuir con tu Plan de acci&#xF3;n para mejorar este producto.
+D&#xE9;janos recordarte que, cada vez que contribuyes, te recompensamos con 100 puntos que puedes canjear por tus regalos favoritos.
+
+&#xA1;Muchas gracias por contribuir! 
+
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>Hola %alias%:
+
+Te informamos de que el concurso %concurso_titulo%, creado para %concurso_empresa_nombre% en la localidad de %concurso_empresa_provincia% (%concurso_empresa_ciudad%) y en la categor&#xED;a de %concurso_categoria%, finaliza en el plazo de 3 d&#xED;as.
+Nos gustar&#xED;a recordarte que, si deseas volver a contribuir en este concurso con una nueva contribuci&#xF3;n, &#xA1;se te acaba el tiempo!
+Igualmente, queremos animarte a participar en el Refer&#xE9;ndum, que comienza al finalizar el mismo, para elegir las mejores contribuciones, con lo que puedes ganar 50 puntos para canjear por tus regalos favoritos.
+
+&#xA1;Muchas gracias por contribuir!
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>Hola %alias%:
+
+Te informamos de que el concurso %concurso_titulo%, creado para %concurso_producto_nombre% %concurso_producto_marca% en la categor&#xED;a de [Categor&#xED;a del concurso], finaliza en el plazo de 3 d&#xED;as.
+Nos gustar&#xED;a recordarte que, con tu votaci&#xF3;n, puedes elegir las contribuciones de m&#xE1;s valor para el producto en concurso y con las que puedes participar en beneficio.
+Adem&#xE1;s, s&#xF3;lo por votar te recompensamos con 50 puntos para canjear por tus regalos favoritos.
+
+&#xA1;Vota ahora!
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="89">
+        <source>Hola %alias%:
+
+Te informamos de que el %created_at%, un colaborador ha contribuido en el concurso %concurso_titulo% que has creado para %nombre_producto% %marca_producto% en la categor&#xED;a de %concurso_categoria%.
+Para verlo, por favor haz clic %aqui%.
+
+&#xA1;Muchas gracias por contribuir!
+
+&lt;p&gt;&lt;a href="%link1%"&gt;No quiero recibir m&#xE1;s este mensaje&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="90">
+        <source>&lt;p&gt;Hola %alias%:&lt;/&gt;&lt;br/&gt;
+
+&lt;p&gt;Te informamos de que el %created_at%, un colaborador ha contribuido en el concurso %concurso_titulo% que has creado para %nombre_producto% %marca_producto% en la categor&#xED;a de %concurso_categoria%.&lt;/p&gt;
+&lt;p&gt;Para verlo, por favor haz clic %aqui%.&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;&#xA1;Muchas gracias por contribuir!&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;&lt;a href="%link1%"&gt;No quiero recibir m&#xE1;s este mensaje&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>Hola %alias%:
+
+Te informamos de que el concurso %concurso_titulo%, creado para %concurso_producto_nombre% %concurso_producto_marca% en la categor&#xED;a de [Categor&#xED;a del concurso], finaliza en el plazo de 3 d&#xED;as.
+Nos gustar&#xED;a recordarte que, si deseas volver a contribuir en este concurso con una nueva contribuci&#xF3;n, &#xA1;se te acaba el tiempo!
+Igualmente, queremos animarte a participar en el Refer&#xE9;ndum, que comienza al finalizar el mismo, para elegir las mejores contribuciones, con lo que puedes ganar 50 puntos para canjear por tus regalos favoritos.
+
+&#xA1;Muchas gracias por contribuir!
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="92">
+        <source>Hola %alias%:
+
+Te informamos de que el concurso %concurso_titulo%, creado para %concurso_empresa_nombre% en la localidad de %concurso_empresa_provincia% (%concurso_empresa_ciudad%) y en la categor&#xED;a de %concurso_categoria%, finaliza en un plazo de 2 d&#xED;as y todav&#xED;a no has votado.
+Nos gustar&#xED;a recordarte que, con tu votaci&#xF3;n, puedes elegir las contribuciones de m&#xE1;s valor para la empresa o entidad en concurso y con las que puedes participar en beneficio.
+Adem&#xE1;s, s&#xF3;lo por votar te recompensamos con 50 puntos para canjear por tus regalos favoritos.
+
+&#xA1;Vota ahora!
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>Hola %alias%:
+
+Te informamos de que el %created_at%, se ha creado el concurso %concurso_titulo%, creado para %nombre_empresa% en la localidad de %provincia% (%ciudad%) y en la categor&#xED;a de %concurso_categoria%.
+Esperamos que sea de tu inter&#xE9;s y nos gustar&#xED;a animarte a contribuir con tu Plan de acci&#xF3;n para mejorar esta empresa/entidad en tu localidad.
+D&#xE9;janos recordarte que, cada vez que contribuyes, te recompensamos con 100 puntos que puedes canjear por tus regalos favoritos.
+
+&#xA1;Muchas gracias por contribuir! 
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>Hola %alias%:
+
+Te informamos de que, el %created_at%, un colaborador ha contribuido en el concurso %concurso_titulo%, que has creado para %nombre_empresa% en la localidad de %provincia% %ciudad% y en la categor&#xED;a de %concurso_categoria%,
+
+Para verlo, por favor haz clic %aqui%.
+
+&#xA1;Muchas gracias por contribuir!
+
+No quiero recibir m&#xE1;s este mensaje
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>&lt;p&gt;Hola %alias%:&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;Te informamos de que, el %created_at%, un colaborador ha contribuido en el concurso %concurso_titulo%, que has creado para %nombre_empresa% en la localidad de %provincia% %ciudad% y en la categor&#xED;a de %concurso_categoria%.&lt;p&gt;
+
+&lt;p&gt;Para verlo, por favor haz clic %aqui%.&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;&#xA1;Muchas gracias por contribuir!&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;&lt;a href="%link1%"&gt;No quiero recibir m&#xE1;s este mensaje&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>&lt;p&gt;Hola %alias%:&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;Te informamos de que el %created_at%, se ha creado el concurso %concurso_titulo%, creado para %nombre_empresa% en la localidad de %provincia% (%ciudad%) y en la categor&#xED;a de %concurso_categoria%.&lt;/p&gt;
+&lt;p&gt;Esperamos que sea de tu inter&#xE9;s y nos gustar&#xED;a animarte a contribuir con tu Plan de acci&#xF3;n para mejorar esta empresa/entidad en tu localidad.&lt;/p&gt;
+&lt;p&gt;D&#xE9;janos recordarte que, cada vez que contribuyes, te recompensamos con 100 puntos que puedes canjear por tus regalos favoritos.&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;&#xA1;Muchas gracias por contribuir!&lt;/p&gt; 
+
+&lt;p&gt;&lt;a href="%link1%"&gt;No quiero recibir m&#xE1;s este mensaje&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="97">
+        <source>&lt;p&gt;Hola %alias%:&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;Te informamos de que, el %created_at%, se ha creado el concurso %concurso_titulo%, creado para %nombre_producto% %marca_producto% en la categor&#xED;a de %concurso_categoria%.&lt;/p&gt;
+&lt;p&gt;Esperamos que sea de tu inter&#xE9;s y nos gustar&#xED;a animarte a contribuir con tu Plan de acci&#xF3;n para mejorar este producto.&lt;/p&gt;
+&lt;p&gt;D&#xE9;janos recordarte que, cada vez que contribuyes, te recompensamos con 100 puntos que puedes canjear por tus regalos favoritos.&lt;/p&gt;&lt;br/&gt;
+
+&lt;p&gt;&#xA1;Muchas gracias por contribuir!&lt;/p&gt;&lt;br/&gt; 
+
+&lt;p&gt;&lt;a href="%link1%"&gt;No quiero recibir m&#xE1;s este mensaje&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>Lista de empresas y entidades</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Auditor&#xED;as</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>Factor de f&#xF3;rmula</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="101">
+        <source>Actividad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="102">
+        <source>Listado de contribuciones</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="103">
+        <source>Listado de Contribuciones</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="104">
+        <source>Categoria de Productos Nivel 2</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

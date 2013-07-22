@@ -1,0 +1,8 @@
+
+<?php
+$image_array = array(1 => '/images/check_red.gif',
+    2 => '/images/check_blue.gif',
+    3 => '/images/check_green.gif');
+//echo $user_product_case_study->getStatus();
+?>
+<img src="<?php echo $image_array[$user_product_case_study->getStatus()]; ?>" />

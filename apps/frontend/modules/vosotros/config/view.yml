@@ -1,0 +1,42 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [global.css,fancybox/jquery.fancybox.css,estyl_sup.css, estyl_side.css, vosotros.css, buscador.css, concurso.css]
+
+  javascripts:    [jquery-1.7.2.min.js, fancybox/jquery.fancybox.pack.js,jquery.autocompleter.js,/sfDependentSelectPlugin/js/SelectDependiente.min.js,close_flash.js, listaProfesional.js, easySlider1.5.js,ckeditor/ckeditor.js, general.js]
+
+  has_layout:     true
+  layout:         layout_vosotros
+
+
+rewardRankingSuccess:
+  javascripts: [ ranking_list.js ]
+
+hierarchyRankingSuccess:
+  javascripts: [ ranking_list.js ]
+
+
+getUsersContestAndContributionSuccess:
+  has_layout: false
+
+misauditoriasSuccess:
+ # stylesheets: [lista.css]
+
+misfavoritosSuccess:
+  #stylesheets: [lista.css]
+
+misComentariosSuccess:
+  stylesheets: [lista.css]
+  javascripts: [ckeditor/ckeditor.js]

@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           contactanos
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contactanos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                  nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo formulario"}
+      fields:
+        created_at : { label : 'Creado el' }
+        nombre : { label : 'Nombre' }
+        apellido1 : { label : 'Apellido 1' }
+        apellido2 : { label : 'Apellido 2' }
+        comentario : { label : 'COMENTARIO' }
+        email : { label : 'Correo electrónico' }
+        status: { label: 'Estado' }
+        user_id: { label: 'Usuario' }
+
+      list:
+        display : [_created_at, nombre, apellido1, apellido2,email, _user_id, _status]
+        object_actions:
+          _ver: { label: ver, action: show }
+          _edit: ~
+          _delete: ~
+          _processed: { label: Tramitado, action: processed}
+          _closed: { label: Cerrado , action: closed}
+        title: Listado de formularios de Contáctanos
+      filter:
+        display: [ created_at,user_id, nombre, apellido1, apellido2,  status ]
+      form:    ~
+      edit:
+        title: Editar formulario de Contáctanos
+        display : [status, user_name, user_id, nombre ,apellido1 ,apellido2 ,email ,phone ,comentario ,fichero1 ,fichero2 ,fichero3 ,fichero4 ,fichero5]
+      new:
+        title: Nuevo formulario de Contáctanos
+        display : [status, user_name, user_id, nombre ,apellido1 ,apellido2 ,email ,phone ,comentario ,fichero1 ,fichero2 ,fichero3 ,fichero4 ,fichero5]

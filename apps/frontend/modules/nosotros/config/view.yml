@@ -1,0 +1,288 @@
+default:
+  http_metas: ~
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony,project
+    #language:     en
+    #robots:       index, follow
+quienesSuccess:
+  metas:
+    title:        Ideas para mejorar tu experiencia de cliente y ganar recompensas
+    description:  ¿Tienes buenas ideas para mejorar tu experiencia de cliente? ¿Te gustaría auditar y mejorar productos, servicios y profesionales y ganar recompensas?
+    keywords:     idea, ideas, comunidad experiencia cliente, mejorar experiencia cliente, mejora experiencia cliente, auditar, auditar producto, auditar productos, auditar servicio, auditar servicios, auditar profesional, auditar profesionales
+    #language:     en
+    #robots:       index, follow
+porqueSuccess:
+  metas:
+    title:         Inteligencia de los consumidores para la mejora continua de empresas
+    description:  ¿Has tenido una mala experiencia de cliente? Ayuda a otros consumidores a la mejora continua de empresas, entidades públicas y profesionales y ¡participa en beneficio!
+    keywords:     consumidor, consumidores, consumir,  experiencia cliente satisfactoria, experiencia cliente insatisfactoria, excelencia,  inteligencia colectiva, crowdsourcing, beneficio.
+    #language:     en
+    #robots:       index, follow
+comoSuccess:
+  metas:
+    title:        Concursos para la mejora de empresas, entidades y profesionales
+    description:  Contribuye en concursos de ideas para la mejora de empresas, entidades públicas, productos y profesionales. ¡Hazte colaborador y gana dinero!
+    keywords:     concurso, concursos, contribuir concursos, plan acción, mejora empresas, mejora entidades públicas, mejora profesionales, mejora productos, valorar profesional, valorar profesionales, valoración profesional, valoración profesionales, recomendar profesional, recomendar profesionales, desaprobar profesional, desaprobar profesionales, entidades públicas recomendadas, empresas no recomendadas, productos no recomendados, entidades no recomendadas
+    #language:     en
+    #robots:       index, follow
+sistemaSuccess:
+  metas:
+    title:        Recompensas por tu contribución en concursos de ideas
+    description:  ¡Gana recompensas, regalos y dinero por tu contribución en concursos de ideas y mejorar tus empresas, productos y profesionales favoritos!
+    keywords:     recompensa, recompensas, ganar recompensa, ganar recompensas, contribución, contribuciones, participación beneficio, participar beneficio, reparto beneficio, reparto beneficios, hacer caja, ganar regalo, ganar regalos, canjear regalo, canjear regalos, vender plan acción, vender planes acción
+    #language:     en
+    #robots:       index, follow
+canjeregalosSuccess:
+  metas:
+    title:        Condiciones para canjear tus regalos
+    description:  Condiciones para canjear tus regalos en la comunidad de Experiencia de Cliente de auditoscopia
+    keywords:     recompensa, recompensas, ganar recompensa, ganar recompensas, contribución, contribuciones, participación beneficio, participar beneficio, reparto beneficio, reparto beneficios, hacer caja, ganar regalo, ganar regalos, canjear regalo, canjear regalos, vender plan acción, vender planes acción
+    #language:     en
+    #robots:       index, follow
+participacionbeneficioSuccess:
+  metas:
+    title:        Condiciones para la Participación en beneficio
+    description:  Términos y condiciones para Participar en beneficio en la comunidad de experiencia de cliente de auditoscopia
+    #keywords:     recompensa, recompensas, ganar recompensa, ganar recompensas, contribución, contribuciones, participación beneficio, participar beneficio, reparto beneficio, reparto beneficios, hacer caja, ganar regalo, ganar regalos, canjear regalo, canjear regalos, vender plan acción, vender planes acción
+    #language:     en
+    #robots:       index, follow
+condicionescajaSuccess:
+  metas:
+    title:        Condiciones para hacer caja
+    description:  Condiciones para hacer caja en la comunidad de Experiencia de Cliente de auditoscopia
+    #keywords:     recompensa, recompensas, ganar recompensa, ganar recompensas, contribución, contribuciones, participación beneficio, participar beneficio, reparto beneficio, reparto beneficios, hacer caja, ganar regalo, ganar regalos, canjear regalo, canjear regalos, vender plan acción, vender planes acción
+    #language:     en
+    #robots:       index, follow
+cobrarcajaSuccess:
+  metas:
+    title:        Cómo cobrar tu caja
+    description:  Cómo cobrar tu caja en la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     recompensa, recompensas, ganar recompensa, ganar recompensas, contribución, contribuciones, participación beneficio, participar beneficio, reparto beneficio, reparto beneficios, hacer caja, ganar regalo, ganar regalos, canjear regalo, canjear regalos, vender plan acción, vender planes acción
+    #language:     en
+    #robots:       index, follow
+jerarquiasSuccess:
+  metas:
+    title:        Ranking de colaboradores más expertos en mejorar productos y servicios
+    description:  ¿Eres el más experto en mejorar tus productos y servicios favoritos? ¡Demuéstralo y consigue tu Jerarquía en nuestro ranking de colaboradores!
+    keywords:     contribuir, comunidad, colaborador, colaboradores, comunidad colaboradores, ranking colaboradores, Jerarquía, Jerarquía colaborador, Jerarquía colaboradores, ganar puntos, puntos canjeables, puntos acumulados, panel expertos, experto, expertos, service auditor, service consultant, service expert, service champion.
+    #language:     en
+    #robots:       index, follow
+nuestrosSuccess:
+  metas:
+    title:        Comunidad de análisis y gestión de Experiencia de Cliente 
+    description:  ¡Confía tu auditoría de Experiencia de Cliente a tus propios clientes! Entra en la comunidad de Experiencia de Cliente y entérate cómo.
+    keywords:     análisis experiencia cliente, gestión experiencia de cliente, proyecto experiencia cliente, proyectos análisis experiencia cliente, aec, auditoría experiencia cliente, auditorías experiencia cliente, estudio experiencia cliente, estudios experiencia cliente,  asesoría experiencia cliente, consultoría experiencia cliente, customer experience, customer experience management, cem, net promoter score, nps, experience index, brand experience index, employee experience index
+    #language:     en
+    #robots:       index, follow    
+colaboraSuccess:
+  metas:
+    title:        Colabora con la comunidad de Experiencia de Cliente
+    description:  Colabora con la comunidad de Experiencia de Cliente y mejora tus productos, servicios y profesionales favoritos. ¡Hazte colaborador ya!
+    keywords:     colaborar
+    #language:     en
+    #robots:       index, follow  
+trabajaSuccess:
+  metas:
+    title:        Trabaja en la comunidad de Experiencia de Cliente
+    description:  ¿Eres experto en alguno de los productos o servicios que audita la comunidad? ¿Quieres formar parte del Panel de Expertos? ¡Contáctanos ya!
+    keywords:     trabajar, trabajo, conciliación vida familiar, autogestión, responsabilidad individual, derecho opinar, realización personal, reto profesional, retos profesionales, aprendizaje continuo, remuneración proyecto.
+    #language:     en
+    #robots:       index, follow  
+empresaSuccess:
+  metas:
+    title:        Contrátanos y  desmárcate por la experiencia de cliente
+    description:  Si eres una empresa, entidad pública o profesional puedes desmarcarte por la experiencia de cliente. Nuestra comunidad te ayuda. ¡Contrátanos!
+    keywords:     necesidad cliente, necesidades cliente, necesidades clientes, expectativa cliente, expectativas cliente, expectativas clientes, experiencia cliente satisfactoria, experiencias cliente satisfactorias, experiencia memorable, experiencias memorables, experiencia única, experiencias únicas, experiencia irrepetible, experiencias irrepetibles, política excelencia, cliente satisfecho, clientes satisfechos
+    #language:     en
+    #robots:       index, follow  
+listablancaSuccess:
+  metas:
+    title:        Guía de empresas, entidades y productos recomendados por su excelencia
+    description:  Contribuye en nuestra guía de empresas, entidades públicas y productos recomendados y gana dinero. ¡Hazte colaborador ya!
+    keywords:     auditoría continua, seguimiento continuo, guía referencia empresas, guía referencia entidades, guía referencia productos, auditoría producto,  auditorías producto, auditorías productos, auditoría servicio, auditorías servicios 
+    #language:     en
+    #robots:       index, follow  
+listanegraSuccess:
+  metas:
+    title:        Guía de empresas, entidades y productos no recomendados
+    description:  ¿Has tenido una mala experiencia con un producto o servicio? Contribuye en la guía de empresas, entidades públicas y productos no recomendados y gana dinero.
+    keywords:     experiencia cliente insatisfactoria, experiencias cliente insatisfactorias desajuste necesidad, desajuste necesidades, desajuste expectativa, desajuste expectativas, no recomendado, no recomendados, no recomendada, no recomendadas
+    #language:     en
+    #robots:       index, follow  
+directorioSuccess:
+  metas:
+    title:        Guía de profesionales recomendados por su excelencia
+    description:  ¿Te gustaría recomendar a un profesional por su excelencia y buenas prácticas? Contribuye en nuestra guía de profesionales recomendados y gana dinero.
+    keywords:     carta recomendación,  cartas de recomendación, carta desaprobación, cartas de desaprobación, valoración profesional,  valoraciones profesional, buena práctica, buenas prácticas, excelencia servicio
+    #language:     en
+    #robots:       index, follow
+decalogoSuccess:
+  metas:
+    title:        Decálogo para la Excelencia de productos y servicios
+    description:  Revisa el Decálogo de la Excelencia para empresas, entidades públicas y profesionales. ¡Ajústate a las necesidades y expectativas de tus clientes!
+    keywords:     decálogo, consultor experiencia cliente, consultores experiencia cliente, calidad, participación consumidor, participación consumidores, responsabilidad consumidor, responsabilidad consumidores, interacción cliente, interacción clientes, distribución beneficio, distribución beneficios, corregir desviación excelencia, satisfacción cliente, satisfacción clientes, necesidad negocio, necesidades negocio
+    #language:     en
+    #robots:       index, follow
+decalogolistablancaSuccess:
+  metas:
+    title:        Decálogo de la lista blanca de la Excelencia de auditoscopia
+    description:  Decálogo de la lista blanca de empresas, entidades públicas y productos recomendados por los consumidores
+    keywords:     mejorar negocio, mejorar negocios, mimar cliente, mimar clientes, cuidar cliente, cuidar clientes
+    #language:     en
+    #robots:       index, follow
+decalogolistanegraSuccess:
+  metas:
+    title:        Decálogo de la lista negra de la Excelencia de auditoscopia
+    description:  Decálogo de la lista negra de empresas, entidades públicas y productos no recomendados por los consumidores
+    keywords:     toque atención cliente, toque atención clientes, reflexionar negocio, innovar
+    #language:     en
+    #robots:       index, follow
+avisolegalSuccess:
+  metas:
+    title:        Aviso legal para participar en auditoscopia
+    description:  Aviso legal para participar en la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     toque atención cliente, toque atención clientes, reflexionar negocio, innovar
+    #language:     en
+    #robots:       index, follow
+terminosycondicionesSuccess:
+  metas:
+    title:        Términos y condiciones de servicio de auditoscopia
+    description:  Términos y condiciones de servicio  la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     toque atención cliente, toque atención clientes, reflexionar negocio, innovar
+    #language:     en
+    #robots:       index, follow
+condicionesparticipacionSuccess:
+  metas:
+    title:        Condiciones de participación en auditoscopia
+    description:  Condiciones de participación en la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     toque atención cliente, toque atención clientes, reflexionar negocio, innovar
+    #language:     en
+    #robots:       index, follow
+politicadeanonimatoSuccess:
+  metas:
+    title:        Política de anonimato de auditoscopia
+    description:  Política de anonimato de la comunidad de Experiencia de Cliente de audioscopia.
+    #keywords:     toque atención cliente, toque atención clientes, reflexionar negocio, innovar
+    #language:     en
+    #robots:       index, follow
+glosarioterminosSuccess:
+  metas:
+    title:        Glosario de términos de auditoscopia
+    description:  Glosario de términos de la comunidad de Experiencia de Cliente de auditoscopia.
+    keywords:     acto consumo, driver satisfacción, drivers satisfacción, elector, ecosistema experiencia cliente, mapa experiencia, mystery shopping, revisor campo, sondeo valoración
+    #language:     en
+    #robots:       index, follow
+preciospormodalidadSuccess:
+  metas:
+    title:        Precios por servicios de análisis y gestión de experiencia de cliente
+    description:  Precios por modalidad de servicio para proyectos de análisis y gestión de Experiencia de Cliente.
+    keywords:     servicio auditoscopia experto, servicio cliente experto,  auditoría empresas, auditoría entidades públicas, auditoría productos, servicio buen profesional
+    #language:     en
+    #robots:       index, follow
+comofuncionaenvioregalosSuccess:
+  metas:
+    title:        Condiciones para el envío de regalos de la comunidad de auditoscopia
+    description:  Condiciones para el envío y recepción de regalos ganados por contribuir en la comunidad de Experiencia de Cliente de auditoscopia
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+antespublicarcontribucionSuccess:
+  metas:
+    title:        Antes de contribuir en  la comunidad de auditoscopia
+    description:  Condiciones que necesitas conocer en detalle antes de contribuir en la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+queseSuccess:
+  metas:
+    title:        Qué se dice de auditoscopia
+    description:  Qué se dice de auditoscopia en los medios de comunicación y en internet.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+auditaSuccess:
+  metas:
+    title:        Audítanos a la comunidad de Experiencia de Cliente
+    description:  Audítanos a la comunidad de Experiencia de Cliente para mejorar y ajustarnos a tus necesidades y expectativas.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comoganarpuntosSuccess:
+  metas:
+    title:        Condiciones para ganar puntos
+    description:  Condiciones para ganar puntos la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+porquecrearunacuentaSuccess:
+  metas:
+    title:        Qué ventajas te ofrece ser colaborador de nuestra comunidad
+    description:  Qué ventajas te ofrece ser colaborador de la comunidad de Experiencia de Cliente de auditoscopia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comoformarblancaSuccess:
+  metas:
+    title:         Cómo entrar en la lista blanca
+    description:   Cómo formar parte de la lista blanca de empresas, entidades públicas y productos recomendados por su excelencia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comopermanecerblancaSuccess:
+  metas:
+    title:         Condiciones para permanecer en la lista blanca
+    description:   Condiciones para permanecer en la lista blanca de empresas, entidades públicas y productos recomendados por su excelencia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+otrasmanerasblancaSuccess:
+  metas:
+    title:         Otras maneras de entrar en la lista blanca
+    description:   Otras maneras formar parte de la lista blanca de empresas, entidades públicas y productos recomendados por su excelencia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comosalirblancaSuccess:
+  metas:
+    title:        Condiciones para salir de la lista blanca
+    description:   Condiciones para salir de la lista blanca de empresas, entidades públicas y productos recomendados por su excelencia.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comoformarnegraSuccess:
+  metas:
+    title:        Cómo se entra en la lista negra
+    description:   Cómo se entra en la lista negra de empresas, entidades públicas y productos no recomendados por los consumidores
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comonoformarnegraSuccess:
+  metas:
+    title:        Cómo no se entra en la lista negra
+    description:   Cómo no se entra en la lista negra de empresas, entidades públicas y productos no recomendados por los consumidores
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+comosalirlistanegraSuccess:
+  metas:
+    title:         Cómo salir de la lista negra
+    description:   Condiciones para salir de la lista negra de empresas, entidades y productos no recomendados por los consumidores
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+proyectosSuccess:
+  metas:
+    title:        Nuestros proyectos y metodología de gestión de experiencia de cliente
+    description:   Nuestros proyectos y metodología de análisis y gestión de experiencia de cliente.
+    #keywords:     
+    #language:     en
+    #robots:       index, follow
+all:    
+  stylesheets:    [fancybox/jquery.fancybox.css, main3.css, media-queries.css, -main.css,-global.css,-estyl_side.css,-estyl_sup.css,-caja.css]
+
+  javascripts:    [fancybox/jquery.fancybox.pack.js, lightbox_loader.js, /sfDependentSelectPlugin/js/SelectDependiente.min.js]
+
+  has_layout:     true
+  layout:         layout5_nosotros

@@ -1,0 +1,54 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProfesionalLetter
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          profesional_letter_cartas_recomendacion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions:
+        _new: { label: "Nueva carta de recomendación"}
+      fields:
+        name: { label: Titulo }
+        created_at: { label: Creada el, date_format: dd/MM/y }
+        first_name: { label: Nombre, is_real: true }
+        last_name_one: { label: Apellido 1, is_real: true }
+        last_name_two: { label: Apellido 2, is_real: true }
+        #user_complete_name: { label: Profesional }
+        activity_name_tres: { label: Actividad, is_real: true }
+        SectorName: {label: Sector , is_real: true }
+        SubSectorName: {label: Subsector , is_real: true }
+        state_name: { label: Provincia, is_real: true }
+        city_name: { label: Localidad, is_real: true }
+        username: { label: Usuario, is_real: true }
+        states_id: { label: Provincia }
+        city_id: { label: Localidad }
+        user_id: { label: Usuario }
+        profesional_letter_estado: { label: Estado, is_real: true }
+      list:
+        max_per_page: 25
+        sort: [created_at, desc]
+        title: Listado de cartas de recomendación
+        display: [created_at, name, last_name_one, last_name_two, first_name, state_name, city_name,SectorName,SubSectorName,activity_name_tres, username, profesional_letter_estado]
+        table_method: doSelectJoinForListing
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [created_at, name, last_name_one, last_name_two, first_name, states_id, city_id, profesional_tipo_uno_id, profesional_tipo_dos_id, profesional_tipo_tres_id, user_id, profesional_letter_estado_id]
+      form:
+        class: CartaRecommandOtherFormBackend
+      edit:
+        title: Editar carta de recomendación
+      new:
+        title: Nueva carta de recomendación

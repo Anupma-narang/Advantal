@@ -1,0 +1,50 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           UserProductCaseStudy
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          user_product_case_study
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css: nothing
+
+    
+    config:
+      actions:
+         _new: { label: "Nuevo caso de éxito"}
+      fields:
+        isDestacado: { label: Destacado }
+        created_at: { label: Creado el }
+        name: { label: Producto }
+        tipo: { label: Tipo de producto, sortBy : esd.sector }
+        sector: { label: Sector del producto, sortBy : esu.sectorName }
+        sub_sector: { label: Subsector del producto, sortBy : esd.subSectorName }
+        description: { label: Descripción del caso de éxito }
+        summary: { label: Resumen del caso de éxito }
+        user_name: { label: Usuario }
+        status: { label: Estado }
+        logo: { label: Añadir logo }
+        
+      list:
+        title: Listado de otros casos de éxito de Producto 
+        display: [_created_at, name, marca, modelo, sector, sub_sector, tipo, user_name ,_status ]
+        table_method: doSelectJoinSectors
+        object_actions:
+          _ver: { label: ver, action: show }
+          _edit: ~
+          _delete: ~
+          _processed: { label: Tramitado, action: processed}
+          _closed: { label: Cerrado , action: closed}
+
+      filter:
+        display: [created_at, name, marca, modelo, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id, user_name, status]
+      form:
+          
+      edit:
+        title: Editar otro caso de éxito de Producto  
+      new:
+        title: Nuevo otro caso de éxito de Producto 

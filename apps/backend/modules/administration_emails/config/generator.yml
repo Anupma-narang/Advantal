@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           AdministrationEmails
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          administration_emails
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new:  { label: Nuevo correo }
+      fields:  
+        created_at : { label: Creado el }
+        user_id : { label: Usuario }
+        user : { label: Usuario }
+        email : { label: Correo electrónico  }
+        permission_id : { label: Perfil }
+      list:    
+        title: Listado de correos de Administradores
+        display: [ _created_at, email, _permission_id, =user ]
+        object_actions:
+          show:
+            action: show
+            label: ver
+          _edit:
+          _delete:
+          assign_permission:
+            action: assignPermission
+            label: Asignar permisos
+      filter:  
+        display: [ created_at, email, permission_id, user_id ]
+      form:    ~
+      edit:    
+        title: Editar correo de Administrador 
+        display: [ user_name, user_id, email, permission_id ]
+      new:     
+        title: Nuevo correo de Administrador
+        display: [ user_name, user_id, email, permission_id ]

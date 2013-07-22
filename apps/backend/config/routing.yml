@@ -1,0 +1,1269 @@
+contribucion_contribuciones_destacadas_producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribuciones_destacadas_producto
+    prefix_path:          /contribuciones_destacadas_producto
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_contribuciones_destacadas_empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribuciones_destacadas_empresa
+    prefix_path:          /contribuciones_destacadas_empresa
+    column:               id
+    with_wildcard_routes: true
+
+cuestionario_baja_value:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                CuestionarioBajaValue
+    module:               cuestionariobajavalue
+    prefix_path:          /cuestionariobajavalue
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_planes_de_accion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               planes_de_accion
+    prefix_path:          /planes_de_accion
+    column:               id
+    with_wildcard_routes: true
+
+pizarra_section_blackboard_section:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PizarraSection
+    module:               blackboard_section
+    prefix_path:          /blackboard_section
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_user_profile_blocked_users:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUserProfile
+    module:               blocked_users
+    prefix_path:          /blocked_users
+    column:               user_id
+    with_wildcard_routes: true
+
+pizarra_section:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PizarraSection
+    module:               PizarraSection
+    prefix_path:          /PizarraSection
+    column:               id
+    with_wildcard_routes: true
+
+administration_emails:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdministrationEmails
+    module:               administration_emails
+    prefix_path:          /administration_emails
+    column:               id
+    with_wildcard_routes: true
+    
+sf_guard_user_administration_profile:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               administration_profile
+    prefix_path:          /administration_profile
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               administration
+    prefix_path:          /administration
+    column:               id
+    with_wildcard_routes: true
+    
+contribucion_contribucion_product:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribucion_product
+    prefix_path:          /contribucion_product
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_contribucion_empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribucion_empresa
+    prefix_path:          /contribucion_empresa
+    column:               id
+    with_wildcard_routes: true
+
+concurso_concursos_pendientes_empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Concurso
+    module:               concursos_pendientes_empresa
+    prefix_path:          /concursos_pendientes_empresa
+    column:               id
+    with_wildcard_routes: true
+
+concurso_concursos_pendientes_product:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Concurso
+    module:               concursos_pendientes_product
+    prefix_path:          /concursos_pendientes_product
+    column:               id
+    with_wildcard_routes: true
+
+contratanos_contratanos_professional:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contratanos
+    module:               contratanos_professional
+    prefix_path:          /contratanos_professional
+    column:               id
+    with_wildcard_routes: true
+
+user_product_case_study_request:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                UserProductCaseStudyRequest
+    module:               user_product_case_study_request
+    prefix_path:          /user_product_case_study_request
+    column:               id
+    with_wildcard_routes: true
+
+user_company_case_study_request:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                UserCompanyCaseStudyRequest
+    module:               user_company_case_study_request
+    prefix_path:          /user_company_case_study_request
+    column:               id
+    with_wildcard_routes: true
+
+user_product_case_study:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                UserProductCaseStudy
+    module:               user_product_case_study
+    prefix_path:          /user_product_case_study
+    column:               id
+    with_wildcard_routes: true
+
+user_company_case_study:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                UserCompanyCaseStudy
+    module:               user_company_case_study
+    prefix_path:          /user_company_case_study
+    column:               id
+    with_wildcard_routes: true
+
+product_case_study:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductCaseStudy
+    module:               product_case_study
+    prefix_path:          /product_case_study
+    column:               id
+    with_wildcard_routes: true
+
+company_case_study:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                CompanyCaseStudy
+    module:               company_case_study
+    prefix_path:          /company_case_study
+    column:               id
+    with_wildcard_routes: true
+
+recomended_registration:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RecomendedRegistration
+    module:               recomended_registration
+    prefix_path:          /recomended_registration
+    column:               id
+    with_wildcard_routes: true
+
+
+pizarraSection:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PizarraSection
+    module:               pizarraSection
+    prefix_path:          /pizarraSection
+    column:               id
+    with_wildcard_routes: true
+    
+auditanos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                auditanos
+    module:               auditanos
+    prefix_path:          /auditanos
+    column:               id
+    with_wildcard_routes: true
+    
+gift_redemption:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                GiftRedemption
+    module:               gift_redemption
+    prefix_path:          /gift_redemption
+    column:               id
+    with_wildcard_routes: true
+
+gift:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                gift
+    module:               gift
+    prefix_path:          /gift
+    column:               id
+    with_wildcard_routes: true
+
+jerarquia:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                jerarquia
+    module:               jerarquia
+    prefix_path:          /jerarquia
+    column:               id
+    with_wildcard_routes: true
+
+reward_log:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RewardLog
+    module:               RewardLog
+    prefix_path:          /RewardLog
+    column:               id
+    with_wildcard_routes: true
+
+administration_caja:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdministrationCaja
+    module:               AdministrationCaja
+    prefix_path:          /AdministrationCaja
+    column:               id
+    with_wildcard_routes: true
+
+profesional_profesionalesListaBlanca:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profesional
+    module:               profesionalesListaBlanca
+    prefix_path:          /profesionalesListaBlanca
+    column:               id
+    with_wildcard_routes: true
+
+profesional_letter_cartas_desaprobacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalLetter
+    module:               cartas_desaprobacion
+    prefix_path:          /cartas_desaprobacion
+    column:               id
+    with_wildcard_routes: true
+
+profesional_letter_cartas_recomendacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalLetter
+    module:               cartas_recomendacion
+    prefix_path:          /cartas_recomendacion
+    column:               id
+    with_wildcard_routes: true
+
+profesional_letter:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profesional
+    #model:                ProfesionalLetter
+    module:               cartas_pendientes
+    prefix_path:          /cartas_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+profesional_cartas_pendientes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profesional
+    module:               cartas_pendientes
+    prefix_path:          /cartas_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+profesional:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profesional
+    module:               profesionales_pendientes
+    prefix_path:          /profesionales_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+alertas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Alertas
+    module:               profesionales_alertas
+    prefix_path:          /profesionales_alertas
+    column:               id
+    with_wildcard_routes: true
+
+producto_lista_blanca:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Producto
+    module:               productoListaBlanca
+    prefix_path:          /producto_lista_blanca
+    column:               id
+    with_wildcard_routes: true
+
+empresa_lista_blanca:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Empresa
+    module:               empresaListaBlanca
+    prefix_path:          /empresa_lista_blanca
+    column:               id
+    with_wildcard_routes: true
+
+concurso_categoria_producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoCategoria
+    module:               concurso_categoria_producto
+    prefix_path:          /concurso_categoria_producto
+    column:               id
+    with_wildcard_routes: true
+
+concurso_categoria_empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoCategoria
+    module:               concurso_categoria_empresa
+    prefix_path:          /concurso_categoria_empresa
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_planes_de_accion_producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               planes_de_accion_producto
+    prefix_path:          /planes_de_accion_producto
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_planes_de_accion_empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               planes_de_accion_empresa
+    prefix_path:          /planes_de_accion_empresa
+    column:               id
+    with_wildcard_routes: true
+
+producto_listaNegraProducto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Producto
+    module:               listaNegraProducto
+    prefix_path:          /listaNegraProducto
+    column:               id
+    with_wildcard_routes: true
+
+contratanos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                contratanos
+    module:               contratanos
+    prefix_path:          /contratanos
+    column:               id
+    with_wildcard_routes: true
+
+pizarra:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pizarra
+    module:               pizarra
+    prefix_path:          /pizarra
+    column:               id
+    with_wildcard_routes: true
+
+contactanos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                contactanos
+    module:               contactanos
+    prefix_path:          /contactanos
+    column:               id
+    with_wildcard_routes: true
+
+auditanos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                auditanos
+    module:               auditanos
+    prefix_path:          /auditanos
+    column:               id
+    with_wildcard_routes: true
+
+lista_negra_aprobar_comentario:
+  url: /listaNegra/aprobarComentario/:id
+  param: { module: listaNegra, action: aprobarComentario }
+
+lista_negra_borrar_comentario:
+  url: /listaNegra/borrarComentario/:id
+  param: { module: listaNegra, action: borrarComentario }
+
+comentarios_lista_negra_pendientes:
+  url: /listaNegra/comentariosListaNegraPendientes
+  param: { module: listaNegra, action: pendientes}
+lista_negra_empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Empresa
+    module:               listaNegraEmpresa
+    prefix_path:          /listaNegraEmpresa
+    column:               id
+    with_wildcard_routes: true
+
+producto_autocomplete:
+  url: /producto/autocomplete
+  params: { module: producto, action: autocomplete }
+
+producto_destacado_sort:
+  url: /productos/sortDestacados
+  param: { module: productoListaBlanca, action: sortDestacado }
+producto_show_destacados:
+  url: /producto_lista_blanca/destacadoManager/:id
+  param: { module: productoListaBlanca, action: destacadoManager }
+
+producto_alternar_destacado:
+  url: /producto/alternar_destacado/:id/:tipo
+  param: { module: productoListaBlanca, action: toggleDestacar }
+
+empresa_destacada_sort:
+  url: /empresa_lista_blanca/sortDestacados
+  param: { module: empresaListaBlanca, action: sortDestacado }
+empresa_show_destacados:
+  url: /empresa_lista_blanca/destacadoManager/:id
+  param: { module: empresaListaBlanca, action: destacadoManager }
+
+empresa_alternar_destacado:
+  url: /empresa_lista_blanca/alternar_destacado/:id/:tipo
+  param: { module: empresaListaBlanca, action: toggleDestacar }
+
+categoria_excelencia:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categoriaExcelencia
+    module:               categoria_excelencia
+    prefix_path:          /categoria_excelencia
+    column:               id
+    with_wildcard_routes: true
+
+kpi:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                kpi
+    module:               kpi
+    prefix_path:          /kpi
+    column:               id
+    with_wildcard_routes: true
+
+colaboradorpuntoshistorico:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                colaboradorpuntoshistorico
+    module:               colaboradorpuntoshistorico
+    prefix_path:          /colaboradorpuntoshistorico
+    column:               id
+    with_wildcard_routes: true
+
+colaborador_puntos_historico:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ColaboradorPuntosHistorico
+    module:               colaborador_puntos_historico
+    prefix_path:          /colaborador_puntos_historico
+    column:               id
+    with_wildcard_routes: true
+
+colaboradorpuntodefinicion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                colaboradorpuntodefinicion
+    module:               colaboradorpuntodefinicion
+    prefix_path:          /colaboradorpuntodefinicion
+    column:               id
+    with_wildcard_routes: true
+
+codigospuntos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                codigospuntos
+    module:               codigospuntos
+    prefix_path:          /codigospuntos
+    column:               id
+    with_wildcard_routes: true
+
+logpuntos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                logpuntos
+    module:               logpuntos
+    prefix_path:          /logpuntos
+    column:               id
+    with_wildcard_routes: true
+
+tablapuntos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tablapuntos
+    module:               tablapuntos
+    prefix_path:          /tablapuntos
+    column:               id
+    with_wildcard_routes: true
+
+tabla_puntos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tabla_puntos
+    module:               tabla_puntos
+    prefix_path:          /tabla_puntos
+    column:               id
+    with_wildcard_routes: true
+
+colaboradores_alertas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                alertas
+    module:               colaboradores_alertas
+    prefix_path:          /colaboradores_alertas
+    column:               id
+    with_wildcard_routes: true
+
+contest_featured_order:
+  url: concurso/:id/setFeaturedOrder
+  param: { module: concurso, action: setFeaturedOrder}
+  
+contest_company_featured_order:
+  url: concurso/:id/setCompanyFeaturedOrder
+  param: { module: concurso, action: setCompanyFeaturedOrder}
+  
+contest_product_featured_order:
+  url: concurso/:id/setProductFeaturedOrder
+  param: { module: concurso, action: setProductFeaturedOrder}
+
+empresa_lista_blanca_order:
+  url: empresa_lista_blanca/:id/setFeaturedOrder
+  param: { module: empresaListaBlanca, action: setFeaturedOrder}
+
+
+lista_negra_empresa_order:
+  url: empresa_lista_negra/:id/setFeaturedOrder
+  param: { module: listaNegraEmpresa , action: setFeaturedOrder}
+
+producto_lista_blanca_order:
+  url: producto_lista_blanca/:id/setFeaturedOrder
+  param: { module: productoListaBlanca, action: setFeaturedOrder}
+
+producto_lista_negra_order:
+  url: producto_lista_negra/:id/setFeaturedOrder
+  param: { module: listaNegraProducto, action: setFeaturedOrder}
+
+gift_order:
+  url: gift/:id/setFeaturedOrder
+  param: { module: gift, action: setFeaturedOrder}
+
+profesional_order:
+  url: profesionales/:id/setFeaturedOrder
+  param: { module: profesionalLista, action: setFeaturedOrder}
+
+colaboradores_caja:
+  url: colaboradores/:id/caja
+  param: { module: sfguarduser, action: caja}
+concursos_alertas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                alertas
+    module:               concursos_alertas
+    prefix_path:          /concursos_alertas
+    column:               id
+    with_wildcard_routes: true
+
+profesionales_alertas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                alertas
+    module:               profesionales_alertas
+    prefix_path:          /profesionales_alertas
+    column:               id
+    with_wildcard_routes: true
+
+profesionales_pendientes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profesional
+    module:               profesionales_pendientes
+    prefix_path:          /profesionales_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+profesionales_reason:
+  url: /profesional_reason
+  params: { module: profesionales_pendientes, action: show, form: submit }
+
+kpi_add_empresa:
+  url: /kpiAddEmpresa
+  params: { module: cuestionario, action: addKpi, tipo: empresa }
+
+kpi_autocomplete:
+  url: /kpiAutocomplete
+  params: { module: cuestionario, action: autocompletKpi }
+
+pregunta_autocomplete:
+  url: /preguntaAutocomplete
+  params: { module: cuestionario, action: autocompletPregunta }
+
+pregunta_add_empresa:
+  url: /preguntaAddEmpresa
+  params: { module: cuestionario, action: addPregunta, tipo: empresa }
+  
+cuestionario_duplicar:
+  url: /lista_cuestionario/duplicar
+  class: sfDoctrineRoute
+  options:
+    model: lista_cuestionario
+    type: object
+
+cuestionario_pregunta:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                CuestionarioPregunta
+    module:               cuestionario_pregunta
+    prefix_path:          /cuestionario_pregunta
+    column:               id
+    with_wildcard_routes: true
+
+sfguarduser_action_new:
+  url: /colaboradores/new
+  params: { module: sfguarduser, action: new }
+
+sfguarduser_action_edit:
+  url: /colaboradores/edit/:id
+  params: { module: sfguarduser, action: edit }
+
+admin_assign_permission:
+  url: /administration/:id/assignPermission
+  params: { module: administration, action: assignPermission }
+  
+admin_change_password:
+  url: /administration/:id/changePassword
+  params: { module: administration, action: changePassword }
+  
+admin_email_assign_permission:
+  url: /administration_emails/:id/assignPermission
+  params: { module: administration_emails, action: assignPermission }
+  
+sfguarduser_assign_permission:
+  url: /colaboradores/:id/assignPermission
+  params: { module: sfguarduser, action: assignPermission }
+
+sfguarduser:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfguarduser
+    module:               sfguarduser
+    prefix_path:          /colaboradores
+    column:               id
+    with_wildcard_routes: true
+
+medallero:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Medallero
+    module:               medallero
+    prefix_path:          /medallero
+    column:               id
+    with_wildcard_routes: true
+
+contribucion-plan_de_acccion:
+  url:  /concursos/:titulo/:date/:time/plan-de-accion/:id
+  param:  { module: planes_de_accion_empresa, action: showplandeaccion }
+
+cuestionario_pendientes:
+  url: /cuestionario/pendientes
+  param: { module: cuestionario, action: pendientes}
+
+borrarComentario_y_aprobar_cuestionario:
+  url: /cuestionario/borrar_y_aprobar/:id
+  param: { module: cuestionario, action: borrarComentarioyAprobar }
+
+aprobar_cuestionario:
+  url: /cuestionario/aprobar/:id
+  param: { module: cuestionario, action: aprobar }
+
+delete_cuestionario:
+  url: /cuestionario/delete/:id
+  params: { module: cuestionario, action: deleteCuestionario }
+
+delete_cuestionario_producto:
+  url: /cuestionarioProducto/delete/:id
+  params: { module: cuestionarioProducto, action: deleteCuestionario }
+cuestionario_newProducto:
+  url: /cuestionario/newProducto
+  params: { module: cuestionario, action: newProducto }
+
+
+cuestionario_producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ListaCuestionario
+    module:               cuestionarioProducto
+    prefix_path:          /cuestionario_producto
+    column:               id
+    with_wildcard_routes: true
+
+
+cuestionario:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ListaCuestionario
+    module:               cuestionario
+    prefix_path:          /cuestionario
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_cp:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ContribucionCp
+    module:               contribucion_cp
+    prefix_path:          /contribucion_cp
+    column:               id
+    with_wildcard_routes: true
+
+concurso_cp:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoCp
+    module:               concurso_cp
+    prefix_path:          /concurso_cp
+    column:               id
+    with_wildcard_routes: true
+
+apply:
+  url:  /apply
+  param: { module: sfApply, action: apply }
+
+sf_guard_user_profile:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUserProfile
+    module:               sf_guard_user_profile
+    prefix_path:          /sf_guard_user_profile
+    column:               id
+    with_wildcard_routes: true
+
+colaborador_nivel_dos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ColaboradorNivelDos
+    module:               colaborador_nivel_dos
+    prefix_path:          /colaborador_nivel_dos
+    column:               id
+    with_wildcard_routes: true
+
+colaborador_nivel_uno:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ColaboradorNivelUno
+    module:               colaborador_nivel_uno
+    prefix_path:          /colaborador_nivel_uno
+    column:               id
+    with_wildcard_routes: true
+
+profesional_tipo_tres:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalTipoTres
+    module:               profesional_tipo_tres
+    prefix_path:          /profesional_tipo_tres
+    column:               id
+    with_wildcard_routes: true
+
+profesional_tipo_dos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalTipoDos
+    module:               profesional_tipo_dos
+    prefix_path:          /profesional_tipo_dos
+    column:               id
+    with_wildcard_routes: true
+
+profesional_tipo_uno:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalTipoUno
+    module:               profesional_tipo_uno
+    prefix_path:          /profesional_tipo_uno
+    column:               id
+    with_wildcard_routes: true
+
+mesaredonda_referendum:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MesaredondaReferendum
+    module:               mesaredonda_referendum
+    prefix_path:          /mesaredonda_referendum
+    column:               id
+    with_wildcard_routes: true
+
+mesaredonda_estado:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MesaredondaEstado
+    module:               mesaredonda_estado
+    prefix_path:          /mesaredonda_estado
+    column:               id
+    with_wildcard_routes: true
+
+mesaredonda_ponencia:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MesaredondaPonencia
+    module:               mesaredonda_ponencia
+    prefix_path:          /mesaredonda_ponencia
+    column:               id
+    with_wildcard_routes: true
+
+mesa_redonda:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MesaRedonda
+    module:               mesa_redonda
+    prefix_path:          /mesa_redonda
+    column:               id
+    with_wildcard_routes: true
+
+mesaredonda_categoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MesaredondaCategoria
+    module:               mesaredonda_categoria
+    prefix_path:          /mesaredonda_categoria
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_signin:
+ url:   /login
+ param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+ url:   /logout
+ param: { module: sfGuardAuth, action: signout }
+
+#sf_guard_password:
+# url:   /request_password
+# param: { module: sfGuardAuth, action: password }
+
+sf_guard_pointed:
+  url: pointed/:id
+  param: {module: sfGuardUser, action: pointed }
+road_type:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RoadType
+    module:               road_type
+    prefix_path:          /road_type
+    column:               id
+    with_wildcard_routes: true
+
+states:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                states
+    module:               states
+    prefix_path:          /states
+    column:               id
+    with_wildcard_routes: true
+
+producto_tipo_tres:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductoTipoTres
+    module:               producto_tipo_tres
+    prefix_path:          /producto_tipo_tres
+    column:               id
+    with_wildcard_routes: true
+
+producto_tipo_dos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductoTipoDos
+    module:               producto_tipo_dos
+    prefix_path:          /producto_tipo_dos
+    column:               id
+    with_wildcard_routes: true
+
+producto_tipo_uno:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductoTipoUno
+    module:               producto_tipo_uno
+    prefix_path:          /producto_tipo_uno
+    column:               id
+    with_wildcard_routes: true
+
+producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Producto
+    module:               producto
+    prefix_path:          /producto
+    column:               id
+    with_wildcard_routes: true
+
+fichero:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Fichero
+    module:               fichero
+    prefix_path:          /fichero
+    column:               id
+    with_wildcard_routes: true
+#
+#producto_edit_lista_blanca:
+#  url: /producto/:id/editListaBlanca
+#  class: sfDoctrineRoute
+#  options:
+#    model: Product
+#    type: object
+
+
+empresa_sector_uno:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EmpresaSectorUno
+    module:               empresa_sector_uno
+    prefix_path:          /empresa_sector_uno
+    column:               id
+    with_wildcard_routes: true
+
+empresa_sector_tres:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EmpresaSectorTres
+    module:               empresa_sector_tres
+    prefix_path:          /empresa_sector_tres
+    column:               id
+    with_wildcard_routes: true
+
+empresa_sector_dos:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EmpresaSectorDos
+    module:               empresa_sector_dos
+    prefix_path:          /empresa_sector_dos
+    column:               id
+    with_wildcard_routes: true
+
+empresa_autocomplete_direccion:
+  url: /empresa/autocompletedireccion
+  param: { module: empresa, action: autocompleteDireccion }
+
+empresa_autocomplete_name:
+  url: /empresa/autocompletenombre
+  param: { module: empresa, action: autocompleteName }
+
+empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Empresa
+    module:               empresa
+    prefix_path:          /empresa
+    column:               id
+    with_wildcard_routes: true
+
+profesional_alternar_destacado:
+  url: /profesionales/alternar_destacado/:id/:tipo
+  param: { module: profesionalLista, action: toggleDestacar }
+
+profesional_show_destacados:
+  url: /profesionales/destacadoManager/:id
+  param: { module: profesionalLista, action: destacadoManager }
+
+profesional_destacada_sort:
+  url: /profesionales/sortDestacados
+  param: { module: profesionalLista, action: sortDestacado }
+
+profesional_autocomplete_direccion:
+  url: /profesionales/autocompletedireccion
+  param: { module: profesionalLista, action: autocompleteDireccion }
+
+profesional_autocomplete_name:
+  url: /profesionales/autocompletenombre
+  param: { module: profesionalLista, action: autocompleteName }
+
+profesional_lista:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profesional
+    module:               profesionalLista
+    prefix_path:          /profesionales
+    column:               id
+    with_wildcard_routes: true
+
+contribucion_estado:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ContribucionEstado
+    module:               contribucion_estado
+    prefix_path:          /contribucion_estado
+    column:               id
+    with_wildcard_routes: true
+
+contribucion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribucion
+    prefix_path:          /contribucion
+    column:               id
+    with_wildcard_routes: true
+
+concurso_tipo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoTipo
+    module:               concurso_tipo
+    prefix_path:          /concurso_tipo
+    column:               id
+    with_wildcard_routes: true
+
+concurso_revision:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoRevision
+    module:               concurso_revision
+    prefix_path:          /concurso_revision
+    column:               id
+    with_wildcard_routes: true
+
+concurso_referendum:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoReferendum
+    module:               concurso_referendum
+    prefix_path:          /concurso_referendum
+    column:               id
+    with_wildcard_routes: true
+
+concurso_historico:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoHistorico
+    module:               concurso_historico
+    prefix_path:          /concurso_historico
+    column:               id
+    with_wildcard_routes: true
+
+concurso_estado:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoEstado
+    module:               concurso_estado
+    prefix_path:          /concurso_estado
+    column:               id
+    with_wildcard_routes: true
+
+concurso_categoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConcursoCategoria
+    module:               concurso_categoria
+    prefix_path:          /concurso_categoria
+    column:               id
+    with_wildcard_routes: true
+
+concurso:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Concurso
+    module:               concurso
+    prefix_path:          /concurso
+    column:               id
+    with_wildcard_routes: true
+
+carta:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalLetter
+    module:               cartas_pendientes
+    prefix_path:          /cartas_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+concursos_pendientes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Concurso
+    module:               concursos_pendientes
+    prefix_path:          /concursos_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+concursos_destacados:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Concurso
+    module:               concursos_destacados
+    prefix_path:          /concursos_destacados
+    column:               id
+    with_wildcard_routes: true
+
+contribuciones_pendientes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribuciones_pendientes
+    prefix_path:          /contribuciones_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+contribuciones_destacadas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Contribucion
+    module:               contribuciones_destacadas
+    prefix_path:          /contribuciones_destacadas
+    column:               id
+    with_wildcard_routes: true
+
+colaboradores_alarmas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Alertas
+    module:               colaboradores_alarmas
+    prefix_path:          /colaboradores_alarmas
+    column:               id
+    with_wildcard_routes: true
+
+concursos_alarmas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Alertas
+    module:               concursos_alarmas
+    prefix_path:          /concursos_alarmas
+    column:               id
+    with_wildcard_routes: true
+
+newComentario:
+  url:  /concurso/newComentario/:id
+  param:  {module: concurso, action: newComentario }
+
+newComentario_pendientes:
+  url:  /concursos_pendientes/newComentario/:id
+  param:  {module: concursos_pendientes, action: newComentario }
+
+RewardLog:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RewardLog
+    module:               RewardLog
+    prefix_path:          /RewardLog
+    column:               id
+    with_wildcard_routes: true
+    
+AdministrationCaja:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdministrationCaja
+    module:               AdministrationCaja
+    prefix_path:          /AdministrationCaja
+    column:               id
+    with_wildcard_routes: true
+    
+alertas_de_caja:
+  url: /alertas_de_caja/:delete
+  param: { module: escritorio, action: alertasDeCajaList , delete: 0}
+  
+alertas_de_canje:
+  url: /alertas_de_canje/:delete
+  param: { module: escritorio, action: giftRedemtionAlerts , delete: 0}
+  
+edit_hierarchy:
+  url: /colaboradores/:id/hierarchy
+  param: { module: sfguarduser, action: hierarchy}
+
+colaboradores_list:
+  url: /colaboradores/:id/List_ver
+  param: { module: sfguarduser, action: List_ver}
+  
+cartas_pendientes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfesionalLetter
+    module:               cartas_pendientes
+    prefix_path:          /cartas_pendientes
+    column:               id
+    with_wildcard_routes: true
+
+
+#cartas_pendientes routing do not remove this otherwise new recomamnd is now working
+profesional_carta_pendientes_create:
+  url:     /cartas_pendientes/:id/cartaPending/*
+  param:   { module: cartas_pendientes, action: cartaPending }
+
+#cartas_recomendacion routing do not remove this otherwise new recomamnd is now working
+profesional_cartas_recomendacion_create:
+  url:     /cartas_recomendacion/:id/addEditRecommand/*
+  param:   { module: cartas_recomendacion, action: addEditRecommand }
+
+#
+cuestionario_baja:
+  url:     /cuestionario_baja
+  param:   { module: cuestionario_baja, action: index}
+  
+#cartas_disaprobacion routing do not remove this otherwise new recomamnd is now working
+profesional_cartas_desaprobacion_create:
+  url:     /cartas_desaprobacion/:id/addEditDisapproval
+  param:   { module: cartas_desaprobacion, action: addEditDisapproval}
+
+gift_redemption_list:
+  url: /gift_redemption/:id/List_ver
+  param: { module: gift_redemption, action: List_ver}
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param:  {module: escritorio, action: index }
+#  param: { module: sfAdminDash, action: dashboard }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

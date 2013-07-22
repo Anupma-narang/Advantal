@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProductoTipoDos
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_tipo_dos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo subsector de Producto"}
+      fields:  
+        name: { label: Subsector del producto }
+        producto_tipo_uno: { label: Sector }      
+        producto_tipo_uno_id: { label: Sector }
+      list:
+        max_per_page: 25
+        title: Listado de subsectores de Producto
+        display: [id,orden,name,producto_tipo_uno]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name, producto_tipo_uno_id]
+      form:    ~
+      edit:
+        title: Editar subsector del Producto
+        display: [orden,name,slug,producto_tipo_uno_id]
+      new:
+        title: Nuevo subsector del Producto
+        display: [orden,name,producto_tipo_uno_id]

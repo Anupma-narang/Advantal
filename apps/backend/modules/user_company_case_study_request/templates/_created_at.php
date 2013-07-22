@@ -1,0 +1,1 @@
+<?php echo date('d/m/Y', strtotime($user_company_case_study_request->getCreatedAt()));?>

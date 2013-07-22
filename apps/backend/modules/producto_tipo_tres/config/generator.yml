@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProductoTipoTres
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_tipo_tres
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo tipo de Producto"}
+      fields:  
+        name: { label: Tipo de producto }
+        producto_tipo_uno: { label: Sector }      
+        producto_tipo_uno_id: { label: Sector }
+        producto_tipo_dos: { label: Subsector }      
+        producto_tipo_dos_id: { label: Subsector }  
+      list:
+        max_per_page: 25
+        title: Listado de tipos de Producto
+        display: [id,orden,name,producto_tipo_uno,producto_tipo_dos]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden,name,producto_tipo_uno_id,producto_tipo_dos_id]
+      form:    ~
+      edit:
+        title: Editar tipo de Producto
+        display: [id,orden,name,producto_tipo_uno_id,producto_tipo_dos_id,slug]
+      new:
+        title: Nuevo tipo de Producto
+        display: [orden,name,producto_tipo_uno_id,producto_tipo_dos_id,slug]

@@ -1,0 +1,22 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+index: 
+  is_secure: true
+  credentials: [[Superadministrador, Administrador, Editor, Lector]]
+  
+show: 
+  is_secure: true
+  credentials: [[Superadministrador, Administrador, Editor, Lector]]  
+  
+List_ver: 
+  is_secure: true
+  credentials: [[Superadministrador, Administrador, Editor, Lector]]    
+
+filter: 
+  is_secure: true
+  credentials: [[Superadministrador, Administrador, Editor, Lector]]  
+  
+all:
+  is_secure: true
+  credentials: [[Superadministrador, Administrador]]

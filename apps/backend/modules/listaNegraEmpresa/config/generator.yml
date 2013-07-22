@@ -1,0 +1,54 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Empresa
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lista_negra_empresa
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+      actions: 
+        _new: { label: "Nueva empresa/entidad"}
+      fields:
+        featured: { label: Home }
+        featured_order: { label: Orden Home }
+        name: { label: Empresa/Entidad }
+        created_at: { label: Creada el, date_format: dd-MM-y}
+        localidad_name: { label: Localidad, sortBy : l.localidad_name }
+        states_name: { label: Provincia, sortBy : s.states_name }
+        sector_name: { label: Sector, sortBy : esu.sector_name }
+        subsector_name: { label: Subsector, sortBy : esd.subsector_name }
+        tressector: { label: Actividad, sortBy : esd.tressector }        
+        
+      list:
+        title: Lista negra de Empresas y Entidades
+        table_method: getListaNegraQuery
+        max_per_page: 25
+        #display: [created_at, name, direccionConProvincia, states_name, localidad_name, sector_name, subsector_name, tressector, _comentariosRealizados, _featured, featured_order]
+        display: [_created_at, name, states_name, localidad_name, sector_name, subsector_name, tressectors, _comentariosRealizados, _featured, featured_order]
+        table_method: doSelectJoinStates        
+        object_actions:
+            _show: { label: Ver, action: show }
+            featured:
+              action: setFeatured
+              label: Home
+            featured_order:
+              action: setFeaturedOrder
+              label: Orden Home
+            _edit: ~
+            _delete: ~
+      filter:
+        display: [created_at, name, states_id, localidad_id, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id]
+
+      form:
+        class: EmpresaListaNegraForm
+      edit:
+        title: Editar Empresa/Entidad en Lista negra
+      new:     
+        title: Nueva Empresa/Entidad en Lista negra

@@ -1,0 +1,66 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfguarduser
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sfguarduser
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+        _new: { label: "Nuevo colaborador"}
+      fields:
+        username: { label: "Usuario/Alias" }
+        hierarchy: { label: "Jerarquía" }
+        is_active: { label: "¿Activo?" }
+        is_disabled: { label: "¿Deshabilitado?" }
+        last_login: { label: "Último acceso" }
+        email_address: { label: "Correo electrónico" }
+        email_address_again: { label: "Repite el correo electrónico" }
+        created_at: { label: "Creado el" }
+        password: { label: "Contraseña" }
+        groups_list: { label: "Lista de grupos" }
+        permissions_list : { label: "Lista de privilegios" }
+        password_again: { label: "Repite la contraseña" }
+        is_super_admin: { label: "¿Superadministrador?" }
+        created_at: { label: Fecha de alta }
+      list:
+        sort: [username, asc]
+        title: Listado de colaboradores
+        display: [id, _created_at, =username, is_active, is_disabled, _hierarchy, email_address, _last_login]
+        max_per_page: 25
+        object_actions:
+          _ver: ~
+          _edit: ~
+          _delete: ~
+          _baja: { label: Dar de baja, action: baja }
+          _puntos: { label: Asignar puntos, action: puntos }
+          _historico: { label: Ver histórico, action: historico }
+          _caja: { label: Caja, action: caja }
+          _hierarchy: { label: Asignar Jerarquía, action: hierarchy }
+          assign_permission:
+            action: assignPermission
+            label: Asignar permisos
+        batch_actions:
+          _delete: ~
+          _bajas: { label: dar de baja, actions: bajas }
+      filter:
+         display: [ created_at, username, is_active, is_disabled, is_super_admin, hierarchy, is_disabled, email_address, last_login]
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "Usuario": [email_address, email_address_again, username, password, password_again]
+          "Privilegios": [is_active, is_disabled, permissions_list]
+      edit:
+        title: "Editar colaborador"
+        display:
+          "Usuario": [email_address, email_address_again, username, password, password_again, Perfil]
+          "Privilegios": [is_active, is_disabled, permissions_list]
+      new:
+        title: "Nuevo colaborador"

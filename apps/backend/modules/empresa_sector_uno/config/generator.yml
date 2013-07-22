@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           EmpresaSectorUno
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          empresa_sector_uno
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+
+    config:
+      actions:
+         _new: { label: "Nuevo sector"}
+      fields:  
+        name: { label: Sector }
+        image:  { label: Imagen }
+      list:
+        max_per_page: 25
+        title: Listado de sectores de Empresa/Entidad
+        display: [id, orden, name]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name]
+      form:    ~
+      edit:
+        title: Editar sector de Empresa/Entidad
+        display: [id, value,orden,name,image]
+      new:
+        title: Nuevo sector de Empresa/Entidad

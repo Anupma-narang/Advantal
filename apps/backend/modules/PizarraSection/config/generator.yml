@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PizarraSection
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pizarra_section
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new: { label: 'Nueva Pizarra nueva sección' }
+      fields:  
+        created_at: { label: 'Creado el' }
+        name: { label: 'Nombre' }
+        short_name: { label: 'Nombre corto' }
+        module: { label: 'Módulo' }
+        action: { label: 'Acción' }
+      list:    
+        title: 'Listado de secciones de La Pizarra'
+        display: [ _created_at, name, short_name, _module ]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Editar secciones de La Pizarra
+        display: [  name, short_name, module ,action]
+      new:
+        title: Nueva sección de la Pizarra
+        display: [  name, short_name, module ,action]

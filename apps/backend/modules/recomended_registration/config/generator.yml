@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           RecomendedRegistration
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          recomended_registration
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css: nothing
+
+    config:
+      actions: 
+        
+      fields:  
+        created_at : { label: 'Creado el'}
+        registered_user : { label: 'Nuevo colaborador'}
+        recomended_user : { label: 'Recomendado por'}
+        email : { label: 'Correo electrónico'}
+      list:    
+        title: 'Listado de colaboradores recomendados'
+        display: [ _created_at, registered_user, recomended_user , email]
+      filter:  
+        display: [created_at, registered_user , email, recomended_user]
+      form:    ~
+      edit:    
+        title: Editar nuevo colaborador recomendado.
+      new:     
+        title: Nuevo colaborador recomendado

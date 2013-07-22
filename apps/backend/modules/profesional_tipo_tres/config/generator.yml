@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProfesionalTipoTres
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          profesional_tipo_tres
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva actividad"}
+      fields:  
+        name: { label: Actividad }
+        profesional_tipo_uno: { label: Sector, is_real: true }
+        profesional_tipo_uno_id: { label: Sector }
+        profesional_tipo_dos: { label: Subsector, is_real: true }      
+        profesional_tipo_dos_id: { label: Subsector }
+      list:
+        max_per_page: 25
+        title: Listado de actividades profesionales
+        display: [id, orden, name,profesional_tipo_uno,profesional_tipo_dos]
+        table_method: doSelectJoinSectorSubSector
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name, profesional_tipo_uno_id, profesional_tipo_dos_id]
+      form:    ~
+      edit:
+        title: Editar actividad profesional
+        display: [id, orden,name,profesional_tipo_uno_id,profesional_tipo_dos_id]
+      new:
+        title: Nueva actividad profesional
+        display: [id, orden,name,profesional_tipo_uno_id,profesional_tipo_dos_id]

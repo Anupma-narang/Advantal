@@ -1,0 +1,59 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Producto
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_lista_blanca
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   true
+
+    config:
+      actions:
+         _new: { label: "Nuevo producto"}
+      fields:
+        name: { label: Producto }
+        isDestacado: { label: Destacado }
+        dividendo: { label: Puntos totales}
+        divisor: { label: Auditorías realizadas }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+        created_at: { label: Creado el }
+        sector_name: { label: Sector del producto, sortBy : psu.sector_name }
+        subsector_name: { label: Subsector del producto, sortBy : psd.subsector_name }
+        tipo: { label: Tipo de producto, sortBy : pst.activity_name }
+      list:
+        max_per_page: 25
+        table_method: getListaBlancaQuery
+        title: Lista blanca de Productos
+        display: [_created_at, name, marca, modelo, sector_name, subsector_name, tipo, _medalla, _audita, _isDestacado,_featured, featured_order]
+        table_method: doSelectJoinSector
+        object_actions:
+          _show: { label: Ver, action: show }
+          featured:
+            action: setFeatured
+            label: Home
+          featured_order:
+            action: setFeaturedOrder
+            label: Orden home
+          _edit: ~
+          _delete: ~
+          destacar: { label: Destacar, action: destacadoManager }
+
+      filter:
+        display: [created_at, name, marca, modelo, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id, medalla]
+      form:
+          actions:
+            _delete: ~
+            _list: { label: Volver al Listado }
+            #detacar: { label: Ir a Destacados, action: destacadoManager }
+            _save: ~
+            _save_and_add: { label: Guardar y crear otro }
+      edit:
+        title: Editar Producto en Lista blanca
+      new:
+        title: Nuevo Producto en Lista blanca

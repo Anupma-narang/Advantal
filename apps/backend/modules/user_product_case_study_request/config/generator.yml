@@ -1,0 +1,61 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           UserProductCaseStudyRequest
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          user_product_case_study_request
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css: nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo caso de éxito"}
+      fields:
+        isDestacado: { label: Destacado }
+        created_at: { label: Creado el }
+        name: { label: Producto }
+        user_name : { label: Usuario }
+        status: { label: Estado }
+        marca: { label: Marca }
+        homepage: { label: Página web }
+        description: { label: Descripción del caso de éxito  }
+        producto_tipo_uno_id: { label: Subsector  }
+        producto_tipo_dos_id: { label: Selecciona actividad  }
+        producto_tipo_tres_id: { label: Tipo de producto  }
+        summary: { label: Resumen del caso de éxito  }
+        file1: { label: Archivo 1 }
+        file2: { label: Archivo 2 }
+        file3: { label: Archivo 3 }
+        file4: { label: Archivo 4 }
+
+      list:
+        max_per_page: 25
+        title: Listado de casos de éxito de Producto
+        display: [_created_at,name,marca,modelo,producto_tipo_uno_id,producto_tipo_dos_id,producto_tipo_tres_id,user_name,_status]
+        object_actions:
+          _ver: { label: ver, action: show }
+          _edit: ~
+          _delete: ~
+          _processed: { label: Tramitado, action: processed}
+          _closed: { label: Cerrado , action: closed}
+
+      filter:
+        display: [created_at,name,marca,modelo,producto_tipo_uno_id,producto_tipo_dos_id,producto_tipo_tres_id,user_name,status]
+      form:
+          actions:
+            _delete: ~
+            _list: ~
+#            detacar: { label: Ir a destacados, action: destacadoManager }
+            _save: ~
+            _save_and_add: { label: Guardar y crear otro }
+      edit:
+        title: Nuevo caso de éxito de Producto
+        display: [status, user_name, name, homepage, marca, modelo, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id, description, summary, file1, file2, file3, file4, logo]
+      new:
+        title: Nuevo caso de éxito de Producto
+        display: [status, user_name, name, homepage, marca, modelo, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id, description, summary, file1, file2, file3, file4, logo]

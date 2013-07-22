@@ -1,0 +1,61 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Concurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concursos_destacados
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions:
+       _new: { label: "Nuevo concurso"}
+       _volverconcursos: { label: "Volver al Listado" }
+      fields:  
+        username: { label: Usuario }
+        concurso_estado: { label: Estado }
+        concurso_estado_id: { label: Estado }
+        created_at: { label: Creado el }
+        tipodestacado: {label: Destacado }
+        concurso_tipo: {label: Tipo }
+        concurso_categoria: {label: Categoría }
+        resumename: { label: Título }
+        name: { label: Título }
+        from: { label: desde }
+        states_id: { label: Provincia }
+        city_id:  { label: Localidad }
+        user_id:  { label: Usuario }
+        concurso_tipo_id: { label: Tipo de concurso }
+        empresa_id: { label: Empresa/Entidad }
+        concurso_categoria_id: {label: Categoría}
+      list:
+        sort: [created_at, name, concurso_tipo_id]
+        title: Listado de concursos destacados
+        display: [_created_at, resumename, _tipodestacado, concurso_tipo,concurso_categoria,username, concurso_estado]        
+        max_per_page: 25
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+          _quitardestacado: { label: Quitar destacado, action: quitarDestacado, params: {confirm : "¿Estás seguro de que quieres quitar el destacado?" } }
+      filter:
+         display: [created_at, name, destacado, concurso_tipo_id, concurso_categoria_id, empresa_id, producto_id, states_id, city_id, user_id, concurso_estado_id]
+      form:    
+        class: ConcursoFormBackend
+        actions:
+          _delete:  ~
+          _list:  ~          
+          volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title: Editar concurso destacado
+      new:
+        title: Nuevo concurso destacado

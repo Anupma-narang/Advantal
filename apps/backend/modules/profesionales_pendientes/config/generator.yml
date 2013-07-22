@@ -1,0 +1,65 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Profesional
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          profesionales_pendientes
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions:
+       _new: { label: "Nuevo profesional"}
+      fields:
+        first_name: { label: Nombre }
+        last_name_one: { label: Apellido 1 }
+        last_name_two: { label: Apellido 2 }
+        profesional_estado: { label: Estado }
+        profesional_estado_id: { label: Estado }
+        created_at: { label: Creado el, date_format: dd/MM/y }
+        activity_name: { label: Actividad, is_real: true }
+        state_name: { label: Provincia, is_real: true }
+        city_name: { label: Localidad, is_real: true }
+        states_id: { label: Provincia }
+        city_id:  { label: Localidad }
+        username: { label: Usuario, is_real: true }
+        user_id: {label: Usuario }
+        profesional_tipo_uno_id: { label: Sector }
+        profesional_tipo_uno: { label: Sector, is_real: true }
+        profesional_tipo_dos_id: { label: Subsector }
+        profesional_tipo_dos: { label: Subsector, is_real: true }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+      list:
+        sort: [created_at, desc]
+        title: Profesionales pendientes
+        display: [created_at, last_name_one, last_name_two, first_name, state_name, city_name, profesional_tipo_uno,profesional_tipo_dos, activity_name, username, profesional_estado]
+        table_method: doSelectJoinForListing
+        max_per_page: 25
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+        actions:
+          _new: ~
+      filter:
+         class: ProfesionalesPendientesFormFilter
+         display: [ created_at, last_name_one, last_name_two, first_name, states_id, city_id, profesional_tipo_uno_id, profesional_tipo_dos_id, profesional_tipo_tres_id, user_id]
+      form:
+        class: ProfesionalForm
+        actions:
+          _delete:  ~
+          _list:  ~
+          volver: { label: Volver a profesionales }
+          _save: ~
+      edit:
+        title: Editar profesional
+      new:
+        title: Nuevo profesional

@@ -1,0 +1,66 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+newEmpresa:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]
+  
+newProducto:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]
+  
+new:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]    
+
+edit:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]
+  
+editEmpresa:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]  
+  
+editProducto:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]    
+
+update:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]
+  
+create:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]] 
+
+delete:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador, Editor]]  
+
+showEmpresa:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]
+
+showProducto:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]  
+  
+setFeatured:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]  
+  
+setFeaturedOrder:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]  
+  
+removeFeatured:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]  
+  
+filtering:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]    
+  
+all:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]

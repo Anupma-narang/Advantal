@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           CuestionarioBajaValue
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          cuestionario_baja_value
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: ~
+      fields:  
+        created_at: { label: Creado el, date_format: dd/MM/y }
+        user: { label: Usuario }
+        user_id: { label: Usuario }
+        surname_1: { label: Apellido 1 }
+        surname_2: { label: Apellido 2 }
+        nombre: { label: Nombre }
+        hierarchy: { label: Jerarquía }
+      list:    
+        max_per_page: 25
+        display: [created_at,_apollo1,_apollo2,_nombre,user]
+        title: Listado de bajas de colaboradores
+        object_actions:
+          _show: { label: Ver, action: show }
+          _delete: ~
+      filter:  
+        display: [created_at,surname_1,surname_2,nombre,user_id] 
+      form:    ~
+      edit:    ~
+      new:     ~

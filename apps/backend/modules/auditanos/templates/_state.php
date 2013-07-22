@@ -1,0 +1,1 @@
+<?php echo $auditanos->getsfGuardUser()->getProfile()->getStates()->getName();?>

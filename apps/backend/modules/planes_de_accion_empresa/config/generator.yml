@@ -1,0 +1,50 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion_planes_de_accion_empresa
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      fields:      
+        name: { label: Contribución  }
+        resume_name: { label: Contribución }
+        concurso: { label: Concurso }
+        resume_concurso: { label: Concurso }
+        concurso_created_at: { label: Creado el }
+        concurso_estado: { label: Estado concurso }
+        concurso_categoria: { label: Categoría }
+        concurso_empresa: { label: Empresa/Entidad }
+        concurso_sector: { label: Sector }
+        concurso_subsector: { label: Subsector }
+        concurso_actividad: { label: Actividad }
+        username: { label: Usuario }
+        user_id: { label: Usuario }
+        concurso_id: { label: Concurso }
+        created_at: { label: Creado el }
+      list:
+        max_per_page: 25
+        sort: [created_at, desc]
+        title: Listado de Planes de acción de Empresa/Entidad
+        display: [_concurso_created_at, resume_name, resume_concurso, concurso_categoria, concurso_empresa,concurso_sector,concurso_subsector, concurso_actividads, _provincia, _localidad, username, concurso_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+        actions: {}
+      filter:
+        class: PlanesDeAccionEmpresaFormFilter
+        #display: [concurso_created_at, name, concurso, concurso_categoria, concurso_empresa,  concurso_actividad,user_id, concurso_estado]
+        display: [ created_at, name, concurso_id, concurso_categoria, concurso_empresa,states_id,localidad_id, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id, user_id, concurso_estado]
+      form:    ~
+      edit:    ~
+      new:     ~

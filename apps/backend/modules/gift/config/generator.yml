@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           gift
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gift
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new: { label: 'Nuevo regalo' }
+      fields:  
+        name: { label: 'Regalo' }
+        image: { label: 'Imagen' }
+        require_points: { label: 'Puntos necesarios' }
+        hierarchy: { label: 'Jerarquía' }
+        created_at: { label: 'Creado el' }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+        features: { label: 'Características' }
+        orden: { label: 'Orden' }
+      list:    
+        title: 'Listado de regalos'
+        display: [ orden, _created_at,name, _require_points , _hierarchy, featured_order, _featured]
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          featured:
+            action: setFeatured
+            label: Home
+          featured_order:
+            action: setFeaturedOrder
+            label: Orden Home
+          _edit:         ~
+          _delete:       ~
+      filter:  
+        display: [ orden, created_at, name, require_points , hierarchy, featured]
+      form:    ~
+      edit:    
+        title: 'Editar regalo'
+        display: [ orden, name, image, require_points , hierarchy,featured,featured_order, features  ]
+        
+      new:     
+        title: 'Nuevo regalo'
+        display: [ orden, name, image, require_points , hierarchy,featured, featured_order,features ]

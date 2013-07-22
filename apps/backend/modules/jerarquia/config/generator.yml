@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           jerarquia
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          jerarquia
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new: { label: 'Nueva Jerarquía' }
+      fields:  
+        name: { label: 'Jerarquía' }
+        points: { label: 'Nº de puntos ' }
+      list:    
+        title: 'Listado de Jerarquías'
+        display: [ id, name, _points]
+      filter:  ~
+      form:    ~
+      edit:    
+        title: 'Editar Jerarquía'
+      new:     
+        title: 'Nueva Jerarquía'

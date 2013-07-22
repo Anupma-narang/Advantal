@@ -1,0 +1,9 @@
+newSuccess:
+  javascripts: [jquery-1.8.2.js, jquery.ui.core.js,jquery.ui.widget.js, jquery.ui.effect.js, ckeditor/ckeditor.js, jquery.ui.datepicker.js, jquery-ui-1.8.6.custom.min.js]
+  stylesheets: []
+
+
+
+editSuccess:
+  javascripts:
+    - ckeditor/ckeditor.js

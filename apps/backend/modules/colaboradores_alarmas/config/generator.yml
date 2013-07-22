@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Alertas
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          colaboradores_alarmas
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: ~
+      fields:  
+        created_at: { label: Creado el }
+        message: { label: Mensaje }
+        type: {label: Tipo }  
+        user: {label: Colaborador}
+        updated_at: { label: Actualizado el }
+        user_related_id: {label: Colaborador }
+      list:    
+        title:  Colaboradores alarmas
+        display: [type, message,user,created_at]
+        max_per_page: 25
+        object_actions:
+          _delete:       ~            
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

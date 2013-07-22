@@ -1,0 +1,76 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Concurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso_concursos_pendientes_empresa
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   nothing
+
+    config:
+      actions:
+       #_new: { label: "Nuevo"}
+       _new: { label: "Nuevo concurso"}
+      fields:  
+        username: { label: Usuario }
+        concurso_estado: { label: Estado }
+        concurso_estado_id: { label: Estado }
+        created_at: { label: Creado el }
+        #destacado: {label: Destacado }
+        concurso_tipo: {label: Tipo de concurso }
+        concurso_categoria: {label: Categoría }
+        resumename: { label: Título }
+        name: { label: Título de la incidencia }
+        names: { label: Título }
+        from: { label: desde }
+        states_id: { label: Provincia }
+        city_id:  { label: Localidad }
+        user_id:  { label: Usuario }
+        concurso_tipo_id: { label: Tipo de concurso }
+        empresa_id: { label: Empresa/Entidad }
+        empresa: { label: Empresa/Entidad }
+        producto: { label: Producto }
+        empresa_sector_uno_id: { label: Sector }
+        empresa_sector_dos_id: { label: Subsector }
+        empresa_sector_tres_id: { label: Actividad }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+      list:
+        #sort: [created_at, desc]
+        title: Concursos pendientes
+        display: [_created_at, resumename,_empresa,_provincia,_localidad,_sector,_subsector,_actividad,concurso_categoria,username,concurso_estado]        
+        max_per_page: 25
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+        actions:
+          _new: ~
+          _volver: 
+            action: volver
+            label:  Volver al Listado            
+      filter:
+         class: ConcursosPendientesEmpresaFormFilter
+         #title: AAA
+         #title: { label: "Title of user"}
+         #display: [name, user_id, concurso_tipo_id, destacado, empresa_id, producto_id, concurso_estado_id, created_at, states_id, city_id, marcaconcurso_tipo_id,]
+         display: [created_at, names, empresa, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id, states_id, city_id, concursos_categoria_id, user_id]
+      form:    
+        class: ConcursoPendienteFormBackend
+        actions:
+          _delete:  ~
+          _list:  ~          
+          #volver: { label: Volver al concurso }
+          _save: ~  
+          _save_and_add: ~
+      edit:
+        title: Editar concurso
+      new:
+        title: Nuevo concurso pendiente

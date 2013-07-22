@@ -1,0 +1,53 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contratanos
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contratanos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css: nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo formulario"}
+      fields:
+        created_at: { label: 'Creado el' }
+        nombre: { label: 'Nombre' }
+        apellido1: { label: 'Apellido 1' }
+        apellido2: { label: 'Apellido 2' }
+        name: { label: 'Empresa/Entidad' }
+        actividad: { label: 'Actividad' }
+        states_id: { label: 'Provincia' }
+        city_id: { label: 'Localidad' }
+        cargo: { label: 'Cargo' }
+        phone: { label: 'Teléfono' }
+        ayudar: { label: 'Comentarios' }
+        servicio: { label: 'Servicio a contratar' }
+        antes: { label: 'Objeto de AEC antes' }
+        cif: { label: 'NIF/NIE/CIF' }
+        email: { label: 'Correo electrónico' }
+        status: { label: 'Estado' }
+      list:
+        max_per_page: 25
+        title: Listado de formularios de Contrátanos para Empresa/Entidad
+        display : [ _created_at, nombre, apellido1, apellido2, name, actividad, _states_id, _city_id, _status]
+        object_actions:
+          _ver: { label: ver, action: show }
+          _edit: ~
+          _delete: ~
+          _processed: { label: Tramitado, action: processed}
+          _closed: { label: Cerrado , action: closed}
+      filter:
+        display: [created_at,nombre,apellido1,apellido2,name,actividad,states_id,city_id,status]
+      form:    ~
+      edit:
+        title: Editar formulario de Contrátanos para Empresa/Entidad
+        display: [status, name, cif,actividad,nombre,apellido1,apellido2,cargo,email,phone,road_type_id, direccion,num,piso,puerta,cp,states_id,city_id,ayudar,servicio,antes, what]
+      new:
+        title: Nuevo formulario  Contrátanos para Empresa/Entidad
+        display: [name, cif,actividad,nombre,apellido1,apellido2,cargo,email,phone,road_type_id, direccion,num,piso,puerta,cp,states_id,city_id,ayudar,servicio,antes, what]

@@ -1,0 +1,77 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+all:
+  is_secure: true
+
+listSession:
+  is_secure: false
+
+baja_notificaciones:
+  is_secure: false
+
+rewardRanking:
+  is_secure: false
+
+hierarchyRanking:
+  is_secure: false
+
+giftList:
+  is_secure: false
+
+homePageGiftList:
+  is_secure: false
+
+getUsersHierarchyHistory:
+  is_secure: false
+
+getUsersContestAndContribution:
+  is_secure: false
+
+UserRewardAndHeirarchyRanking:
+  is_secure: false
+
+recomiendanos:
+  is_secure: false
+
+companyCaseStudy:
+  is_secure: false
+
+companyCaseStudyAjex:
+  is_secure: false
+
+productCaseStudy:
+  is_secure: false
+
+productCaseStudyAjex:
+  is_secure: false
+
+userCompanyCaseStudy:
+  is_secure: false
+
+userProductCaseStudy:
+  is_secure: false
+
+userCompanyCaseStudyAjex:
+  is_secure: false
+
+userProductCaseStudyAjex:
+  is_secure: false
+
+userCompanyCaseStudyPaging:
+  is_secure: false
+
+userProductCaseStudyPaging:
+  is_secure: false
+
+companyCaseStudyPaging:
+  is_secure: false
+
+productCaseStudyPaging:
+  is_secure: false
+
+showProductCaseStudyDetail:
+  is_secure: false
+  
+showCompanyCaseStudyDetail:
+  is_secure: false

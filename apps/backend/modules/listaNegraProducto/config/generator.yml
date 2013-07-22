@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Producto
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_listaNegraProducto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+        actions:
+           _new: { label: "Nuevo producto"}
+        fields:
+          featured: { label: Home }
+          featured_order: { label: Orden Home   }          
+          validado: { label: Validado, sortBy : valida }
+          name: { label: Producto}
+          created_at: { label: Creado el, date_format: dd-MM-y}
+          sector_name: { label: Sector del producto, sortBy : psu.sector_name }
+          subsector_name: { label: Subsector del producto, sortBy : psd.subsector_name }
+          tipo: { label: Tipo de producto, sortBy : pst.activity_name }
+        list:
+          title: Lista negra de Productos
+          #display: [_created_at, name, marca, modelo,validado, sector_name, subsector_name, tipo, _comentariosRealizados,_featured, featured_order]
+          display: [_created_at, name, marca, modelo, sector_name, subsector_name, tipo, _comentariosRealizados,_featured, featured_order]
+          table_method: doSelectJoinSector
+          max_per_page: 25  
+          object_actions:
+            _show: { label: Ver, action: show }
+            featured:
+              action: setFeatured
+              label: Home
+            featured_order:
+              action: setFeaturedOrder
+              label: Orden Home
+            _edit: ~
+            _delete: ~
+        filter:
+          display: [created_at, name, marca, modelo, valida, lista_cuestionario_id, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id ]
+          fields:
+            name: {label: Producto}
+        form:
+          class: ProductoListaNegraForm
+        edit:
+          title: Editar Producto en Lista negra
+        new:    
+          title: Nuevo Producto en Lista negra

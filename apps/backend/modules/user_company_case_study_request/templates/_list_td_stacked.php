@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%created_at%% - %%name%% - %%States%% - %%city_id%% - %%user_name%% - %%status%%', array('%%created_at%%' => get_partial('user_company_case_study_request/created_at', array('type' => 'list', 'user_company_case_study_request' => $user_company_case_study_request)), '%%name%%' => $user_company_case_study_request->getName(), '%%States%%' => $user_company_case_study_request->getStates(), '%%city_id%%' => $user_company_case_study_request->getCityId(), '%%user_name%%' => $user_company_case_study_request->getUserName(), '%%status%%' => get_partial('user_company_case_study_request/status', array('type' => 'list', 'user_company_case_study_request' => $user_company_case_study_request))), 'messages') ?>
+</td>

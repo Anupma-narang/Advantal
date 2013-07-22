@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           colaboradorpuntodefinicion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          colaboradorpuntodefinicion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+       _new: { label: "Nuevo criterio"}
+      fields:  
+        short_descripcion: { label: Descripción }
+        is_automatic: { label: ¿Automático? }
+        puntos: { label: Nº puntos }
+        codigo: { label: Código }
+        descripcion: { label: Descripción }
+      list:    
+        title:  "Tabla de puntos"
+        display: [codigo, =descripcion, is_automatic, puntos]
+        max_per_page: 25
+        sort: [codigo, asc]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~        
+      filter:  
+        display: [descripcion, is_automatic, puntos, codigo]
+      form:    ~
+      edit:
+        title: Editar tabla de puntos
+      new:
+        title: Nuevo criterio de puntos

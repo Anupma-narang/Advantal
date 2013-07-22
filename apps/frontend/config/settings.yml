@@ -1,0 +1,50 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         true
+    #error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    logging_enabled:        false
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    # Form security secret (CSRF protection)
+    csrf_secret:            1a97aa0fa704ac12d160ed6be3afab7d84e3c40
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+    enabled_modules:        [default, sfGuardAuth, sfApply,sfDependentSelectAuto]
+    standard_helpers:       [jQuery,I18N,Partial, Text]
+    i18n: on
+    default_culture:        es
+    #charset:                utf-8
+
+    login_module:           sfGuardAuth
+    login_action:           signin
+
+    secure_module:          sfGuardAuth
+    secure_action:          secure  
+
+    user_image_path:  '/images/uploads/users/'
+    gift_upload_path: /images/uploads/gift

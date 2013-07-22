@@ -1,0 +1,72 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProfesionalLetter
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          profesional_letter
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+      actions:
+       _new: { label: "Nueva carta"}
+      fields:
+        username: { label: Usuario, is_real: true }
+        profesional_letter_estado: { label: Estado }
+        profesional_letter_estado_id: { label: Estado }
+        created_at: { label: Creada el, date_format: dd/MM/y }
+        profesional_letter_type: {label: Tipo de carta, is_real: true }
+        profesional_letter_type_id: { label: Tipo de carta }
+        profesional_id: { label: Profesional }
+        name: { label: Título, is_real: true }
+      list:
+        sort: [created_at, desc]
+        title: Cartas pendientes
+        #display: [created_at, profesional_letter_estado,profesional_letter_type,username]
+        display: [created_at, name, profesional_letter_type, username, profesional_letter_estado]
+        table_method: doSelectJoinForListing
+        max_per_page: 25
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+        actions:
+          _new: ~
+          _volver:
+            action: volver
+            label:  Volver al Listado
+          cartaPending:
+            action: cartaPending
+            label:  Nueva carta
+          _cartaUpdatePending:
+            action: cartaUpdatePending
+            label:  Editar carta
+      filter:
+         class: CartasPendientesFormFilter
+         #display: [user_id, profesional_letter_type_id, profesional_id, profesional_letter_estado_id, created_at]
+         display: [created_at, name, profesional_letter_type_id, user_id ]
+      form:
+        class: CartaPendienteOtherFormBackend
+        #class: CartaPendienteFormBackend
+      edit:
+        title: Editar carta
+        actions:
+          _delete:  ~
+          _list:  ~
+          volver: { label: Volver a la carta }
+          _save: ~
+          _save_and_add: ~
+      #new:
+      #  title: Nueva carta
+      #  actions:
+      #    _delete:  ~
+      #    _list:  ~
+      #    _save: ~
+      #    _save_and_add: ~

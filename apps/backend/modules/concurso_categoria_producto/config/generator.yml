@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ConcursoCategoria
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso_categoria_producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva categoría"}
+      fields:
+        name: { label: Categoría }
+        image: { label: Imagen }
+      list:
+        title: Listado de categorías de concurso de Producto
+        display: [orden,name]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden,name]
+      form:
+        class: ConcursoCategoriaProductoForm
+      edit:
+        title: Editar categoría de concurso de Producto
+        display: [orden,name,image]
+      new:
+        title: Nueva categoría de concurso de Producto
+        display: [orden,name,image]

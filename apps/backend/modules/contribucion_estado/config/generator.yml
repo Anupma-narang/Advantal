@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ContribucionEstado
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion_estado
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+         _new: { label: "Nuevo"}
+      fields:  ~
+      list:
+        title: Estado de las contribuciones
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

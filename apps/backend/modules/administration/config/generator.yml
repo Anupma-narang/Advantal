@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new: { label: Nuevo administrador }
+      fields:  
+        surname1 : { label: Apellido 1 }
+        surname2 : { label: Apellido 2 }
+        name : { label: Nombre  }
+        email_address : { label: Correo electrónico  }
+        profile : { label: Perfil   }
+        username : { label: Usuario   }
+      list:    
+        title: Listado de Administradores
+        display: [ _surname1, _surname2, _name, email_address, _profile, username ] 
+        object_actions:
+          assign_permission:
+            action: assignPermission
+            label: Asignar permisos
+          change_password:
+            action: changePassword
+            label : Cambiar contraseña
+      filter:  
+        class : AdministrationFormFilter
+      form:    ~
+      edit:    
+        title: Editar Administrador
+        
+      new:     
+        title: Nuevo Administrador

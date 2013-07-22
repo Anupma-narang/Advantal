@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ConcursoCategoria
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso_categoria
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva categoría"}
+      fields:
+        name: { label: Categoría }
+        concurso_tipo: { label: Tipo de concurso }
+        concurso_tipo_id: { label: Tipo de concurso }
+        image: { label: Imagen }
+      list:
+        title: Listado de categorías de concursos
+        display: [orden,name,concurso_tipo]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden,name, concurso_tipo_id]
+      form:    ~
+      edit:
+        title: Editar categorías de concurso de Empresa/Entidad
+        display: [orden,concurso_tipo_id,name,image]
+      new:
+        title: Nueva categorías de concurso de Empresa/Entidad
+        display: [orden,concurso_tipo_id,name,image]
+        

@@ -1,0 +1,57 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Empresa
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          empresa
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+      actions:
+         _new: { label: "Nueva empresa/entidad"}
+      fields:
+        divisor: { label: Auditorías}
+        factor_formula: { label: Factor de fórmula }
+        name: { label: Empresa/Entidad }
+        localidad_name: { label: Localidad, sortBy : l.localidad_name }
+        states_name: { label: Provincia, sortBy : s.states_name }
+        sector_name: { label: Sector, sortBy : esu.sector_name }
+        subsector_name: { label: Subsector, sortBy : esd.subsector_name }
+        tressector: { label: Actividad, sortBy : esd.tressector }        
+        dividendo: { label: Puntos totales }
+        divisor: { label: Auditorías realizadas }
+        isDestacada: { label: Destacada }
+        from: { label: desde }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+        created_at: { label: Creado el }
+        status: { label: Estado }
+      list:
+        max_per_page: 25
+        title: Listado de Empresas y Entidades
+        sort: [created_at, desc]
+        display: [_created_at, name,  states_name, localidad_name, sector_name, subsector_name, tressectors, _lista]
+        #display: [_created_at, name,  states_name, localidad_name, sector_name, subsector_name, tressector, _lista, _isDestacada ,_featured, featured_order]
+        table_method: doSelectJoinStates
+        object_actions:
+          _show: { label: Ver, action: show }
+          _edit: ~
+          _delete: ~
+      filter:
+        display: [created_at, name, states_id, localidad_id, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id, lista]
+      form:
+        actions:
+          _delete: ~
+          _list: ~
+          _save: ~
+          _save_and_add: { label: Guardar y crear otro }
+      edit:    
+        title: Editar Empresa/Entidad
+      new:
+        title: Nueva Empresa/Entidad

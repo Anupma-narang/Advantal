@@ -1,0 +1,217 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values, contains the web/images folder
+
+all:
+  upload_dir: upload
+  documents_dir: documents
+  allowed_mime_types_upload: [application/pdf, application/msword, application/vnd.ms-excel, application/rtf, application/vnd.oasis.opendocument.text, application/vnd.oasis.opendocument.spreadsheet, text/plain, application/zip, image/gif, image/jpeg, image/bmp, audio/mpeg,video/x-msvideo, video/mp4, video/x-ms-wmv, application/x-troff-msvideo, video/mpeg, video/ogg, video/avi, video/msvideo, video/quicktime, video/x-mpeg, video/x-ms-asf, video/x-matroska, video/x-flv]
+
+  sfApplyPlugin:
+    from:
+      email: "your@auditoscopia.com"
+      fullname: "the staff at yoursite.com"
+
+  concursos_in_list: 10
+  company_case_study_list: 10
+  contribuciones_in_list: 10
+  contribuciones_destacadas: 10
+  contribuciones_destacadas: 10
+  destacados_in_menuside: 10
+  .values:
+    ficheros_privados: [doc, docx, xls, xlsx, ppt, pptx, pps, pdf, zip, rar, tgz, lzh, gz]    #tipo de ficheros adjuntados en contribuciones y concursos privados
+
+  sfApplyPlugin:
+    from:
+      email: "vicentegon32@gmail.com"
+      fullname: "auditoscopia"
+  sfDoctrineApplyPlugin:
+    afterLogin: vosotros/micuenta
+  sfApplyPlugin:
+    afterLogin: vosotros/micuenta
+  sf_guard_plugin:
+    success_signin_url: concurso/index
+    success_signout_url: @homepage
+
+  listaBlanca:
+    ultimosComentarios: 25
+    numero_empresas_listado: 10
+    auditorias_por_dia: 9999
+#    auditorias_por_dia: 5
+
+  listaNegra:
+    ultimosComentarios: 25
+    comentarios_por_dia: 5
+
+  directorio:
+    numero_profesional_listado: 10
+
+  auditorias:
+    intervaloRepeticion: 0 day # insertar en texto el intervalo válido entre auditorías. http://www.php.net/manual/en/class.dateinterval.php
+#    intervaloRepeticion: 30 day # insertar en texto el intervalo válido entre auditorías. http://www.php.net/manual/en/class.dateinterval.php
+    por_dia: 9999
+#    por_dia: 5
+
+  directorio:
+    ultimosComentarios: 25
+    numero_profesionales_listado: 10
+
+  tiny_mce_incidencia: |
+    width: "550px",
+    height: "200px",
+    language: "es",
+    relative_urls: false,
+    convert_urls: false,
+    plugins: "preview, paste, advlink",
+    theme_advanced_buttons1: "bold, italic, underline, separator, justifyleft, justifycenter, justifyright, justifyfull, separator, forecolor, fontselect, fontsizeselect, separator, pastetext, pasteword, separator, link, bullist, numlist, separator, undo, redo, selectall",
+    theme_advanced_buttons2: "",
+    theme_advanced_buttons3: "",
+    plugin_preview_width: "500",
+    plugin_preview_height: "600",
+    fullscreen_new_window: true,
+    theme_advanced_resize_horizontal: false,
+    paste_auto_cleanup_on_paste: true,
+
+  tiny_mce_basico_incidencia: |
+    width: "600px",
+    height: "200px",
+    language: "es",
+    relative_urls: false,
+    convert_urls: false,
+    plugins: "paste",
+    theme_advanced_buttons1: "bold, italic, underline, separator, forecolor, separator, pastetext, pasteword, separator, bullist, numlist, separator, undo, redo",
+    theme_advanced_buttons2: "",
+    theme_advanced_buttons3: "",
+    plugin_preview_width: "500",
+    plugin_preview_height: "600",
+    fullscreen_new_window: false,
+    theme_advanced_resize_horizontal: false,
+    theme_advanced_resizing : false,
+    paste_auto_cleanup_on_paste: true,
+    theme_advanced_path : false,
+#    theme_advanced_statusbar_location : "none",
+    content_css : "/css/tiny_mce_style.css",
+    setup : function(ed) {
+          ed.onKeyDown.add(function(ed, e) {
+               var alerta = '';
+               var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/i,"");
+               var text = strip.split(' ').length + " Palabras, " +  strip.length + " Caracteres"
+               if(strip.length>12300){
+                   alerta = '<spam style="background-color: yellow;">¡Has superado el límite de caracteres!</spam>';
+                    $("form :submit").attr('disabled', 'disabled');
+               }
+               else{
+                    alerta = '';
+                    $("form :submit").removeAttr('disabled');
+               }
+               tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text+' '+alerta);
+    });},
+
+  tiny_mce_basico_planaccion: |
+    width: "600px",
+    height: "200px",
+    language: "es",
+    relative_urls: false,
+    convert_urls: false,
+    plugins: "paste",
+    theme_advanced_buttons1: "bold, italic, underline, separator, forecolor, separator, pastetext, pasteword, separator, bullist, numlist, separator, undo, redo",
+    theme_advanced_buttons2: "",
+    theme_advanced_buttons3: "",
+    plugin_preview_width: "500",
+    plugin_preview_height: "600",
+    fullscreen_new_window: false,
+    theme_advanced_resize_horizontal: false,
+    theme_advanced_resizing : false,
+    paste_auto_cleanup_on_paste: true,
+    theme_advanced_path : false,
+#    theme_advanced_statusbar_location : "none",
+    content_css : "/css/tiny_mce_style.css",
+    setup : function(ed) {
+          ed.onKeyUp.add(function(ed, e) {
+               var alerta = '';
+               var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/i,"");
+               var text = strip.split(' ').length + " Palabras, " +  strip.length + " Caracteres"
+               if(strip.length>43000){
+                   alerta = '<spam style="background-color: yellow;">¡Has superado el límite de caracteres!</spam>';
+                   $("form :submit").attr('disabled', 'disabled');
+               }
+               else{
+                    alerta = '';
+                    $("form :submit").removeAttr('disabled');
+               }
+               tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text+' '+alerta);
+    });},
+
+  tiny_mce_basico_resumen: |
+    width: "600px",
+    height: "200px",
+    language: "es",
+    relative_urls: false,
+    convert_urls: false,
+    plugins: "paste",
+    theme_advanced_buttons1: "bold, italic, underline, separator, forecolor, separator, pastetext, pasteword, separator, bullist, numlist, separator, undo, redo",
+    theme_advanced_buttons2: "",
+    theme_advanced_buttons3: "",
+    plugin_preview_width: "500",
+    plugin_preview_height: "600",
+    fullscreen_new_window: false,
+    theme_advanced_resize_horizontal: false,
+    theme_advanced_resizing : false,
+    paste_auto_cleanup_on_paste: true,
+    theme_advanced_path : false,
+#    theme_advanced_statusbar_location : "none",
+    content_css : "/css/tiny_mce_style.css",
+    setup : function(ed) {
+          ed.onKeyUp.add(function(ed, e) {
+               var alerta = '';
+               var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/i,"");
+               var text = strip.split(' ').length + " Palabras, " +  strip.length + " Caracteres"
+               if(strip.length>800){
+                   alerta = '<spam style="background-color: yellow;">¡Has superado el límite de caracteres!</spam>';
+                   $("form :submit").attr('disabled', 'disabled');
+               }
+               else{
+                    alerta = '';
+                    $("form :submit").removeAttr('disabled');
+               }
+               tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text+' '+alerta);
+    });},
+
+#  np_assets_optimizer_plugin:
+#    enabled: true                          # status of the plugin
+#    class: npAssetsOptimizerService        # the plugin service class to use
+#    configuration:                         # optimization service configuration
+#      javascript:                          # Javascript optimizer configuration
+#        enabled: false                     # status of optimization
+#        class: npOptimizerJavascript       # the javascript optimizer class to use
+#        params:                            # optimizer class configuration
+#          driver: JSMin                    # javascript optimization driver name
+#          destination: /js/optimized.js    # destination path for optimized .js file
+#          timestamp: true                  # adds a timestamp to the combined file url
+#          files:                           # list of js assets to optimize and combine
+#            - jquery.js
+#            - jquery-ui.js
+#            - application.js
+#      stylesheet:                          # stylesheets configuration section
+#        enabled: true                      # status of optimization
+#        class: npOptimizerStylesheet       # the stylesheet optimizer class to use
+#        params:                            # optimizer class configuration
+#          driver: Cssmin                   # stylesheet optimization driver name
+#          destination: /css/optimized.css  # destination path for optimized .css file
+#          timestamp: true                  # adds a timestamp to the combined file url
+#          files:                           # list of css assets to optimize and combine
+#             - global.css
+#             - preguntasfrecuentes.css
+#             - caja.css
+#             - footer.css
+#  #          - /facebox/facebox.css
+#  #          - main
+#  #          - skins/foo.css
+#      png_image:                           # PNG images configuration section
+#        enabled: false                     # status of optimization
+#        class: npOptimizerPngImage         # the PNG image optimizer class to use
+#        params:                            # optimizer class configuration
+#          driver: Pngout                   # PNG image optimization driver name
+#          folders:                         # folders to scan for PNG files to optimize
+#            - %SF_WEB_DIR%/images          # by default, contains the web/images folder

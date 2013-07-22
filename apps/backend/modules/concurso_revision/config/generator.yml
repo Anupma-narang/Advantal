@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ConcursoRevision
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso_revision
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+         _new: { label: "Nuevo"}
+      fields:  ~
+      list:
+        title: Revisiones de concursos
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

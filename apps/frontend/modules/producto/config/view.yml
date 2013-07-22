@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+newSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [global.css,producto.css,concurso.css]
+
+  #javascripts:    []
+
+  has_layout:     true
+  layout:         layout_concurso
+  
+#newSuccess:
+ #javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,/sfDependentSelectPlugin/js/SelectDependiente.min.js]  

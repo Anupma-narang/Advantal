@@ -1,0 +1,65 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion_contribucion_product
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva contribución"}
+      fields:
+        user_name: { label: Usuario }
+        user_id: {label: Usuario }
+        contribucion_estado: { label: Estado contribución }
+        created_at: { label: Creada el }
+        destacado: {label: Destacada }
+        concurso_tipo: {label: Tipo }
+        tipo_concurso: {label: Tipo de concurso }
+        concurso_tipo_id: {label: Tipo de concurso }
+        resume_concurso: {label: Resumen (concurso) }
+        name: { label: Título }
+        contribucion_estado_id: { label: Estado contribución }
+        resumename: { label: Título }
+        concurso_producto: { label: Producto }
+        concurso_producto_marca: { label: Marca }
+        producto_id: { label: Producto }
+        marca: { label: Marca }
+        modelo: { label: Modelo }
+      list:
+        max_per_page: 25
+        sort: created_at
+        title: Listado contribución de Producto
+        display: [_created_at,resumename,destacado,concurso,concurso_producto,concurso_producto_marca,_modelo,username,contribucion_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+      filter:
+        class: ContribucionFormFilter
+        display: [created_at, name, destacado, concurso_id, producto_id, marca, modelo, user_id, contribucion_estado_id]
+        #display: [name, concurso_id, user_id, contribucion_estado_id, concurso_tipo_id ,destacado, created_at concurso_tipo_id,]
+      form:
+        class: ContribucionBackendForm
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen]
+        actions:
+          _delete:  ~
+          _list:  ~
+          #volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title:  Editar contribución de Producto
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+      new:
+        title:  Nueva contribución de Producto
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]

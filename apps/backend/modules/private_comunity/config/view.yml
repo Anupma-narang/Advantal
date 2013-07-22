@@ -1,0 +1,4 @@
+default:
+   stylesheets:    [main_background.css,/sfDoctrinePlugin/css/global.css,/sfDoctrinePlugin/css/default.css ]
+newSuccess:
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,/sfDependentSelectPlugin/js/SelectDependiente.min.js]

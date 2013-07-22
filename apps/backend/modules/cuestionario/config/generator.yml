@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ListaCuestionario
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          cuestionario
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+
+    config:
+      actions:
+       _new:        { label: "Nuevo cuestionario"}
+      fields:
+        updated_at: { label: Creado el, date_format: dd/MM/y}
+        nombre:     { label: Título }
+        sector: { label: Sector, sortBy : esu.sector }
+        subsector: { label: Subsector, sortBy : esd.subsector }
+        actividad: { label: Actividad, sortBy : esd.actividad }
+      list:
+        title: Listado de cuestionarios de auditoría de Empresa/Entidad
+        display: [updated_at, nombre, _tipo, sector, subsector, actividad]
+        table_method: getCuestionariosForEmpresa
+        max_per_page: 25        
+        object_actions:
+          _show:    { label: Ver, action: show}
+          _edit: ~
+          duplicar: { label: Duplicar, action: duplicar }
+          _delete: ~
+
+      filter:
+         display: [created_at, nombre, empresa_sector_uno_id, empresa_sector_dos_id, empresa_sector_tres_id]
+         fields:
+           created_at: { label: Creado el}
+      form:
+        actions:
+          _list: ~
+          _delete: ~
+          _save: { label: Guardar }
+          _save_and_add: { label: Guardar y crear otro }
+      edit:
+        title: Editar cuestionario de auditoría de Empresa/Entidad
+      new:
+        title: Nuevo cuestionario de auditoría de Empresa/Entidad

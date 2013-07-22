@@ -1,0 +1,22 @@
+<?php use_helper('I18N', 'Url') ?>
+<?php echo __(<<<EOM
+Hola %alias%:
+
+Te informamos de que, el %created_at%, un colaborador ha contribuido en el concurso %concurso_titulo%, que has creado para %nombre_empresa% en la localidad de %ciudadyprovincia% y en la categoría de %concurso_categoria%,
+
+Para verlo, por favor haz clic %aqui%.
+
+¡Muchas gracias por contribuir!
+
+No quiero recibir más este mensaje
+EOM
+, array(
+		"%alias%" 						=> 	$alias,
+		"%created_at%"					=>	format_datetime($created_at, "p", "es_ES"),
+  	"%concurso_titulo%" 			=> 	$concurso_titulo,
+		"%nombre_empresa%"				=>	$nombre_empresa,
+		"%ciudadyprovincia%"  =>	$ciudadyprovincia,
+    "%aqui%"						=>	link_to('aquí', "http://auditoscopia.servigenlm.com/concursos/$empresa_slug/$slug/$date/$time/plan-de-accion/$number"),
+		//"%aqui%"						=>	link_to('aquí', 'http://auditoscopia.servigenlm.com/concurso/show?id='.$concurso_id.'&contribucion_id='.$contribucion_id),
+		"%link1%"						=>	url_for('http://auditoscopia.servigenlm.com/vosotros/baja_notificaciones?hash='.$hash.'&tipo=colaborador_contribuye_value'),
+		"%concurso_categoria%"			=> 	$concurso_categoria)) ?>	

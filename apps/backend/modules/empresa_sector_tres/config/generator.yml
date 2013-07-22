@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           EmpresaSectorTres
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          empresa_sector_tres
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva actividad"}
+      fields:  
+        name: { label: Actividad }
+        empresa_sector_uno: { label: Sector }
+        empresa_sector_uno_id: { label: Sector }
+        empresa_sector_dos: { label: Subsector }      
+        empresa_sector_dos_id: { label: Subsector }
+      list:
+        max_per_page: 25
+        title: Listado de actividades de Empresa/Entidad
+        display: [id, orden, name,empresa_sector_uno,empresa_sector_dos]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name, empresa_sector_uno_id, empresa_sector_dos_id]
+      form:    ~
+      edit:
+        title: Editar actividad de Empresa/Entidad
+        display: [id, orden,name,empresa_sector_uno_id,empresa_sector_dos_id]
+      new:
+        title: Nueva actividad de Empresa/Entidad
+        display: [id, orden,name,empresa_sector_uno_id,empresa_sector_dos_id]

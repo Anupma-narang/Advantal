@@ -1,0 +1,33 @@
+<?php if(count($cartas->getResults())>0):?>
+    <?php echo link_to_function('borrar', "$('#Cartas_home_content').load('".url_for('escritorio/get_cartas_pendientes?delete=all')."');", array('style' => 'float:right', 'title' => 'Borrar todas las alertas'))?>
+<?php endif;?>
+
+<ul>
+<?php if(count($cartas->getResults())>0):?>
+<h4>
+<?php echo format_number_choice('[0]Hay 0 carta pendientes.|[1]Hay 1 carta pendiente.|(1,+Inf]Hay %count% cartas pendientes.',
+        	            		array('%count%' => $n_cartas),$n_cartas)?>
+</h4><br/>
+	<?php foreach ($cartas->getResults() as $carta):?>
+		<li><?php echo format_datetime($carta->getCreatedAt(), "HH:mm d/MM/y", "es_ES")?> - <?php echo html_entity_decode($carta->message)?>
+        &nbsp;
+        <?php //echo link_to_function('borrar', "$('#Cartas_home_content').load('".url_for('escritorio/get_cartas_pendientes?delete='.$carta->getId())."');")?>
+        </li>
+	<?php endforeach;?>
+<?php else:?>
+	<li>No existen datos.</li>
+<?php endif;?>
+</ul>
+
+<?php if ($cartas->haveToPaginate()): ?>
+<div class="pagination" style="text-align:right">
+  <?php echo link_to_function(image_tag('/images/first.png',array('title'=>'Primera')),'$("#Cartas_home_content").load("'.url_for('escritorio/get_cartas_pendientes?page='.$cartas->getFirstPage()).'")') ?>
+  <?php echo link_to_function(image_tag('/images/previous.png',array('title'=>'Anterior')), '$("#Cartas_home_content").load("'.url_for('escritorio/get_cartas_pendientes?page='.$cartas->getPreviousPage()).'")') ?>
+  <?php $links = $cartas->getLinks(); foreach ($links as $page): ?>
+    <?php echo ($page == $cartas->getPage()) ? $page : link_to_function($page, '$("#Cartas_home_content").load("'.url_for('escritorio/get_cartas_pendientes?page='.$page).'")') ?>
+    <?php if ($page != $cartas->getCurrentMaxLink()): ?> - <?php endif ?>
+  <?php endforeach ?>
+  <?php echo link_to_function(image_tag('/images/next.png',array('title'=>'Siguiente')), '$("#Cartas_home_content").load("'.url_for('escritorio/get_cartas_pendientes?page='.$cartas->getNextPage()).'")') ?>
+  <?php echo link_to_function(image_tag('/images/last.png',array('title'=>'Última')), '$("#Cartas_home_content").load("'.url_for('escritorio/get_cartas_pendientes?page='.$cartas->getLastPage()).'")') ?>
+</div>
+<?php endif ?>

@@ -1,0 +1,1 @@
+<?php echo $colaboradorpuntoshistorico->getSfGuardUser()->getUsername();?>

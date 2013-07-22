@@ -1,0 +1,27 @@
+new:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]
+
+show:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+edit:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+
+create:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+update:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+addEditDisapproval:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+all:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]

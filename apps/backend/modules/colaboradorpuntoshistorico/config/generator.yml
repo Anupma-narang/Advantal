@@ -1,0 +1,47 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           colaboradorpuntoshistorico
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          colaboradorpuntoshistorico
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+        _new: { label: "Nueva entrada"}
+      fields:  
+        username: { label: "Usuario" }
+        User: { label: Usuario }
+        user_id: { label: Usuario }
+        created_at: { label: Creado el }
+        objeto_por_id:  { label: Módulo relacionado }
+        descripcion: { label: Descripción }
+        hierarchy: { label: Jerarquía }
+        puntos: { label: Puntos }
+        tipo_punto: { label: Tipo de puntos }
+      list:
+        max_per_page: 25
+        sort: [user_id, desc]
+        title:  "Histórico de colaboradores"
+        display: [_created_at,_puntos,tipo_punto, descripcion, _user_id, _hierarchy ]
+        object_actions:
+          show:
+            action: show
+            label: Ver        
+          _edit:         ~
+          _delete:       ~  
+      filter:  
+        display: [created_at, user_name,  descripcion, puntos, tipo_punto]
+      form:    ~
+      edit:        
+        title:  Editar histórico de colaboradores
+        display: [user_name, user_id,puntos,tipo_punto,descripcion]
+      new:
+        title:  Nueva entrada en el Histórico
+        display: [user_name, user_id,puntos,tipo_punto,descripcion ]

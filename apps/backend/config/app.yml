@@ -1,0 +1,235 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_guard_plugin:
+    success_signin_url: @homepage
+    success_signout_url: login/index
+  tiny_mce_backend: |
+    width: "550px"
+    height: "200px"
+    language: "es"
+    relative_urls: false,
+    convert_urls: false,
+    plugins: "preview, paste, advlink"
+    theme_advanced_buttons1: "bold, italic, underline, separator, justifyleft, justifycenter, justifyright, justifyfull, separator, forecolor, fontselect, fontsizeselect, separator, pastetext, pasteword, separator, link, bullist, numlist, separator, undo, redo, selectall"
+    theme_advanced_buttons2: ""
+    theme_advanced_buttons3: ""
+    plugin_preview_width: "500"
+    plugin_preview_height: "600"
+    fullscreen_new_window: true,
+    theme_advanced_resize_horizontal: false,
+    paste_auto_cleanup_on_paste: true,
+
+  sf_admin_dash:
+    categories:
+      Concursos:
+        items:
+          Concursos pendientes:
+            url:          concursos_pendientes
+            image:        menu.png
+          Contribuciones pendientes:
+            url:          contribuciones_pendientes
+            image:        addedit.png
+          Concursos:
+            url:          concurso/index
+            image:        cpanel.png
+          Contribuciones:
+            url:          contribucion
+            image:        language.png
+          Concursos destacados:
+            url:          concursos_destacados
+            image:        checkin.png
+          Contribuciones destacadas:
+            url:          contribuciones_destacadas
+            image:        generic.png
+          Planes de acción:
+            url:          planes_de_accion/index
+            image:        config.png
+
+      Las Listas:
+        items:
+          L. blanca Empresas/Entidades:
+            url:          empresa_lista_blanca
+            image:        module.png
+          L. blanca Productos:
+            url:          producto_lista_blanca
+            image:        templatemanager.png
+          L. negra Empresas/Entidades:
+            url:          lista_negra_empresa
+            image:        addedit.png
+          L. negra Productos:
+            url:          producto_listaNegraProducto
+            image:        generic.png
+          Cuestionarios Empresa/Entidad:
+            url:          cuestionario
+            image:        config.png
+          Cuestionarios Producto:
+            url:          cuestionario_producto
+            image:        config.png
+          Categorías de excelencia:
+            url: categoria_excelencia
+            image: query.png
+          KPIs:
+            url:          kpi
+            image:        checkin.png
+          Empresas/Entidades:
+            url:          empresa
+            image:        addedit.png
+          Productos:
+            url:          producto
+            image:        addedit.png
+
+      Directorio:
+        items:
+          Profesionales pendientes:
+            url:          profesionales_pendientes
+            image:        menu.png
+          Cartas pendientes:
+            url:          cartas_pendientes
+            image:        massemail.png
+          Cartas de recomendación:
+            url:          profesional_letter_cartas_recomendacion
+            image:        menu.png
+          Cartas de desaprobación:
+            url:          profesional_letter_cartas_desaprobacion
+            image:        addedit.png
+          Profesionales:
+            url:          profesional_lista
+            image:        support.png
+          Alertas:
+            url:          alertas
+            image:        addedit.png
+
+      Colaboradores:
+        items:
+          Colaboradores:
+            url:          @sfguarduser
+            image:        users.png
+          Historico de colaboradores:
+            url:          colaboradorpuntoshistorico
+            image:        menu.png
+          Histórico de recompensas:
+            url:          RewardLog
+            image:        menu.png
+          Alertas:
+            url:          colaboradores_alertas
+            image:        messaging.png
+          Escaparate de regalos:
+            url:          gift
+            image:        mediamanager.png
+          Jerarquías:
+            url:          jerarquia
+            image:        credits.png
+          Tabla de puntos:
+            url:          colaboradorpuntodefinicion
+            image:        module.png
+          Formulario de baja:
+            url:          cuestionario_pregunta
+            image:        trash.png
+          Nuestros casos de éxito:
+            url: company_case_study
+            image: menu.png
+          Otros casos de éxito:
+            url: user_company_case_study
+            image: menu.png
+          Usuarios bloqueados:
+            url: sf_guard_user_profile_blocked_users
+            image: menu.png
+
+      Administración:
+        items:
+          La Pizarra:
+            url:          pizarra
+            image:        message_config.png
+          Caja:
+            url:          administration_caja
+            image:        checkin.png
+          Administrador:
+            url:          sf_guard_user
+            image:        users.png
+          Perfiles Admin.:
+            url:          sf_guard_user_administration_profile
+            image:        credits.png
+          Correos Administradores:
+            url:          administration_emails
+            image:        massemail.png
+          Secciones La Pizarra:
+            url:          pizarra_section_blackboard_section
+            image:        templatemanager.png
+          Provincias:
+            url:          states
+            image:        impressions.png
+          Tipos de vía:
+            url:          road_type
+            image:        impressions.png
+          Sector de Empresa/Entidad:
+            url:          empresa_sector_uno
+            image:        module.png
+          Subsector de Empresa/Entidad:
+            url:          empresa_sector_dos
+            image:        module.png
+          Actividad de Empresa/Entidad:
+            url:           empresa_sector_tres
+            image:         module.png
+          Sector de Producto:
+            url:           producto_tipo_uno
+            image:         message_config.png
+          Subsector de Producto:
+            url:           producto_tipo_dos
+            image:         message_config.png
+          Tipo de Producto:
+            url:           producto_tipo_tres
+            image:         message_config.png
+          #Sector de Profesional:
+          Sector profesional:
+            url:          profesional_tipo_uno
+            image:        support.png
+          #Subsector de Profesional:
+          Subsector profesional:
+            url:          profesional_tipo_dos
+            image:        support.png
+          #Actividad de Profesional:
+          Actividad profesional:
+            url:           profesional_tipo_tres
+            image:         support.png
+          Categorías:
+            url:          concurso_categoria
+            image:        query.png
+
+
+
+      Correo:
+        items:
+          Contáctanos:
+            url:          contactanos
+            image:        massemail.png
+          Audítanos:
+            url:          auditanos
+            image:        config.png
+          Contrátanos:
+            url:          contratanos
+            image:        cpanel.png
+          Casos de éxito:
+            url:          user_company_case_study_request
+            image:        language.png
+
+          Bajas:
+            url:          cuestionariobajavalue/index
+            image:        trash.png
+          Recomendaciones de amigos:
+            url:          recomended_registration
+            image:        menu.png
+          Canje regalos:
+            url:          gift_redemption
+            image:        checkin.png
+
+
+
+
+  listas:
+    tipos: { Null: Ninguna, lb: Lista blanca, ln: Lista negra }
+
+  cuestionarios:
+    min_kpis: 7

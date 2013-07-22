@@ -1,0 +1,12 @@
+new:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+
+create:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+
+  
+all:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]

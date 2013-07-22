@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+new:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+edit:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+create:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+update:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor]]
+  
+changeStatus:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador,Editor, Lector]]
+  
+all:
+  is_secure: true
+  credentials: [ [Superadministrador, Administrador]]

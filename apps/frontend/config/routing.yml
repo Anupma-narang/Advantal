@@ -1,0 +1,536 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+volver_order_lista_negra:
+  url: /las-listas/lista-negra/volverOrden
+  params: { module: listaNegra, action: volverOrden }
+recordar_order_lista_negra:
+  url: /las-listas/lista-negra/recordarOrden
+  params: { module: listaNegra, action: recordarOrden }
+
+volver_order_producto:
+  url: /las-listas/lista-blanca-producto/volveroOrder
+  params: { module: listaBlancaProducto, action: volverOrder }
+
+recordar_order_producto:
+  url: /las-listas/lista-blanca-producto/recordar-orden
+  params: { module: listaBlancaProducto, action: recordarOrden }
+
+volver_order_empresa:
+  url: /las-listas/lista-blanca-empresa/volverOrder
+  params: { module: listaBlanca, action: volverOrder }
+
+recordar_order:
+  url: /las-listas/lista-blanca/recordarorden
+  params: { module: listaBlanca, action: recordarOrden }
+
+producto_show_chart:
+  url: /las-listas/lista-blanca/producto/chart/:id
+  params: { module: listaBlancaProducto, action: showChart }
+
+empresa_show_chart:
+  url: /las-listas/lista-blanca/empresa/chart/:id
+  params: { module: listaBlanca, action: showChart }
+
+lista_negra_detalle_empresa:
+  url: /las-listas/lista-negra/empresa-entidad/:slug
+  params: { module: listaNegra, action: detalle, tipo: empresa}
+
+lista_negra_detalle_producto:
+  url: /las-listas/lista-negra/producto/:slug
+  params: { module: listaNegra, action: detalle, tipo: producto}
+
+lista_negra_producto_comenta:
+    url: /las-listas/lista-negra/producto/:slug/comenta
+    params: { module: listaNegra, action: addComentario, type: producto}
+
+lista_negra_empresa_comenta:
+  url: /las-listas/lista-negra/empresa-entidad/:slug/comenta
+  params: { module: listaNegra, action: addComentario, type: empresa}
+
+lista_negra_comentarios:
+  url: /las-listas/lista-negra/:tipo/:slug/comentarios
+  param: { module: listaNegra, action: comentarios }
+
+lista_negra_producto:
+  url: /las-listas/lista-negra/productos
+  params: { module: listaNegra, action: indexProductos }
+
+lista_negra_empresa_detalle:
+  url: /las-listas/lista-negra/empresa-entidad/:slug
+  params: { module: listaNegra, action: detalleEmpresa }
+
+lista_negra_empresa:
+  url: /las-listas/lista-negra/empresa
+  params: { module: listaNegra, action: indexEmpresas }
+
+producto_autocomplete:
+  url: /producto/autocomplete
+  params: { module: listaBlancaProducto, action: autocomplete }
+
+lista_blanca_audita_producto:
+  url: /las-listas/lista-blanca/producto/:slug/audita
+  param: { module: listaBlancaProducto, action: audita }
+
+lista_blanca_productos:
+  url: /las-listas/lista-blanca/productos/:sector1/:sector2/:sector3
+  param: { module: listaBlancaProducto, action: index, sector1: null, sector2: null, sector3: null }
+
+
+show_map:
+  url: /las-listas/lista-blanca/empresa/:slug/mapa
+  param: { module: listaBlanca, action: generateMap }
+
+lista_blanca_producto_detalle:
+  url: /las-listas/lista-blanca/producto/:slug
+  param: { module: listaBlancaProducto, action: detalle }
+
+lista_blanca_empresa_detalle:
+  url: /las-listas/lista-blanca/empresa-entidad/:slug
+  param: { module: listaBlanca, action: detalle }
+
+lista_blanca_categoria_excelencia:
+  url: /las-listas/lista-blanca/:tipo/:slug/excelencia
+  param: { module: listaBlanca, action: categoriaExcelencia }
+  
+lista_profesional_categoria_excelencia:
+  url: /las-listas/directorio-de-buenos-profesionales/:tipo/:slug/excelencia
+  param: { module: directorio, action: categoriaExcelencia }
+
+lista_profesional_detalle:
+  url: /las-listas/directorio-de-buenos-profesionales/profesionales/:slug
+  param: { module: directorio, action: detalle }
+  
+lista_profesional_detalle_des:
+  url: /las-listas/directorio-de-buenos-profesionales/profesionales/desaprobaciones/:slug
+  param: { module: directorio, action: detalle, desaprobaciones: desaprobaciones }
+
+show_profesional_map:
+  url: /las-listas/directorio-de-buenos-profesionales/profesionales/:slug/mapa
+  param: { module: directorio, action: generateMap }
+
+profesional_show_chart:
+  url: /las-listas/directorio-de-buenos-profesionales/profesionales/chart/:id
+  params: { module: directorio, action: showChart }
+
+profesional_recordar_order:
+  url: /las-listas/directorio-de-buenos-profesionales/recordarOrden
+  params: { module: directorio, action: recordarOrden }
+
+volver_order_profesional:
+  url: /las-listas/directorio-de-buenos-profesionales/volverOrder
+  params: { module: directorio, action: volverOrder }
+
+lista_blanca_comentarios:
+  url: /las-listas/lista-blanca/:tipo/:slug/comentarios
+  param: { module: listaBlanca, action: comentarios }
+
+lista_blanca_audita_empresa:
+  url: /las-listas/lista-blanca/empresa-entidad/:slug/audita
+  param: { module: listaBlanca, action: audita }
+
+lista_blanca_empresa:
+  url: /las-listas/lista-blanca/empresas/:sector1/:sector2/:sector3
+  param: { module: listaBlanca, action: index, sector1: null, sector2: null, sector3: null }
+
+lista_blanca_empresa_index:
+  url: /las-listas/lista-blanca/empresas
+  param: { module: listaBlanca, action: index }
+
+lista_blanca_empresa_reset:
+  url: /las-listas/lista-blanca/reset
+  param: { module: listaBlanca, action: resetFilter }
+  
+lista_blanca_producto_reset:  
+  url: /las-listas/lista-blanca/productos/reset
+  param: { module: listaBlancaProducto, action: resetFilter }  
+
+lista_negra_empresa_reset:
+  url: /las-listas/lista-negra/reset
+  param: { module: listaNegra, action: resetFilter }
+  
+lista_negra_producto_reset:  
+  url: /las-listas/lista-negra/productos/reset
+  param: { module: listaNegra, action: resetFilter }  
+  
+lista_profesional_reset:
+  url: /las-listas/profesional/reset
+  param: { module: directorio, action: resetFilter }
+
+lista_blanca_noaudita:
+  url: /las-listas/lista-blanca/noaudita
+  param: { module: listaBlanca, action: noaudita }
+
+lista_profesional:
+  url: /las-listas/directorio-de-buenos-profesionales/:sector1/:sector2/:sector3
+  param: { module: directorio, action: index, sector1: null, sector2: null, sector3: null }
+
+concurso-url-alias:
+  url:  /concursos/:nombre/:slug/:date/:time
+  param:  { module: concurso, action: urlaliasshow }
+
+concurso-plan_de_acccion:
+  url:  /concursos/:titulo/:date/:time/plan-de-accion/:id
+  param:  { module: contribucionuno, action: showplandeaccion }
+
+contribucion-resumen_plan_de_acccion:
+  url:  /concursos/:titulo/:date/:time/resumen-plan-de-accion/:id
+  param:  { module: contribucionuno, action: showresumenplandeaccion }
+
+concurso-incidencia:
+  url:  /concursos/:nombre/:slug/:date/:time/incidencia/:numero
+  param: { module: concurso, action: showIncidencia }
+ 
+comapny_audita_record:
+  url: /company/auditaRecord/*
+  param: { module: empresa, action: auditaRecord }
+  
+product_audita_record:
+  url: /product/auditaRecord/*
+  param: { module: producto, action: auditaRecord } 
+  
+company_comment_record:
+  url: /company/commentRecord/*
+  param: { module: empresa, action: commentRecord } 
+  
+product_comment_record:
+  url: /product/commentRecord/*
+  param: { module: producto, action: commentRecord } 
+ 
+my_audit_list:
+  url: /vosotros/misAuditList/*
+  param: { module: vosotros, action: misAuditList }
+
+my_audit_record:
+  url: /vosotros/misAuditRecord/*
+  param: { module: vosotros, action: misAuditRecord }  
+  
+my_comment_list:
+  url: /vosotros/misCommentList/*
+  param: { module: vosotros, action: misCommentList }  
+ 
+my_comment_record:
+  url: /vosotros/misCommentRecord/*
+  param: { module: vosotros, action: misCommentRecord }    
+
+concurso_type:
+  url: /concurso/tipo/:tipo/list/:list
+  param: { module: concurso, action: index }
+  
+contest_edit:
+  url: concurso/edit/*
+  param: { module: concurso, action: edit } 
+  
+profesional_edit:
+  url: profesional/edit/*
+  param: { module: profesional, action: edit }  
+  
+profesional_recomend_edit:
+  url: profesionalrecomend/edit/*
+  param: { module: profesional, action: editRecomend } 
+  
+profesional_disaproval_edit:
+  url: profesionaldisaproval/edit/*
+  param: { module: profesional, action: editDisaproval }   
+  
+contribution_edit:
+  url: contribucionuno/edit/:concurso_id/:id/*
+  param: { module: contribucionuno, action: edit } 
+  
+contest-show:
+  url: concurso/show/*
+  param: { module: concurso, action: show } 
+  
+contest-new:
+  url: concurso/new/tipo/empresa/*
+  param: { module: concurso, action: new } 
+
+company-contest-show:
+  url: /concurso/empresa/:company/:title/:date
+  param: { module: concurso, action: filterCompanyContest}
+  
+product-contest-show:
+  url: /concurso/producto/:product/:title/:date
+  param: { module: concurso, action: filterProductContest}
+  
+company-contest-incident:
+  url: /concurso/empresa/:company/:title/:date/contribución/:contribution
+  param: { module: concurso, action: filterCompanyIncidencia}
+  
+company-contest-action-plan:
+  url: /concurso/empresa/:company/:title/:date/plan_de_accion/:contribution
+  param: { module: concurso, action: filterCompanyActionPlan}
+  
+product-contest-incident:
+  url: /concurso/producto/:product/:title/:date/contribución/:contribution
+  param: { module: concurso, action: filterProductIncidencia}
+  
+product-contest-action-plan:
+  url: /concurso/producto/:product/:title/:date/plan_de_accion/:contribution
+  param: { module: concurso, action: filterProductActionPlan}  
+
+borradores-draft:
+  url: vosotros/borradores
+  param: { module: vosotros, action: borradores }
+
+contest-draft:
+  url: vosotros/borradores/type/contest
+  param: { module: vosotros, action: borradores, type : contest }
+  
+contribution-draft:
+  url: vosotros/borradores/:type
+  param: { module: vosotros, action: borradores , type : contribution }
+  
+profesional-draft:
+  url: vosotros/borradores/type/profesional
+  param: { module: vosotros, action: borradores, type : profesional }
+  
+profesional-cartas-draft:
+  url: vosotros/borradores/type/cartas
+  param: { module: vosotros, action: borradores, type : cartas }  
+  
+concurso-misconcursos:
+  url: /vosotros/misconcursos
+  param: { module: vosotros, action: misconcursos}  
+  
+concurso-referendum:
+  url:  /vosotros/misreferendums
+  param:  { module: vosotros, action: misreferendums }  
+  
+favourit:
+  url:  /vosotros/misfavoritos/*
+  param:  { module: vosotros, action: misfavoritos }  
+  
+my_contest_empresa_active:
+  url: vosotros/misconcursos/empresa/active/:tipo/:list
+  param: { module: vosotros, action: misconcursos , tipo: empresa, list : active}
+  
+my_contest_empresa_history:
+  url: vosotros/misconcursos/empresa/history/:tipo/:list
+  param: { module: vosotros, action: misconcursos, tipo: empresa, list : history }
+  
+my_contest_producto_active:
+  url: vosotros/misconcursos/producto/active/:tipo/:list
+  param: { module: vosotros, action: misconcursos, tipo: producto, list : active }
+
+my_contest_producto_history:
+  url: vosotros/misconcursos/producto/history/:tipo/:list
+  param: { module: vosotros, action: misconcursos, tipo: producto, list : history }
+  
+my_referendum_empresa_active:
+  url: vosotros/misconcursos/empresa/active/:tipo/:list
+  param: { module: vosotros, action: misreferendums , tipo: empresa, list : active}
+  
+my_referendum_empresa_history:
+  url: vosotros/misconcursos/empresa/history/:tipo/:list
+  param: { module: vosotros, action: misreferendums, tipo: empresa, list : history }
+  
+my_referendum_producto_active:
+  url: vosotros/misconcursos/producto/active/:tipo/:list
+  param: { module: vosotros, action: misreferendums, tipo: producto, list : active }
+
+my_referendum_producto_history:
+  url: vosotros/misconcursos/producto/history/:tipo/:list
+  param: { module: vosotros, action: misreferendums, tipo: producto, list : history }
+  
+my_favoritos_company_contest:
+  url: vosotros/misfavoritos/type/company_contest/:type
+  param: { module: vosotros, action: misfavoritos, type: company_contest }  
+my_favoritos_product_contest:
+  url: vosotros/misfavoritos/type/product_contest/:type
+  param: { module: vosotros, action: misfavoritos, type: product_contest }  
+
+concurso-miscontribution:
+  url: /vosotros/miscontribuciones
+  param: { module: vosotros, action: miscontribuciones}
+
+contribucion-plan_de_acccion:
+  url:  /concursos/:nombre/:slug/:date/:time/plan-de-accion/:numero
+  param:  { module: concurso, action: showPlanDeAccion }
+
+contribucion-incidencia_descripcion:
+  url:  /concursos/:titulo/:date/:time/descripcion-incidencia/:id
+  param:  { module: contribucionuno, action: showincidenciadescripcion }
+
+contribucion-incidencia_descripcion_n:
+  url:  /concursos/:nombre/:slug/:date/:time/plan-de-accion/:number
+  param:  { module: concurso, action: showincidenciadescripcion }
+
+vosotros:
+  url:  /vostros/micuenta/*
+  param:  { module: vosotros, action: micuenta }
+  
+draft:
+  url:  /vosotros/borradores/*
+  param:  { module: vosotros, action: borradores }
+
+concurso-misauditorias:
+  url:  /vosotros/misauditorias/*
+  param:  { module: vosotros, action: misauditorias }
+  
+my-carts:
+  url:  /vosotros/miscartas/*
+  param:  { module: vosotros, action: miscartas }
+  
+concurso-miscomentarios:
+  url:  /vosotros/misComentarios/*
+  param:  { module: vosotros, action: misComentarios }
+
+preguntasfrecuentes:
+  url: /nosotros/preguntasfrecuentes
+  param: { module: preguntasfrecuentes, action: index }
+  
+list-session:
+  url: /vostros/session
+  param: { module: vosotros, action: listSession }
+  
+concurso_index:
+  url: /concurso/*
+  param: { module: concurso, action: index }
+  
+nosotros_audita:
+  url: /nosotros/audita
+  param: { module : nosotros, action: audita }
+# Comunidad privada #
+comunidadprivada:
+  url:  /comunidadprivada
+  param:  { module: comunidadprivada, action: index }
+
+apply:
+  url:  /registro
+  param: { module: sfApply, action: apply }
+reset:
+  url: /reset
+  param: { module: sfApply, action: reset }
+
+resetRequest:
+  url: /reset-request
+  param: { module: sfApply, action: resetRequest }
+
+validate:
+  url: /confirm/:validate
+  param: { module: sfApply, action: confirm }
+  
+gift_list:
+  url: /vosotros/gift-list/*
+  param: { module: vosotros, action: giftList }
+  
+gift_redemption:
+  url: /vosotros/gift-redemption
+  param: { module: vosotros, action: giftRedemption}
+
+featured_gifts:
+  url: /vosotros/gift-featured
+  param: { module: vosotros, action: homePageGiftList}
+ 
+featured_user_listing:
+  url: /vosotros/user-listing
+  param: { module: vosotros, action: userRewardAndHeirarchyRanking}
+  
+featured_comapny_list:
+  url: /comapny/featured-company
+  param: { module: empresa, action: featuredComapnyRecords}
+
+featured_product_list:
+  url: /producto/featured-product
+  param: { module: producto, action: featuredProductRecords}
+  
+featured_professional_list:
+  url: /profesional/homePageProfessionalList
+  param: { module: profesional, action: homePageProfessionalList}
+  
+blackboard_list:
+  url: /blackboard
+  param: { module: blackboard, action: index }
+# settings:
+#  url: /settings
+#  param: { module: sfApply, action: settings }
+
+# We implement the missing sf_guard_password feature from sfGuardPlugin
+sf_guard_password:
+  url: /reset-request
+  param: { module: sfApply, action: resetRequest }
+# default rules
+#completecity:
+#  url: /completecity
+#  param: { module: concurso, action: completecity}
+autocompletecity:
+  url: /autocompletecity
+  param: { module: concurso, action: autocompletecity}
+
+complete:
+  url: /complete
+  param: { module: concurso, action: complete}
+
+autocompletemodel:
+  url: /autocompletemodel
+  param: { module: concurso, action: autocompletemodel}
+  
+autocompleteconcursoname:
+  url: /autocompleteconcursoname
+  param: { module: concurso, action: autocompleteconcursoname}
+  
+autocompleteconcursoaddress:
+  url: /autocompleteconcursoaddress
+  param: { module: concurso, action: autocompleteconcursoaddress}
+  
+autocomplete:
+  url: /autocomplete
+  param: { module: concurso, action: autocomplete}
+
+autocompleteproducto:
+  url: /autocompleteproducto
+  param: { module: concurso, action: autocompleteproducto}
+  
+
+autocompleteuser:
+  url: /autocompleteuser
+  param: { module: concurso, action: autocompleteuser}
+
+reward_ranking:
+  url: /vosotros/rewardRanking/*
+  param: { module: vosotros, action: rewardRanking }
+  
+hierarchy_ranking:
+  url: /vosotros/hierarchyRanking/*
+  param: { module: vosotros, action: hierarchyRanking }
+  
+empresa_autocomplete_direccion:
+  url: /empresa/autocompletedireccion
+  param: { module: empresa, action: autocompleteDireccion }
+
+empresa_autocomplete_name:
+  url: /empresa/autocompletenombre
+  param: { module: empresa, action: autocompleteName }
+
+profesionalrecomend:
+  url: /profesionalrecomend/:idprofesional
+  param: { module: profesional, action: recomend }
+
+profesionaldisaproval:
+  url: /profesionaldisaproval/:idprofesional
+  param: { module: profesional, action: disaproval }
+
+profesional:
+  url:  /profesional
+  param:  { module: profesional, action: index }
+
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+get_recomendation:
+  url: /recomendation
+  param: { module: directorio, action: letters, tipo: 1}
+
+get_disaproval:
+  url: /disaproval
+  param: { module: directorio, action: letters, tipo: 2}
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

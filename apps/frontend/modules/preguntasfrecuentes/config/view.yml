@@ -1,0 +1,15 @@
+default:
+  http_metas:
+    content-type: text/html
+  metas:
+    title:        Preguntas + frecuentes sobre la comunidad de Experiencia de Cliente
+    description:  Encuentra respuesta a todas tus dudas sobre la comunidad de Experiencia de Cliente de auditoscopia. ¡Anímate a probar!
+    keywords:     preguntas + frecuentes, preguntas más frecuentes, preguntas auditoscopia
+
+all:    
+  stylesheets:    [fancybox/jquery.fancybox.css, main3.css, media-queries.css, -main.css,-global.css,-estyl_side.css,-estyl_sup.css,-caja.css]
+
+  javascripts:    [fancybox/jquery.fancybox.pack.js, lightbox_loader.js]
+
+  has_layout:     true
+  layout:         layout5_preguntasfrecuentes

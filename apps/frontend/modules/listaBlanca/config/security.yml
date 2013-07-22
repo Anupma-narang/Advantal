@@ -1,0 +1,11 @@
+audita:
+  is_secure: true
+
+auditacrear:
+  is_secure: true
+
+auditaguardar:
+  is_secure: true
+
+noaudita:
+  is_secure: true  

@@ -1,0 +1,62 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva contribución"}
+      fields:
+        user_name: { label: Usuario }
+        user_id: {label: Usuario }
+        contribucion_estado: { label: Estado contribución }
+        created_at: { label: Creada el }
+        destacado: {label: Destacada }
+        concurso_tipo: {label: Tipo }
+        tipo_concurso: {label: Tipo de concurso }
+        concurso_tipo_id: {label: Tipo de concurso }
+        resume_concurso: {label: Resumen (concurso) }
+        name: { label: Título }
+        contribucion_estado_id: { label: Estado contribución }
+        resumename: { label: Título }
+      list:
+        max_per_page: 25
+        sort: created_at
+        title: Listado de contribución
+        display: [_created_at,resumename,destacado,concurso,tipo_concurso,username,contribucion_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+      filter:
+        class: ContribucionFormFilter
+        display: [created_at, name, destacado, concurso_tipo_id, concurso_id, user_id, contribucion_estado_id]
+        #display: [name, concurso_id, user_id, contribucion_estado_id, destacado, created_at]
+
+      form:
+        class: ContribucionBackendForm
+        #display: [name, contribucion_estado_id, user_id, destacado, concurso_id, incidencia, plan_accion, resumen]
+        display: [name, contribucion_estado_id, user_id, destacado, concurso_id, incidencia, plan_accion, resumen]
+        actions:
+          _delete:  ~
+          _list:  ~
+          #volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title:  Editar contribución
+        display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+      new:
+        display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+        title:  Nueva contribución

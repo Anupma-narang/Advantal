@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MesaRedonda
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          mesa_redonda
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Listado de Mesas redondas
+      filter:
+        display: [id,name,plan_accion]
+      form:    ~
+      edit:    ~
+      new:     ~

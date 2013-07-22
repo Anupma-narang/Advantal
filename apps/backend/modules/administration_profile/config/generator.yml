@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardPermission
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user_administration_profile
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new: { label: Nuevo administrador }
+      fields:  
+        name : { label: Perfil   }
+      list:    
+        title: Listado de perfiles de Administración
+        display: [ name ] 
+        object_actions:
+      filter: ~ 
+      form:    ~
+      

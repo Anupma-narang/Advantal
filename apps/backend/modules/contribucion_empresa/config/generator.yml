@@ -1,0 +1,65 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion_contribucion_empresa
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva contribución"}
+      fields:
+        user_name: { label: Usuario }
+        user_id: {label: Usuario }
+        contribucion_estado: { label: Estado contribución }
+        created_at: { label: Creada el }
+        destacado: {label: Destacada }
+        concurso_tipo: {label: Tipo }
+        tipo_concurso: {label: Tipo de concurso }
+        concurso_tipo_id: {label: Tipo de concurso }
+        resume_concurso: {label: Resumen (concurso) }
+        name: { label: Título }
+        contribucion_estado_id: { label: Estado contribución }
+        resumename: { label: Título }
+        concurso_empresa: { label: Empresa/Entidad }
+        states_id: { label: Provincia }
+        city_id: { label: Localidad }
+        empresa_id: { label: Empresa/Entidad }
+      list:
+        max_per_page: 25
+        sort: created_at
+        title: Listado contribución de Empresa/Entidad
+        #display: [_created_at,resumename,destacado,concurso,tipo_concurso,username,contribucion_estado]
+        display: [_created_at,resumename,destacado,concurso,concurso_empresa,_provincia,_localidad,username,contribucion_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+      filter:
+        class: ContribucionFormFilter
+        display: [created_at, name, destacado, concurso_id,empresa_id,states_id,city_id, user_id, contribucion_estado_id]
+        #display: [name, concurso_id, user_id,, concurso_tipo_id, contribucion_estado_id, destacado, created_at ]
+      form:
+        class: ContribucionBackendForm
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen]
+        actions:
+          _delete:  ~
+          _list:  ~
+          #volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title:  Editar contribución de Empresa/Entidad
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+      new:
+        title:  Nueva contribución de Empresa/Entidad
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]

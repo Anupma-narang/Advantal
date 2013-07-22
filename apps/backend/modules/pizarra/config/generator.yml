@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           pizarra
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pizarra
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions: 
+        _new : { label : 'Nuevo mensaje' }
+      fields:  
+        name: { label : 'Titular' }
+        text: { label : 'Mensaje' }
+        seccion: { label : 'Sección' }
+        created_at: { label : 'Creado el' }
+        schedule: { label : 'Programación' }
+        days: { label: 'Días' }
+        months: { label: 'Meses' }
+      list:   
+        max_per_page: 25
+        title: Listado de mensajes de la Pizarra
+        display: [ _created_at,name, _seccion, _visibilidad,  _schedule]
+        object_actions:
+          _ver: ~
+          _edit: ~
+          _delete: ~
+      filter:  
+        display: [ created_at,name, seccion, visibilidad, velocidad, desde, hasta, days, months]
+      form:    ~
+      edit:    
+        title: 'Editar mensaje de la Pizarra'
+        display: [ name, text, seccion, visibilidad, velocidad, desde, hasta, days, months]
+      new:     
+        title: Nuevo mensaje de la Pizarra
+        display: [ name, text, seccion, visibilidad, velocidad, desde, hasta, days, months]
+        

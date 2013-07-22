@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ConcursoCp
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso_cp
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        display: [name, concurso_estado, concurso_categoria, user]
+      filter:  
+        display: [concurso_estado_id, concurso_categoria_id,user_id]
+      form:    ~
+      edit:    ~
+      new:     ~

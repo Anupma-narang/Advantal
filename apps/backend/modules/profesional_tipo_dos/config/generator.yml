@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProfesionalTipoDos
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          profesional_tipo_dos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nuevo subsector"}
+      fields:
+        name: { label: Subsector }
+        profesional_tipo_uno: { label: Sector}
+        profesional_tipo_uno_id: { label: Sector}
+      list:
+        max_per_page: 25
+        title: Listado de subsectores profesionales
+        display: [id,orden,name,profesional_tipo_uno]
+        table_method: doSelectJoinSector
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [orden, name, profesional_tipo_uno_id]
+      form:    ~
+      edit:
+        title: Editar subsector profesional
+        display: [id, orden,name,profesional_tipo_uno_id]
+      new:
+        title: Nuevo subsector profesional

@@ -1,0 +1,1 @@
+<?php echo date('d/m/Y', strtotime($cuestionario_pregunta->getCreatedAt()));?>

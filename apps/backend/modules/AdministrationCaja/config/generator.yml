@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           AdministrationCaja
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          administration_caja
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+        {}
+      fields:
+        admin_email: { label : 'Correo para avisos de caja' }
+        expiry_date: { label : 'Caducidad de caja'}
+        points_per_cent: { label : 'Puntos por céntimo'}
+      list:
+        title: 'Gestión de Caja'
+        display: [  expiry_date ,	points_per_cent ]
+      filter:  ~
+      form:    ~
+      edit:    
+        title: 'Editar gestión de Caja'
+      new:     
+        title: 'Nuevo correo para avisos de caja'

@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Profesional
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          profesional_profesionalesListaBlanca
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+      actions:
+         _new: { label: "Nuevo"}
+      fields:
+        created_at: { label: Creado el, date_format: dd/MM/y }
+        first_name: { label: Nombre }
+        last_name_one: { label: Apellido 1 }
+        last_name_two: { label: Apellido 2 }
+        tipo : { label: Actividad }
+        States: { label: Provincia }
+        City: { label: Localidad }
+        isDestacada: { label: Destacada }
+      list:
+        table_method: getListaQuery
+        max_per_page: 25
+        title: Listado de profesionales
+        display: [ created_at, last_name_one, last_name_two, first_name, tipo, States, City, _isDestacada ]
+        object_actions:
+          _show: { label: Ver, action: show }
+          _edit: ~
+          _delete: ~
+          destacar: { label: Destacar, action: destacadoManager }
+      filter:
+        display: [ last_name_one, last_name_two, first_name, profesional_tipo_uno_id, profesional_tipo_dos_id, profesional_tipo_tres_id, states_id, city_id ]
+      form:
+        actions:
+          _delete: ~
+          _list: ~
+          detacar: { label: Ir a destacados, action: destacadoManager }
+          _save: ~
+      edit:
+        title: Editar Profesional de
+
+      new:
+        title: Nueva profesional de

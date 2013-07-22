@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           categoriaExcelencia
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          categoria_excelencia
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+
+    config:
+      actions:
+       _new:        { label: "Nueva categoría"}
+      fields:
+        valor_min: { label: Valor mínimo }
+        valor_max: { label: Valor máximo }
+        nombre: { label: Medalla }        
+      list:
+        title: Categorías de excelencia
+        display: [ =nombre, valor_min, valor_max ]
+        object_actions:
+          _ver: { label: ver, action: show }
+          _edit: ~
+          _delete: ~        
+      filter:
+        class: false
+      form:    ~
+      edit:    
+        title: Editar categoría de excelencia
+      new:     
+        title: Nueva categoría de excelencia
+        

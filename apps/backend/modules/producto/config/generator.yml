@@ -1,0 +1,48 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Producto
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   false
+
+    config:
+      actions:
+         _new: { label: "Nuevo producto"}
+      fields:
+        name: { label: Producto }
+        tipo: { label: Tipo de producto, sortBy : psu.tipo }
+        isDestacado: { label: Destacado }
+        featured: { label: Home }
+        featured_order: { label: Orden Home   }
+        created_at: { label: Creado el }
+        sector_name: { label: Sector del producto, sortBy : psu.sector_name }
+        subsector_name: { label: Subsector del producto, sortBy : psd.subsector_name }
+      list:
+        max_per_page: 25
+        title: Listado de Productos
+        display: [_created_at, name, marca, modelo, sector_name, subsector_name, tipo, _lista]
+        table_method: doSelectJoinSector
+        object_actions:
+          _show: { label: Ver, action: show }
+          _edit: ~
+          _delete: ~
+      filter:
+        display: [created_at, name, marca, modelo, producto_tipo_uno_id, producto_tipo_dos_id, producto_tipo_tres_id, lista]
+      form:
+          actions:
+            _delete: ~
+            _list: { label: Volver al Listado }
+            #detacar: { label: Ir a Destacados, action: destacadoManager }
+            _save: ~
+            _save_and_add: { label: Guardar y crear otro }
+      edit:
+        title: Editar producto
+      new:
+        title: Nuevo Producto

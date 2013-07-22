@@ -1,0 +1,67 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Contribucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribucion_contribuciones_destacadas_producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+       _new: { label: "Nueva contribución"}
+      fields:
+        username: { label: Usuario }
+        user_id: {label: Usuario }
+        contribucion_estado: { label: Estado contribución }
+        created_at: { label: Creada el }
+        destacado: {label: Destacada }
+        concurso_tipo: {label: Tipo }
+        resume_concurso: {label: Resumen (concurso) }
+        name: { label: Título }
+        contribucion_estado_id: { label: Estado contribución }
+        resumename: { label: Título }
+        concurso_tipo_id: { label: Tipo de concurso }
+        concurso_producto: { label: Producto }
+        concurso_producto_marca: { label: Marca }
+        tipo_concurso: { label: Tipo de concurso }
+        empresa_id: { label: Empresa/Entidad }
+        modelo: { label: Modelo }
+      list:
+        max_per_page: 25
+        sort: created_at
+        title: Listado de contribución destacadada de Prodcuto
+        #display: [resumename,concurso,tipo_concurso,destacado,created_at,contribucion_estado,username]
+        display: [_created_at,resumename,destacado,concurso,concurso_producto,concurso_producto_marca,_modelo,username,contribucion_estado]
+        object_actions:
+          show:
+            action: show
+            label: Ver
+          _edit:         ~
+          _delete:       ~
+          _quitardestacado: { label: Quitar destacado, action: quitarDestacado, params: {confirm : "¿Estás seguro de que quieres quitar el destacado?" } }
+      filter:
+        class: ContribucionProductoFormFilter
+        #display: [created_at, name, concurso_id, user_id, contribucion_estado_id]
+        display: [created_at, name,destacado, concurso_id,producto_id,marca,modelo, user_id,contribucion_estado_id]
+      form:
+        class: ContribucionBackendProductoForm
+        actions:
+          _delete:  ~
+          _list:  ~
+          volver: { label: Volver al concurso }
+          _save: ~
+          _save_and_add: ~
+      edit:
+        title:  Editar contribución destacadada de Producto
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+        #display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+      new:
+        title:  Nueva contribución destacadada de Producto
+        display: [name, contribucion_estado_id, user_id, user_name, destacado, concurso_id, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]
+        #display: [name, contribucion_estado_id, user_id, user_name, concurso_id, destacado, incidencia, plan_accion, resumen, archivo_1, archivo_2, archivo_3, archivo_4, archivo_5]

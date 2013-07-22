@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ConcursoEstado
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso_estado
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+         _new: { label: "Nuevo"}
+      fields:  ~
+      list:
+        title: Listado de Estados Concursos
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           states
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          states
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+         _new: { label: "Nueva provincia"}
+      fields: 
+        name: { label: Provincia }
+      list:
+        title: Listado de provincias
+        display: [id, orden, name]
+        sort: [name, asc]
+      filter:  
+        display: [orden, name]
+      form:    ~
+      edit:
+        title: Editar provincia
+      new:
+        title: Nueva provincia

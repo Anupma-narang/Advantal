@@ -1,0 +1,20 @@
+default:
+  http_metas:
+    content-type: text/html
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony,project
+    #language:     en
+    #robots:       index, follow
+
+
+all:    
+  stylesheets:    [global.css,comofunciona.css]
+
+  #javascripts:    []
+
+  has_layout:     true
+  layout:         layout_comofunciona
+
+

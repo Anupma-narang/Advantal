@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           CuestionarioPregunta
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          cuestionario_pregunta
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                    nothing
+
+    config:
+      actions:
+       _new: { label: "Nueva pregunta"}
+      fields:
+        label: { label: "Pregunta" }
+        type_id:  { label: "Tipo de pregunta" }
+        CuestionarioValuesTypes: { label: "Tipo de pregunta" }
+        created_at: { label: Creada el }
+        updated_at: { label: Modificada el }
+      list:
+        title:   Cuestionario de baja
+        display: [_created_at, label, CuestionarioValuesTypes]
+        object_actions:
+          #show:
+          #  action: show
+          #  label: Ver        
+          _edit:         ~
+          _delete:       ~
+      filter:
+        display: [label, type_id]
+      form:    ~
+      edit:
+        title: "Editar pregunta de baja"
+        display: [label, type_id]
+      new:  
+        title: "Nueva pregunta de baja"
+        display: [label, type_id]
